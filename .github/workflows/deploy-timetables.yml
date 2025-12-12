@@ -4,7 +4,7 @@ on:
   push:
     branches: ["main"]
     paths:
-      - "year-10-timetable/**"
+      - "**"
       - ".github/workflows/deploy-timetables.yml"
 
 permissions:
@@ -22,11 +22,10 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-          cache-dependency-path: year-10-timetable/package-lock.json
+          cache-dependency-path: package-lock.json
 
       - name: Install Dependencies
         run: |
-          cd year-10-timetable
           npm ci
 
       - name: Build Year 10
@@ -35,11 +34,10 @@ jobs:
           SHEET_URL: "https://docs.google.com/spreadsheets/d/1i1p1tWNJZtwr_9orEjX0AKeQ_GrqkqI-vUW9KbAWslU/export?format=xlsx"
           VITE_APP_TITLE: "Year 10 Assessment Calendar"
         run: |
-          cd year-10-timetable
           # Generate Data
           node scripts/download-and-parse.js
-          # Build with Base URL
-          npm run build -- --base=/year-10/
+          # Build with Base URL - including repo name
+          npm run build -- --base=/bassaleg-assessment-calendar/year-10/
           # Move to artifacts
           mkdir -p build_artifacts/year-10
           cp -r dist/* build_artifacts/year-10/
@@ -50,17 +48,20 @@ jobs:
           SHEET_URL: "https://docs.google.com/spreadsheets/d/1IwS8bwAq1-MGXMp88erwBC55m8iFaU--ZgBPRzuS-w4/export?format=xlsx"
           VITE_APP_TITLE: "Year 11 Assessment Calendar"
         run: |
-          cd year-10-timetable
           # Generate Data
           node scripts/download-and-parse.js
-          # Build with Base URL
-          npm run build -- --base=/year-11/
+          # Build with Base URL - including repo name
+          npm run build -- --base=/bassaleg-assessment-calendar/year-11/
           # Move to artifacts
           mkdir -p build_artifacts/year-11
           cp -r dist/* build_artifacts/year-11/
 
+      - name: Create Landing Page
+        run: |
+          cp .github/workflows/landing-page.html build_artifacts/index.html
+
       - name: Deploy to gh-pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: year-10-timetable/build_artifacts
+          folder: build_artifacts
           branch: gh-pages

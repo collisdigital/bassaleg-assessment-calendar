@@ -1,6 +1,0 @@
-# References
-
-| INDEX NUMBER | DOCUMENT NAME |
-| --- | --- |
-|  | *\<ADD DOCUMENT REFERENCES AND VERSION NUMBERS AS **REQUIRED**\>* |
-
