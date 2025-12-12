@@ -1,0 +1,31 @@
+[project]
+name = "claude-experiments"
+version = "0.1.0"
+description = "Word to MkDocs conversion tools and documentation"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mkdocs>=1.6.0",
+    "mkdocs-material>=9.0.0",
+    "mkdocs-awesome-nav>=3.0.0",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = []
+
+[tool.uv]
+dev-dependencies = []
+package = false
+
+# Note: Pandoc must be installed separately as a system package
+# On Ubuntu/Debian: sudo apt-get install pandoc
+# On macOS: brew install pandoc
+# On Windows: choco install pandoc or download from https://pandoc.org/installing.html

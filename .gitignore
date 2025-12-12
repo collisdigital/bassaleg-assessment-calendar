@@ -1,0 +1,33 @@
+site/
+mkdocs_output.log
+.venv
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Test and debug files
+test_*.py
+test_*.md
+debug_*.py
+trace_*.py
+
+# Build artifacts
+.nav-order.json
+
+# Intermediate conversion folders
+media
+raw-processed/
+raw-clean/
+raw-tables-converted/
+raw-step1-cleaned/
+raw-step1-simple-tables/
+raw-step2-simple-tables/
+raw-step2-grid-tables/
+raw-step3-grid-tables/
+raw-step3-admonitions/
+raw-step4-admonitions/
+
+# Other
+node_modules
