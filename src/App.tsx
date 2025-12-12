@@ -38,13 +38,13 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col font-sans">
-      <header className="bg-white border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
+      <header className="sticky top-0 z-30 bg-white border-b border-gray-200 shadow-sm">
+        <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
           <div>
-            <h1 className="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight">
-              {dataHook.filename || import.meta.env.VITE_APP_TITLE}
+            <h1 className="text-lg md:text-2xl font-bold text-gray-900 tracking-tight leading-tight">
+              {dataHook.filename || import.meta.env.VITE_APP_TITLE || 'Year 10 Assessment Calendar'}
             </h1>
-            <p className="text-gray-500 mt-1">2025-2026 Academic Year</p>
+            <p className="text-xs md:text-sm text-gray-500">2025-2026 Academic Year</p>
           </div>
 
           {/* Desktop View Selector */}
