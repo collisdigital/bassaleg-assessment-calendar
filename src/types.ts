@@ -16,6 +16,8 @@ export interface DayInfo {
 
 export interface Data {
   generatedAt: string;
+  sourceUrl?: string;
+  filename?: string;
   types: Record<string, string>;
   schedule: DayInfo[];
 }

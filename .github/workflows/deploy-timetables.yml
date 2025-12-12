@@ -30,10 +30,10 @@ jobs:
 
       - name: Build Year 10
         env:
-          # Default Year 10 Sheet
-          SHEET_URL: "https://docs.google.com/spreadsheets/d/1i1p1tWNJZtwr_9orEjX0AKeQ_GrqkqI-vUW9KbAWslU/export?format=xlsx"
           VITE_APP_TITLE: "Year 10 Assessment Calendar"
         run: |
+          # Read SHEET_URL from file
+          export SHEET_URL=$(cat scripts/year-10-sheet-url.txt)
           # Generate Data
           node scripts/download-and-parse.js
           # Build with Base URL - including repo name
@@ -44,10 +44,10 @@ jobs:
 
       - name: Build Year 11
         env:
-          # Year 11 Sheet (Converted edit URL to export URL)
-          SHEET_URL: "https://docs.google.com/spreadsheets/d/1IwS8bwAq1-MGXMp88erwBC55m8iFaU--ZgBPRzuS-w4/export?format=xlsx"
           VITE_APP_TITLE: "Year 11 Assessment Calendar"
         run: |
+          # Read SHEET_URL from file
+          export SHEET_URL=$(cat scripts/year-11-sheet-url.txt)
           # Generate Data
           node scripts/download-and-parse.js
           # Build with Base URL - including repo name

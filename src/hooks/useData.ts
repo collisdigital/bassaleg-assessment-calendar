@@ -64,6 +64,8 @@ export function useData() {
     setSelectedSubjects,
     selectedTypes,
     setSelectedTypes,
-    typeColors
+    typeColors,
+    filename: data.filename,
+    sourceUrl: data.sourceUrl
   };
 }

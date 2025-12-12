@@ -6,25 +6,67 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const GOOGLE_SHEET_EXPORT_URL = process.env.SHEET_URL || "https://docs.google.com/spreadsheets/d/1i1p1tWNJZtwr_9orEjX0AKeQ_GrqkqI-vUW9KbAWslU/export?format=xlsx";
+// Helper to read default URL from file
+function readDefaultUrl() {
+    try {
+        const urlPath = path.join(__dirname, 'year-10-sheet-url.txt');
+        if (fs.existsSync(urlPath)) {
+            return fs.readFileSync(urlPath, 'utf-8').trim();
+        }
+    } catch (e) {
+        console.warn("Could not read default URL file:", e);
+    }
+    return null;
+}
+
+const RAW_SHEET_URL = process.env.SHEET_URL || readDefaultUrl();
+
+if (!RAW_SHEET_URL) {
+    console.error("Error: No SHEET_URL provided and default file could not be read.");
+    process.exit(1);
+}
+
+// Append export format if not present
+const DOWNLOAD_URL = RAW_SHEET_URL.endsWith('/export?format=xlsx') 
+    ? RAW_SHEET_URL 
+    : `${RAW_SHEET_URL}/export?format=xlsx`;
+
 const OUTPUT_FILE = path.join(__dirname, '../src/data.json');
 const DOWNLOAD_PATH = path.join(__dirname, 'temp_sheet.xlsx');
 
-if (!process.env.SHEET_URL) {
-    console.log("No SHEET_URL provided, using default Year 10 sheet.");
-} else {
-    console.log(`Using SHEET_URL: ${process.env.SHEET_URL}`);
-}
+console.log(`Using Base URL: ${RAW_SHEET_URL}`);
 
 const COL_DATE = 2; // B
 const COL_WEEK = 3; // C
 const COL_INSET = 4; // D
 const COL_SUBJECT_START = 5; // E
 
+let sheetFilename = "Assessment Calendar.xlsx"; // Default fallback
+
 async function downloadSheet() {
   console.log('Downloading spreadsheet...');
-  const response = await fetch(GOOGLE_SHEET_EXPORT_URL);
+  const response = await fetch(DOWNLOAD_URL);
   if (!response.ok) throw new Error(`Failed to download: ${response.statusText}`);
+  
+  // Try to extract filename from Content-Disposition header
+  const contentDisposition = response.headers.get('content-disposition');
+  if (contentDisposition) {
+      fs.writeFileSync(path.join(__dirname, 'debug_log.txt'), `Content-Disposition: ${contentDisposition}\n`);
+
+      const filenameStarMatch = contentDisposition.match(/filename\*=UTF-8''([^;]+)/i);
+      if (filenameStarMatch && filenameStarMatch[1]) {
+          sheetFilename = decodeURIComponent(filenameStarMatch[1]);
+      } else {
+          const filenameMatch = contentDisposition.match(/filename="?([^\"]+)"?/);
+          if (filenameMatch && filenameMatch[1]) {
+              sheetFilename = filenameMatch[1].replace(/\+/g, ' ');
+          }
+      }
+  }
+  
+  console.log(`Detected filename: ${sheetFilename}`);
+  fs.appendFileSync(path.join(__dirname, 'debug_log.txt'), `Extracted Filename: ${sheetFilename}\n`);
+
   const arrayBuffer = await response.arrayBuffer();
   fs.writeFileSync(DOWNLOAD_PATH, Buffer.from(arrayBuffer));
   console.log('Download complete.');
@@ -236,6 +278,8 @@ async function parseSheet() {
 
   const output = {
       generatedAt: new Date().toISOString(),
+      sourceUrl: RAW_SHEET_URL,
+      filename: sheetFilename.replace(/\.xlsx$/i, ''), // Remove extension for display
       types: typeMap,
       schedule: data
   };
