@@ -1,12 +1,43 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import rawData from '../data.json';
 import { Data } from '../types';
 
 const data = rawData as Data;
 
 export function useData() {
-  const [selectedSubjects, setSelectedSubjects] = useState<string[]>([]);
-  const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
+  const [selectedSubjects, setSelectedSubjects] = useState<string[]>(() => {
+    if (typeof window === 'undefined') return [];
+    const params = new URLSearchParams(window.location.search);
+    return params.getAll('lesson');
+  });
+
+  const [selectedTypes, setSelectedTypes] = useState<string[]>(() => {
+    if (typeof window === 'undefined') return [];
+    const params = new URLSearchParams(window.location.search);
+    return params.getAll('type');
+  });
+
+  // Sync state to URL
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    const params = new URLSearchParams(window.location.search);
+
+    // Update 'lesson' (subjects)
+    params.delete('lesson');
+    selectedSubjects.forEach(s => params.append('lesson', s));
+
+    // Update 'type'
+    params.delete('type');
+    selectedTypes.forEach(t => params.append('type', t));
+
+    const newUrl = `${window.location.pathname}?${params.toString()}`;
+
+    // Only update if changed to avoid loops/redundant calls, though react handles deps
+    if (window.location.search !== `?${params.toString()}`) {
+      window.history.replaceState(null, '', newUrl);
+    }
+  }, [selectedSubjects, selectedTypes]);
 
   // Extract all unique subjects and types for the filter options
   const allSubjects = useMemo(() => {

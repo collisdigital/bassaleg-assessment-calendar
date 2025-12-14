@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, vi, beforeEach, afterAll } from 'vitest';
 import { renderHook, act } from '@testing-library/react';
 import { useData } from './useData';
 
@@ -7,7 +7,36 @@ import { useData } from './useData';
 // let's rely on the hook logic which depends on the imported json.
 // Ideally, we'd mock the import.
 
+// We mock window.location and history
+const originalLocation = window.location;
+const originalHistory = window.history;
+
 describe('useData Hook', () => {
+  beforeEach(() => {
+    // Reset window.location
+    delete (window as any).location;
+    (window as any).location = {
+        search: '',
+        pathname: '/',
+        assign: vi.fn(),
+        reload: vi.fn(),
+    };
+
+    // Reset window.history
+    delete (window as any).history;
+    (window as any).history = {
+        replaceState: vi.fn(),
+        pushState: vi.fn(),
+        state: null,
+        length: 1,
+    };
+  });
+
+  afterAll(() => {
+    window.location = originalLocation;
+    window.history = originalHistory;
+  });
+
   it('should return all subjects and types initially', () => {
     const { result } = renderHook(() => useData());
 
@@ -15,6 +44,30 @@ describe('useData Hook', () => {
     expect(result.current.allTypes.length).toBeGreaterThan(0);
     expect(result.current.selectedSubjects).toEqual([]);
     expect(result.current.selectedTypes).toEqual([]);
+  });
+
+  it('should initialize filters from URL parameters', () => {
+    // Set URL params before rendering
+    (window.location as any).search = '?type=Exam&lesson=Science+%26+Tech';
+
+    const { result } = renderHook(() => useData());
+
+    expect(result.current.selectedTypes).toContain('Exam');
+    expect(result.current.selectedSubjects).toContain('Science & Tech');
+  });
+
+  it('should update URL when filters change', () => {
+    const { result } = renderHook(() => useData());
+
+    act(() => {
+      result.current.setSelectedTypes(['Mock']);
+    });
+
+    expect(window.history.replaceState).toHaveBeenCalledWith(
+        null,
+        '',
+        expect.stringContaining('type=Mock')
+    );
   });
 
   it('should filter assessments by subject', () => {
