@@ -62,6 +62,7 @@ export function FilterBar({
                     key={type}
                     onClick={() => toggleType(type)}
                     style={style}
+                    aria-pressed={isSelected}
                     className={`px-3 py-1 text-sm rounded-full border transition-colors shadow-sm text-black
                       ${isSelected
                         ? 'font-bold ring-2 ring-offset-1 ring-gray-300'
@@ -85,6 +86,7 @@ export function FilterBar({
                   <button
                     key={subject}
                     onClick={() => toggleSubject(subject)}
+                    aria-pressed={isSelected}
                     className={`px-3 py-1 text-sm rounded-full border transition-colors
                       ${isSelected
                         ? 'bg-indigo-600 text-white border-indigo-600'
@@ -106,6 +108,7 @@ export function FilterBar({
                 <button
                     onClick={() => { setSelectedSubjects([]); setSelectedTypes([]); }}
                     className="text-red-600 hover:underline"
+                    aria-label="Clear all active filters"
                 >
                     Clear All
                 </button>
