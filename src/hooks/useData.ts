@@ -1,13 +1,14 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import rawData from '../data.json';
 import { Data } from '../types';
 
 const data = rawData as Data;
 
-export function useData() {
-  const [selectedSubjects, setSelectedSubjects] = useState<string[]>([]);
-  const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
+function createSlug(str: string): string {
+  return str.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+}
 
+export function useData() {
   // Extract all unique subjects and types for the filter options
   const allSubjects = useMemo(() => {
     const subjects = new Set<string>();
@@ -21,6 +22,66 @@ export function useData() {
     // We can use the types map from the data, or extract from assessments
     return Object.values(data.types).sort();
   }, []);
+
+  const [selectedSubjects, setSelectedSubjects] = useState<string[]>(() => {
+    if (typeof window === 'undefined') return [];
+    const params = new URLSearchParams(window.location.search);
+    const param = params.get('lesson');
+    if (!param) return [];
+
+    // Split by space (which is how multiple values are encoded in one param if we use '+')
+    // URLSearchParams decodes '+' to space automatically.
+    const slugs = param.split(' ');
+
+    // Map slugs back to original subjects
+    return allSubjects.filter(subject => slugs.includes(createSlug(subject)));
+  });
+
+  const [selectedTypes, setSelectedTypes] = useState<string[]>(() => {
+    if (typeof window === 'undefined') return [];
+    const params = new URLSearchParams(window.location.search);
+    const param = params.get('type');
+    if (!param) return [];
+
+    const slugs = param.split(' ');
+    return allTypes.filter(type => slugs.includes(createSlug(type)));
+  });
+
+  // Sync state to URL
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    const params = new URLSearchParams(window.location.search);
+
+    // Update 'lesson' (subjects)
+    if (selectedSubjects.length > 0) {
+      const slug = selectedSubjects.map(createSlug).join(' ');
+      params.set('lesson', slug);
+    } else {
+      params.delete('lesson');
+    }
+
+    // Update 'type'
+    if (selectedTypes.length > 0) {
+      const slug = selectedTypes.map(createSlug).join(' ');
+      params.set('type', slug);
+    } else {
+      params.delete('type');
+    }
+
+    const queryString = params.toString();
+    const newUrl = queryString
+      ? `${window.location.pathname}?${queryString}`
+      : window.location.pathname;
+
+    const currentSearch = window.location.search;
+    const newSearch = queryString ? `?${queryString}` : '';
+
+    // Only update if changed to avoid loops/redundant calls
+    if (currentSearch !== newSearch) {
+      window.history.replaceState(null, '', newUrl);
+    }
+  }, [selectedSubjects, selectedTypes]);
 
   const typeColors = useMemo(() => {
     const map: Record<string, string> = {};

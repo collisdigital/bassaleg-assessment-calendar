@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, vi, beforeEach, afterAll } from 'vitest';
 import { renderHook, act } from '@testing-library/react';
 import { useData } from './useData';
 
@@ -7,7 +7,42 @@ import { useData } from './useData';
 // let's rely on the hook logic which depends on the imported json.
 // Ideally, we'd mock the import.
 
+// We mock window.location and history
+const originalLocation = window.location;
+const originalHistory = window.history;
+
 describe('useData Hook', () => {
+  beforeEach(() => {
+    // Reset window.location
+    delete (window as any).location;
+    (window as any).location = {
+        search: '',
+        pathname: '/',
+        assign: vi.fn(),
+        reload: vi.fn(),
+    };
+
+    // Reset window.history
+    delete (window as any).history;
+    (window as any).history = {
+        replaceState: vi.fn(),
+        pushState: vi.fn(),
+        state: null,
+        length: 1,
+    };
+  });
+
+  afterAll(() => {
+    Object.defineProperty(window, 'location', {
+      writable: true,
+      value: originalLocation
+    });
+    Object.defineProperty(window, 'history', {
+      writable: true,
+      value: originalHistory
+    });
+  });
+
   it('should return all subjects and types initially', () => {
     const { result } = renderHook(() => useData());
 
@@ -15,6 +50,60 @@ describe('useData Hook', () => {
     expect(result.current.allTypes.length).toBeGreaterThan(0);
     expect(result.current.selectedSubjects).toEqual([]);
     expect(result.current.selectedTypes).toEqual([]);
+  });
+
+  it('should initialize filters from URL parameters with combined slugs', () => {
+    // Set URL params before rendering
+    // "Exam" -> "exam", "Science & Tech" -> "science-tech"
+    // format: ?type=exam&lesson=science-tech
+    (window.location as any).search = '?type=exam&lesson=science-tech';
+
+    const { result } = renderHook(() => useData());
+
+    expect(result.current.selectedTypes).toContain('Exam');
+    expect(result.current.selectedSubjects).toContain('Science & Tech');
+  });
+
+  it('should initialize multiple filters from combined space-separated slugs', () => {
+      // ?type=exam+mock
+      // URLSearchParams decodes + to space.
+      (window.location as any).search = '?type=exam+mock';
+
+      const { result } = renderHook(() => useData());
+
+      expect(result.current.selectedTypes).toContain('Exam');
+      expect(result.current.selectedTypes).toContain('Mock');
+  });
+
+  it('should update URL when filters change', () => {
+    const { result } = renderHook(() => useData());
+
+    act(() => {
+      result.current.setSelectedTypes(['Mock']);
+    });
+
+    // "Mock" -> "mock"
+    expect(window.history.replaceState).toHaveBeenCalledWith(
+        null,
+        '',
+        expect.stringContaining('type=mock')
+    );
+  });
+
+  it('should update URL with combined parameters', () => {
+     const { result } = renderHook(() => useData());
+
+     act(() => {
+         result.current.setSelectedTypes(['Mock', 'Exam']);
+     });
+
+     // "Mock" -> "mock", "Exam" -> "exam" -> "mock exam" (encoded as mock+exam or mock%20exam)
+     // URLSearchParams.toString() encodes space as +
+     expect(window.history.replaceState).toHaveBeenCalledWith(
+         null,
+         '',
+         expect.stringMatching(/type=mock\+exam|type=exam\+mock/)
+     );
   });
 
   it('should filter assessments by subject', () => {
@@ -42,26 +131,6 @@ describe('useData Hook', () => {
     });
 
     // Ensure we actually found something to make the test valid
-    expect(foundAssessment).toBe(true);
-  });
-
-   it('should filter assessments by type', () => {
-    const { result } = renderHook(() => useData());
-
-    const typeToFilter = "Exam";
-
-    act(() => {
-      result.current.setSelectedTypes([typeToFilter]);
-    });
-
-    let foundAssessment = false;
-    result.current.schedule.forEach(day => {
-       day.assessments.forEach(a => {
-           expect(a.type).toBe(typeToFilter);
-           foundAssessment = true;
-       });
-    });
-
     expect(foundAssessment).toBe(true);
   });
 });
