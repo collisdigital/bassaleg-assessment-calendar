@@ -64,6 +64,30 @@ function App() {
 
   const todayDate = new Date().getDate();
 
+  const CalendarDayIcon = ({ day }: { day: number }) => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 448 512"
+      fill="currentColor"
+      className="w-8 h-8"
+      aria-hidden="true"
+    >
+        {/* Font Awesome Regular Calendar path */}
+        <path d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z" />
+        <text
+          x="224"
+          y="360"
+          textAnchor="middle"
+          dominantBaseline="middle"
+          fontSize="200"
+          fontWeight="bold"
+          fill="currentColor"
+        >
+          {day}
+        </text>
+    </svg>
+  );
+
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col font-sans">
       <header className="sticky top-0 z-30 bg-white border-b border-gray-200 shadow-sm">
@@ -80,24 +104,26 @@ function App() {
             {viewMode === 'timeline' && (
               <button
                 onClick={handleScrollToToday}
-                className="flex items-center justify-center w-8 h-8 rounded border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 text-sm font-semibold shadow-sm transition-colors"
+                className="text-gray-600 hover:text-gray-900 transition-colors p-1 rounded-md hover:bg-gray-100"
                 title="Jump to Today"
+                aria-label="Jump to Today"
               >
-                [{todayDate}]
+                <CalendarDayIcon day={todayDate} />
               </button>
             )}
             <ViewSelector currentView={viewMode} onViewChange={setViewMode} />
           </div>
 
           {/* Mobile Menu Button & Today Button */}
-          <div className="md:hidden flex items-center gap-2">
+          <div className="md:hidden flex items-center gap-1">
             {viewMode === 'timeline' && (
               <button
                 onClick={handleScrollToToday}
-                className="flex items-center justify-center w-8 h-8 rounded border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 text-sm font-semibold shadow-sm transition-colors"
+                className="text-gray-600 hover:text-gray-900 transition-colors p-1 rounded-md hover:bg-gray-100"
                 title="Jump to Today"
+                aria-label="Jump to Today"
               >
-                [{todayDate}]
+                <CalendarDayIcon day={todayDate} />
               </button>
             )}
             <button
