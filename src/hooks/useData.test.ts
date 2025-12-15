@@ -33,8 +33,14 @@ describe('useData Hook', () => {
   });
 
   afterAll(() => {
-    window.location = originalLocation;
-    window.history = originalHistory;
+    Object.defineProperty(window, 'location', {
+      writable: true,
+      value: originalLocation
+    });
+    Object.defineProperty(window, 'history', {
+      writable: true,
+      value: originalHistory
+    });
   });
 
   it('should return all subjects and types initially', () => {
