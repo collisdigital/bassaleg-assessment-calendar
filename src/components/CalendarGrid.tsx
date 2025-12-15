@@ -32,6 +32,19 @@ export function CalendarGrid({ schedule, viewMode, onAssessmentClick }: Calendar
       setCurrentMonth(new Date(new Date().getFullYear(), new Date().getMonth(), 1));
   }
 
+  // Optimize lookup by creating a map of date string -> DayInfo
+  // ⚡ Bolt: Reduces lookup complexity from O(N*M) to O(1) inside the grid generation loop
+  const scheduleMap = useMemo(() => {
+    const map = new Map<string, DayInfo>();
+    schedule.forEach(day => {
+        // day.date is ISO string, e.g., "2025-11-03T00:00:00.000Z"
+        // We strip the time part to match YYYY-MM-DD format used in grid generation
+        const dateKey = day.date.substring(0, 10);
+        map.set(dateKey, day);
+    });
+    return map;
+  }, [schedule]);
+
   // Calculate days to display
   const daysInMonth = useMemo(() => {
     const year = currentMonth.getFullYear();
@@ -74,8 +87,8 @@ export function CalendarGrid({ schedule, viewMode, onAssessmentClick }: Calendar
         const day = String(slot.date.getDate()).padStart(2, '0');
         const slotDateStr = `${year}-${month}-${day}`;
 
-        // Ensure schedule dates are also compared as YYYY-MM-DD (assuming they are ISO strings in JSON)
-        const foundDay = schedule.find(s => s.date.startsWith(slotDateStr));
+        // ⚡ Bolt: Use Map lookup instead of array.find()
+        const foundDay = scheduleMap.get(slotDateStr);
         return {
             ...slot,
             day: foundDay || { date: slot.date.toISOString(), week: null, isInset: false, assessments: [] }
@@ -83,7 +96,7 @@ export function CalendarGrid({ schedule, viewMode, onAssessmentClick }: Calendar
     });
 
     return mappedDays;
-  }, [currentMonth, schedule]);
+  }, [currentMonth, scheduleMap]);
 
   const monthLabel = currentMonth.toLocaleString('default', { month: 'long', year: 'numeric' });
 
