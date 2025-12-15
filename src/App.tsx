@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useData } from './hooks/useData';
 import { FilterBar } from './components/FilterBar';
 import { CalendarGrid } from './components/CalendarGrid';
@@ -28,6 +28,7 @@ function App() {
   const [selectedAssessment, setSelectedAssessment] = useState<{data: Assessment, date: string} | null>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [showFilterWarning, setShowFilterWarning] = useState(false);
+  const timelineScrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     // If Timeline view is selected on page load and filters are enabled, show a warning
@@ -55,6 +56,14 @@ function App() {
     setSelectedAssessment(null);
   };
 
+  const handleScrollToToday = () => {
+    if (timelineScrollRef.current) {
+      timelineScrollRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  };
+
+  const todayDate = new Date().getDate();
+
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col font-sans">
       <header className="sticky top-0 z-30 bg-white border-b border-gray-200 shadow-sm">
@@ -66,22 +75,42 @@ function App() {
             <p className="text-xs md:text-sm text-gray-500">2025-2026 Academic Year</p>
           </div>
 
-          {/* Desktop View Selector */}
-          <div className="hidden md:block">
+          {/* Desktop View Selector & Today Button */}
+          <div className="hidden md:flex items-center gap-3">
+            {viewMode === 'timeline' && (
+              <button
+                onClick={handleScrollToToday}
+                className="flex items-center justify-center w-8 h-8 rounded border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 text-sm font-semibold shadow-sm transition-colors"
+                title="Jump to Today"
+              >
+                [{todayDate}]
+              </button>
+            )}
             <ViewSelector currentView={viewMode} onViewChange={setViewMode} />
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            type="button"
-            className="md:hidden -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-            onClick={() => setIsMobileMenuOpen(true)}
-          >
-            <span className="sr-only">Open main menu</span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-          </button>
+          {/* Mobile Menu Button & Today Button */}
+          <div className="md:hidden flex items-center gap-2">
+            {viewMode === 'timeline' && (
+              <button
+                onClick={handleScrollToToday}
+                className="flex items-center justify-center w-8 h-8 rounded border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 text-sm font-semibold shadow-sm transition-colors"
+                title="Jump to Today"
+              >
+                [{todayDate}]
+              </button>
+            )}
+            <button
+              type="button"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+              onClick={() => setIsMobileMenuOpen(true)}
+            >
+              <span className="sr-only">Open main menu</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </button>
+          </div>
         </div>
 
         {/* Filter Warning - Inside Sticky Header */}
@@ -166,6 +195,7 @@ function App() {
              <TimelineView
                 schedule={dataHook.schedule}
                 onAssessmentClick={handleAssessmentClick}
+                scrollRef={timelineScrollRef}
              />
           ) : (
             <CalendarGrid
