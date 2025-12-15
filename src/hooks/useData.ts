@@ -69,10 +69,16 @@ export function useData() {
       params.delete('type');
     }
 
-    const newUrl = `${window.location.pathname}?${params.toString()}`;
+    const queryString = params.toString();
+    const newUrl = queryString
+      ? `${window.location.pathname}?${queryString}`
+      : window.location.pathname;
+
+    const currentSearch = window.location.search;
+    const newSearch = queryString ? `?${queryString}` : '';
 
     // Only update if changed to avoid loops/redundant calls
-    if (window.location.search !== `?${params.toString()}`) {
+    if (currentSearch !== newSearch) {
       window.history.replaceState(null, '', newUrl);
     }
   }, [selectedSubjects, selectedTypes]);
