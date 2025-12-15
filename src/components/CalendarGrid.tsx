@@ -32,6 +32,18 @@ export function CalendarGrid({ schedule, viewMode, onAssessmentClick }: Calendar
       setCurrentMonth(new Date(new Date().getFullYear(), new Date().getMonth(), 1));
   }
 
+  // Optimization: Create a lookup map for schedule dates to avoid O(N*M) lookups
+  // N = schedule items, M = days displayed (30-42)
+  const scheduleMap = useMemo(() => {
+    const map = new Map<string, DayInfo>();
+    schedule.forEach(day => {
+        // Assuming date is in ISO format YYYY-MM-DD...
+        const dateStr = day.date.substring(0, 10);
+        map.set(dateStr, day);
+    });
+    return map;
+  }, [schedule]);
+
   // Calculate days to display
   const daysInMonth = useMemo(() => {
     const year = currentMonth.getFullYear();
@@ -74,8 +86,7 @@ export function CalendarGrid({ schedule, viewMode, onAssessmentClick }: Calendar
         const day = String(slot.date.getDate()).padStart(2, '0');
         const slotDateStr = `${year}-${month}-${day}`;
 
-        // Ensure schedule dates are also compared as YYYY-MM-DD (assuming they are ISO strings in JSON)
-        const foundDay = schedule.find(s => s.date.startsWith(slotDateStr));
+        const foundDay = scheduleMap.get(slotDateStr);
         return {
             ...slot,
             day: foundDay || { date: slot.date.toISOString(), week: null, isInset: false, assessments: [] }
@@ -83,7 +94,7 @@ export function CalendarGrid({ schedule, viewMode, onAssessmentClick }: Calendar
     });
 
     return mappedDays;
-  }, [currentMonth, schedule]);
+  }, [currentMonth, scheduleMap]);
 
   const monthLabel = currentMonth.toLocaleString('default', { month: 'long', year: 'numeric' });
 
