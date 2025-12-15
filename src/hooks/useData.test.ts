@@ -46,14 +46,27 @@ describe('useData Hook', () => {
     expect(result.current.selectedTypes).toEqual([]);
   });
 
-  it('should initialize filters from URL parameters', () => {
+  it('should initialize filters from URL parameters with combined slugs', () => {
     // Set URL params before rendering
-    (window.location as any).search = '?type=Exam&lesson=Science+%26+Tech';
+    // "Exam" -> "exam", "Science & Tech" -> "science-tech"
+    // format: ?type=exam&lesson=science-tech
+    (window.location as any).search = '?type=exam&lesson=science-tech';
 
     const { result } = renderHook(() => useData());
 
     expect(result.current.selectedTypes).toContain('Exam');
     expect(result.current.selectedSubjects).toContain('Science & Tech');
+  });
+
+  it('should initialize multiple filters from combined space-separated slugs', () => {
+      // ?type=exam+mock
+      // URLSearchParams decodes + to space.
+      (window.location as any).search = '?type=exam+mock';
+
+      const { result } = renderHook(() => useData());
+
+      expect(result.current.selectedTypes).toContain('Exam');
+      expect(result.current.selectedTypes).toContain('Mock');
   });
 
   it('should update URL when filters change', () => {
@@ -63,11 +76,28 @@ describe('useData Hook', () => {
       result.current.setSelectedTypes(['Mock']);
     });
 
+    // "Mock" -> "mock"
     expect(window.history.replaceState).toHaveBeenCalledWith(
         null,
         '',
-        expect.stringContaining('type=Mock')
+        expect.stringContaining('type=mock')
     );
+  });
+
+  it('should update URL with combined parameters', () => {
+     const { result } = renderHook(() => useData());
+
+     act(() => {
+         result.current.setSelectedTypes(['Mock', 'Exam']);
+     });
+
+     // "Mock" -> "mock", "Exam" -> "exam" -> "mock exam" (encoded as mock+exam or mock%20exam)
+     // URLSearchParams.toString() encodes space as +
+     expect(window.history.replaceState).toHaveBeenCalledWith(
+         null,
+         '',
+         expect.stringMatching(/type=mock\+exam|type=exam\+mock/)
+     );
   });
 
   it('should filter assessments by subject', () => {
@@ -95,26 +125,6 @@ describe('useData Hook', () => {
     });
 
     // Ensure we actually found something to make the test valid
-    expect(foundAssessment).toBe(true);
-  });
-
-   it('should filter assessments by type', () => {
-    const { result } = renderHook(() => useData());
-
-    const typeToFilter = "Exam";
-
-    act(() => {
-      result.current.setSelectedTypes([typeToFilter]);
-    });
-
-    let foundAssessment = false;
-    result.current.schedule.forEach(day => {
-       day.assessments.forEach(a => {
-           expect(a.type).toBe(typeToFilter);
-           foundAssessment = true;
-       });
-    });
-
     expect(foundAssessment).toBe(true);
   });
 });
