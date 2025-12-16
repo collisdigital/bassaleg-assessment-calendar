@@ -4,16 +4,17 @@ import { DayInfo, Assessment } from '../types';
 interface TimelineViewProps {
   schedule: DayInfo[];
   onAssessmentClick: (assessment: Assessment, date: string) => void;
+  jumpToTodayTrigger?: number;
 }
 
-export function TimelineView({ schedule, onAssessmentClick }: TimelineViewProps) {
+export function TimelineView({ schedule, onAssessmentClick, jumpToTodayTrigger = 0 }: TimelineViewProps) {
   const todayRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (todayRef.current) {
       todayRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
-  }, []);
+  }, [jumpToTodayTrigger]);
 
   // Filter out days with no assessments?
   // User didn't specify, but usually a timeline shows events.

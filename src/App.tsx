@@ -28,6 +28,7 @@ function App() {
   const [selectedAssessment, setSelectedAssessment] = useState<{data: Assessment, date: string} | null>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [showFilterWarning, setShowFilterWarning] = useState(false);
+  const [jumpToTodayTrigger, setJumpToTodayTrigger] = useState(0);
 
   useEffect(() => {
     // If Timeline view is selected on page load and filters are enabled, show a warning
@@ -67,7 +68,17 @@ function App() {
           </div>
 
           {/* Desktop View Selector */}
-          <div className="hidden md:block">
+          <div className="hidden md:flex items-center gap-2">
+            <button
+              onClick={() => setJumpToTodayTrigger((prev) => prev + 1)}
+              className="flex items-center justify-center p-2 text-gray-600 hover:text-indigo-600 hover:bg-gray-50 rounded-full transition-colors"
+              aria-label="Jump to Today"
+              title="Jump to Today"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+              </svg>
+            </button>
             <ViewSelector currentView={viewMode} onViewChange={setViewMode} />
           </div>
 
@@ -166,12 +177,14 @@ function App() {
              <TimelineView
                 schedule={dataHook.schedule}
                 onAssessmentClick={handleAssessmentClick}
+                jumpToTodayTrigger={jumpToTodayTrigger}
              />
           ) : (
             <CalendarGrid
                 schedule={dataHook.schedule}
                 viewMode={viewMode}
                 onAssessmentClick={handleAssessmentClick}
+                jumpToTodayTrigger={jumpToTodayTrigger}
             />
           )}
         </div>

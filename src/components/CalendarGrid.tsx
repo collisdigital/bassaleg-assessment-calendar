@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { DayInfo, ViewMode } from '../types';
 import { DayCell } from './DayCell';
 
@@ -8,9 +8,10 @@ interface CalendarGridProps {
   schedule: DayInfo[];
   viewMode: ViewMode;
   onAssessmentClick: (assessment: Assessment, date: string) => void;
+  jumpToTodayTrigger?: number;
 }
 
-export function CalendarGrid({ schedule, viewMode, onAssessmentClick }: CalendarGridProps) {
+export function CalendarGrid({ schedule, viewMode, onAssessmentClick, jumpToTodayTrigger = 0 }: CalendarGridProps) {
   // Determine the date range from the schedule to set initial view
   // User request: Start with current month containing today
 
@@ -31,6 +32,12 @@ export function CalendarGrid({ schedule, viewMode, onAssessmentClick }: Calendar
   const goToToday = () => {
       setCurrentMonth(new Date(new Date().getFullYear(), new Date().getMonth(), 1));
   }
+
+  useEffect(() => {
+    if (jumpToTodayTrigger > 0) {
+      goToToday();
+    }
+  }, [jumpToTodayTrigger]);
 
   // Optimization: Create a lookup map for schedule dates to avoid O(N*M) lookups
   // N = schedule items, M = days displayed (30-42)
