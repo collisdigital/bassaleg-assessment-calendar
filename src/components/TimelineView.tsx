@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, memo } from 'react';
 import { DayInfo, Assessment } from '../types';
 
 interface TimelineViewProps {
@@ -7,7 +7,7 @@ interface TimelineViewProps {
   scrollRef?: React.RefObject<HTMLDivElement>;
 }
 
-export function TimelineView({ schedule, onAssessmentClick, scrollRef }: TimelineViewProps) {
+export const TimelineView = memo(function TimelineView({ schedule, onAssessmentClick, scrollRef }: TimelineViewProps) {
   const internalRef = useRef<HTMLDivElement>(null);
   const activeRef = scrollRef || internalRef;
 
@@ -27,20 +27,27 @@ export function TimelineView({ schedule, onAssessmentClick, scrollRef }: Timelin
     return new Date(y, m - 1, d);
   };
 
-  // Helper to check if a date is today
+  // Optimization: Calculate today's date components once outside the loop
+  const today = new Date();
+  const currentDay = today.getDate();
+  const currentMonth = today.getMonth();
+  const currentYear = today.getFullYear();
+
+  // Optimization: Pre-calculate midnight for future comparison
+  const todayMidnight = new Date();
+  todayMidnight.setHours(0,0,0,0);
+
+  // Helper using closed-over values to avoid creating new Date() for 'today' every time
   const isToday = (dateStr: string) => {
       const d = parseDate(dateStr);
-      const today = new Date();
-      return d.getDate() === today.getDate() &&
-             d.getMonth() === today.getMonth() &&
-             d.getFullYear() === today.getFullYear();
+      return d.getDate() === currentDay &&
+             d.getMonth() === currentMonth &&
+             d.getFullYear() === currentYear;
   };
 
   const isFutureOrToday = (dateStr: string) => {
       const d = parseDate(dateStr);
-      const today = new Date();
-      today.setHours(0,0,0,0);
-      return d >= today;
+      return d >= todayMidnight;
   };
 
   // Find the first day that is today or in the future to mark as the scroll target
@@ -145,4 +152,4 @@ export function TimelineView({ schedule, onAssessmentClick, scrollRef }: Timelin
       )}
     </div>
   );
-}
+});
