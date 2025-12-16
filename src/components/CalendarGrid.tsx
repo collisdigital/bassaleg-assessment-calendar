@@ -89,7 +89,7 @@ export function CalendarGrid({ schedule, viewMode, onAssessmentClick }: Calendar
         const foundDay = scheduleMap.get(slotDateStr);
         return {
             ...slot,
-            day: foundDay || { date: slot.date.toISOString(), week: null, isInset: false, assessments: [] }
+            day: foundDay ?? { date: slot.date.toISOString(), week: null, isInset: false, assessments: [] }
         };
     });
 
@@ -141,7 +141,7 @@ export function CalendarGrid({ schedule, viewMode, onAssessmentClick }: Calendar
             {visibleDays.map((slot, idx) => (
                 <DayCell
                     key={idx}
-                    day={slot.day!}
+                    day={slot.day}
                     isCurrentMonth={slot.isCurrentMonth}
                     onAssessmentClick={onAssessmentClick}
                 />

@@ -57,7 +57,7 @@ async function downloadSheet() {
       if (filenameStarMatch && filenameStarMatch[1]) {
           sheetFilename = decodeURIComponent(filenameStarMatch[1]);
       } else {
-          const filenameMatch = contentDisposition.match(/filename="?([^\"]+)"?/);
+          const filenameMatch = contentDisposition.match(/filename="?([^"]+)"?/);
           if (filenameMatch && filenameMatch[1]) {
               sheetFilename = filenameMatch[1].replace(/\+/g, ' ');
           }

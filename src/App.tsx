@@ -95,7 +95,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
           <div>
             <h1 className="text-lg md:text-2xl font-bold text-gray-900 tracking-tight leading-tight">
-              {dataHook.filename || import.meta.env.VITE_APP_TITLE || 'Year 10 Assessment Calendar'}
+              {dataHook.filename ?? import.meta.env.VITE_APP_TITLE ?? 'Year 10 Assessment Calendar'}
             </h1>
             <p className="text-xs md:text-sm text-gray-500">2025-2026 Academic Year</p>
           </div>
@@ -296,7 +296,7 @@ function App() {
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:text-blue-800 underline decoration-blue-300 hover:decoration-blue-800 transition-colors"
               >
-                {dataHook.filename || 'Assessment Calendar Spreadsheet'}
+                {dataHook.filename ?? 'Assessment Calendar Spreadsheet'}
               </a>
             ) : (
               'Assessment Calendar Spreadsheet'

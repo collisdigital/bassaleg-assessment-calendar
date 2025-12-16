@@ -29,7 +29,6 @@ async function verify() {
     // Count non-empty date rows in Excel
     let excelRowCount = 0;
     let firstDateExcel = null;
-    let lastDateExcel = null;
 
     sheet.eachRow((row, rowNumber) => {
         if (rowNumber === 1) return; // Header
@@ -37,7 +36,6 @@ async function verify() {
         if (dateCell.value) {
             excelRowCount++;
             if (!firstDateExcel) firstDateExcel = dateCell.value;
-            lastDateExcel = dateCell.value;
         }
     });
 

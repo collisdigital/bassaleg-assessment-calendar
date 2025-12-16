@@ -9,7 +9,7 @@ interface TimelineViewProps {
 
 export const TimelineView = memo(function TimelineView({ schedule, onAssessmentClick, scrollRef }: TimelineViewProps) {
   const internalRef = useRef<HTMLDivElement>(null);
-  const activeRef = scrollRef || internalRef;
+  const activeRef = scrollRef ?? internalRef;
 
   useEffect(() => {
     if (activeRef.current) {

@@ -5,7 +5,6 @@ import { useData } from './useData';
 // Mock data.json to ensure tests are deterministic
 // We will use vi.mock but for simplicity in this environment,
 // let's rely on the hook logic which depends on the imported json.
-// Ideally, we'd mock the import.
 
 // We mock window.location and history
 const originalLocation = window.location;
@@ -15,6 +14,7 @@ describe('useData Hook', () => {
   beforeEach(() => {
     // Reset window.location
     Object.defineProperty(window, 'location', {
+      configurable: true,
       writable: true,
       value: {
         search: '',
@@ -27,6 +27,7 @@ describe('useData Hook', () => {
 
     // Reset window.history
     Object.defineProperty(window, 'history', {
+      configurable: true,
       writable: true,
       value: {
         replaceState: vi.fn(),
@@ -43,10 +44,12 @@ describe('useData Hook', () => {
 
   afterAll(() => {
     Object.defineProperty(window, 'location', {
+      configurable: true,
       writable: true,
       value: originalLocation
     });
     Object.defineProperty(window, 'history', {
+      configurable: true,
       writable: true,
       value: originalHistory
     });
@@ -92,6 +95,7 @@ describe('useData Hook', () => {
     });
 
     // "Mock" -> "mock"
+    // eslint-disable-next-line @typescript-eslint/unbound-method
     expect(window.history.replaceState).toHaveBeenCalledWith(
         null,
         '',
@@ -108,6 +112,7 @@ describe('useData Hook', () => {
 
      // "Mock" -> "mock", "Exam" -> "exam" -> "mock exam" (encoded as mock+exam or mock%20exam)
      // URLSearchParams.toString() encodes space as +
+     // eslint-disable-next-line @typescript-eslint/unbound-method
      expect(window.history.replaceState).toHaveBeenCalledWith(
          null,
          '',
