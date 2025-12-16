@@ -14,22 +14,31 @@ const originalHistory = window.history;
 describe('useData Hook', () => {
   beforeEach(() => {
     // Reset window.location
-    delete (window as any).location;
-    (window as any).location = {
+    Object.defineProperty(window, 'location', {
+      writable: true,
+      value: {
         search: '',
         pathname: '/',
         assign: vi.fn(),
         reload: vi.fn(),
-    };
+        toString: () => 'http://localhost/',
+      } as unknown as Location,
+    });
 
     // Reset window.history
-    delete (window as any).history;
-    (window as any).history = {
+    Object.defineProperty(window, 'history', {
+      writable: true,
+      value: {
         replaceState: vi.fn(),
         pushState: vi.fn(),
         state: null,
         length: 1,
-    };
+        go: vi.fn(),
+        back: vi.fn(),
+        forward: vi.fn(),
+        scrollRestoration: 'auto',
+      } as unknown as History,
+    });
   });
 
   afterAll(() => {
@@ -56,7 +65,7 @@ describe('useData Hook', () => {
     // Set URL params before rendering
     // "Exam" -> "exam", "Science & Tech" -> "science-tech"
     // format: ?type=exam&lesson=science-tech
-    (window.location as any).search = '?type=exam&lesson=science-tech';
+    window.location.search = '?type=exam&lesson=science-tech';
 
     const { result } = renderHook(() => useData());
 
@@ -67,7 +76,7 @@ describe('useData Hook', () => {
   it('should initialize multiple filters from combined space-separated slugs', () => {
       // ?type=exam+mock
       // URLSearchParams decodes + to space.
-      (window.location as any).search = '?type=exam+mock';
+      window.location.search = '?type=exam+mock';
 
       const { result } = renderHook(() => useData());
 

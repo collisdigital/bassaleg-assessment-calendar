@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { useData } from './hooks/useData';
 import { FilterBar } from './components/FilterBar';
 import { CalendarGrid } from './components/CalendarGrid';
@@ -6,6 +6,31 @@ import { TimelineView } from './components/TimelineView';
 import { ViewSelector } from './components/ViewSelector';
 import { ViewMode, Assessment } from './types';
 import { Modal } from './components/Modal';
+
+// Moved outside component to prevent re-creation on every render
+const CalendarDayIcon = ({ day }: { day: number }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 448 512"
+    fill="currentColor"
+    className="w-8 h-8"
+    aria-hidden="true"
+  >
+      {/* Font Awesome Regular Calendar path */}
+      <path d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z" />
+      <text
+        x="220"
+        y="340"
+        textAnchor="middle"
+        dominantBaseline="middle"
+        fontSize="200"
+        fontWeight="bold"
+        fill="currentColor"
+      >
+        {day}
+      </text>
+  </svg>
+);
 
 function App() {
   const dataHook = useData();
@@ -48,13 +73,13 @@ function App() {
     }
   }, [dataHook.selectedSubjects.length, dataHook.selectedTypes.length]);
 
-  const handleAssessmentClick = (assessment: Assessment, date: string) => {
+  const handleAssessmentClick = useCallback((assessment: Assessment, date: string) => {
     setSelectedAssessment({ data: assessment, date });
-  };
+  }, []);
 
-  const closeAssessmentModal = () => {
+  const closeAssessmentModal = useCallback(() => {
     setSelectedAssessment(null);
-  };
+  }, []);
 
   const handleScrollToToday = () => {
     if (timelineScrollRef.current) {
@@ -63,30 +88,6 @@ function App() {
   };
 
   const todayDate = new Date().getDate();
-
-  const CalendarDayIcon = ({ day }: { day: number }) => (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 448 512"
-      fill="currentColor"
-      className="w-8 h-8"
-      aria-hidden="true"
-    >
-        {/* Font Awesome Regular Calendar path */}
-        <path d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z" />
-        <text
-          x="220"
-          y="340"
-          textAnchor="middle"
-          dominantBaseline="middle"
-          fontSize="200"
-          fontWeight="bold"
-          fill="currentColor"
-        >
-          {day}
-        </text>
-    </svg>
-  );
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col font-sans">
