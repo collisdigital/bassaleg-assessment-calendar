@@ -59,6 +59,16 @@ A web application designed to visualize assessment timetables for Year 10 and Ye
    npm install
    ```
 
+### Linting
+
+To check code style and catch potential errors:
+
+```bash
+npm run lint
+```
+
+This command uses ESLint with TypeScript and React-specific rules to ensure code quality and consistency.
+
 ### Running Locally
 
 To start the development server:
