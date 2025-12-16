@@ -17,26 +17,29 @@ export function TimelineView({ schedule, onAssessmentClick, scrollRef }: Timelin
     }
   }, [activeRef]);
 
-  // Filter out days with no assessments?
-  // User didn't specify, but usually a timeline shows events.
-  // However, showing empty days gives context of time passing.
-  // Let's filter to only days with assessments OR days that are "Today" to allow context.
-  // Actually, for a whole year, that's a lot of empty days.
-  // Let's group by Month.
+  // Helper to parse "YYYY-MM-DD" string into a local Date object (midnight)
+  // This avoids timezone issues when parsing standard ISO strings or date strings
+  const parseDate = (dateStr: string) => {
+    // Take the first 10 characters (YYYY-MM-DD)
+    const part = dateStr.substring(0, 10);
+    const [y, m, d] = part.split('-').map(Number);
+    // Note: Month is 0-indexed in Date constructor
+    return new Date(y, m - 1, d);
+  };
 
   // Helper to check if a date is today
   const isToday = (dateStr: string) => {
+      const d = parseDate(dateStr);
       const today = new Date();
-      const d = new Date(dateStr);
       return d.getDate() === today.getDate() &&
              d.getMonth() === today.getMonth() &&
              d.getFullYear() === today.getFullYear();
   };
 
   const isFutureOrToday = (dateStr: string) => {
+      const d = parseDate(dateStr);
       const today = new Date();
       today.setHours(0,0,0,0);
-      const d = new Date(dateStr);
       return d >= today;
   };
 
@@ -46,14 +49,14 @@ export function TimelineView({ schedule, onAssessmentClick, scrollRef }: Timelin
   return (
     <div className="flex flex-col space-y-4 bg-gray-50 p-4 min-h-[500px]">
       {schedule.map((day) => {
-        // Skip days with no assessments unless it is today?
-        // Or maybe just show all days with assessments?
-        // Let's show all days with assessments.
+        // Show all days with assessments. If a day has no assessments and is not today, we skip it.
+        // Current logic: skip if empty assessments and not today.
         if (day.assessments.length === 0 && !isToday(day.date)) return null;
 
-        const dateObj = new Date(day.date);
+        const dateObj = parseDate(day.date);
         const dateLabel = dateObj.toLocaleDateString(undefined, { weekday: 'short', day: 'numeric', month: 'short' });
         const isCurrentDay = isToday(day.date);
+        const isPastDay = !isFutureOrToday(day.date); // Needed for dimming
 
         // Determine if this element should be the scroll target
         // We want the first day that is Today or Future.
@@ -63,11 +66,23 @@ export function TimelineView({ schedule, onAssessmentClick, scrollRef }: Timelin
             scrollTargetFound = true;
         }
 
+        let appearanceClasses = '';
+        if (isCurrentDay) {
+          // Today: highlighted withe a blue tint
+          appearanceClasses = 'bg-blue-50 border border-blue-200 ring-2 ring-blue-100 shadow-sm';
+        } else if (isPastDay) {
+          // Past events: Opacity 60%, flat styling (no shadow), light grey background )
+          appearanceClasses = 'bg-gray-100 opacity-60';
+        } else {
+          // Future events
+          appearanceClasses = 'bg-white border border-gray-200 shadow-sm';
+        }
+
         return (
           <div
             key={day.date}
             ref={isRef ? activeRef : null}
-            className={`flex flex-col md:flex-row gap-2 md:gap-4 p-4 rounded-lg shadow-sm border ${isCurrentDay ? 'bg-blue-50 border-blue-200 ring-2 ring-blue-100' : 'bg-white border-gray-200'}`}
+            className={`flex flex-col md:flex-row gap-2 md:gap-4 p-4 rounded-lg ${appearanceClasses}`}
           >
             {/* Date Column */}
             <div className="md:w-32 flex-shrink-0">
@@ -87,6 +102,13 @@ export function TimelineView({ schedule, onAssessmentClick, scrollRef }: Timelin
                    const rawColor = assessment.color;
                    const hex = rawColor.length === 8 ? '#' + rawColor.substring(2) : '#' + rawColor;
 
+                   // Override color for past events
+                   const dotStyle = isPastDay
+                     ? { backgroundColor: undefined }
+                     : { backgroundColor: hex };
+
+                   const dotClass = `flex-shrink-0 w-3 h-3 mt-1.5 rounded-full ${isPastDay ? 'bg-gray-400' : ''}`;
+
                    return (
                        <button
                          key={i}
@@ -94,8 +116,8 @@ export function TimelineView({ schedule, onAssessmentClick, scrollRef }: Timelin
                          className="text-left group flex items-start gap-3 p-2 rounded hover:bg-gray-50 transition-colors"
                        >
                            <span
-                             className="flex-shrink-0 w-3 h-3 mt-1.5 rounded-full"
-                             style={{ backgroundColor: hex }}
+                             className={dotClass}
+                             style={dotStyle}
                            />
                            <div>
                                <div className="text-sm font-semibold text-gray-900">
