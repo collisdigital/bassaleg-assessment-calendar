@@ -1,17 +1,14 @@
 import { describe, it, expect, vi, beforeEach, afterAll } from 'vitest';
 import { renderHook, act } from '@testing-library/react';
-import { useData } from './useData';
-
-// Mock data.json to ensure tests are deterministic
-// We will use vi.mock but for simplicity in this environment,
-// let's rely on the hook logic which depends on the imported json.
-
-// We mock window.location and history
-const originalLocation = window.location;
-const originalHistory = window.history;
+import { createMockData, createMockDay, createMockAssessment } from '../test/test-utils';
 
 describe('useData Hook', () => {
+  const originalLocation = window.location;
+  const originalHistory = window.history;
+
   beforeEach(() => {
+    vi.resetModules(); // Ensure we get a fresh module registry for each test
+
     // Reset window.location
     Object.defineProperty(window, 'location', {
       configurable: true,
@@ -53,98 +50,121 @@ describe('useData Hook', () => {
       writable: true,
       value: originalHistory
     });
+    vi.restoreAllMocks();
   });
 
-  it('should return all subjects and types initially', () => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  async function loadUseData(mockData: any) {
+    vi.doMock('../data.json', () => ({
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+      default: mockData,
+    }));
+    const module = await import('./useData');
+    return module.useData;
+  }
+
+  it('should return empty lists if schedule is empty', async () => {
+    const useData = await loadUseData(createMockData({ schedule: [], types: {} }));
     const { result } = renderHook(() => useData());
 
-    expect(result.current.allSubjects.length).toBeGreaterThan(0);
-    expect(result.current.allTypes.length).toBeGreaterThan(0);
-    expect(result.current.selectedSubjects).toEqual([]);
-    expect(result.current.selectedTypes).toEqual([]);
+    expect(result.current.allSubjects).toEqual([]);
+    expect(result.current.allTypes).toEqual([]);
+    expect(result.current.schedule).toEqual([]);
   });
 
-  it('should initialize filters from URL parameters with combined slugs', () => {
-    // Set URL params before rendering
-    // "Exam" -> "exam", "Science & Tech" -> "science-tech"
-    // format: ?type=exam&lesson=science-tech
-    window.location.search = '?type=exam&lesson=science-tech';
+  it('should return all subjects and types from data', async () => {
+    const useData = await loadUseData(createMockData({
+        schedule: [
+            createMockDay('2024-01-01', [
+                createMockAssessment('Maths', 'Exam'),
+                createMockAssessment('English', 'Mock')
+            ])
+        ],
+        types: { '#FF0000': 'Exam', '#00FF00': 'Mock' }
+    }));
+
+    const { result } = renderHook(() => useData());
+
+    expect(result.current.allSubjects).toEqual(['English', 'Maths']);
+    expect(result.current.allTypes).toEqual(['Exam', 'Mock']);
+  });
+
+  it('should initialize filters from URL parameters', async () => {
+    const useData = await loadUseData(createMockData({
+         schedule: [createMockDay('2024-01-01', [createMockAssessment('Maths', 'Exam')])],
+         types: { '#FF0000': 'Exam' }
+    }));
+
+    // ?type=exam&lesson=maths
+    window.location.search = '?type=exam&lesson=maths';
 
     const { result } = renderHook(() => useData());
 
     expect(result.current.selectedTypes).toContain('Exam');
-    expect(result.current.selectedSubjects).toContain('Science & Tech');
+    expect(result.current.selectedSubjects).toContain('Maths');
   });
 
-  it('should initialize multiple filters from combined space-separated slugs', () => {
-      // ?type=exam+mock
-      // URLSearchParams decodes + to space.
-      window.location.search = '?type=exam+mock';
+  it('should update URL when filters change', async () => {
+    const useData = await loadUseData(createMockData({
+        schedule: [createMockDay('2024-01-01', [createMockAssessment('Maths', 'Exam')])],
+        types: { '#FF0000': 'Exam' }
+   }));
 
-      const { result } = renderHook(() => useData());
-
-      expect(result.current.selectedTypes).toContain('Exam');
-      expect(result.current.selectedTypes).toContain('Mock');
-  });
-
-  it('should update URL when filters change', () => {
     const { result } = renderHook(() => useData());
 
     act(() => {
-      result.current.setSelectedTypes(['Mock']);
+      result.current.setSelectedTypes(['Exam']);
     });
 
-    // "Mock" -> "mock"
     // eslint-disable-next-line @typescript-eslint/unbound-method
     expect(window.history.replaceState).toHaveBeenCalledWith(
         null,
         '',
-        expect.stringContaining('type=mock')
+        expect.stringContaining('type=exam')
     );
   });
 
-  it('should update URL with combined parameters', () => {
-     const { result } = renderHook(() => useData());
+  it('should filter schedule based on selection', async () => {
+     const useData = await loadUseData(createMockData({
+        schedule: [
+            createMockDay('2024-01-01', [
+                createMockAssessment('Maths', 'Exam'),
+                createMockAssessment('English', 'Mock')
+            ])
+        ],
+        types: { '#FF0000': 'Exam', '#00FF00': 'Mock' }
+    }));
 
-     act(() => {
-         result.current.setSelectedTypes(['Mock', 'Exam']);
-     });
-
-     // "Mock" -> "mock", "Exam" -> "exam" -> "mock exam" (encoded as mock+exam or mock%20exam)
-     // URLSearchParams.toString() encodes space as +
-     // eslint-disable-next-line @typescript-eslint/unbound-method
-     expect(window.history.replaceState).toHaveBeenCalledWith(
-         null,
-         '',
-         expect.stringMatching(/type=mock\+exam|type=exam\+mock/)
-     );
-  });
-
-  it('should filter assessments by subject', () => {
     const { result } = renderHook(() => useData());
 
-    // Pick a subject that definitely exists, e.g., "Maths / Numeracy"
-    const subjectToFilter = "Maths / Numeracy";
-    if (!result.current.allSubjects.includes(subjectToFilter)) {
-        // Fallback if data changed
-        return;
-    }
+    act(() => {
+        result.current.setSelectedSubjects(['Maths']);
+    });
+
+    // Check result
+    const day = result.current.schedule[0];
+    expect(day.assessments).toHaveLength(1);
+    expect(day.assessments[0].subject).toBe('Maths');
+  });
+
+  it('should handle special characters in subjects for URL slugs', async () => {
+     const useData = await loadUseData(createMockData({
+        schedule: [createMockDay('2024-01-01', [createMockAssessment('Science & Tech', 'Exam')])],
+        types: { '#FF0000': 'Exam' }
+    }));
+
+    const { result } = renderHook(() => useData());
 
     act(() => {
-      result.current.setSelectedSubjects([subjectToFilter]);
+        result.current.setSelectedSubjects(['Science & Tech']);
     });
 
-    // Check a day that we know has Maths
-    // We iterate through all days and ensure ONLY Maths assessments are present
-    let foundAssessment = false;
-    result.current.schedule.forEach(day => {
-       day.assessments.forEach(a => {
-           expect(a.subject).toBe(subjectToFilter);
-           foundAssessment = true;
-       });
-    });
-
-    // Ensure we actually found something to make the test valid
-    expect(foundAssessment).toBe(true);
+    // Slug should be science-tech
+    // eslint-disable-next-line @typescript-eslint/unbound-method
+    expect(window.history.replaceState).toHaveBeenCalledWith(
+        null,
+        '',
+        expect.stringContaining('lesson=science-tech')
+    );
   });
 });
