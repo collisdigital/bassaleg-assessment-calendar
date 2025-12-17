@@ -17,17 +17,36 @@ export default [
       },
     },
   },
+  // Configuration for E2E tests and config files (disable type-checked rules)
+  {
+    files: ['e2e/**/*.ts', 'playwright.config.ts'],
+    languageOptions: {
+      globals: {
+        ...globals.node,
+        // Allow Playwright's test assertions and browser globals if needed
+      },
+      parser: tseslint.parser,
+      parserOptions: {
+        project: null, // Disable project service for these files to avoid "not found" errors
+      },
+    },
+    // We can't use type-checked rules here because these files aren't in the main tsconfig
+    // and we don't want to force them into it.
+  },
   // Scope type-aware rules to ONLY TypeScript files
   ...tseslint.configs.stylisticTypeChecked.map(config => ({
     ...config,
     files: ['**/*.{ts,tsx}'],
+    ignores: ['e2e/**/*.ts', 'playwright.config.ts'],
   })),
   ...tseslint.configs.recommendedTypeChecked.map(config => ({
     ...config,
     files: ['**/*.{ts,tsx}'],
+    ignores: ['e2e/**/*.ts', 'playwright.config.ts'],
   })),
   {
     files: ['**/*.{ts,tsx}'],
+    ignores: ['e2e/**/*.ts', 'playwright.config.ts'],
     languageOptions: {
       ecmaVersion: 2020,
       sourceType: 'module',

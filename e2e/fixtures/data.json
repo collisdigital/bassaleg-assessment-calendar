@@ -1,0 +1,22 @@
+{
+  "filename": "E2E Test Calendar",
+  "sourceUrl": "http://localhost/test",
+  "types": {
+    "FF0000": "Exam",
+    "00FF00": "Coursework"
+  },
+  "schedule": [
+    {
+      "date": "2025-09-01",
+      "isSchoolDay": true,
+      "assessments": [
+        {
+          "subject": "E2E Subject",
+          "type": "Exam",
+          "label": "Test Exam",
+          "color": "FF0000"
+        }
+      ]
+    }
+  ]
+}
