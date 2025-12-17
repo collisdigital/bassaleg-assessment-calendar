@@ -18,7 +18,7 @@ A web application designed to visualize assessment timetables for Year 10 and Ye
 - **Build Tool**: [Vite](https://vitejs.dev/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **Data Processing**: [Node.js](https://nodejs.org/) & [ExcelJS](https://github.com/exceljs/exceljs)
-- **Testing**: [Vitest](https://vitest.dev/) & [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+- **Testing**: [Vitest](https://vitest.dev/) (Unit), [Playwright](https://playwright.dev/) (E2E) & [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 - **CI/CD**: [GitHub Actions](https://github.com/features/actions) & [GitHub Pages](https://pages.github.com/)
 
 ## VC Project Structure
@@ -26,6 +26,9 @@ A web application designed to visualize assessment timetables for Year 10 and Ye
 ```text
 /
 ├── .github/workflows/   # CI/CD pipelines (Deploy Assessment Timetables)
+├── e2e/                 # End-to-End tests (Playwright)
+│   ├── fixtures/        # Test data fixtures
+│   └── smoke.spec.ts    # Smoke tests
 ├── scripts/             # Data fetching and parsing scripts
 │   ├── download-and-parse.js  # Main script to fetch Google Sheet & generate JSON
 │   ├── year-10-sheet-url.txt  # Source URL for Year 10
@@ -109,11 +112,27 @@ This will compile the TypeScript code and bundle the assets into the `dist/` dir
 
 ## 🧪 Testing
 
-Run the test suite with Vitest:
+### Unit Tests
+
+Run the unit test suite with Vitest:
 
 ```bash
 npm run test
 ```
+
+### End-to-End (E2E) Tests
+
+Run the E2E tests with Playwright (Chromium only):
+
+```bash
+# Run headless (CI mode)
+npm run test:e2e
+
+# Run with UI reporter
+npm run test:e2e:ui
+```
+
+*Note: E2E tests run against the production build (`vite build` -> `vite preview`).*
 
 ## ⚙️ Configuration
 

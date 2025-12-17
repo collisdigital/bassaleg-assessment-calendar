@@ -2,7 +2,10 @@ import { useState, useMemo, useEffect } from 'react';
 import rawData from '../data.json';
 import { Data } from '../types';
 
-const data = rawData as Data;
+// Allow injection of data via window object for E2E testing
+const data = (typeof window !== 'undefined' && window.APP_DATA)
+  ? window.APP_DATA
+  : (rawData as Data);
 
 function createSlug(str: string): string {
   return str.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
