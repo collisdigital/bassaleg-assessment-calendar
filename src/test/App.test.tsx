@@ -25,7 +25,8 @@ describe('App', () => {
       setSelectedTypes: vi.fn(),
       typeColors: { 'Exam': '#FF0000', 'Mock': '#00FF00' },
       filename: 'Test Calendar',
-      sourceUrl: 'http://test.com'
+      sourceUrl: 'http://test.com',
+      generatedAt: '2024-02-13T12:00:00Z' // Yesterday relative to 2024-02-14
   };
 
   const originalInnerWidth = window.innerWidth;
@@ -52,6 +53,12 @@ describe('App', () => {
     render(<App />);
     expect(screen.getByRole('heading', { name: 'Test Calendar' })).toBeInTheDocument();
     expect(screen.getByText('2025-2026 Academic Year')).toBeInTheDocument();
+  });
+
+  it('renders last updated text in footer', () => {
+    render(<App />);
+    // Since generatedAt is yesterday relative to system time
+    expect(screen.getByText('(last updated yesterday)', { exact: false })).toBeInTheDocument();
   });
 
   it('switches between Timeline and Calendar views', async () => {

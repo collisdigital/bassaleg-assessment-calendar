@@ -14,7 +14,8 @@ describe('FilterBar', () => {
     typeColors: { 'Exam': '#FF0000', 'Mock': '#00FF00' },
     schedule: [],
     filename: '',
-    sourceUrl: ''
+    sourceUrl: '',
+    generatedAt: '2023-01-01T00:00:00.000Z'
   };
 
   it('renders all filter options', () => {
