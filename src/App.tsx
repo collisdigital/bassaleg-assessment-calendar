@@ -6,6 +6,7 @@ import { TimelineView } from './components/TimelineView';
 import { ViewSelector } from './components/ViewSelector';
 import { ViewMode, Assessment } from './types';
 import { Modal } from './components/Modal';
+import { formatLastUpdated } from './utils/dateUtils';
 
 // Moved outside component to prevent re-creation on every render
 const CalendarDayIcon = ({ day }: { day: number }) => (
@@ -300,6 +301,11 @@ function App() {
               </a>
             ) : (
               'Assessment Calendar Spreadsheet'
+            )}
+            {dataHook.generatedAt && (
+              <span className="mx-1">
+                (last updated {formatLastUpdated(dataHook.generatedAt)})
+              </span>
             )}
           </p>
           <div className="mt-4 flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-4">
