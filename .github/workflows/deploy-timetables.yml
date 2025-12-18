@@ -1,6 +1,8 @@
 name: Deploy Assessment Timetables
 
 on:
+  schedule:
+    - cron: '37 1 * * *'
   push:
     branches: ["main"]
     paths:

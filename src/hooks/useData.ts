@@ -130,6 +130,7 @@ export function useData() {
     setSelectedTypes,
     typeColors,
     filename: data.filename,
-    sourceUrl: data.sourceUrl
+    sourceUrl: data.sourceUrl,
+    generatedAt: data.generatedAt
   };
 }
