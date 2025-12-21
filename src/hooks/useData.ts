@@ -2,6 +2,7 @@ import { useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import rawData from '../data.json';
 import { AppData, YearData } from '../types';
+import { normalizeHexColor } from '../utils/colorUtils';
 
 const appData = rawData as unknown as AppData;
 
@@ -80,13 +81,7 @@ export function useData(yearId: string) {
     if (!yearData) return {};
     const map: Record<string, string> = {};
     for (const [color, type] of Object.entries(yearData.types)) {
-        let hex = color;
-        if (color.length === 8) {
-            hex = '#' + color.substring(2);
-        } else if (color.length === 6) {
-             hex = '#' + color;
-        }
-        map[type] = hex;
+        map[type] = normalizeHexColor(color);
     }
     return map;
   }, [yearData]);

@@ -8,6 +8,7 @@ import { ViewSelector } from './ViewSelector';
 import { ViewMode, Assessment } from '../types';
 import { Modal } from './Modal';
 import { formatLastUpdated } from '../utils/dateUtils';
+import { normalizeHexColor } from '../utils/colorUtils';
 
 // Moved outside component to prevent re-creation on every render
 const CalendarDayIcon = ({ day }: { day: number }) => (
@@ -280,9 +281,7 @@ export function YearView() {
               <div>
                 <h4 className="text-sm font-medium text-gray-500">Type</h4>
                 {(() => {
-                  const rawColor = selectedAssessment.data.color;
-                  // Handle ARGB (8 chars) or RGB (6 chars)
-                  const hex = rawColor.length === 8 ? '#' + rawColor.substring(2) : '#' + rawColor;
+                  const hex = normalizeHexColor(selectedAssessment.data.color);
                   return (
                     <span className="inline-flex items-center rounded-md px-2 py-1 text-xs font-medium ring-1 ring-inset ring-gray-500/10 mt-1"
                           style={{ backgroundColor: hex }}>
