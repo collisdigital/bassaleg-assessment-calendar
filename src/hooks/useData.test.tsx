@@ -54,6 +54,32 @@ describe('useData Hook', () => {
     expect(result.current.allTypes).toEqual(['Exam', 'Mock']);
   });
 
+  it('should switch data when yearId changes', async () => {
+    const year10 = createMockYearData({
+        schedule: [createMockDay('2024-01-01', [createMockAssessment('Maths', 'Exam')])],
+        types: { '#FF0000': 'Exam' }
+    });
+    const year11 = createMockYearData({
+        schedule: [createMockDay('2024-01-01', [createMockAssessment('Physics', 'Exam')])],
+        types: { '#FF0000': 'Exam' }
+    });
+
+    const useData = await loadUseData(createMockAppData({
+        'year-10': year10,
+        'year-11': year11
+    }));
+
+    const { result, rerender } = renderHook((yearId) => useData(yearId), {
+        wrapper: createWrapper('/year-10'),
+        initialProps: 'year-10'
+    });
+
+    expect(result.current.allSubjects).toEqual(['Maths']);
+
+    rerender('year-11');
+    expect(result.current.allSubjects).toEqual(['Physics']);
+  });
+
   it('should initialize filters from URL parameters', async () => {
      const yearData = createMockYearData({
          schedule: [createMockDay('2024-01-01', [createMockAssessment('Maths', 'Exam')])],
@@ -123,9 +149,6 @@ describe('useData Hook', () => {
        result.current.setSelectedSubjects(['Science & Tech']);
    });
 
-   // Since we are mocking, we can't easily check window.location or router state directly from the hook result
-   // without a custom spy component, but we can verify the 'selectedSubjects' state updated correctly
-   // which implies the URL round-trip worked (since the hook reads from URL).
    expect(result.current.selectedSubjects).toContain('Science & Tech');
  });
 });

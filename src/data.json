@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-21T10:12:55.441Z",
+  "generatedAt": "2025-12-21T13:26:40.546Z",
   "years": {
     "year-10": {
       "name": "Year 10",
@@ -8,8 +8,7 @@
       "types": {
         "#EF4444": "Exam",
         "#F59E0B": "Mock",
-        "#3B82F6": "Coursework",
-        "#10B981": "Quiz"
+        "#3B82F6": "Coursework"
       },
       "schedule": [
         {
@@ -38,14 +37,14 @@
           "assessments": [
             {
               "subject": "Maths",
-              "type": "Coursework",
-              "label": "Year 10 Maths Coursework - Topic: Cells",
-              "color": "#3B82F6"
+              "type": "Mock",
+              "label": "Year 10 Maths Mock - Topic: Topic B",
+              "color": "#F59E0B"
             },
             {
-              "subject": "History",
+              "subject": "Science",
               "type": "Exam",
-              "label": "Year 10 History Exam - Topic: Coding",
+              "label": "Year 10 Science Exam - Topic: Topic D",
               "color": "#EF4444"
             }
           ]
@@ -56,22 +55,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Computer Science",
-              "type": "Quiz",
-              "label": "Year 10 Computer Science Quiz - Topic: Cells",
-              "color": "#10B981"
+              "subject": "Art",
+              "type": "Coursework",
+              "label": "Year 10 Art Coursework - Topic: Topic B",
+              "color": "#3B82F6"
             },
             {
-              "subject": "Art",
-              "type": "Mock",
-              "label": "Year 10 Art Mock - Topic: WWII",
-              "color": "#F59E0B"
+              "subject": "Geography",
+              "type": "Exam",
+              "label": "Year 10 Geography Exam - Topic: Topic C",
+              "color": "#EF4444"
             },
             {
               "subject": "Science",
-              "type": "Quiz",
-              "label": "Year 10 Science Quiz - Topic: Algebra",
-              "color": "#10B981"
+              "type": "Coursework",
+              "label": "Year 10 Science Coursework - Topic: Topic A",
+              "color": "#3B82F6"
             }
           ]
         },
@@ -81,9 +80,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
+              "subject": "History",
               "type": "Exam",
-              "label": "Year 10 Geography Exam - Topic: Poetry",
+              "label": "Year 10 History Exam - Topic: Topic A",
               "color": "#EF4444"
             }
           ]
@@ -106,9 +105,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "History",
+              "subject": "Science",
               "type": "Mock",
-              "label": "Year 10 History Mock - Topic: WWII",
+              "label": "Year 10 Science Mock - Topic: Topic C",
               "color": "#F59E0B"
             }
           ]
@@ -121,13 +120,13 @@
             {
               "subject": "History",
               "type": "Exam",
-              "label": "Year 10 History Exam - Topic: Rivers",
+              "label": "Year 10 History Exam - Topic: Topic D",
               "color": "#EF4444"
             },
             {
-              "subject": "English",
+              "subject": "Maths",
               "type": "Exam",
-              "label": "Year 10 English Exam - Topic: Poetry",
+              "label": "Year 10 Maths Exam - Topic: Topic A",
               "color": "#EF4444"
             }
           ]
@@ -139,14 +138,14 @@
           "assessments": [
             {
               "subject": "English",
-              "type": "Quiz",
-              "label": "Year 10 English Quiz - Topic: WWII",
-              "color": "#10B981"
+              "type": "Coursework",
+              "label": "Year 10 English Coursework - Topic: Topic C",
+              "color": "#3B82F6"
             },
             {
-              "subject": "Computer Science",
+              "subject": "Art",
               "type": "Exam",
-              "label": "Year 10 Computer Science Exam - Topic: Algebra",
+              "label": "Year 10 Art Exam - Topic: Topic A",
               "color": "#EF4444"
             }
           ]
@@ -158,15 +157,15 @@
           "assessments": [
             {
               "subject": "Maths",
-              "type": "Coursework",
-              "label": "Year 10 Maths Coursework - Topic: Algebra",
-              "color": "#3B82F6"
+              "type": "Mock",
+              "label": "Year 10 Maths Mock - Topic: Topic A",
+              "color": "#F59E0B"
             },
             {
               "subject": "English",
-              "type": "Quiz",
-              "label": "Year 10 English Quiz - Topic: Rivers",
-              "color": "#10B981"
+              "type": "Coursework",
+              "label": "Year 10 English Coursework - Topic: Topic C",
+              "color": "#3B82F6"
             }
           ]
         },
@@ -178,14 +177,14 @@
             {
               "subject": "Art",
               "type": "Exam",
-              "label": "Year 10 Art Exam - Topic: Coding",
+              "label": "Year 10 Art Exam - Topic: Topic D",
               "color": "#EF4444"
             },
             {
               "subject": "Art",
-              "type": "Mock",
-              "label": "Year 10 Art Mock - Topic: Coding",
-              "color": "#F59E0B"
+              "type": "Exam",
+              "label": "Year 10 Art Exam - Topic: Topic D",
+              "color": "#EF4444"
             }
           ]
         },
@@ -208,14 +207,14 @@
           "assessments": [
             {
               "subject": "Geography",
-              "type": "Quiz",
-              "label": "Year 10 Geography Quiz - Topic: Poetry",
-              "color": "#10B981"
+              "type": "Coursework",
+              "label": "Year 10 Geography Coursework - Topic: Topic A",
+              "color": "#3B82F6"
             },
             {
-              "subject": "Computer Science",
+              "subject": "Art",
               "type": "Mock",
-              "label": "Year 10 Computer Science Mock - Topic: Algebra",
+              "label": "Year 10 Art Mock - Topic: Topic A",
               "color": "#F59E0B"
             }
           ]
@@ -226,10 +225,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Computer Science",
-              "type": "Coursework",
-              "label": "Year 10 Computer Science Coursework - Topic: Cells",
-              "color": "#3B82F6"
+              "subject": "Art",
+              "type": "Mock",
+              "label": "Year 10 Art Mock - Topic: Topic B",
+              "color": "#F59E0B"
             }
           ]
         },
@@ -246,15 +245,15 @@
           "assessments": [
             {
               "subject": "English",
-              "type": "Coursework",
-              "label": "Year 10 English Coursework - Topic: Poetry",
-              "color": "#3B82F6"
+              "type": "Mock",
+              "label": "Year 10 English Mock - Topic: Topic A",
+              "color": "#F59E0B"
             },
             {
               "subject": "History",
-              "type": "Quiz",
-              "label": "Year 10 History Quiz - Topic: Rivers",
-              "color": "#10B981"
+              "type": "Coursework",
+              "label": "Year 10 History Coursework - Topic: Topic C",
+              "color": "#3B82F6"
             }
           ]
         },
@@ -266,13 +265,13 @@
             {
               "subject": "English",
               "type": "Exam",
-              "label": "Year 10 English Exam - Topic: Algebra",
+              "label": "Year 10 English Exam - Topic: Topic A",
               "color": "#EF4444"
             },
             {
               "subject": "Maths",
               "type": "Mock",
-              "label": "Year 10 Maths Mock - Topic: Coding",
+              "label": "Year 10 Maths Mock - Topic: Topic D",
               "color": "#F59E0B"
             }
           ]
@@ -296,9 +295,9 @@
           "assessments": [
             {
               "subject": "Science",
-              "type": "Quiz",
-              "label": "Year 10 Science Quiz - Topic: Poetry",
-              "color": "#10B981"
+              "type": "Coursework",
+              "label": "Year 10 Science Coursework - Topic: Topic B",
+              "color": "#3B82F6"
             }
           ]
         },
@@ -309,15 +308,15 @@
           "assessments": [
             {
               "subject": "Science",
-              "type": "Quiz",
-              "label": "Year 10 Science Quiz - Topic: WWII",
-              "color": "#10B981"
+              "type": "Coursework",
+              "label": "Year 10 Science Coursework - Topic: Topic C",
+              "color": "#3B82F6"
             },
             {
-              "subject": "Science",
-              "type": "Coursework",
-              "label": "Year 10 Science Coursework - Topic: Poetry",
-              "color": "#3B82F6"
+              "subject": "English",
+              "type": "Mock",
+              "label": "Year 10 English Mock - Topic: Topic B",
+              "color": "#F59E0B"
             }
           ]
         },
@@ -327,22 +326,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Computer Science",
+              "subject": "Art",
               "type": "Exam",
-              "label": "Year 10 Computer Science Exam - Topic: Rivers",
+              "label": "Year 10 Art Exam - Topic: Topic C",
               "color": "#EF4444"
             },
             {
               "subject": "Maths",
-              "type": "Quiz",
-              "label": "Year 10 Maths Quiz - Topic: Coding",
-              "color": "#10B981"
+              "type": "Coursework",
+              "label": "Year 10 Maths Coursework - Topic: Topic D",
+              "color": "#3B82F6"
             },
             {
               "subject": "Maths",
-              "type": "Quiz",
-              "label": "Year 10 Maths Quiz - Topic: Coding",
-              "color": "#10B981"
+              "type": "Coursework",
+              "label": "Year 10 Maths Coursework - Topic: Topic D",
+              "color": "#3B82F6"
             }
           ]
         },
@@ -353,9 +352,9 @@
           "assessments": [
             {
               "subject": "Geography",
-              "type": "Quiz",
-              "label": "Year 10 Geography Quiz - Topic: Algebra",
-              "color": "#10B981"
+              "type": "Coursework",
+              "label": "Year 10 Geography Coursework - Topic: Topic A",
+              "color": "#3B82F6"
             }
           ]
         },
@@ -389,16 +388,16 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
-              "type": "Quiz",
-              "label": "Year 10 Art Quiz - Topic: Algebra",
-              "color": "#10B981"
+              "subject": "Geography",
+              "type": "Coursework",
+              "label": "Year 10 Geography Coursework - Topic: Topic A",
+              "color": "#3B82F6"
             },
             {
               "subject": "Science",
-              "type": "Quiz",
-              "label": "Year 10 Science Quiz - Topic: Cells",
-              "color": "#10B981"
+              "type": "Coursework",
+              "label": "Year 10 Science Coursework - Topic: Topic B",
+              "color": "#3B82F6"
             }
           ]
         },
@@ -410,14 +409,14 @@
             {
               "subject": "English",
               "type": "Coursework",
-              "label": "Year 10 English Coursework - Topic: WWII",
+              "label": "Year 10 English Coursework - Topic: Topic C",
               "color": "#3B82F6"
             },
             {
-              "subject": "Science",
-              "type": "Coursework",
-              "label": "Year 10 Science Coursework - Topic: Cells",
-              "color": "#3B82F6"
+              "subject": "English",
+              "type": "Mock",
+              "label": "Year 10 English Mock - Topic: Topic B",
+              "color": "#F59E0B"
             }
           ]
         },
@@ -427,22 +426,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
+              "subject": "History",
               "type": "Exam",
-              "label": "Year 10 Geography Exam - Topic: Cells",
+              "label": "Year 10 History Exam - Topic: Topic B",
               "color": "#EF4444"
             },
             {
               "subject": "English",
-              "type": "Coursework",
-              "label": "Year 10 English Coursework - Topic: WWII",
-              "color": "#3B82F6"
+              "type": "Mock",
+              "label": "Year 10 English Mock - Topic: Topic C",
+              "color": "#F59E0B"
             },
             {
               "subject": "Art",
-              "type": "Quiz",
-              "label": "Year 10 Art Quiz - Topic: WWII",
-              "color": "#10B981"
+              "type": "Coursework",
+              "label": "Year 10 Art Coursework - Topic: Topic C",
+              "color": "#3B82F6"
             }
           ]
         },
@@ -453,15 +452,15 @@
           "assessments": [
             {
               "subject": "English",
-              "type": "Coursework",
-              "label": "Year 10 English Coursework - Topic: Rivers",
-              "color": "#3B82F6"
+              "type": "Mock",
+              "label": "Year 10 English Mock - Topic: Topic C",
+              "color": "#F59E0B"
             },
             {
               "subject": "English",
-              "type": "Quiz",
-              "label": "Year 10 English Quiz - Topic: WWII",
-              "color": "#10B981"
+              "type": "Coursework",
+              "label": "Year 10 English Coursework - Topic: Topic C",
+              "color": "#3B82F6"
             }
           ]
         },
@@ -527,19 +526,19 @@
             {
               "subject": "Maths",
               "type": "Mock",
-              "label": "Year 10 Maths Mock - Topic: Poetry",
+              "label": "Year 10 Maths Mock - Topic: Topic A",
               "color": "#F59E0B"
             },
             {
-              "subject": "Computer Science",
-              "type": "Coursework",
-              "label": "Year 10 Computer Science Coursework - Topic: Algebra",
-              "color": "#3B82F6"
+              "subject": "Art",
+              "type": "Mock",
+              "label": "Year 10 Art Mock - Topic: Topic A",
+              "color": "#F59E0B"
             },
             {
               "subject": "History",
               "type": "Coursework",
-              "label": "Year 10 History Coursework - Topic: Poetry",
+              "label": "Year 10 History Coursework - Topic: Topic A",
               "color": "#3B82F6"
             }
           ]
@@ -551,15 +550,15 @@
           "assessments": [
             {
               "subject": "Maths",
-              "type": "Coursework",
-              "label": "Year 10 Maths Coursework - Topic: Poetry",
-              "color": "#3B82F6"
+              "type": "Mock",
+              "label": "Year 10 Maths Mock - Topic: Topic A",
+              "color": "#F59E0B"
             },
             {
               "subject": "Maths",
-              "type": "Coursework",
-              "label": "Year 10 Maths Coursework - Topic: Cells",
-              "color": "#3B82F6"
+              "type": "Mock",
+              "label": "Year 10 Maths Mock - Topic: Topic B",
+              "color": "#F59E0B"
             }
           ]
         },
@@ -571,14 +570,14 @@
             {
               "subject": "Science",
               "type": "Exam",
-              "label": "Year 10 Science Exam - Topic: Poetry",
+              "label": "Year 10 Science Exam - Topic: Topic B",
               "color": "#EF4444"
             },
             {
-              "subject": "History",
-              "type": "Coursework",
-              "label": "Year 10 History Coursework - Topic: Coding",
-              "color": "#3B82F6"
+              "subject": "Science",
+              "type": "Mock",
+              "label": "Year 10 Science Mock - Topic: Topic D",
+              "color": "#F59E0B"
             }
           ]
         },
@@ -589,20 +588,20 @@
           "assessments": [
             {
               "subject": "English",
-              "type": "Coursework",
-              "label": "Year 10 English Coursework - Topic: Algebra",
-              "color": "#3B82F6"
+              "type": "Mock",
+              "label": "Year 10 English Mock - Topic: Topic A",
+              "color": "#F59E0B"
             },
             {
               "subject": "Geography",
-              "type": "Coursework",
-              "label": "Year 10 Geography Coursework - Topic: Cells",
-              "color": "#3B82F6"
+              "type": "Mock",
+              "label": "Year 10 Geography Mock - Topic: Topic B",
+              "color": "#F59E0B"
             },
             {
               "subject": "History",
               "type": "Exam",
-              "label": "Year 10 History Exam - Topic: Coding",
+              "label": "Year 10 History Exam - Topic: Topic D",
               "color": "#EF4444"
             }
           ]
@@ -631,10 +630,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "History",
-              "type": "Coursework",
-              "label": "Year 10 History Coursework - Topic: Rivers",
-              "color": "#3B82F6"
+              "subject": "Science",
+              "type": "Mock",
+              "label": "Year 10 Science Mock - Topic: Topic C",
+              "color": "#F59E0B"
             }
           ]
         },
@@ -652,14 +651,14 @@
             {
               "subject": "Maths",
               "type": "Exam",
-              "label": "Year 10 Maths Exam - Topic: Coding",
+              "label": "Year 10 Maths Exam - Topic: Topic D",
               "color": "#EF4444"
             },
             {
-              "subject": "Computer Science",
-              "type": "Quiz",
-              "label": "Year 10 Computer Science Quiz - Topic: Poetry",
-              "color": "#10B981"
+              "subject": "Art",
+              "type": "Coursework",
+              "label": "Year 10 Art Coursework - Topic: Topic B",
+              "color": "#3B82F6"
             }
           ]
         },
@@ -669,15 +668,15 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
-              "type": "Coursework",
-              "label": "Year 10 Art Coursework - Topic: WWII",
-              "color": "#3B82F6"
+              "subject": "Geography",
+              "type": "Mock",
+              "label": "Year 10 Geography Mock - Topic: Topic C",
+              "color": "#F59E0B"
             },
             {
-              "subject": "Art",
+              "subject": "Geography",
               "type": "Exam",
-              "label": "Year 10 Art Exam - Topic: Poetry",
+              "label": "Year 10 Geography Exam - Topic: Topic A",
               "color": "#EF4444"
             }
           ]
@@ -688,9 +687,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
+              "subject": "History",
               "type": "Mock",
-              "label": "Year 10 Geography Mock - Topic: Rivers",
+              "label": "Year 10 History Mock - Topic: Topic C",
               "color": "#F59E0B"
             }
           ]
@@ -714,21 +713,21 @@
           "assessments": [
             {
               "subject": "English",
-              "type": "Coursework",
-              "label": "Year 10 English Coursework - Topic: Algebra",
-              "color": "#3B82F6"
+              "type": "Mock",
+              "label": "Year 10 English Mock - Topic: Topic A",
+              "color": "#F59E0B"
             },
             {
-              "subject": "Geography",
+              "subject": "History",
               "type": "Mock",
-              "label": "Year 10 Geography Mock - Topic: Coding",
+              "label": "Year 10 History Mock - Topic: Topic D",
               "color": "#F59E0B"
             },
             {
               "subject": "Science",
-              "type": "Coursework",
-              "label": "Year 10 Science Coursework - Topic: WWII",
-              "color": "#3B82F6"
+              "type": "Mock",
+              "label": "Year 10 Science Mock - Topic: Topic C",
+              "color": "#F59E0B"
             }
           ]
         },
@@ -738,22 +737,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
-              "type": "Quiz",
-              "label": "Year 10 Art Quiz - Topic: Poetry",
-              "color": "#10B981"
+              "subject": "Geography",
+              "type": "Coursework",
+              "label": "Year 10 Geography Coursework - Topic: Topic B",
+              "color": "#3B82F6"
             },
             {
               "subject": "Maths",
               "type": "Exam",
-              "label": "Year 10 Maths Exam - Topic: Cells",
+              "label": "Year 10 Maths Exam - Topic: Topic B",
               "color": "#EF4444"
             },
             {
               "subject": "English",
-              "type": "Quiz",
-              "label": "Year 10 English Quiz - Topic: Rivers",
-              "color": "#10B981"
+              "type": "Coursework",
+              "label": "Year 10 English Coursework - Topic: Topic C",
+              "color": "#3B82F6"
             }
           ]
         },
@@ -763,15 +762,15 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
-              "type": "Quiz",
-              "label": "Year 10 Art Quiz - Topic: Coding",
-              "color": "#10B981"
+              "subject": "Geography",
+              "type": "Coursework",
+              "label": "Year 10 Geography Coursework - Topic: Topic D",
+              "color": "#3B82F6"
             },
             {
-              "subject": "Science",
+              "subject": "English",
               "type": "Coursework",
-              "label": "Year 10 Science Coursework - Topic: WWII",
+              "label": "Year 10 English Coursework - Topic: Topic C",
               "color": "#3B82F6"
             }
           ]
@@ -782,22 +781,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Computer Science",
+              "subject": "Art",
               "type": "Exam",
-              "label": "Year 10 Computer Science Exam - Topic: Coding",
+              "label": "Year 10 Art Exam - Topic: Topic D",
               "color": "#EF4444"
             },
             {
               "subject": "History",
-              "type": "Quiz",
-              "label": "Year 10 History Quiz - Topic: Poetry",
-              "color": "#10B981"
+              "type": "Coursework",
+              "label": "Year 10 History Coursework - Topic: Topic A",
+              "color": "#3B82F6"
             },
             {
               "subject": "Maths",
-              "type": "Quiz",
-              "label": "Year 10 Maths Quiz - Topic: Algebra",
-              "color": "#10B981"
+              "type": "Coursework",
+              "label": "Year 10 Maths Coursework - Topic: Topic A",
+              "color": "#3B82F6"
             }
           ]
         },
@@ -826,20 +825,20 @@
           "assessments": [
             {
               "subject": "English",
-              "type": "Quiz",
-              "label": "Year 10 English Quiz - Topic: Poetry",
-              "color": "#10B981"
+              "type": "Coursework",
+              "label": "Year 10 English Coursework - Topic: Topic B",
+              "color": "#3B82F6"
             },
             {
               "subject": "Maths",
-              "type": "Quiz",
-              "label": "Year 10 Maths Quiz - Topic: Cells",
-              "color": "#10B981"
+              "type": "Coursework",
+              "label": "Year 10 Maths Coursework - Topic: Topic B",
+              "color": "#3B82F6"
             },
             {
               "subject": "History",
               "type": "Mock",
-              "label": "Year 10 History Mock - Topic: Coding",
+              "label": "Year 10 History Mock - Topic: Topic D",
               "color": "#F59E0B"
             }
           ]
@@ -852,7 +851,7 @@
             {
               "subject": "Maths",
               "type": "Mock",
-              "label": "Year 10 Maths Mock - Topic: WWII",
+              "label": "Year 10 Maths Mock - Topic: Topic C",
               "color": "#F59E0B"
             }
           ]
@@ -870,9 +869,9 @@
           "assessments": [
             {
               "subject": "History",
-              "type": "Quiz",
-              "label": "Year 10 History Quiz - Topic: Poetry",
-              "color": "#10B981"
+              "type": "Coursework",
+              "label": "Year 10 History Coursework - Topic: Topic A",
+              "color": "#3B82F6"
             }
           ]
         },
@@ -883,9 +882,9 @@
           "assessments": [
             {
               "subject": "Art",
-              "type": "Coursework",
-              "label": "Year 10 Art Coursework - Topic: Rivers",
-              "color": "#3B82F6"
+              "type": "Mock",
+              "label": "Year 10 Art Mock - Topic: Topic D",
+              "color": "#F59E0B"
             }
           ]
         },
@@ -907,21 +906,21 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
+              "subject": "History",
               "type": "Exam",
-              "label": "Year 10 Geography Exam - Topic: Poetry",
+              "label": "Year 10 History Exam - Topic: Topic B",
               "color": "#EF4444"
             },
             {
               "subject": "Art",
-              "type": "Quiz",
-              "label": "Year 10 Art Quiz - Topic: Poetry",
-              "color": "#10B981"
+              "type": "Coursework",
+              "label": "Year 10 Art Coursework - Topic: Topic B",
+              "color": "#3B82F6"
             },
             {
-              "subject": "Geography",
+              "subject": "History",
               "type": "Mock",
-              "label": "Year 10 Geography Mock - Topic: Cells",
+              "label": "Year 10 History Mock - Topic: Topic B",
               "color": "#F59E0B"
             }
           ]
@@ -938,10 +937,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
-              "type": "Quiz",
-              "label": "Year 10 Art Quiz - Topic: WWII",
-              "color": "#10B981"
+              "subject": "Geography",
+              "type": "Coursework",
+              "label": "Year 10 Geography Coursework - Topic: Topic C",
+              "color": "#3B82F6"
             }
           ]
         },
@@ -952,9 +951,9 @@
           "assessments": [
             {
               "subject": "History",
-              "type": "Quiz",
-              "label": "Year 10 History Quiz - Topic: Rivers",
-              "color": "#10B981"
+              "type": "Coursework",
+              "label": "Year 10 History Coursework - Topic: Topic D",
+              "color": "#3B82F6"
             }
           ]
         },
@@ -966,7 +965,7 @@
             {
               "subject": "English",
               "type": "Coursework",
-              "label": "Year 10 English Coursework - Topic: Coding",
+              "label": "Year 10 English Coursework - Topic: Topic D",
               "color": "#3B82F6"
             }
           ]
@@ -989,9 +988,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Computer Science",
+              "subject": "Art",
               "type": "Exam",
-              "label": "Year 10 Computer Science Exam - Topic: Rivers",
+              "label": "Year 10 Art Exam - Topic: Topic C",
               "color": "#EF4444"
             }
           ]
@@ -1002,15 +1001,15 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
+              "subject": "Geography",
               "type": "Exam",
-              "label": "Year 10 Art Exam - Topic: Rivers",
+              "label": "Year 10 Geography Exam - Topic: Topic D",
               "color": "#EF4444"
             },
             {
               "subject": "Maths",
               "type": "Exam",
-              "label": "Year 10 Maths Exam - Topic: Rivers",
+              "label": "Year 10 Maths Exam - Topic: Topic D",
               "color": "#EF4444"
             }
           ]
@@ -1022,20 +1021,20 @@
           "assessments": [
             {
               "subject": "History",
-              "type": "Mock",
-              "label": "Year 10 History Mock - Topic: Coding",
-              "color": "#F59E0B"
-            },
-            {
-              "subject": "Computer Science",
               "type": "Exam",
-              "label": "Year 10 Computer Science Exam - Topic: Coding",
+              "label": "Year 10 History Exam - Topic: Topic D",
               "color": "#EF4444"
             },
             {
-              "subject": "History",
+              "subject": "Art",
+              "type": "Exam",
+              "label": "Year 10 Art Exam - Topic: Topic D",
+              "color": "#EF4444"
+            },
+            {
+              "subject": "Science",
               "type": "Coursework",
-              "label": "Year 10 History Coursework - Topic: WWII",
+              "label": "Year 10 Science Coursework - Topic: Topic C",
               "color": "#3B82F6"
             }
           ]
@@ -1046,22 +1045,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "English",
-              "type": "Coursework",
-              "label": "Year 10 English Coursework - Topic: Cells",
-              "color": "#3B82F6"
-            },
-            {
-              "subject": "English",
+              "subject": "Maths",
               "type": "Mock",
-              "label": "Year 10 English Mock - Topic: Poetry",
+              "label": "Year 10 Maths Mock - Topic: Topic B",
               "color": "#F59E0B"
             },
             {
               "subject": "English",
-              "type": "Coursework",
-              "label": "Year 10 English Coursework - Topic: Rivers",
-              "color": "#3B82F6"
+              "type": "Mock",
+              "label": "Year 10 English Mock - Topic: Topic B",
+              "color": "#F59E0B"
+            },
+            {
+              "subject": "Maths",
+              "type": "Mock",
+              "label": "Year 10 Maths Mock - Topic: Topic C",
+              "color": "#F59E0B"
             }
           ]
         },
@@ -1073,7 +1072,7 @@
             {
               "subject": "Science",
               "type": "Coursework",
-              "label": "Year 10 Science Coursework - Topic: Algebra",
+              "label": "Year 10 Science Coursework - Topic: Topic A",
               "color": "#3B82F6"
             }
           ]
@@ -1104,19 +1103,19 @@
             {
               "subject": "English",
               "type": "Exam",
-              "label": "Year 10 English Exam - Topic: Algebra",
+              "label": "Year 10 English Exam - Topic: Topic A",
               "color": "#EF4444"
             },
             {
               "subject": "Geography",
               "type": "Coursework",
-              "label": "Year 10 Geography Coursework - Topic: Coding",
+              "label": "Year 10 Geography Coursework - Topic: Topic D",
               "color": "#3B82F6"
             },
             {
-              "subject": "History",
+              "subject": "Science",
               "type": "Coursework",
-              "label": "Year 10 History Coursework - Topic: WWII",
+              "label": "Year 10 Science Coursework - Topic: Topic C",
               "color": "#3B82F6"
             }
           ]
@@ -1127,10 +1126,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Computer Science",
-              "type": "Mock",
-              "label": "Year 10 Computer Science Mock - Topic: Cells",
-              "color": "#F59E0B"
+              "subject": "Art",
+              "type": "Exam",
+              "label": "Year 10 Art Exam - Topic: Topic B",
+              "color": "#EF4444"
             }
           ]
         },
@@ -1141,20 +1140,20 @@
           "assessments": [
             {
               "subject": "Art",
-              "type": "Quiz",
-              "label": "Year 10 Art Quiz - Topic: Algebra",
-              "color": "#10B981"
+              "type": "Coursework",
+              "label": "Year 10 Art Coursework - Topic: Topic A",
+              "color": "#3B82F6"
             },
             {
-              "subject": "History",
-              "type": "Quiz",
-              "label": "Year 10 History Quiz - Topic: WWII",
-              "color": "#10B981"
+              "subject": "Science",
+              "type": "Coursework",
+              "label": "Year 10 Science Coursework - Topic: Topic C",
+              "color": "#3B82F6"
             },
             {
               "subject": "English",
               "type": "Mock",
-              "label": "Year 10 English Mock - Topic: Cells",
+              "label": "Year 10 English Mock - Topic: Topic B",
               "color": "#F59E0B"
             }
           ]
@@ -1183,10 +1182,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Computer Science",
-              "type": "Mock",
-              "label": "Year 10 Computer Science Mock - Topic: Cells",
-              "color": "#F59E0B"
+              "subject": "Art",
+              "type": "Exam",
+              "label": "Year 10 Art Exam - Topic: Topic B",
+              "color": "#EF4444"
             }
           ]
         },
@@ -1215,15 +1214,15 @@
           "assessments": [
             {
               "subject": "Science",
-              "type": "Quiz",
-              "label": "Year 10 Science Quiz - Topic: Rivers",
-              "color": "#10B981"
+              "type": "Coursework",
+              "label": "Year 10 Science Coursework - Topic: Topic D",
+              "color": "#3B82F6"
             },
             {
-              "subject": "History",
-              "type": "Quiz",
-              "label": "Year 10 History Quiz - Topic: Coding",
-              "color": "#10B981"
+              "subject": "Science",
+              "type": "Coursework",
+              "label": "Year 10 Science Coursework - Topic: Topic D",
+              "color": "#3B82F6"
             }
           ]
         },
@@ -1246,15 +1245,15 @@
           "assessments": [
             {
               "subject": "English",
-              "type": "Quiz",
-              "label": "Year 10 English Quiz - Topic: Coding",
-              "color": "#10B981"
+              "type": "Coursework",
+              "label": "Year 10 English Coursework - Topic: Topic D",
+              "color": "#3B82F6"
             },
             {
               "subject": "Science",
-              "type": "Coursework",
-              "label": "Year 10 Science Coursework - Topic: Coding",
-              "color": "#3B82F6"
+              "type": "Mock",
+              "label": "Year 10 Science Mock - Topic: Topic D",
+              "color": "#F59E0B"
             }
           ]
         },
@@ -1282,16 +1281,16 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Science",
-              "type": "Coursework",
-              "label": "Year 10 Science Coursework - Topic: Rivers",
-              "color": "#3B82F6"
+              "subject": "English",
+              "type": "Mock",
+              "label": "Year 10 English Mock - Topic: Topic C",
+              "color": "#F59E0B"
             },
             {
               "subject": "Geography",
-              "type": "Quiz",
-              "label": "Year 10 Geography Quiz - Topic: Algebra",
-              "color": "#10B981"
+              "type": "Coursework",
+              "label": "Year 10 Geography Coursework - Topic: Topic A",
+              "color": "#3B82F6"
             }
           ]
         },
@@ -1314,9 +1313,9 @@
           "assessments": [
             {
               "subject": "Maths",
-              "type": "Coursework",
-              "label": "Year 10 Maths Coursework - Topic: Cells",
-              "color": "#3B82F6"
+              "type": "Mock",
+              "label": "Year 10 Maths Mock - Topic: Topic B",
+              "color": "#F59E0B"
             }
           ]
         },
@@ -1332,10 +1331,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Computer Science",
-              "type": "Quiz",
-              "label": "Year 10 Computer Science Quiz - Topic: WWII",
-              "color": "#10B981"
+              "subject": "Art",
+              "type": "Coursework",
+              "label": "Year 10 Art Coursework - Topic: Topic C",
+              "color": "#3B82F6"
             }
           ]
         },
@@ -1345,22 +1344,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
-              "type": "Coursework",
-              "label": "Year 10 Geography Coursework - Topic: Coding",
-              "color": "#3B82F6"
+              "subject": "History",
+              "type": "Mock",
+              "label": "Year 10 History Mock - Topic: Topic D",
+              "color": "#F59E0B"
             },
             {
               "subject": "English",
               "type": "Mock",
-              "label": "Year 10 English Mock - Topic: Coding",
+              "label": "Year 10 English Mock - Topic: Topic D",
               "color": "#F59E0B"
             },
             {
-              "subject": "History",
-              "type": "Coursework",
-              "label": "Year 10 History Coursework - Topic: Algebra",
-              "color": "#3B82F6"
+              "subject": "Science",
+              "type": "Mock",
+              "label": "Year 10 Science Mock - Topic: Topic A",
+              "color": "#F59E0B"
             }
           ]
         },
@@ -1390,7 +1389,7 @@
             {
               "subject": "Maths",
               "type": "Exam",
-              "label": "Year 10 Maths Exam - Topic: WWII",
+              "label": "Year 10 Maths Exam - Topic: Topic C",
               "color": "#EF4444"
             }
           ]
@@ -1403,13 +1402,13 @@
             {
               "subject": "Geography",
               "type": "Exam",
-              "label": "Year 10 Geography Exam - Topic: Cells",
+              "label": "Year 10 Geography Exam - Topic: Topic B",
               "color": "#EF4444"
             },
             {
-              "subject": "Geography",
+              "subject": "History",
               "type": "Exam",
-              "label": "Year 10 Geography Exam - Topic: WWII",
+              "label": "Year 10 History Exam - Topic: Topic C",
               "color": "#EF4444"
             }
           ]
@@ -1420,10 +1419,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Computer Science",
-              "type": "Quiz",
-              "label": "Year 10 Computer Science Quiz - Topic: Algebra",
-              "color": "#10B981"
+              "subject": "Art",
+              "type": "Coursework",
+              "label": "Year 10 Art Coursework - Topic: Topic A",
+              "color": "#3B82F6"
             }
           ]
         },
@@ -1441,7 +1440,7 @@
             {
               "subject": "Maths",
               "type": "Exam",
-              "label": "Year 10 Maths Exam - Topic: Algebra",
+              "label": "Year 10 Maths Exam - Topic: Topic A",
               "color": "#EF4444"
             }
           ]
@@ -1465,21 +1464,21 @@
           "assessments": [
             {
               "subject": "Science",
-              "type": "Coursework",
-              "label": "Year 10 Science Coursework - Topic: Cells",
-              "color": "#3B82F6"
-            },
-            {
-              "subject": "Science",
               "type": "Mock",
-              "label": "Year 10 Science Mock - Topic: WWII",
+              "label": "Year 10 Science Mock - Topic: Topic B",
               "color": "#F59E0B"
             },
             {
               "subject": "English",
-              "type": "Coursework",
-              "label": "Year 10 English Coursework - Topic: Cells",
-              "color": "#3B82F6"
+              "type": "Mock",
+              "label": "Year 10 English Mock - Topic: Topic C",
+              "color": "#F59E0B"
+            },
+            {
+              "subject": "English",
+              "type": "Mock",
+              "label": "Year 10 English Mock - Topic: Topic B",
+              "color": "#F59E0B"
             }
           ]
         },
@@ -1489,9 +1488,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "English",
+              "subject": "Maths",
               "type": "Exam",
-              "label": "Year 10 English Exam - Topic: WWII",
+              "label": "Year 10 Maths Exam - Topic: Topic C",
               "color": "#EF4444"
             }
           ]
@@ -1504,7 +1503,7 @@
             {
               "subject": "Science",
               "type": "Coursework",
-              "label": "Year 10 Science Coursework - Topic: Algebra",
+              "label": "Year 10 Science Coursework - Topic: Topic A",
               "color": "#3B82F6"
             }
           ]
@@ -1515,16 +1514,16 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
+              "subject": "Geography",
               "type": "Exam",
-              "label": "Year 10 Art Exam - Topic: Rivers",
+              "label": "Year 10 Geography Exam - Topic: Topic D",
               "color": "#EF4444"
             },
             {
-              "subject": "Geography",
-              "type": "Quiz",
-              "label": "Year 10 Geography Quiz - Topic: WWII",
-              "color": "#10B981"
+              "subject": "History",
+              "type": "Coursework",
+              "label": "Year 10 History Coursework - Topic: Topic C",
+              "color": "#3B82F6"
             }
           ]
         },
@@ -1535,15 +1534,15 @@
           "assessments": [
             {
               "subject": "Science",
-              "type": "Quiz",
-              "label": "Year 10 Science Quiz - Topic: Algebra",
-              "color": "#10B981"
+              "type": "Coursework",
+              "label": "Year 10 Science Coursework - Topic: Topic A",
+              "color": "#3B82F6"
             },
             {
               "subject": "History",
-              "type": "Mock",
-              "label": "Year 10 History Mock - Topic: Algebra",
-              "color": "#F59E0B"
+              "type": "Exam",
+              "label": "Year 10 History Exam - Topic: Topic A",
+              "color": "#EF4444"
             }
           ]
         },
@@ -1567,19 +1566,19 @@
             {
               "subject": "English",
               "type": "Mock",
-              "label": "Year 10 English Mock - Topic: Cells",
+              "label": "Year 10 English Mock - Topic: Topic B",
               "color": "#F59E0B"
             },
             {
               "subject": "English",
-              "type": "Quiz",
-              "label": "Year 10 English Quiz - Topic: Cells",
-              "color": "#10B981"
+              "type": "Coursework",
+              "label": "Year 10 English Coursework - Topic: Topic B",
+              "color": "#3B82F6"
             },
             {
-              "subject": "Computer Science",
+              "subject": "Art",
               "type": "Exam",
-              "label": "Year 10 Computer Science Exam - Topic: Rivers",
+              "label": "Year 10 Art Exam - Topic: Topic C",
               "color": "#EF4444"
             }
           ]
@@ -1590,15 +1589,15 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Computer Science",
-              "type": "Quiz",
-              "label": "Year 10 Computer Science Quiz - Topic: Poetry",
-              "color": "#10B981"
+              "subject": "Art",
+              "type": "Coursework",
+              "label": "Year 10 Art Coursework - Topic: Topic B",
+              "color": "#3B82F6"
             },
             {
-              "subject": "Geography",
+              "subject": "History",
               "type": "Mock",
-              "label": "Year 10 Geography Mock - Topic: Algebra",
+              "label": "Year 10 History Mock - Topic: Topic A",
               "color": "#F59E0B"
             }
           ]
@@ -1609,9 +1608,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
+              "subject": "History",
               "type": "Exam",
-              "label": "Year 10 Geography Exam - Topic: Poetry",
+              "label": "Year 10 History Exam - Topic: Topic B",
               "color": "#EF4444"
             }
           ]
@@ -1628,16 +1627,16 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "History",
-              "type": "Quiz",
-              "label": "Year 10 History Quiz - Topic: Coding",
-              "color": "#10B981"
-            },
-            {
               "subject": "Science",
               "type": "Coursework",
-              "label": "Year 10 Science Coursework - Topic: Poetry",
+              "label": "Year 10 Science Coursework - Topic: Topic D",
               "color": "#3B82F6"
+            },
+            {
+              "subject": "English",
+              "type": "Mock",
+              "label": "Year 10 English Mock - Topic: Topic B",
+              "color": "#F59E0B"
             }
           ]
         },
@@ -1665,15 +1664,15 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "History",
+              "subject": "Science",
               "type": "Mock",
-              "label": "Year 10 History Mock - Topic: Poetry",
+              "label": "Year 10 Science Mock - Topic: Topic B",
               "color": "#F59E0B"
             },
             {
-              "subject": "History",
+              "subject": "Science",
               "type": "Mock",
-              "label": "Year 10 History Mock - Topic: Coding",
+              "label": "Year 10 Science Mock - Topic: Topic D",
               "color": "#F59E0B"
             }
           ]
@@ -1684,9 +1683,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Computer Science",
+              "subject": "Art",
               "type": "Exam",
-              "label": "Year 10 Computer Science Exam - Topic: Cells",
+              "label": "Year 10 Art Exam - Topic: Topic B",
               "color": "#EF4444"
             }
           ]
@@ -1699,7 +1698,7 @@
             {
               "subject": "History",
               "type": "Exam",
-              "label": "Year 10 History Exam - Topic: Algebra",
+              "label": "Year 10 History Exam - Topic: Topic A",
               "color": "#EF4444"
             }
           ]
@@ -1712,7 +1711,7 @@
             {
               "subject": "Art",
               "type": "Coursework",
-              "label": "Year 10 Art Coursework - Topic: WWII",
+              "label": "Year 10 Art Coursework - Topic: Topic C",
               "color": "#3B82F6"
             }
           ]
@@ -1737,9 +1736,8 @@
       "sourceUrl": "http://example.com/Year 11",
       "types": {
         "#EF4444": "Exam",
-        "#F59E0B": "Mock",
-        "#3B82F6": "Coursework",
-        "#10B981": "Quiz"
+        "#10B981": "Practical",
+        "#8B5CF6": "Speaking"
       },
       "schedule": [
         {
@@ -1762,21 +1760,21 @@
           "assessments": [
             {
               "subject": "Maths",
-              "type": "Coursework",
-              "label": "Year 11 Maths Coursework - Topic: Poetry",
-              "color": "#3B82F6"
-            },
-            {
-              "subject": "Art",
-              "type": "Coursework",
-              "label": "Year 11 Art Coursework - Topic: Poetry",
-              "color": "#3B82F6"
+              "type": "Practical",
+              "label": "Year 11 Maths Practical - Topic: Topic B",
+              "color": "#10B981"
             },
             {
               "subject": "Computer Science",
-              "type": "Quiz",
-              "label": "Year 11 Computer Science Quiz - Topic: Rivers",
+              "type": "Practical",
+              "label": "Year 11 Computer Science Practical - Topic: Topic B",
               "color": "#10B981"
+            },
+            {
+              "subject": "Computer Science",
+              "type": "Speaking",
+              "label": "Year 11 Computer Science Speaking - Topic: Topic D",
+              "color": "#8B5CF6"
             }
           ]
         },
@@ -1792,16 +1790,16 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
-              "type": "Coursework",
-              "label": "Year 11 Geography Coursework - Topic: Poetry",
-              "color": "#3B82F6"
+              "subject": "Chemistry",
+              "type": "Practical",
+              "label": "Year 11 Chemistry Practical - Topic: Topic B",
+              "color": "#10B981"
             },
             {
-              "subject": "Geography",
-              "type": "Mock",
-              "label": "Year 11 Geography Mock - Topic: Rivers",
-              "color": "#F59E0B"
+              "subject": "Chemistry",
+              "type": "Exam",
+              "label": "Year 11 Chemistry Exam - Topic: Topic C",
+              "color": "#EF4444"
             }
           ]
         },
@@ -1811,21 +1809,21 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
-              "type": "Quiz",
-              "label": "Year 11 Art Quiz - Topic: Algebra",
+              "subject": "Biology",
+              "type": "Speaking",
+              "label": "Year 11 Biology Speaking - Topic: Topic A",
+              "color": "#8B5CF6"
+            },
+            {
+              "subject": "Biology",
+              "type": "Practical",
+              "label": "Year 11 Biology Practical - Topic: Topic B",
               "color": "#10B981"
             },
             {
-              "subject": "Art",
-              "type": "Coursework",
-              "label": "Year 11 Art Coursework - Topic: Poetry",
-              "color": "#3B82F6"
-            },
-            {
-              "subject": "Science",
+              "subject": "Physics",
               "type": "Exam",
-              "label": "Year 11 Science Exam - Topic: Cells",
+              "label": "Year 11 Physics Exam - Topic: Topic B",
               "color": "#EF4444"
             }
           ]
@@ -1848,22 +1846,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "History",
-              "type": "Quiz",
-              "label": "Year 11 History Quiz - Topic: Rivers",
-              "color": "#10B981"
+              "subject": "Physics",
+              "type": "Speaking",
+              "label": "Year 11 Physics Speaking - Topic: Topic C",
+              "color": "#8B5CF6"
             },
             {
               "subject": "Computer Science",
               "type": "Exam",
-              "label": "Year 11 Computer Science Exam - Topic: Coding",
+              "label": "Year 11 Computer Science Exam - Topic: Topic D",
               "color": "#EF4444"
             },
             {
-              "subject": "History",
-              "type": "Mock",
-              "label": "Year 11 History Mock - Topic: Poetry",
-              "color": "#F59E0B"
+              "subject": "Physics",
+              "type": "Exam",
+              "label": "Year 11 Physics Exam - Topic: Topic B",
+              "color": "#EF4444"
             }
           ]
         },
@@ -1874,20 +1872,20 @@
           "assessments": [
             {
               "subject": "Computer Science",
-              "type": "Coursework",
-              "label": "Year 11 Computer Science Coursework - Topic: WWII",
-              "color": "#3B82F6"
-            },
-            {
-              "subject": "Maths",
-              "type": "Quiz",
-              "label": "Year 11 Maths Quiz - Topic: WWII",
+              "type": "Practical",
+              "label": "Year 11 Computer Science Practical - Topic: Topic C",
               "color": "#10B981"
             },
             {
               "subject": "Maths",
+              "type": "Speaking",
+              "label": "Year 11 Maths Speaking - Topic: Topic C",
+              "color": "#8B5CF6"
+            },
+            {
+              "subject": "Maths",
               "type": "Exam",
-              "label": "Year 11 Maths Exam - Topic: WWII",
+              "label": "Year 11 Maths Exam - Topic: Topic C",
               "color": "#EF4444"
             }
           ]
@@ -1898,22 +1896,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "History",
-              "type": "Mock",
-              "label": "Year 11 History Mock - Topic: WWII",
-              "color": "#F59E0B"
+              "subject": "Chemistry",
+              "type": "Practical",
+              "label": "Year 11 Chemistry Practical - Topic: Topic C",
+              "color": "#10B981"
             },
             {
-              "subject": "Geography",
-              "type": "Mock",
-              "label": "Year 11 Geography Mock - Topic: WWII",
-              "color": "#F59E0B"
+              "subject": "Chemistry",
+              "type": "Practical",
+              "label": "Year 11 Chemistry Practical - Topic: Topic C",
+              "color": "#10B981"
             },
             {
-              "subject": "Art",
-              "type": "Coursework",
-              "label": "Year 11 Art Coursework - Topic: Rivers",
-              "color": "#3B82F6"
+              "subject": "Biology",
+              "type": "Speaking",
+              "label": "Year 11 Biology Speaking - Topic: Topic D",
+              "color": "#8B5CF6"
             }
           ]
         },
@@ -1923,9 +1921,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "English",
+              "subject": "English Lit",
               "type": "Exam",
-              "label": "Year 11 English Exam - Topic: Algebra",
+              "label": "Year 11 English Lit Exam - Topic: Topic A",
               "color": "#EF4444"
             }
           ]
@@ -1954,22 +1952,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
-              "type": "Quiz",
-              "label": "Year 11 Art Quiz - Topic: Cells",
-              "color": "#10B981"
+              "subject": "Biology",
+              "type": "Speaking",
+              "label": "Year 11 Biology Speaking - Topic: Topic B",
+              "color": "#8B5CF6"
             },
             {
               "subject": "Computer Science",
               "type": "Exam",
-              "label": "Year 11 Computer Science Exam - Topic: Algebra",
+              "label": "Year 11 Computer Science Exam - Topic: Topic A",
               "color": "#EF4444"
             },
             {
-              "subject": "Geography",
-              "type": "Mock",
-              "label": "Year 11 Geography Mock - Topic: WWII",
-              "color": "#F59E0B"
+              "subject": "Chemistry",
+              "type": "Practical",
+              "label": "Year 11 Chemistry Practical - Topic: Topic C",
+              "color": "#10B981"
             }
           ]
         },
@@ -1979,22 +1977,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Science",
+              "subject": "Physics",
               "type": "Exam",
-              "label": "Year 11 Science Exam - Topic: Rivers",
+              "label": "Year 11 Physics Exam - Topic: Topic D",
               "color": "#EF4444"
             },
             {
-              "subject": "Art",
-              "type": "Mock",
-              "label": "Year 11 Art Mock - Topic: Algebra",
-              "color": "#F59E0B"
+              "subject": "Biology",
+              "type": "Practical",
+              "label": "Year 11 Biology Practical - Topic: Topic A",
+              "color": "#10B981"
             },
             {
               "subject": "Computer Science",
-              "type": "Coursework",
-              "label": "Year 11 Computer Science Coursework - Topic: Poetry",
-              "color": "#3B82F6"
+              "type": "Practical",
+              "label": "Year 11 Computer Science Practical - Topic: Topic A",
+              "color": "#10B981"
             }
           ]
         },
@@ -2010,22 +2008,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "English",
+              "subject": "English Lit",
               "type": "Exam",
-              "label": "Year 11 English Exam - Topic: Coding",
+              "label": "Year 11 English Lit Exam - Topic: Topic D",
               "color": "#EF4444"
             },
             {
-              "subject": "History",
-              "type": "Coursework",
-              "label": "Year 11 History Coursework - Topic: Poetry",
-              "color": "#3B82F6"
+              "subject": "Chemistry",
+              "type": "Practical",
+              "label": "Year 11 Chemistry Practical - Topic: Topic B",
+              "color": "#10B981"
             },
             {
-              "subject": "English",
-              "type": "Quiz",
-              "label": "Year 11 English Quiz - Topic: Poetry",
-              "color": "#10B981"
+              "subject": "English Lit",
+              "type": "Speaking",
+              "label": "Year 11 English Lit Speaking - Topic: Topic A",
+              "color": "#8B5CF6"
             }
           ]
         },
@@ -2036,20 +2034,20 @@
           "assessments": [
             {
               "subject": "Computer Science",
-              "type": "Mock",
-              "label": "Year 11 Computer Science Mock - Topic: Algebra",
-              "color": "#F59E0B"
+              "type": "Practical",
+              "label": "Year 11 Computer Science Practical - Topic: Topic A",
+              "color": "#10B981"
             },
             {
-              "subject": "History",
-              "type": "Coursework",
-              "label": "Year 11 History Coursework - Topic: Cells",
-              "color": "#3B82F6"
+              "subject": "Chemistry",
+              "type": "Speaking",
+              "label": "Year 11 Chemistry Speaking - Topic: Topic B",
+              "color": "#8B5CF6"
             },
             {
               "subject": "Computer Science",
               "type": "Exam",
-              "label": "Year 11 Computer Science Exam - Topic: Poetry",
+              "label": "Year 11 Computer Science Exam - Topic: Topic A",
               "color": "#EF4444"
             }
           ]
@@ -2072,21 +2070,21 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
-              "type": "Coursework",
-              "label": "Year 11 Geography Coursework - Topic: WWII",
-              "color": "#3B82F6"
+              "subject": "Chemistry",
+              "type": "Practical",
+              "label": "Year 11 Chemistry Practical - Topic: Topic C",
+              "color": "#10B981"
             },
             {
-              "subject": "English",
+              "subject": "English Lit",
               "type": "Exam",
-              "label": "Year 11 English Exam - Topic: Poetry",
+              "label": "Year 11 English Lit Exam - Topic: Topic A",
               "color": "#EF4444"
             },
             {
-              "subject": "English",
+              "subject": "English Lit",
               "type": "Exam",
-              "label": "Year 11 English Exam - Topic: Poetry",
+              "label": "Year 11 English Lit Exam - Topic: Topic B",
               "color": "#EF4444"
             }
           ]
@@ -2104,21 +2102,21 @@
           "assessments": [
             {
               "subject": "Maths",
-              "type": "Coursework",
-              "label": "Year 11 Maths Coursework - Topic: Coding",
-              "color": "#3B82F6"
+              "type": "Practical",
+              "label": "Year 11 Maths Practical - Topic: Topic D",
+              "color": "#10B981"
             },
             {
-              "subject": "Science",
-              "type": "Coursework",
-              "label": "Year 11 Science Coursework - Topic: Coding",
-              "color": "#3B82F6"
+              "subject": "Physics",
+              "type": "Practical",
+              "label": "Year 11 Physics Practical - Topic: Topic D",
+              "color": "#10B981"
             },
             {
-              "subject": "Science",
-              "type": "Coursework",
-              "label": "Year 11 Science Coursework - Topic: Coding",
-              "color": "#3B82F6"
+              "subject": "English Lit",
+              "type": "Speaking",
+              "label": "Year 11 English Lit Speaking - Topic: Topic D",
+              "color": "#8B5CF6"
             }
           ]
         },
@@ -2128,15 +2126,15 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "History",
-              "type": "Coursework",
-              "label": "Year 11 History Coursework - Topic: Rivers",
-              "color": "#3B82F6"
+              "subject": "Chemistry",
+              "type": "Practical",
+              "label": "Year 11 Chemistry Practical - Topic: Topic C",
+              "color": "#10B981"
             },
             {
               "subject": "Maths",
               "type": "Exam",
-              "label": "Year 11 Maths Exam - Topic: Poetry",
+              "label": "Year 11 Maths Exam - Topic: Topic A",
               "color": "#EF4444"
             }
           ]
@@ -2171,16 +2169,16 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
-              "type": "Quiz",
-              "label": "Year 11 Art Quiz - Topic: Algebra",
-              "color": "#10B981"
+              "subject": "Biology",
+              "type": "Speaking",
+              "label": "Year 11 Biology Speaking - Topic: Topic A",
+              "color": "#8B5CF6"
             },
             {
               "subject": "Maths",
-              "type": "Mock",
-              "label": "Year 11 Maths Mock - Topic: Cells",
-              "color": "#F59E0B"
+              "type": "Practical",
+              "label": "Year 11 Maths Practical - Topic: Topic B",
+              "color": "#10B981"
             }
           ]
         },
@@ -2190,9 +2188,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "History",
+              "subject": "Chemistry",
               "type": "Exam",
-              "label": "Year 11 History Exam - Topic: Cells",
+              "label": "Year 11 Chemistry Exam - Topic: Topic B",
               "color": "#EF4444"
             }
           ]
@@ -2209,22 +2207,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "English",
-              "type": "Coursework",
-              "label": "Year 11 English Coursework - Topic: Coding",
-              "color": "#3B82F6"
-            },
-            {
-              "subject": "History",
-              "type": "Coursework",
-              "label": "Year 11 History Coursework - Topic: Rivers",
-              "color": "#3B82F6"
-            },
-            {
-              "subject": "Art",
-              "type": "Quiz",
-              "label": "Year 11 Art Quiz - Topic: Poetry",
+              "subject": "English Lit",
+              "type": "Practical",
+              "label": "Year 11 English Lit Practical - Topic: Topic D",
               "color": "#10B981"
+            },
+            {
+              "subject": "Chemistry",
+              "type": "Practical",
+              "label": "Year 11 Chemistry Practical - Topic: Topic D",
+              "color": "#10B981"
+            },
+            {
+              "subject": "Biology",
+              "type": "Speaking",
+              "label": "Year 11 Biology Speaking - Topic: Topic A",
+              "color": "#8B5CF6"
             }
           ]
         },
@@ -2246,10 +2244,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "English",
-              "type": "Coursework",
-              "label": "Year 11 English Coursework - Topic: Poetry",
-              "color": "#3B82F6"
+              "subject": "Maths",
+              "type": "Practical",
+              "label": "Year 11 Maths Practical - Topic: Topic A",
+              "color": "#10B981"
             }
           ]
         },
@@ -2259,15 +2257,15 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "History",
+              "subject": "Physics",
               "type": "Exam",
-              "label": "Year 11 History Exam - Topic: Algebra",
+              "label": "Year 11 Physics Exam - Topic: Topic A",
               "color": "#EF4444"
             },
             {
-              "subject": "English",
+              "subject": "Maths",
               "type": "Exam",
-              "label": "Year 11 English Exam - Topic: Rivers",
+              "label": "Year 11 Maths Exam - Topic: Topic D",
               "color": "#EF4444"
             }
           ]
@@ -2278,16 +2276,16 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
-              "type": "Quiz",
-              "label": "Year 11 Art Quiz - Topic: Coding",
-              "color": "#10B981"
+              "subject": "Computer Science",
+              "type": "Speaking",
+              "label": "Year 11 Computer Science Speaking - Topic: Topic D",
+              "color": "#8B5CF6"
             },
             {
-              "subject": "Science",
-              "type": "Coursework",
-              "label": "Year 11 Science Coursework - Topic: Cells",
-              "color": "#3B82F6"
+              "subject": "Physics",
+              "type": "Practical",
+              "label": "Year 11 Physics Practical - Topic: Topic B",
+              "color": "#10B981"
             }
           ]
         },
@@ -2297,10 +2295,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
-              "type": "Mock",
-              "label": "Year 11 Art Mock - Topic: Algebra",
-              "color": "#F59E0B"
+              "subject": "Biology",
+              "type": "Practical",
+              "label": "Year 11 Biology Practical - Topic: Topic A",
+              "color": "#10B981"
             }
           ]
         },
@@ -2310,10 +2308,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
-              "type": "Mock",
-              "label": "Year 11 Geography Mock - Topic: Rivers",
-              "color": "#F59E0B"
+              "subject": "Chemistry",
+              "type": "Practical",
+              "label": "Year 11 Chemistry Practical - Topic: Topic C",
+              "color": "#10B981"
             }
           ]
         },
@@ -2336,15 +2334,15 @@
           "assessments": [
             {
               "subject": "Maths",
-              "type": "Mock",
-              "label": "Year 11 Maths Mock - Topic: WWII",
-              "color": "#F59E0B"
+              "type": "Practical",
+              "label": "Year 11 Maths Practical - Topic: Topic C",
+              "color": "#10B981"
             },
             {
-              "subject": "Art",
-              "type": "Mock",
-              "label": "Year 11 Art Mock - Topic: Cells",
-              "color": "#F59E0B"
+              "subject": "Biology",
+              "type": "Practical",
+              "label": "Year 11 Biology Practical - Topic: Topic B",
+              "color": "#10B981"
             }
           ]
         },
@@ -2354,10 +2352,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
-              "type": "Coursework",
-              "label": "Year 11 Geography Coursework - Topic: Poetry",
-              "color": "#3B82F6"
+              "subject": "Biology",
+              "type": "Speaking",
+              "label": "Year 11 Biology Speaking - Topic: Topic A",
+              "color": "#8B5CF6"
             }
           ]
         },
@@ -2367,10 +2365,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "History",
-              "type": "Quiz",
-              "label": "Year 11 History Quiz - Topic: Poetry",
-              "color": "#10B981"
+              "subject": "Physics",
+              "type": "Speaking",
+              "label": "Year 11 Physics Speaking - Topic: Topic A",
+              "color": "#8B5CF6"
             }
           ]
         },
@@ -2382,14 +2380,14 @@
             {
               "subject": "Computer Science",
               "type": "Exam",
-              "label": "Year 11 Computer Science Exam - Topic: Poetry",
+              "label": "Year 11 Computer Science Exam - Topic: Topic B",
               "color": "#EF4444"
             },
             {
-              "subject": "Geography",
-              "type": "Coursework",
-              "label": "Year 11 Geography Coursework - Topic: WWII",
-              "color": "#3B82F6"
+              "subject": "Chemistry",
+              "type": "Speaking",
+              "label": "Year 11 Chemistry Speaking - Topic: Topic C",
+              "color": "#8B5CF6"
             }
           ]
         },
@@ -2400,9 +2398,9 @@
           "assessments": [
             {
               "subject": "Maths",
-              "type": "Quiz",
-              "label": "Year 11 Maths Quiz - Topic: Poetry",
-              "color": "#10B981"
+              "type": "Speaking",
+              "label": "Year 11 Maths Speaking - Topic: Topic B",
+              "color": "#8B5CF6"
             }
           ]
         },
@@ -2425,21 +2423,21 @@
           "assessments": [
             {
               "subject": "Maths",
-              "type": "Quiz",
-              "label": "Year 11 Maths Quiz - Topic: Cells",
-              "color": "#10B981"
+              "type": "Speaking",
+              "label": "Year 11 Maths Speaking - Topic: Topic B",
+              "color": "#8B5CF6"
             },
             {
               "subject": "Maths",
-              "type": "Mock",
-              "label": "Year 11 Maths Mock - Topic: WWII",
-              "color": "#F59E0B"
+              "type": "Practical",
+              "label": "Year 11 Maths Practical - Topic: Topic C",
+              "color": "#10B981"
             },
             {
               "subject": "Computer Science",
-              "type": "Quiz",
-              "label": "Year 11 Computer Science Quiz - Topic: Poetry",
-              "color": "#10B981"
+              "type": "Speaking",
+              "label": "Year 11 Computer Science Speaking - Topic: Topic B",
+              "color": "#8B5CF6"
             }
           ]
         },
@@ -2461,16 +2459,16 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
-              "type": "Mock",
-              "label": "Year 11 Geography Mock - Topic: Poetry",
-              "color": "#F59E0B"
+              "subject": "Biology",
+              "type": "Practical",
+              "label": "Year 11 Biology Practical - Topic: Topic B",
+              "color": "#10B981"
             },
             {
               "subject": "Computer Science",
-              "type": "Mock",
-              "label": "Year 11 Computer Science Mock - Topic: Poetry",
-              "color": "#F59E0B"
+              "type": "Exam",
+              "label": "Year 11 Computer Science Exam - Topic: Topic B",
+              "color": "#EF4444"
             }
           ]
         },
@@ -2480,16 +2478,16 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
+              "subject": "Biology",
               "type": "Exam",
-              "label": "Year 11 Geography Exam - Topic: Poetry",
+              "label": "Year 11 Biology Exam - Topic: Topic B",
               "color": "#EF4444"
             },
             {
               "subject": "Computer Science",
-              "type": "Coursework",
-              "label": "Year 11 Computer Science Coursework - Topic: Algebra",
-              "color": "#3B82F6"
+              "type": "Practical",
+              "label": "Year 11 Computer Science Practical - Topic: Topic A",
+              "color": "#10B981"
             }
           ]
         },
@@ -2517,10 +2515,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
-              "type": "Mock",
-              "label": "Year 11 Art Mock - Topic: WWII",
-              "color": "#F59E0B"
+              "subject": "Biology",
+              "type": "Practical",
+              "label": "Year 11 Biology Practical - Topic: Topic C",
+              "color": "#10B981"
             }
           ]
         },
@@ -2530,22 +2528,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "History",
-              "type": "Quiz",
-              "label": "Year 11 History Quiz - Topic: WWII",
-              "color": "#10B981"
+              "subject": "Chemistry",
+              "type": "Speaking",
+              "label": "Year 11 Chemistry Speaking - Topic: Topic C",
+              "color": "#8B5CF6"
             },
             {
               "subject": "Computer Science",
-              "type": "Quiz",
-              "label": "Year 11 Computer Science Quiz - Topic: Rivers",
-              "color": "#10B981"
+              "type": "Speaking",
+              "label": "Year 11 Computer Science Speaking - Topic: Topic C",
+              "color": "#8B5CF6"
             },
             {
-              "subject": "English",
-              "type": "Quiz",
-              "label": "Year 11 English Quiz - Topic: Coding",
-              "color": "#10B981"
+              "subject": "English Lit",
+              "type": "Speaking",
+              "label": "Year 11 English Lit Speaking - Topic: Topic D",
+              "color": "#8B5CF6"
             }
           ]
         },
@@ -2555,10 +2553,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Science",
-              "type": "Mock",
-              "label": "Year 11 Science Mock - Topic: Poetry",
-              "color": "#F59E0B"
+              "subject": "English Lit",
+              "type": "Practical",
+              "label": "Year 11 English Lit Practical - Topic: Topic B",
+              "color": "#10B981"
             }
           ]
         },
@@ -2568,15 +2566,15 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
-              "type": "Coursework",
-              "label": "Year 11 Geography Coursework - Topic: WWII",
-              "color": "#3B82F6"
+              "subject": "Biology",
+              "type": "Practical",
+              "label": "Year 11 Biology Practical - Topic: Topic C",
+              "color": "#10B981"
             },
             {
-              "subject": "English",
+              "subject": "English Lit",
               "type": "Exam",
-              "label": "Year 11 English Exam - Topic: Coding",
+              "label": "Year 11 English Lit Exam - Topic: Topic D",
               "color": "#EF4444"
             }
           ]
@@ -2607,14 +2605,14 @@
             {
               "subject": "Maths",
               "type": "Exam",
-              "label": "Year 11 Maths Exam - Topic: Poetry",
+              "label": "Year 11 Maths Exam - Topic: Topic B",
               "color": "#EF4444"
             },
             {
-              "subject": "History",
-              "type": "Mock",
-              "label": "Year 11 History Mock - Topic: Coding",
-              "color": "#F59E0B"
+              "subject": "Chemistry",
+              "type": "Practical",
+              "label": "Year 11 Chemistry Practical - Topic: Topic D",
+              "color": "#10B981"
             }
           ]
         },
@@ -2630,10 +2628,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
-              "type": "Quiz",
-              "label": "Year 11 Geography Quiz - Topic: Poetry",
-              "color": "#10B981"
+              "subject": "Chemistry",
+              "type": "Speaking",
+              "label": "Year 11 Chemistry Speaking - Topic: Topic A",
+              "color": "#8B5CF6"
             }
           ]
         },
@@ -2643,22 +2641,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
+              "subject": "Biology",
               "type": "Exam",
-              "label": "Year 11 Art Exam - Topic: Poetry",
+              "label": "Year 11 Biology Exam - Topic: Topic A",
               "color": "#EF4444"
             },
             {
-              "subject": "Art",
+              "subject": "Biology",
               "type": "Exam",
-              "label": "Year 11 Art Exam - Topic: Coding",
+              "label": "Year 11 Biology Exam - Topic: Topic D",
               "color": "#EF4444"
             },
             {
-              "subject": "History",
-              "type": "Coursework",
-              "label": "Year 11 History Coursework - Topic: Poetry",
-              "color": "#3B82F6"
+              "subject": "Chemistry",
+              "type": "Speaking",
+              "label": "Year 11 Chemistry Speaking - Topic: Topic B",
+              "color": "#8B5CF6"
             }
           ]
         },
@@ -2680,22 +2678,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
-              "type": "Mock",
-              "label": "Year 11 Art Mock - Topic: Coding",
-              "color": "#F59E0B"
+              "subject": "Computer Science",
+              "type": "Practical",
+              "label": "Year 11 Computer Science Practical - Topic: Topic D",
+              "color": "#10B981"
             },
             {
-              "subject": "English",
+              "subject": "English Lit",
               "type": "Exam",
-              "label": "Year 11 English Exam - Topic: WWII",
+              "label": "Year 11 English Lit Exam - Topic: Topic C",
               "color": "#EF4444"
             },
             {
-              "subject": "English",
-              "type": "Quiz",
-              "label": "Year 11 English Quiz - Topic: Algebra",
-              "color": "#10B981"
+              "subject": "English Lit",
+              "type": "Speaking",
+              "label": "Year 11 English Lit Speaking - Topic: Topic A",
+              "color": "#8B5CF6"
             }
           ]
         },
@@ -2705,22 +2703,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
-              "type": "Coursework",
-              "label": "Year 11 Art Coursework - Topic: Poetry",
-              "color": "#3B82F6"
+              "subject": "Biology",
+              "type": "Speaking",
+              "label": "Year 11 Biology Speaking - Topic: Topic B",
+              "color": "#8B5CF6"
             },
             {
-              "subject": "Science",
-              "type": "Coursework",
-              "label": "Year 11 Science Coursework - Topic: Cells",
-              "color": "#3B82F6"
-            },
-            {
-              "subject": "History",
-              "type": "Quiz",
-              "label": "Year 11 History Quiz - Topic: Coding",
+              "subject": "Physics",
+              "type": "Practical",
+              "label": "Year 11 Physics Practical - Topic: Topic B",
               "color": "#10B981"
+            },
+            {
+              "subject": "Physics",
+              "type": "Speaking",
+              "label": "Year 11 Physics Speaking - Topic: Topic D",
+              "color": "#8B5CF6"
             }
           ]
         },
@@ -2731,9 +2729,9 @@
           "assessments": [
             {
               "subject": "Computer Science",
-              "type": "Mock",
-              "label": "Year 11 Computer Science Mock - Topic: Rivers",
-              "color": "#F59E0B"
+              "type": "Exam",
+              "label": "Year 11 Computer Science Exam - Topic: Topic C",
+              "color": "#EF4444"
             }
           ]
         },
@@ -2743,15 +2741,15 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Science",
-              "type": "Mock",
-              "label": "Year 11 Science Mock - Topic: WWII",
-              "color": "#F59E0B"
+              "subject": "English Lit",
+              "type": "Practical",
+              "label": "Year 11 English Lit Practical - Topic: Topic C",
+              "color": "#10B981"
             },
             {
-              "subject": "Geography",
+              "subject": "Biology",
               "type": "Exam",
-              "label": "Year 11 Geography Exam - Topic: WWII",
+              "label": "Year 11 Biology Exam - Topic: Topic C",
               "color": "#EF4444"
             }
           ]
@@ -2764,14 +2762,14 @@
             {
               "subject": "Computer Science",
               "type": "Exam",
-              "label": "Year 11 Computer Science Exam - Topic: Cells",
+              "label": "Year 11 Computer Science Exam - Topic: Topic B",
               "color": "#EF4444"
             },
             {
               "subject": "Computer Science",
-              "type": "Quiz",
-              "label": "Year 11 Computer Science Quiz - Topic: WWII",
-              "color": "#10B981"
+              "type": "Speaking",
+              "label": "Year 11 Computer Science Speaking - Topic: Topic C",
+              "color": "#8B5CF6"
             }
           ]
         },
@@ -2799,10 +2797,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
-              "type": "Mock",
-              "label": "Year 11 Art Mock - Topic: Cells",
-              "color": "#F59E0B"
+              "subject": "Biology",
+              "type": "Exam",
+              "label": "Year 11 Biology Exam - Topic: Topic B",
+              "color": "#EF4444"
             }
           ]
         },
@@ -2812,15 +2810,15 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "History",
-              "type": "Coursework",
-              "label": "Year 11 History Coursework - Topic: Cells",
-              "color": "#3B82F6"
+              "subject": "Physics",
+              "type": "Speaking",
+              "label": "Year 11 Physics Speaking - Topic: Topic B",
+              "color": "#8B5CF6"
             },
             {
               "subject": "Computer Science",
               "type": "Exam",
-              "label": "Year 11 Computer Science Exam - Topic: Rivers",
+              "label": "Year 11 Computer Science Exam - Topic: Topic D",
               "color": "#EF4444"
             }
           ]
@@ -2831,16 +2829,16 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Science",
+              "subject": "Physics",
               "type": "Exam",
-              "label": "Year 11 Science Exam - Topic: Cells",
+              "label": "Year 11 Physics Exam - Topic: Topic B",
               "color": "#EF4444"
             },
             {
-              "subject": "Art",
-              "type": "Mock",
-              "label": "Year 11 Art Mock - Topic: Poetry",
-              "color": "#F59E0B"
+              "subject": "Biology",
+              "type": "Practical",
+              "label": "Year 11 Biology Practical - Topic: Topic A",
+              "color": "#10B981"
             }
           ]
         },
@@ -2868,21 +2866,21 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "English",
-              "type": "Coursework",
-              "label": "Year 11 English Coursework - Topic: Algebra",
-              "color": "#3B82F6"
-            },
-            {
-              "subject": "Maths",
-              "type": "Quiz",
-              "label": "Year 11 Maths Quiz - Topic: Cells",
+              "subject": "English Lit",
+              "type": "Practical",
+              "label": "Year 11 English Lit Practical - Topic: Topic A",
               "color": "#10B981"
             },
             {
-              "subject": "Art",
+              "subject": "Maths",
+              "type": "Speaking",
+              "label": "Year 11 Maths Speaking - Topic: Topic B",
+              "color": "#8B5CF6"
+            },
+            {
+              "subject": "Computer Science",
               "type": "Exam",
-              "label": "Year 11 Art Exam - Topic: Algebra",
+              "label": "Year 11 Computer Science Exam - Topic: Topic A",
               "color": "#EF4444"
             }
           ]
@@ -2899,10 +2897,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
-              "type": "Coursework",
-              "label": "Year 11 Geography Coursework - Topic: Coding",
-              "color": "#3B82F6"
+              "subject": "Biology",
+              "type": "Practical",
+              "label": "Year 11 Biology Practical - Topic: Topic D",
+              "color": "#10B981"
             }
           ]
         },
@@ -2912,16 +2910,16 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
+              "subject": "Biology",
               "type": "Exam",
-              "label": "Year 11 Geography Exam - Topic: Algebra",
+              "label": "Year 11 Biology Exam - Topic: Topic A",
               "color": "#EF4444"
             },
             {
-              "subject": "Art",
-              "type": "Mock",
-              "label": "Year 11 Art Mock - Topic: Coding",
-              "color": "#F59E0B"
+              "subject": "Biology",
+              "type": "Practical",
+              "label": "Year 11 Biology Practical - Topic: Topic D",
+              "color": "#10B981"
             }
           ]
         },
@@ -2931,21 +2929,21 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Science",
-              "type": "Quiz",
-              "label": "Year 11 Science Quiz - Topic: Rivers",
-              "color": "#10B981"
+              "subject": "English Lit",
+              "type": "Speaking",
+              "label": "Year 11 English Lit Speaking - Topic: Topic C",
+              "color": "#8B5CF6"
             },
             {
-              "subject": "Science",
-              "type": "Quiz",
-              "label": "Year 11 Science Quiz - Topic: Algebra",
-              "color": "#10B981"
+              "subject": "Physics",
+              "type": "Speaking",
+              "label": "Year 11 Physics Speaking - Topic: Topic A",
+              "color": "#8B5CF6"
             },
             {
-              "subject": "Geography",
+              "subject": "Chemistry",
               "type": "Exam",
-              "label": "Year 11 Geography Exam - Topic: Coding",
+              "label": "Year 11 Chemistry Exam - Topic: Topic D",
               "color": "#EF4444"
             }
           ]
@@ -3010,15 +3008,15 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
-              "type": "Coursework",
-              "label": "Year 11 Geography Coursework - Topic: Coding",
-              "color": "#3B82F6"
+              "subject": "Chemistry",
+              "type": "Practical",
+              "label": "Year 11 Chemistry Practical - Topic: Topic D",
+              "color": "#10B981"
             },
             {
-              "subject": "Geography",
+              "subject": "Chemistry",
               "type": "Exam",
-              "label": "Year 11 Geography Exam - Topic: WWII",
+              "label": "Year 11 Chemistry Exam - Topic: Topic C",
               "color": "#EF4444"
             }
           ]
@@ -3030,21 +3028,21 @@
           "assessments": [
             {
               "subject": "Computer Science",
-              "type": "Mock",
-              "label": "Year 11 Computer Science Mock - Topic: Coding",
-              "color": "#F59E0B"
+              "type": "Practical",
+              "label": "Year 11 Computer Science Practical - Topic: Topic D",
+              "color": "#10B981"
             },
             {
-              "subject": "History",
+              "subject": "Chemistry",
               "type": "Exam",
-              "label": "Year 11 History Exam - Topic: WWII",
+              "label": "Year 11 Chemistry Exam - Topic: Topic C",
               "color": "#EF4444"
             },
             {
-              "subject": "Art",
-              "type": "Coursework",
-              "label": "Year 11 Art Coursework - Topic: WWII",
-              "color": "#3B82F6"
+              "subject": "Biology",
+              "type": "Practical",
+              "label": "Year 11 Biology Practical - Topic: Topic C",
+              "color": "#10B981"
             }
           ]
         },
@@ -3060,22 +3058,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
+              "subject": "Biology",
               "type": "Exam",
-              "label": "Year 11 Geography Exam - Topic: Cells",
+              "label": "Year 11 Biology Exam - Topic: Topic B",
               "color": "#EF4444"
             },
             {
               "subject": "Computer Science",
-              "type": "Mock",
-              "label": "Year 11 Computer Science Mock - Topic: Rivers",
-              "color": "#F59E0B"
+              "type": "Practical",
+              "label": "Year 11 Computer Science Practical - Topic: Topic C",
+              "color": "#10B981"
             },
             {
-              "subject": "Geography",
-              "type": "Quiz",
-              "label": "Year 11 Geography Quiz - Topic: Poetry",
-              "color": "#10B981"
+              "subject": "Chemistry",
+              "type": "Speaking",
+              "label": "Year 11 Chemistry Speaking - Topic: Topic B",
+              "color": "#8B5CF6"
             }
           ]
         },
@@ -3086,14 +3084,14 @@
           "assessments": [
             {
               "subject": "Computer Science",
-              "type": "Coursework",
-              "label": "Year 11 Computer Science Coursework - Topic: Cells",
-              "color": "#3B82F6"
+              "type": "Practical",
+              "label": "Year 11 Computer Science Practical - Topic: Topic B",
+              "color": "#10B981"
             },
             {
-              "subject": "Art",
+              "subject": "Computer Science",
               "type": "Exam",
-              "label": "Year 11 Art Exam - Topic: Cells",
+              "label": "Year 11 Computer Science Exam - Topic: Topic B",
               "color": "#EF4444"
             }
           ]
@@ -3116,22 +3114,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "English",
-              "type": "Quiz",
-              "label": "Year 11 English Quiz - Topic: Algebra",
-              "color": "#10B981"
+              "subject": "English Lit",
+              "type": "Speaking",
+              "label": "Year 11 English Lit Speaking - Topic: Topic A",
+              "color": "#8B5CF6"
             },
             {
-              "subject": "History",
-              "type": "Mock",
-              "label": "Year 11 History Mock - Topic: Rivers",
-              "color": "#F59E0B"
+              "subject": "Chemistry",
+              "type": "Exam",
+              "label": "Year 11 Chemistry Exam - Topic: Topic D",
+              "color": "#EF4444"
             },
             {
               "subject": "Maths",
-              "type": "Coursework",
-              "label": "Year 11 Maths Coursework - Topic: Cells",
-              "color": "#3B82F6"
+              "type": "Practical",
+              "label": "Year 11 Maths Practical - Topic: Topic B",
+              "color": "#10B981"
             }
           ]
         },
@@ -3143,7 +3141,7 @@
             {
               "subject": "Computer Science",
               "type": "Exam",
-              "label": "Year 11 Computer Science Exam - Topic: Poetry",
+              "label": "Year 11 Computer Science Exam - Topic: Topic A",
               "color": "#EF4444"
             }
           ]
@@ -3154,22 +3152,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Science",
-              "type": "Coursework",
-              "label": "Year 11 Science Coursework - Topic: Rivers",
-              "color": "#3B82F6"
+              "subject": "Physics",
+              "type": "Practical",
+              "label": "Year 11 Physics Practical - Topic: Topic C",
+              "color": "#10B981"
             },
             {
               "subject": "Computer Science",
-              "type": "Coursework",
-              "label": "Year 11 Computer Science Coursework - Topic: Rivers",
-              "color": "#3B82F6"
+              "type": "Practical",
+              "label": "Year 11 Computer Science Practical - Topic: Topic C",
+              "color": "#10B981"
             },
             {
-              "subject": "History",
-              "type": "Coursework",
-              "label": "Year 11 History Coursework - Topic: Rivers",
-              "color": "#3B82F6"
+              "subject": "Chemistry",
+              "type": "Practical",
+              "label": "Year 11 Chemistry Practical - Topic: Topic D",
+              "color": "#10B981"
             }
           ]
         },
@@ -3185,16 +3183,16 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "English",
+              "subject": "English Lit",
               "type": "Exam",
-              "label": "Year 11 English Exam - Topic: Cells",
+              "label": "Year 11 English Lit Exam - Topic: Topic B",
               "color": "#EF4444"
             },
             {
-              "subject": "Science",
-              "type": "Quiz",
-              "label": "Year 11 Science Quiz - Topic: Rivers",
-              "color": "#10B981"
+              "subject": "Physics",
+              "type": "Speaking",
+              "label": "Year 11 Physics Speaking - Topic: Topic C",
+              "color": "#8B5CF6"
             }
           ]
         },
@@ -3216,16 +3214,16 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Science",
-              "type": "Quiz",
-              "label": "Year 11 Science Quiz - Topic: Coding",
-              "color": "#10B981"
+              "subject": "Physics",
+              "type": "Speaking",
+              "label": "Year 11 Physics Speaking - Topic: Topic D",
+              "color": "#8B5CF6"
             },
             {
-              "subject": "Science",
-              "type": "Mock",
-              "label": "Year 11 Science Mock - Topic: Rivers",
-              "color": "#F59E0B"
+              "subject": "Physics",
+              "type": "Practical",
+              "label": "Year 11 Physics Practical - Topic: Topic D",
+              "color": "#10B981"
             }
           ]
         },
@@ -3241,16 +3239,16 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
-              "type": "Quiz",
-              "label": "Year 11 Art Quiz - Topic: Poetry",
-              "color": "#10B981"
+              "subject": "Biology",
+              "type": "Speaking",
+              "label": "Year 11 Biology Speaking - Topic: Topic B",
+              "color": "#8B5CF6"
             },
             {
-              "subject": "Science",
-              "type": "Quiz",
-              "label": "Year 11 Science Quiz - Topic: Rivers",
-              "color": "#10B981"
+              "subject": "Physics",
+              "type": "Speaking",
+              "label": "Year 11 Physics Speaking - Topic: Topic C",
+              "color": "#8B5CF6"
             }
           ]
         },
@@ -3262,20 +3260,20 @@
             {
               "subject": "Maths",
               "type": "Exam",
-              "label": "Year 11 Maths Exam - Topic: Coding",
+              "label": "Year 11 Maths Exam - Topic: Topic D",
               "color": "#EF4444"
             },
             {
-              "subject": "Art",
-              "type": "Mock",
-              "label": "Year 11 Art Mock - Topic: Poetry",
-              "color": "#F59E0B"
+              "subject": "Biology",
+              "type": "Practical",
+              "label": "Year 11 Biology Practical - Topic: Topic A",
+              "color": "#10B981"
             },
             {
               "subject": "Computer Science",
-              "type": "Coursework",
-              "label": "Year 11 Computer Science Coursework - Topic: WWII",
-              "color": "#3B82F6"
+              "type": "Practical",
+              "label": "Year 11 Computer Science Practical - Topic: Topic C",
+              "color": "#10B981"
             }
           ]
         },
@@ -3286,9 +3284,9 @@
           "assessments": [
             {
               "subject": "Maths",
-              "type": "Quiz",
-              "label": "Year 11 Maths Quiz - Topic: WWII",
-              "color": "#10B981"
+              "type": "Speaking",
+              "label": "Year 11 Maths Speaking - Topic: Topic C",
+              "color": "#8B5CF6"
             }
           ]
         },
@@ -3322,10 +3320,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "History",
-              "type": "Coursework",
-              "label": "Year 11 History Coursework - Topic: Rivers",
-              "color": "#3B82F6"
+              "subject": "Physics",
+              "type": "Speaking",
+              "label": "Year 11 Physics Speaking - Topic: Topic C",
+              "color": "#8B5CF6"
             }
           ]
         },
@@ -3335,22 +3333,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
+              "subject": "Biology",
               "type": "Exam",
-              "label": "Year 11 Geography Exam - Topic: Poetry",
+              "label": "Year 11 Biology Exam - Topic: Topic A",
               "color": "#EF4444"
             },
             {
-              "subject": "Geography",
-              "type": "Coursework",
-              "label": "Year 11 Geography Coursework - Topic: Algebra",
-              "color": "#3B82F6"
+              "subject": "Chemistry",
+              "type": "Speaking",
+              "label": "Year 11 Chemistry Speaking - Topic: Topic A",
+              "color": "#8B5CF6"
             },
             {
-              "subject": "History",
-              "type": "Coursework",
-              "label": "Year 11 History Coursework - Topic: Coding",
-              "color": "#3B82F6"
+              "subject": "Physics",
+              "type": "Speaking",
+              "label": "Year 11 Physics Speaking - Topic: Topic D",
+              "color": "#8B5CF6"
             }
           ]
         },
@@ -3378,15 +3376,15 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
-              "type": "Quiz",
-              "label": "Year 11 Art Quiz - Topic: Cells",
-              "color": "#10B981"
+              "subject": "Biology",
+              "type": "Speaking",
+              "label": "Year 11 Biology Speaking - Topic: Topic B",
+              "color": "#8B5CF6"
             },
             {
-              "subject": "History",
+              "subject": "Physics",
               "type": "Exam",
-              "label": "Year 11 History Exam - Topic: WWII",
+              "label": "Year 11 Physics Exam - Topic: Topic C",
               "color": "#EF4444"
             }
           ]
@@ -3398,21 +3396,21 @@
           "assessments": [
             {
               "subject": "Computer Science",
-              "type": "Coursework",
-              "label": "Year 11 Computer Science Coursework - Topic: Rivers",
-              "color": "#3B82F6"
+              "type": "Practical",
+              "label": "Year 11 Computer Science Practical - Topic: Topic C",
+              "color": "#10B981"
             },
             {
-              "subject": "History",
-              "type": "Mock",
-              "label": "Year 11 History Mock - Topic: Cells",
-              "color": "#F59E0B"
+              "subject": "Chemistry",
+              "type": "Exam",
+              "label": "Year 11 Chemistry Exam - Topic: Topic B",
+              "color": "#EF4444"
             },
             {
               "subject": "Computer Science",
-              "type": "Quiz",
-              "label": "Year 11 Computer Science Quiz - Topic: Poetry",
-              "color": "#10B981"
+              "type": "Speaking",
+              "label": "Year 11 Computer Science Speaking - Topic: Topic A",
+              "color": "#8B5CF6"
             }
           ]
         },
@@ -3423,9 +3421,9 @@
           "assessments": [
             {
               "subject": "Computer Science",
-              "type": "Quiz",
-              "label": "Year 11 Computer Science Quiz - Topic: Rivers",
-              "color": "#10B981"
+              "type": "Speaking",
+              "label": "Year 11 Computer Science Speaking - Topic: Topic C",
+              "color": "#8B5CF6"
             }
           ]
         },
@@ -3465,15 +3463,15 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "English",
-              "type": "Quiz",
-              "label": "Year 11 English Quiz - Topic: Coding",
-              "color": "#10B981"
+              "subject": "English Lit",
+              "type": "Speaking",
+              "label": "Year 11 English Lit Speaking - Topic: Topic D",
+              "color": "#8B5CF6"
             },
             {
               "subject": "Computer Science",
               "type": "Exam",
-              "label": "Year 11 Computer Science Exam - Topic: WWII",
+              "label": "Year 11 Computer Science Exam - Topic: Topic C",
               "color": "#EF4444"
             }
           ]
@@ -3484,10 +3482,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
-              "type": "Mock",
-              "label": "Year 11 Geography Mock - Topic: Algebra",
-              "color": "#F59E0B"
+              "subject": "Chemistry",
+              "type": "Practical",
+              "label": "Year 11 Chemistry Practical - Topic: Topic A",
+              "color": "#10B981"
             }
           ]
         },
@@ -3497,10 +3495,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Science",
-              "type": "Coursework",
-              "label": "Year 11 Science Coursework - Topic: Poetry",
-              "color": "#3B82F6"
+              "subject": "Physics",
+              "type": "Practical",
+              "label": "Year 11 Physics Practical - Topic: Topic A",
+              "color": "#10B981"
             }
           ]
         },
@@ -3510,22 +3508,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "English",
+              "subject": "English Lit",
               "type": "Exam",
-              "label": "Year 11 English Exam - Topic: Rivers",
+              "label": "Year 11 English Lit Exam - Topic: Topic C",
               "color": "#EF4444"
             },
             {
-              "subject": "Geography",
-              "type": "Quiz",
-              "label": "Year 11 Geography Quiz - Topic: Cells",
-              "color": "#10B981"
+              "subject": "Chemistry",
+              "type": "Speaking",
+              "label": "Year 11 Chemistry Speaking - Topic: Topic B",
+              "color": "#8B5CF6"
             },
             {
               "subject": "Maths",
-              "type": "Coursework",
-              "label": "Year 11 Maths Coursework - Topic: Poetry",
-              "color": "#3B82F6"
+              "type": "Practical",
+              "label": "Year 11 Maths Practical - Topic: Topic B",
+              "color": "#10B981"
             }
           ]
         },
@@ -3549,9 +3547,8 @@
       "sourceUrl": "http://example.com/Year 12",
       "types": {
         "#EF4444": "Exam",
-        "#F59E0B": "Mock",
-        "#3B82F6": "Coursework",
-        "#10B981": "Quiz"
+        "#EC4899": "Essay",
+        "#6366F1": "Presentation"
       },
       "schedule": [
         {
@@ -3560,28 +3557,28 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Maths",
+              "subject": "Psychology",
               "type": "Exam",
-              "label": "Year 12 Maths Exam - Topic: Algebra",
+              "label": "Year 12 Psychology Exam - Intro",
               "color": "#EF4444"
             },
             {
-              "subject": "Maths",
-              "type": "Coursework",
-              "label": "Year 12 Maths Coursework - Topic: Cells",
-              "color": "#3B82F6"
+              "subject": "Psychology",
+              "type": "Essay",
+              "label": "Year 12 Psychology Essay - Topic: Topic B",
+              "color": "#EC4899"
             },
             {
-              "subject": "History",
-              "type": "Coursework",
-              "label": "Year 12 History Coursework - Topic: Coding",
-              "color": "#3B82F6"
+              "subject": "Sociology",
+              "type": "Presentation",
+              "label": "Year 12 Sociology Presentation - Topic: Topic D",
+              "color": "#6366F1"
             },
             {
-              "subject": "History",
-              "type": "Quiz",
-              "label": "Year 12 History Quiz - Topic: WWII",
-              "color": "#10B981"
+              "subject": "Economics",
+              "type": "Presentation",
+              "label": "Year 12 Economics Presentation - Topic: Topic C",
+              "color": "#6366F1"
             }
           ]
         },
@@ -3591,10 +3588,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Computer Science",
-              "type": "Mock",
-              "label": "Year 12 Computer Science Mock - Topic: Poetry",
-              "color": "#F59E0B"
+              "subject": "Further Maths",
+              "type": "Essay",
+              "label": "Year 12 Further Maths Essay - Topic: Topic B",
+              "color": "#EC4899"
             }
           ]
         },
@@ -3604,10 +3601,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
-              "type": "Quiz",
-              "label": "Year 12 Geography Quiz - Topic: Poetry",
-              "color": "#10B981"
+              "subject": "Economics",
+              "type": "Presentation",
+              "label": "Year 12 Economics Presentation - Topic: Topic B",
+              "color": "#6366F1"
             }
           ]
         },
@@ -3617,15 +3614,15 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
-              "type": "Quiz",
-              "label": "Year 12 Art Quiz - Topic: Cells",
-              "color": "#10B981"
+              "subject": "Further Maths",
+              "type": "Presentation",
+              "label": "Year 12 Further Maths Presentation - Topic: Topic B",
+              "color": "#6366F1"
             },
             {
-              "subject": "History",
+              "subject": "Sociology",
               "type": "Exam",
-              "label": "Year 12 History Exam - Topic: Rivers",
+              "label": "Year 12 Sociology Exam - Topic: Topic C",
               "color": "#EF4444"
             }
           ]
@@ -3636,9 +3633,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "History",
+              "subject": "Economics",
               "type": "Exam",
-              "label": "Year 12 History Exam - Topic: Poetry",
+              "label": "Year 12 Economics Exam - Topic: Topic B",
               "color": "#EF4444"
             }
           ]
@@ -3661,16 +3658,16 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Computer Science",
-              "type": "Mock",
-              "label": "Year 12 Computer Science Mock - Topic: Rivers",
-              "color": "#F59E0B"
+              "subject": "Further Maths",
+              "type": "Exam",
+              "label": "Year 12 Further Maths Exam - Topic: Topic D",
+              "color": "#EF4444"
             },
             {
-              "subject": "Art",
-              "type": "Coursework",
-              "label": "Year 12 Art Coursework - Topic: Algebra",
-              "color": "#3B82F6"
+              "subject": "Further Maths",
+              "type": "Presentation",
+              "label": "Year 12 Further Maths Presentation - Topic: Topic A",
+              "color": "#6366F1"
             }
           ]
         },
@@ -3680,15 +3677,15 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
-              "type": "Quiz",
-              "label": "Year 12 Geography Quiz - Topic: Poetry",
-              "color": "#10B981"
+              "subject": "Economics",
+              "type": "Presentation",
+              "label": "Year 12 Economics Presentation - Topic: Topic A",
+              "color": "#6366F1"
             },
             {
-              "subject": "Science",
+              "subject": "Sociology",
               "type": "Exam",
-              "label": "Year 12 Science Exam - Topic: Algebra",
+              "label": "Year 12 Sociology Exam - Topic: Topic A",
               "color": "#EF4444"
             }
           ]
@@ -3699,9 +3696,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Science",
+              "subject": "Sociology",
               "type": "Exam",
-              "label": "Year 12 Science Exam - Topic: Cells",
+              "label": "Year 12 Sociology Exam - Topic: Topic B",
               "color": "#EF4444"
             }
           ]
@@ -3718,10 +3715,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "History",
-              "type": "Quiz",
-              "label": "Year 12 History Quiz - Topic: Coding",
-              "color": "#10B981"
+              "subject": "Economics",
+              "type": "Presentation",
+              "label": "Year 12 Economics Presentation - Topic: Topic D",
+              "color": "#6366F1"
             }
           ]
         },
@@ -3743,22 +3740,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
-              "type": "Quiz",
-              "label": "Year 12 Art Quiz - Topic: Coding",
-              "color": "#10B981"
+              "subject": "Further Maths",
+              "type": "Presentation",
+              "label": "Year 12 Further Maths Presentation - Topic: Topic D",
+              "color": "#6366F1"
             },
             {
-              "subject": "Geography",
-              "type": "Mock",
-              "label": "Year 12 Geography Mock - Topic: Algebra",
-              "color": "#F59E0B"
+              "subject": "Economics",
+              "type": "Exam",
+              "label": "Year 12 Economics Exam - Topic: Topic A",
+              "color": "#EF4444"
             },
             {
-              "subject": "English",
-              "type": "Mock",
-              "label": "Year 12 English Mock - Topic: WWII",
-              "color": "#F59E0B"
+              "subject": "Psychology",
+              "type": "Exam",
+              "label": "Year 12 Psychology Exam - Topic: Topic C",
+              "color": "#EF4444"
             }
           ]
         },
@@ -3768,22 +3765,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
-              "type": "Quiz",
-              "label": "Year 12 Geography Quiz - Topic: Coding",
-              "color": "#10B981"
+              "subject": "Economics",
+              "type": "Presentation",
+              "label": "Year 12 Economics Presentation - Topic: Topic D",
+              "color": "#6366F1"
             },
             {
-              "subject": "Art",
-              "type": "Quiz",
-              "label": "Year 12 Art Quiz - Topic: Algebra",
-              "color": "#10B981"
+              "subject": "Economics",
+              "type": "Presentation",
+              "label": "Year 12 Economics Presentation - Topic: Topic A",
+              "color": "#6366F1"
             },
             {
-              "subject": "English",
-              "type": "Quiz",
-              "label": "Year 12 English Quiz - Topic: Poetry",
-              "color": "#10B981"
+              "subject": "Psychology",
+              "type": "Presentation",
+              "label": "Year 12 Psychology Presentation - Topic: Topic B",
+              "color": "#6366F1"
             }
           ]
         },
@@ -3793,22 +3790,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
-              "type": "Mock",
-              "label": "Year 12 Art Mock - Topic: Rivers",
-              "color": "#F59E0B"
-            },
-            {
-              "subject": "Geography",
+              "subject": "Further Maths",
               "type": "Exam",
-              "label": "Year 12 Geography Exam - Topic: Rivers",
+              "label": "Year 12 Further Maths Exam - Topic: Topic D",
               "color": "#EF4444"
             },
             {
-              "subject": "Art",
-              "type": "Mock",
-              "label": "Year 12 Art Mock - Topic: Algebra",
-              "color": "#F59E0B"
+              "subject": "Economics",
+              "type": "Exam",
+              "label": "Year 12 Economics Exam - Topic: Topic C",
+              "color": "#EF4444"
+            },
+            {
+              "subject": "Further Maths",
+              "type": "Essay",
+              "label": "Year 12 Further Maths Essay - Topic: Topic A",
+              "color": "#EC4899"
             }
           ]
         },
@@ -3818,16 +3815,16 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "History",
+              "subject": "Sociology",
               "type": "Exam",
-              "label": "Year 12 History Exam - Topic: Algebra",
+              "label": "Year 12 Sociology Exam - Topic: Topic A",
               "color": "#EF4444"
             },
             {
-              "subject": "Art",
-              "type": "Quiz",
-              "label": "Year 12 Art Quiz - Topic: WWII",
-              "color": "#10B981"
+              "subject": "Further Maths",
+              "type": "Presentation",
+              "label": "Year 12 Further Maths Presentation - Topic: Topic C",
+              "color": "#6366F1"
             }
           ]
         },
@@ -3855,22 +3852,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "English",
-              "type": "Mock",
-              "label": "Year 12 English Mock - Topic: Poetry",
-              "color": "#F59E0B"
+              "subject": "Sociology",
+              "type": "Exam",
+              "label": "Year 12 Sociology Exam - Topic: Topic B",
+              "color": "#EF4444"
             },
             {
-              "subject": "English",
-              "type": "Quiz",
-              "label": "Year 12 English Quiz - Topic: WWII",
-              "color": "#10B981"
+              "subject": "Sociology",
+              "type": "Presentation",
+              "label": "Year 12 Sociology Presentation - Topic: Topic C",
+              "color": "#6366F1"
             },
             {
-              "subject": "History",
-              "type": "Mock",
-              "label": "Year 12 History Mock - Topic: Cells",
-              "color": "#F59E0B"
+              "subject": "Economics",
+              "type": "Exam",
+              "label": "Year 12 Economics Exam - Topic: Topic B",
+              "color": "#EF4444"
             }
           ]
         },
@@ -3880,22 +3877,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "English",
-              "type": "Quiz",
-              "label": "Year 12 English Quiz - Topic: Rivers",
-              "color": "#10B981"
+              "subject": "Sociology",
+              "type": "Presentation",
+              "label": "Year 12 Sociology Presentation - Topic: Topic D",
+              "color": "#6366F1"
             },
             {
-              "subject": "Geography",
-              "type": "Coursework",
-              "label": "Year 12 Geography Coursework - Topic: Cells",
-              "color": "#3B82F6"
+              "subject": "Economics",
+              "type": "Essay",
+              "label": "Year 12 Economics Essay - Topic: Topic B",
+              "color": "#EC4899"
             },
             {
-              "subject": "History",
-              "type": "Coursework",
-              "label": "Year 12 History Coursework - Topic: Rivers",
-              "color": "#3B82F6"
+              "subject": "Economics",
+              "type": "Essay",
+              "label": "Year 12 Economics Essay - Topic: Topic C",
+              "color": "#EC4899"
             }
           ]
         },
@@ -3905,21 +3902,21 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Computer Science",
-              "type": "Quiz",
-              "label": "Year 12 Computer Science Quiz - Topic: Poetry",
-              "color": "#10B981"
+              "subject": "Further Maths",
+              "type": "Presentation",
+              "label": "Year 12 Further Maths Presentation - Topic: Topic A",
+              "color": "#6366F1"
             },
             {
-              "subject": "Art",
-              "type": "Coursework",
-              "label": "Year 12 Art Coursework - Topic: Rivers",
-              "color": "#3B82F6"
+              "subject": "Further Maths",
+              "type": "Essay",
+              "label": "Year 12 Further Maths Essay - Topic: Topic C",
+              "color": "#EC4899"
             },
             {
-              "subject": "Computer Science",
+              "subject": "Further Maths",
               "type": "Exam",
-              "label": "Year 12 Computer Science Exam - Topic: Cells",
+              "label": "Year 12 Further Maths Exam - Topic: Topic B",
               "color": "#EF4444"
             }
           ]
@@ -3930,10 +3927,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Computer Science",
-              "type": "Quiz",
-              "label": "Year 12 Computer Science Quiz - Topic: Poetry",
-              "color": "#10B981"
+              "subject": "Further Maths",
+              "type": "Presentation",
+              "label": "Year 12 Further Maths Presentation - Topic: Topic B",
+              "color": "#6366F1"
             }
           ]
         },
@@ -3961,16 +3958,16 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Computer Science",
-              "type": "Mock",
-              "label": "Year 12 Computer Science Mock - Topic: Algebra",
-              "color": "#F59E0B"
+              "subject": "Further Maths",
+              "type": "Essay",
+              "label": "Year 12 Further Maths Essay - Topic: Topic A",
+              "color": "#EC4899"
             },
             {
-              "subject": "History",
-              "type": "Coursework",
-              "label": "Year 12 History Coursework - Topic: Cells",
-              "color": "#3B82F6"
+              "subject": "Sociology",
+              "type": "Essay",
+              "label": "Year 12 Sociology Essay - Topic: Topic B",
+              "color": "#EC4899"
             }
           ]
         },
@@ -3986,10 +3983,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "English",
-              "type": "Quiz",
-              "label": "Year 12 English Quiz - Topic: Coding",
-              "color": "#10B981"
+              "subject": "Psychology",
+              "type": "Presentation",
+              "label": "Year 12 Psychology Presentation - Topic: Topic D",
+              "color": "#6366F1"
             }
           ]
         },
@@ -3999,16 +3996,16 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "English",
-              "type": "Quiz",
-              "label": "Year 12 English Quiz - Topic: Rivers",
-              "color": "#10B981"
+              "subject": "Psychology",
+              "type": "Presentation",
+              "label": "Year 12 Psychology Presentation - Topic: Topic C",
+              "color": "#6366F1"
             },
             {
-              "subject": "Science",
-              "type": "Coursework",
-              "label": "Year 12 Science Coursework - Topic: Poetry",
-              "color": "#3B82F6"
+              "subject": "Sociology",
+              "type": "Presentation",
+              "label": "Year 12 Sociology Presentation - Topic: Topic B",
+              "color": "#6366F1"
             }
           ]
         },
@@ -4036,22 +4033,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Science",
-              "type": "Quiz",
-              "label": "Year 12 Science Quiz - Topic: Algebra",
-              "color": "#10B981"
+              "subject": "Sociology",
+              "type": "Presentation",
+              "label": "Year 12 Sociology Presentation - Topic: Topic A",
+              "color": "#6366F1"
             },
             {
-              "subject": "Science",
-              "type": "Mock",
-              "label": "Year 12 Science Mock - Topic: Poetry",
-              "color": "#F59E0B"
+              "subject": "Sociology",
+              "type": "Exam",
+              "label": "Year 12 Sociology Exam - Topic: Topic A",
+              "color": "#EF4444"
             },
             {
-              "subject": "Geography",
-              "type": "Coursework",
-              "label": "Year 12 Geography Coursework - Topic: Poetry",
-              "color": "#3B82F6"
+              "subject": "Economics",
+              "type": "Essay",
+              "label": "Year 12 Economics Essay - Topic: Topic B",
+              "color": "#EC4899"
             }
           ]
         },
@@ -4067,10 +4064,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Maths",
-              "type": "Coursework",
-              "label": "Year 12 Maths Coursework - Topic: Rivers",
-              "color": "#3B82F6"
+              "subject": "Psychology",
+              "type": "Essay",
+              "label": "Year 12 Psychology Essay - Topic: Topic C",
+              "color": "#EC4899"
             }
           ]
         },
@@ -4086,10 +4083,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Maths",
-              "type": "Quiz",
-              "label": "Year 12 Maths Quiz - Topic: Cells",
-              "color": "#10B981"
+              "subject": "Psychology",
+              "type": "Presentation",
+              "label": "Year 12 Psychology Presentation - Topic: Topic B",
+              "color": "#6366F1"
             }
           ]
         },
@@ -4111,22 +4108,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
-              "type": "Mock",
-              "label": "Year 12 Geography Mock - Topic: Algebra",
-              "color": "#F59E0B"
+              "subject": "Economics",
+              "type": "Essay",
+              "label": "Year 12 Economics Essay - Topic: Topic A",
+              "color": "#EC4899"
             },
             {
-              "subject": "Art",
-              "type": "Quiz",
-              "label": "Year 12 Art Quiz - Topic: Poetry",
-              "color": "#10B981"
+              "subject": "Economics",
+              "type": "Presentation",
+              "label": "Year 12 Economics Presentation - Topic: Topic A",
+              "color": "#6366F1"
             },
             {
-              "subject": "Geography",
-              "type": "Coursework",
-              "label": "Year 12 Geography Coursework - Topic: Rivers",
-              "color": "#3B82F6"
+              "subject": "Economics",
+              "type": "Presentation",
+              "label": "Year 12 Economics Presentation - Topic: Topic C",
+              "color": "#6366F1"
             }
           ]
         },
@@ -4136,9 +4133,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
+              "subject": "Economics",
               "type": "Exam",
-              "label": "Year 12 Geography Exam - Topic: Poetry",
+              "label": "Year 12 Economics Exam - Topic: Topic A",
               "color": "#EF4444"
             }
           ]
@@ -4149,22 +4146,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Computer Science",
+              "subject": "Further Maths",
               "type": "Exam",
-              "label": "Year 12 Computer Science Exam - Topic: Poetry",
+              "label": "Year 12 Further Maths Exam - Topic: Topic A",
               "color": "#EF4444"
             },
             {
-              "subject": "History",
-              "type": "Mock",
-              "label": "Year 12 History Mock - Topic: Rivers",
-              "color": "#F59E0B"
+              "subject": "Economics",
+              "type": "Essay",
+              "label": "Year 12 Economics Essay - Topic: Topic D",
+              "color": "#EC4899"
             },
             {
-              "subject": "Maths",
-              "type": "Coursework",
-              "label": "Year 12 Maths Coursework - Topic: Poetry",
-              "color": "#3B82F6"
+              "subject": "Psychology",
+              "type": "Essay",
+              "label": "Year 12 Psychology Essay - Topic: Topic B",
+              "color": "#EC4899"
             }
           ]
         },
@@ -4174,22 +4171,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
+              "subject": "Economics",
               "type": "Exam",
-              "label": "Year 12 Geography Exam - Topic: Poetry",
+              "label": "Year 12 Economics Exam - Topic: Topic B",
               "color": "#EF4444"
             },
             {
-              "subject": "Art",
-              "type": "Coursework",
-              "label": "Year 12 Art Coursework - Topic: Cells",
-              "color": "#3B82F6"
+              "subject": "Economics",
+              "type": "Presentation",
+              "label": "Year 12 Economics Presentation - Topic: Topic B",
+              "color": "#6366F1"
             },
             {
-              "subject": "English",
-              "type": "Mock",
-              "label": "Year 12 English Mock - Topic: Cells",
-              "color": "#F59E0B"
+              "subject": "Psychology",
+              "type": "Essay",
+              "label": "Year 12 Psychology Essay - Topic: Topic B",
+              "color": "#EC4899"
             }
           ]
         },
@@ -4199,16 +4196,16 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "History",
+              "subject": "Economics",
               "type": "Exam",
-              "label": "Year 12 History Exam - Topic: Coding",
+              "label": "Year 12 Economics Exam - Topic: Topic D",
               "color": "#EF4444"
             },
             {
-              "subject": "Art",
-              "type": "Mock",
-              "label": "Year 12 Art Mock - Topic: Rivers",
-              "color": "#F59E0B"
+              "subject": "Further Maths",
+              "type": "Exam",
+              "label": "Year 12 Further Maths Exam - Topic: Topic D",
+              "color": "#EF4444"
             }
           ]
         },
@@ -4230,21 +4227,21 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "History",
+              "subject": "Sociology",
               "type": "Exam",
-              "label": "Year 12 History Exam - Topic: Poetry",
+              "label": "Year 12 Sociology Exam - Topic: Topic B",
               "color": "#EF4444"
             },
             {
-              "subject": "Science",
-              "type": "Mock",
-              "label": "Year 12 Science Mock - Topic: WWII",
-              "color": "#F59E0B"
+              "subject": "Sociology",
+              "type": "Essay",
+              "label": "Year 12 Sociology Essay - Topic: Topic C",
+              "color": "#EC4899"
             },
             {
-              "subject": "Geography",
+              "subject": "Economics",
               "type": "Exam",
-              "label": "Year 12 Geography Exam - Topic: WWII",
+              "label": "Year 12 Economics Exam - Topic: Topic C",
               "color": "#EF4444"
             }
           ]
@@ -4261,22 +4258,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Computer Science",
-              "type": "Quiz",
-              "label": "Year 12 Computer Science Quiz - Topic: Poetry",
-              "color": "#10B981"
+              "subject": "Further Maths",
+              "type": "Presentation",
+              "label": "Year 12 Further Maths Presentation - Topic: Topic A",
+              "color": "#6366F1"
             },
             {
-              "subject": "English",
-              "type": "Coursework",
-              "label": "Year 12 English Coursework - Topic: Cells",
-              "color": "#3B82F6"
+              "subject": "Psychology",
+              "type": "Essay",
+              "label": "Year 12 Psychology Essay - Topic: Topic B",
+              "color": "#EC4899"
             },
             {
-              "subject": "Computer Science",
-              "type": "Mock",
-              "label": "Year 12 Computer Science Mock - Topic: Cells",
-              "color": "#F59E0B"
+              "subject": "Further Maths",
+              "type": "Essay",
+              "label": "Year 12 Further Maths Essay - Topic: Topic B",
+              "color": "#EC4899"
             }
           ]
         },
@@ -4286,16 +4283,16 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Computer Science",
-              "type": "Quiz",
-              "label": "Year 12 Computer Science Quiz - Topic: WWII",
-              "color": "#10B981"
+              "subject": "Further Maths",
+              "type": "Presentation",
+              "label": "Year 12 Further Maths Presentation - Topic: Topic C",
+              "color": "#6366F1"
             },
             {
-              "subject": "Computer Science",
-              "type": "Quiz",
-              "label": "Year 12 Computer Science Quiz - Topic: Cells",
-              "color": "#10B981"
+              "subject": "Further Maths",
+              "type": "Presentation",
+              "label": "Year 12 Further Maths Presentation - Topic: Topic B",
+              "color": "#6366F1"
             }
           ]
         },
@@ -4305,22 +4302,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
-              "type": "Mock",
-              "label": "Year 12 Art Mock - Topic: Cells",
-              "color": "#F59E0B"
+              "subject": "Further Maths",
+              "type": "Essay",
+              "label": "Year 12 Further Maths Essay - Topic: Topic B",
+              "color": "#EC4899"
             },
             {
-              "subject": "Computer Science",
-              "type": "Quiz",
-              "label": "Year 12 Computer Science Quiz - Topic: Poetry",
-              "color": "#10B981"
+              "subject": "Further Maths",
+              "type": "Presentation",
+              "label": "Year 12 Further Maths Presentation - Topic: Topic B",
+              "color": "#6366F1"
             },
             {
-              "subject": "Maths",
-              "type": "Quiz",
-              "label": "Year 12 Maths Quiz - Topic: Cells",
-              "color": "#10B981"
+              "subject": "Psychology",
+              "type": "Presentation",
+              "label": "Year 12 Psychology Presentation - Topic: Topic B",
+              "color": "#6366F1"
             }
           ]
         },
@@ -4342,9 +4339,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "English",
+              "subject": "Psychology",
               "type": "Exam",
-              "label": "Year 12 English Exam - Topic: WWII",
+              "label": "Year 12 Psychology Exam - Topic: Topic C",
               "color": "#EF4444"
             }
           ]
@@ -4355,10 +4352,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Science",
-              "type": "Mock",
-              "label": "Year 12 Science Mock - Topic: Rivers",
-              "color": "#F59E0B"
+              "subject": "Sociology",
+              "type": "Essay",
+              "label": "Year 12 Sociology Essay - Topic: Topic D",
+              "color": "#EC4899"
             }
           ]
         },
@@ -4368,16 +4365,16 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "English",
-              "type": "Mock",
-              "label": "Year 12 English Mock - Topic: WWII",
-              "color": "#F59E0B"
+              "subject": "Psychology",
+              "type": "Exam",
+              "label": "Year 12 Psychology Exam - Topic: Topic C",
+              "color": "#EF4444"
             },
             {
-              "subject": "Art",
-              "type": "Mock",
-              "label": "Year 12 Art Mock - Topic: Coding",
-              "color": "#F59E0B"
+              "subject": "Further Maths",
+              "type": "Essay",
+              "label": "Year 12 Further Maths Essay - Topic: Topic D",
+              "color": "#EC4899"
             }
           ]
         },
@@ -4411,10 +4408,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
-              "type": "Mock",
-              "label": "Year 12 Art Mock - Topic: Cells",
-              "color": "#F59E0B"
+              "subject": "Further Maths",
+              "type": "Exam",
+              "label": "Year 12 Further Maths Exam - Topic: Topic B",
+              "color": "#EF4444"
             }
           ]
         },
@@ -4424,16 +4421,16 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
+              "subject": "Further Maths",
               "type": "Exam",
-              "label": "Year 12 Art Exam - Topic: Algebra",
+              "label": "Year 12 Further Maths Exam - Topic: Topic A",
               "color": "#EF4444"
             },
             {
-              "subject": "Maths",
-              "type": "Mock",
-              "label": "Year 12 Maths Mock - Topic: Poetry",
-              "color": "#F59E0B"
+              "subject": "Psychology",
+              "type": "Essay",
+              "label": "Year 12 Psychology Essay - Topic: Topic B",
+              "color": "#EC4899"
             }
           ]
         },
@@ -4443,16 +4440,16 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "English",
-              "type": "Mock",
-              "label": "Year 12 English Mock - Topic: Algebra",
-              "color": "#F59E0B"
+              "subject": "Psychology",
+              "type": "Essay",
+              "label": "Year 12 Psychology Essay - Topic: Topic A",
+              "color": "#EC4899"
             },
             {
-              "subject": "History",
-              "type": "Mock",
-              "label": "Year 12 History Mock - Topic: Algebra",
-              "color": "#F59E0B"
+              "subject": "Sociology",
+              "type": "Essay",
+              "label": "Year 12 Sociology Essay - Topic: Topic A",
+              "color": "#EC4899"
             }
           ]
         },
@@ -4462,15 +4459,15 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
-              "type": "Coursework",
-              "label": "Year 12 Art Coursework - Topic: Cells",
-              "color": "#3B82F6"
+              "subject": "Further Maths",
+              "type": "Essay",
+              "label": "Year 12 Further Maths Essay - Topic: Topic B",
+              "color": "#EC4899"
             },
             {
-              "subject": "Computer Science",
+              "subject": "Further Maths",
               "type": "Exam",
-              "label": "Year 12 Computer Science Exam - Topic: Poetry",
+              "label": "Year 12 Further Maths Exam - Topic: Topic A",
               "color": "#EF4444"
             }
           ]
@@ -4481,10 +4478,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "English",
-              "type": "Coursework",
-              "label": "Year 12 English Coursework - Topic: Algebra",
-              "color": "#3B82F6"
+              "subject": "Psychology",
+              "type": "Essay",
+              "label": "Year 12 Psychology Essay - Topic: Topic A",
+              "color": "#EC4899"
             }
           ]
         },
@@ -4506,22 +4503,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Science",
-              "type": "Coursework",
-              "label": "Year 12 Science Coursework - Topic: Rivers",
-              "color": "#3B82F6"
+              "subject": "Sociology",
+              "type": "Presentation",
+              "label": "Year 12 Sociology Presentation - Topic: Topic D",
+              "color": "#6366F1"
             },
             {
-              "subject": "Science",
-              "type": "Mock",
-              "label": "Year 12 Science Mock - Topic: Rivers",
-              "color": "#F59E0B"
+              "subject": "Sociology",
+              "type": "Essay",
+              "label": "Year 12 Sociology Essay - Topic: Topic C",
+              "color": "#EC4899"
             },
             {
-              "subject": "Computer Science",
-              "type": "Coursework",
-              "label": "Year 12 Computer Science Coursework - Topic: Algebra",
-              "color": "#3B82F6"
+              "subject": "Further Maths",
+              "type": "Presentation",
+              "label": "Year 12 Further Maths Presentation - Topic: Topic A",
+              "color": "#6366F1"
             }
           ]
         },
@@ -4531,22 +4528,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
-              "type": "Coursework",
-              "label": "Year 12 Geography Coursework - Topic: Cells",
-              "color": "#3B82F6"
+              "subject": "Economics",
+              "type": "Essay",
+              "label": "Year 12 Economics Essay - Topic: Topic B",
+              "color": "#EC4899"
             },
             {
-              "subject": "Computer Science",
-              "type": "Coursework",
-              "label": "Year 12 Computer Science Coursework - Topic: Poetry",
-              "color": "#3B82F6"
+              "subject": "Further Maths",
+              "type": "Presentation",
+              "label": "Year 12 Further Maths Presentation - Topic: Topic A",
+              "color": "#6366F1"
             },
             {
-              "subject": "History",
-              "type": "Quiz",
-              "label": "Year 12 History Quiz - Topic: Cells",
-              "color": "#10B981"
+              "subject": "Economics",
+              "type": "Presentation",
+              "label": "Year 12 Economics Presentation - Topic: Topic B",
+              "color": "#6366F1"
             }
           ]
         },
@@ -4556,22 +4553,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
-              "type": "Mock",
-              "label": "Year 12 Art Mock - Topic: Cells",
-              "color": "#F59E0B"
+              "subject": "Further Maths",
+              "type": "Essay",
+              "label": "Year 12 Further Maths Essay - Topic: Topic B",
+              "color": "#EC4899"
             },
             {
-              "subject": "Geography",
-              "type": "Coursework",
-              "label": "Year 12 Geography Coursework - Topic: Rivers",
-              "color": "#3B82F6"
+              "subject": "Economics",
+              "type": "Essay",
+              "label": "Year 12 Economics Essay - Topic: Topic D",
+              "color": "#EC4899"
             },
             {
-              "subject": "Maths",
-              "type": "Coursework",
-              "label": "Year 12 Maths Coursework - Topic: Cells",
-              "color": "#3B82F6"
+              "subject": "Psychology",
+              "type": "Presentation",
+              "label": "Year 12 Psychology Presentation - Topic: Topic B",
+              "color": "#6366F1"
             }
           ]
         },
@@ -4587,10 +4584,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
-              "type": "Coursework",
-              "label": "Year 12 Art Coursework - Topic: Coding",
-              "color": "#3B82F6"
+              "subject": "Further Maths",
+              "type": "Essay",
+              "label": "Year 12 Further Maths Essay - Topic: Topic D",
+              "color": "#EC4899"
             }
           ]
         },
@@ -4654,22 +4651,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Maths",
-              "type": "Quiz",
-              "label": "Year 12 Maths Quiz - Topic: WWII",
-              "color": "#10B981"
+              "subject": "Psychology",
+              "type": "Presentation",
+              "label": "Year 12 Psychology Presentation - Topic: Topic C",
+              "color": "#6366F1"
             },
             {
-              "subject": "Geography",
-              "type": "Mock",
-              "label": "Year 12 Geography Mock - Topic: Rivers",
-              "color": "#F59E0B"
+              "subject": "Economics",
+              "type": "Exam",
+              "label": "Year 12 Economics Exam - Topic: Topic D",
+              "color": "#EF4444"
             },
             {
-              "subject": "Geography",
-              "type": "Coursework",
-              "label": "Year 12 Geography Coursework - Topic: Rivers",
-              "color": "#3B82F6"
+              "subject": "Economics",
+              "type": "Presentation",
+              "label": "Year 12 Economics Presentation - Topic: Topic C",
+              "color": "#6366F1"
             }
           ]
         },
@@ -4679,10 +4676,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Science",
-              "type": "Mock",
-              "label": "Year 12 Science Mock - Topic: Cells",
-              "color": "#F59E0B"
+              "subject": "Sociology",
+              "type": "Exam",
+              "label": "Year 12 Sociology Exam - Topic: Topic B",
+              "color": "#EF4444"
             }
           ]
         },
@@ -4692,16 +4689,16 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "English",
-              "type": "Quiz",
-              "label": "Year 12 English Quiz - Topic: Cells",
-              "color": "#10B981"
+              "subject": "Psychology",
+              "type": "Presentation",
+              "label": "Year 12 Psychology Presentation - Topic: Topic B",
+              "color": "#6366F1"
             },
             {
-              "subject": "Maths",
-              "type": "Coursework",
-              "label": "Year 12 Maths Coursework - Topic: Rivers",
-              "color": "#3B82F6"
+              "subject": "Psychology",
+              "type": "Essay",
+              "label": "Year 12 Psychology Essay - Topic: Topic D",
+              "color": "#EC4899"
             }
           ]
         },
@@ -4711,10 +4708,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Science",
-              "type": "Mock",
-              "label": "Year 12 Science Mock - Topic: Rivers",
-              "color": "#F59E0B"
+              "subject": "Sociology",
+              "type": "Essay",
+              "label": "Year 12 Sociology Essay - Topic: Topic C",
+              "color": "#EC4899"
             }
           ]
         },
@@ -4724,9 +4721,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Science",
+              "subject": "Sociology",
               "type": "Exam",
-              "label": "Year 12 Science Exam - Topic: Cells",
+              "label": "Year 12 Sociology Exam - Topic: Topic B",
               "color": "#EF4444"
             }
           ]
@@ -4755,22 +4752,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Science",
-              "type": "Coursework",
-              "label": "Year 12 Science Coursework - Topic: Algebra",
-              "color": "#3B82F6"
+              "subject": "Sociology",
+              "type": "Essay",
+              "label": "Year 12 Sociology Essay - Topic: Topic A",
+              "color": "#EC4899"
             },
             {
-              "subject": "Geography",
-              "type": "Quiz",
-              "label": "Year 12 Geography Quiz - Topic: Coding",
-              "color": "#10B981"
+              "subject": "Economics",
+              "type": "Presentation",
+              "label": "Year 12 Economics Presentation - Topic: Topic D",
+              "color": "#6366F1"
             },
             {
-              "subject": "Maths",
-              "type": "Quiz",
-              "label": "Year 12 Maths Quiz - Topic: Coding",
-              "color": "#10B981"
+              "subject": "Psychology",
+              "type": "Presentation",
+              "label": "Year 12 Psychology Presentation - Topic: Topic D",
+              "color": "#6366F1"
             }
           ]
         },
@@ -4780,22 +4777,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Maths",
+              "subject": "Psychology",
               "type": "Exam",
-              "label": "Year 12 Maths Exam - Topic: Rivers",
+              "label": "Year 12 Psychology Exam - Topic: Topic C",
               "color": "#EF4444"
             },
             {
-              "subject": "History",
-              "type": "Quiz",
-              "label": "Year 12 History Quiz - Topic: Poetry",
-              "color": "#10B981"
+              "subject": "Sociology",
+              "type": "Presentation",
+              "label": "Year 12 Sociology Presentation - Topic: Topic B",
+              "color": "#6366F1"
             },
             {
-              "subject": "Art",
-              "type": "Mock",
-              "label": "Year 12 Art Mock - Topic: Poetry",
-              "color": "#F59E0B"
+              "subject": "Further Maths",
+              "type": "Exam",
+              "label": "Year 12 Further Maths Exam - Topic: Topic B",
+              "color": "#EF4444"
             }
           ]
         },
@@ -4805,16 +4802,16 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "English",
-              "type": "Coursework",
-              "label": "Year 12 English Coursework - Topic: Poetry",
-              "color": "#3B82F6"
+              "subject": "Psychology",
+              "type": "Essay",
+              "label": "Year 12 Psychology Essay - Topic: Topic B",
+              "color": "#EC4899"
             },
             {
-              "subject": "History",
-              "type": "Quiz",
-              "label": "Year 12 History Quiz - Topic: Algebra",
-              "color": "#10B981"
+              "subject": "Sociology",
+              "type": "Presentation",
+              "label": "Year 12 Sociology Presentation - Topic: Topic A",
+              "color": "#6366F1"
             }
           ]
         },
@@ -4824,22 +4821,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Science",
+              "subject": "Sociology",
               "type": "Exam",
-              "label": "Year 12 Science Exam - Topic: WWII",
+              "label": "Year 12 Sociology Exam - Topic: Topic C",
               "color": "#EF4444"
             },
             {
-              "subject": "History",
-              "type": "Mock",
-              "label": "Year 12 History Mock - Topic: Coding",
-              "color": "#F59E0B"
+              "subject": "Sociology",
+              "type": "Essay",
+              "label": "Year 12 Sociology Essay - Topic: Topic D",
+              "color": "#EC4899"
             },
             {
-              "subject": "Maths",
-              "type": "Coursework",
-              "label": "Year 12 Maths Coursework - Topic: WWII",
-              "color": "#3B82F6"
+              "subject": "Psychology",
+              "type": "Presentation",
+              "label": "Year 12 Psychology Presentation - Topic: Topic C",
+              "color": "#6366F1"
             }
           ]
         },
@@ -4861,9 +4858,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Maths",
+              "subject": "Psychology",
               "type": "Exam",
-              "label": "Year 12 Maths Exam - Topic: WWII",
+              "label": "Year 12 Psychology Exam - Topic: Topic C",
               "color": "#EF4444"
             }
           ]
@@ -4874,16 +4871,16 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Science",
-              "type": "Coursework",
-              "label": "Year 12 Science Coursework - Topic: Poetry",
-              "color": "#3B82F6"
+              "subject": "Sociology",
+              "type": "Essay",
+              "label": "Year 12 Sociology Essay - Topic: Topic B",
+              "color": "#EC4899"
             },
             {
-              "subject": "Science",
-              "type": "Quiz",
-              "label": "Year 12 Science Quiz - Topic: Rivers",
-              "color": "#10B981"
+              "subject": "Sociology",
+              "type": "Presentation",
+              "label": "Year 12 Sociology Presentation - Topic: Topic D",
+              "color": "#6366F1"
             }
           ]
         },
@@ -4899,16 +4896,16 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
-              "type": "Coursework",
-              "label": "Year 12 Art Coursework - Topic: Coding",
-              "color": "#3B82F6"
+              "subject": "Economics",
+              "type": "Presentation",
+              "label": "Year 12 Economics Presentation - Topic: Topic D",
+              "color": "#6366F1"
             },
             {
-              "subject": "Science",
-              "type": "Quiz",
-              "label": "Year 12 Science Quiz - Topic: WWII",
-              "color": "#10B981"
+              "subject": "Sociology",
+              "type": "Presentation",
+              "label": "Year 12 Sociology Presentation - Topic: Topic C",
+              "color": "#6366F1"
             }
           ]
         },
@@ -4918,9 +4915,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
+              "subject": "Economics",
               "type": "Exam",
-              "label": "Year 12 Geography Exam - Topic: Coding",
+              "label": "Year 12 Economics Exam - Topic: Topic D",
               "color": "#EF4444"
             }
           ]
@@ -4943,10 +4940,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Science",
-              "type": "Coursework",
-              "label": "Year 12 Science Coursework - Topic: WWII",
-              "color": "#3B82F6"
+              "subject": "Sociology",
+              "type": "Essay",
+              "label": "Year 12 Sociology Essay - Topic: Topic C",
+              "color": "#EC4899"
             }
           ]
         },
@@ -4956,22 +4953,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Computer Science",
+              "subject": "Further Maths",
               "type": "Exam",
-              "label": "Year 12 Computer Science Exam - Topic: Coding",
+              "label": "Year 12 Further Maths Exam - Topic: Topic D",
               "color": "#EF4444"
             },
             {
-              "subject": "Art",
-              "type": "Coursework",
-              "label": "Year 12 Art Coursework - Topic: WWII",
-              "color": "#3B82F6"
+              "subject": "Further Maths",
+              "type": "Presentation",
+              "label": "Year 12 Further Maths Presentation - Topic: Topic C",
+              "color": "#6366F1"
             },
             {
-              "subject": "English",
-              "type": "Mock",
-              "label": "Year 12 English Mock - Topic: Poetry",
-              "color": "#F59E0B"
+              "subject": "Psychology",
+              "type": "Essay",
+              "label": "Year 12 Psychology Essay - Topic: Topic B",
+              "color": "#EC4899"
             }
           ]
         },
@@ -4981,9 +4978,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Maths",
+              "subject": "Psychology",
               "type": "Exam",
-              "label": "Year 12 Maths Exam - Topic: Cells",
+              "label": "Year 12 Psychology Exam - Topic: Topic B",
               "color": "#EF4444"
             }
           ]
@@ -4994,16 +4991,16 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "English",
-              "type": "Quiz",
-              "label": "Year 12 English Quiz - Topic: Algebra",
-              "color": "#10B981"
+              "subject": "Psychology",
+              "type": "Presentation",
+              "label": "Year 12 Psychology Presentation - Topic: Topic A",
+              "color": "#6366F1"
             },
             {
-              "subject": "English",
-              "type": "Coursework",
-              "label": "Year 12 English Coursework - Topic: WWII",
-              "color": "#3B82F6"
+              "subject": "Sociology",
+              "type": "Essay",
+              "label": "Year 12 Sociology Essay - Topic: Topic C",
+              "color": "#EC4899"
             }
           ]
         },
@@ -5013,15 +5010,15 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Science",
-              "type": "Mock",
-              "label": "Year 12 Science Mock - Topic: Coding",
-              "color": "#F59E0B"
+              "subject": "Sociology",
+              "type": "Essay",
+              "label": "Year 12 Sociology Essay - Topic: Topic D",
+              "color": "#EC4899"
             },
             {
-              "subject": "English",
+              "subject": "Sociology",
               "type": "Exam",
-              "label": "Year 12 English Exam - Topic: Poetry",
+              "label": "Year 12 Sociology Exam - Topic: Topic A",
               "color": "#EF4444"
             }
           ]
@@ -5044,16 +5041,16 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
-              "type": "Quiz",
-              "label": "Year 12 Geography Quiz - Topic: Rivers",
-              "color": "#10B981"
+              "subject": "Economics",
+              "type": "Presentation",
+              "label": "Year 12 Economics Presentation - Topic: Topic C",
+              "color": "#6366F1"
             },
             {
-              "subject": "Geography",
-              "type": "Quiz",
-              "label": "Year 12 Geography Quiz - Topic: Algebra",
-              "color": "#10B981"
+              "subject": "Economics",
+              "type": "Presentation",
+              "label": "Year 12 Economics Presentation - Topic: Topic A",
+              "color": "#6366F1"
             }
           ]
         },
@@ -5063,10 +5060,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
-              "type": "Mock",
-              "label": "Year 12 Art Mock - Topic: Rivers",
-              "color": "#F59E0B"
+              "subject": "Further Maths",
+              "type": "Essay",
+              "label": "Year 12 Further Maths Essay - Topic: Topic C",
+              "color": "#EC4899"
             }
           ]
         },
@@ -5076,16 +5073,16 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
+              "subject": "Further Maths",
               "type": "Exam",
-              "label": "Year 12 Art Exam - Topic: Cells",
+              "label": "Year 12 Further Maths Exam - Topic: Topic B",
               "color": "#EF4444"
             },
             {
-              "subject": "History",
-              "type": "Coursework",
-              "label": "Year 12 History Coursework - Topic: Rivers",
-              "color": "#3B82F6"
+              "subject": "Sociology",
+              "type": "Presentation",
+              "label": "Year 12 Sociology Presentation - Topic: Topic C",
+              "color": "#6366F1"
             }
           ]
         },
@@ -5101,10 +5098,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Computer Science",
-              "type": "Mock",
-              "label": "Year 12 Computer Science Mock - Topic: Rivers",
-              "color": "#F59E0B"
+              "subject": "Further Maths",
+              "type": "Essay",
+              "label": "Year 12 Further Maths Essay - Topic: Topic C",
+              "color": "#EC4899"
             }
           ]
         },
@@ -5126,9 +5123,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "History",
+              "subject": "Economics",
               "type": "Exam",
-              "label": "Year 12 History Exam - Topic: WWII",
+              "label": "Year 12 Economics Exam - Topic: Topic C",
               "color": "#EF4444"
             }
           ]
@@ -5151,16 +5148,16 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "History",
-              "type": "Mock",
-              "label": "Year 12 History Mock - Topic: Poetry",
-              "color": "#F59E0B"
+              "subject": "Economics",
+              "type": "Essay",
+              "label": "Year 12 Economics Essay - Topic: Topic A",
+              "color": "#EC4899"
             },
             {
-              "subject": "English",
-              "type": "Coursework",
-              "label": "Year 12 English Coursework - Topic: Poetry",
-              "color": "#3B82F6"
+              "subject": "Psychology",
+              "type": "Essay",
+              "label": "Year 12 Psychology Essay - Topic: Topic A",
+              "color": "#EC4899"
             }
           ]
         },
@@ -5170,10 +5167,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "History",
-              "type": "Mock",
-              "label": "Year 12 History Mock - Topic: WWII",
-              "color": "#F59E0B"
+              "subject": "Sociology",
+              "type": "Exam",
+              "label": "Year 12 Sociology Exam - Topic: Topic C",
+              "color": "#EF4444"
             }
           ]
         },
@@ -5201,16 +5198,16 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "History",
+              "subject": "Sociology",
               "type": "Exam",
-              "label": "Year 12 History Exam - Topic: Cells",
+              "label": "Year 12 Sociology Exam - Topic: Topic B",
               "color": "#EF4444"
             },
             {
-              "subject": "English",
-              "type": "Coursework",
-              "label": "Year 12 English Coursework - Topic: Poetry",
-              "color": "#3B82F6"
+              "subject": "Psychology",
+              "type": "Essay",
+              "label": "Year 12 Psychology Essay - Topic: Topic B",
+              "color": "#EC4899"
             }
           ]
         },
@@ -5220,21 +5217,21 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "English",
+              "subject": "Psychology",
               "type": "Exam",
-              "label": "Year 12 English Exam - Topic: Poetry",
+              "label": "Year 12 Psychology Exam - Topic: Topic A",
               "color": "#EF4444"
             },
             {
-              "subject": "Computer Science",
-              "type": "Mock",
-              "label": "Year 12 Computer Science Mock - Topic: Cells",
-              "color": "#F59E0B"
+              "subject": "Further Maths",
+              "type": "Essay",
+              "label": "Year 12 Further Maths Essay - Topic: Topic B",
+              "color": "#EC4899"
             },
             {
-              "subject": "Computer Science",
+              "subject": "Further Maths",
               "type": "Exam",
-              "label": "Year 12 Computer Science Exam - Topic: Cells",
+              "label": "Year 12 Further Maths Exam - Topic: Topic B",
               "color": "#EF4444"
             }
           ]
@@ -5245,10 +5242,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
-              "type": "Quiz",
-              "label": "Year 12 Geography Quiz - Topic: WWII",
-              "color": "#10B981"
+              "subject": "Economics",
+              "type": "Presentation",
+              "label": "Year 12 Economics Presentation - Topic: Topic C",
+              "color": "#6366F1"
             }
           ]
         },
@@ -5258,10 +5255,10 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "English",
-              "type": "Mock",
-              "label": "Year 12 English Mock - Topic: WWII",
-              "color": "#F59E0B"
+              "subject": "Psychology",
+              "type": "Exam",
+              "label": "Year 12 Psychology Exam - Topic: Topic C",
+              "color": "#EF4444"
             }
           ]
         },
@@ -5295,16 +5292,16 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
-              "type": "Quiz",
-              "label": "Year 12 Geography Quiz - Topic: Cells",
-              "color": "#10B981"
+              "subject": "Economics",
+              "type": "Presentation",
+              "label": "Year 12 Economics Presentation - Topic: Topic B",
+              "color": "#6366F1"
             },
             {
-              "subject": "Science",
-              "type": "Quiz",
-              "label": "Year 12 Science Quiz - Topic: Poetry",
-              "color": "#10B981"
+              "subject": "Sociology",
+              "type": "Presentation",
+              "label": "Year 12 Sociology Presentation - Topic: Topic A",
+              "color": "#6366F1"
             }
           ]
         },
@@ -5314,16 +5311,16 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Computer Science",
-              "type": "Mock",
-              "label": "Year 12 Computer Science Mock - Topic: Poetry",
-              "color": "#F59E0B"
+              "subject": "Further Maths",
+              "type": "Essay",
+              "label": "Year 12 Further Maths Essay - Topic: Topic A",
+              "color": "#EC4899"
             },
             {
-              "subject": "Maths",
-              "type": "Coursework",
-              "label": "Year 12 Maths Coursework - Topic: Poetry",
-              "color": "#3B82F6"
+              "subject": "Psychology",
+              "type": "Essay",
+              "label": "Year 12 Psychology Essay - Topic: Topic B",
+              "color": "#EC4899"
             }
           ]
         },
@@ -5333,16 +5330,16 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
+              "subject": "Further Maths",
               "type": "Exam",
-              "label": "Year 12 Art Exam - Topic: WWII",
+              "label": "Year 12 Further Maths Exam - Topic: Topic C",
               "color": "#EF4444"
             },
             {
-              "subject": "English",
-              "type": "Quiz",
-              "label": "Year 12 English Quiz - Topic: Cells",
-              "color": "#10B981"
+              "subject": "Sociology",
+              "type": "Presentation",
+              "label": "Year 12 Sociology Presentation - Topic: Topic B",
+              "color": "#6366F1"
             }
           ]
         },
