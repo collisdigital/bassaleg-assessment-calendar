@@ -1,7 +1,8 @@
 {
-  "generatedAt": "2025-12-21T00:49:27.196Z",
+  "generatedAt": "2025-12-21T10:12:55.441Z",
   "years": {
     "year-10": {
+      "name": "Year 10",
       "filename": "Year 10 Assessment Calendar",
       "sourceUrl": "http://example.com/Year 10",
       "types": {
@@ -1731,6 +1732,7 @@
       ]
     },
     "year-11": {
+      "name": "Year 11",
       "filename": "Year 11 Assessment Calendar",
       "sourceUrl": "http://example.com/Year 11",
       "types": {
@@ -3542,6 +3544,7 @@
       ]
     },
     "year-12": {
+      "name": "Year 12",
       "filename": "Year 12 Assessment Calendar",
       "sourceUrl": "http://example.com/Year 12",
       "types": {
