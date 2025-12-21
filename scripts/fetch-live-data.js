@@ -2,17 +2,9 @@ import ExcelJS from 'exceljs';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { writeTestData } from './generate-test-data.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-
-// Check for --test flag
-if (process.argv.includes('--test')) {
-    console.log("Running in TEST mode. Generating mock data...");
-    writeTestData();
-    process.exit(0);
-}
 
 const OUTPUT_FILE = path.join(__dirname, '../src/data.json');
 const CONFIG_FILE = path.join(__dirname, 'years-config.json');

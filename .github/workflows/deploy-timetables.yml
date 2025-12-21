@@ -32,7 +32,7 @@ jobs:
 
       - name: Generate Data
         run: |
-          node scripts/download-and-parse.js
+          npm run data:fetch
 
       - name: Build App
         run: |

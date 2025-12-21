@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "data:fetch": "node scripts/fetch-live-data.js",
+    "data:generate": "node scripts/generate-test-data.js",
     "lint": "eslint .",
     "test": "vitest",
     "test:coverage": "vitest run --coverage",
