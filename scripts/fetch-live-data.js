@@ -263,22 +263,7 @@ async function parseSheet(filePath) {
     for (const year of yearsConfig) {
         console.log(`\n--- Processing ${year.name} (${year.id}) ---`);
 
-        let sheetUrl = null;
-        if (year.sheetUrlFile) {
-            try {
-                // Config path is relative to repo root, we are in scripts/
-                // e.g. "scripts/year-10-sheet-url.txt"
-                const urlPath = path.join(__dirname, '..', year.sheetUrlFile);
-                if (fs.existsSync(urlPath)) {
-                    sheetUrl = fs.readFileSync(urlPath, 'utf-8').trim();
-                    console.log(`Read URL from ${year.sheetUrlFile}`);
-                } else {
-                    console.warn(`URL file not found: ${urlPath}`);
-                }
-            } catch (e) {
-                console.warn(`Could not read URL file for ${year.id}:`, e);
-            }
-        }
+        const sheetUrl = year.sheetUrl;
 
         if (!sheetUrl) {
             console.warn(`No URL found for ${year.id}. Skipping.`);

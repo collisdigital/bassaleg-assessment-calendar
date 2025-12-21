@@ -41,6 +41,32 @@ A web application designed to visualize assessment timetables for Year 10 and Ye
 
 ## 🏁 Getting Started
 
+The fastest way to start contributing:
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/collisdigital/bassaleg-assessment-calendar?quickstart=1)
+
+This provides:
+
+* A pre-configured VS Code environment (with useful extensions installed)
+* All required dependencies installed
+* Automatic port forwarding for preview
+* Git integration
+
+Once you have successfully launched Codespaces, dependencies will be automatically
+installed. You can start the development server from the VS Code Terminal:
+
+```bash
+npm run dev
+```
+
+You will be prompted to **Open in Browser** to view the locally running site.
+
+See the [Quickstart Guide](http://docs.github.com/en/codespaces/quickstart) for
+more information.
+
+Note: It can take a few minutes to fully launch Codespaces the first time, but
+is faster on subsequent launches as the environment is then cached.
+
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) (v20 or later recommended)
@@ -137,4 +163,4 @@ The workflow:
 
 ## 📄 License
 
-[MIT](https://github.com/collisdigital/bassaleg-assessment-calendar/blob/main/LICENSE)
+[MIT](LICENSE)
