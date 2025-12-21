@@ -14,12 +14,16 @@ export interface DayInfo {
   assessments: Assessment[];
 }
 
-export interface Data {
-  generatedAt: string;
+export interface YearData {
   sourceUrl?: string;
   filename?: string;
   types: Record<string, string>;
   schedule: DayInfo[];
+}
+
+export interface AppData {
+  generatedAt: string;
+  years: Record<string, YearData>;
 }
 
 export interface Filters {

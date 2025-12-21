@@ -1,0 +1,12 @@
+[
+  {
+    "id": "year-10",
+    "name": "Year 10",
+    "sheetUrlFile": "scripts/year-10-sheet-url.txt"
+  },
+  {
+    "id": "year-11",
+    "name": "Year 11",
+    "sheetUrlFile": "scripts/year-11-sheet-url.txt"
+  }
+]

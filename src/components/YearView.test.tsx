@@ -1,15 +1,18 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import App from '../App';
+import { MemoryRouter, Routes, Route } from 'react-router-dom';
+import { YearView } from './YearView';
 import * as useDataHook from '../hooks/useData';
-import { createMockDay, createMockAssessment } from './test-utils';
+import { createMockDay, createMockAssessment } from '../test/test-utils';
 
 // Mock scrollIntoView
 const mockScrollIntoView = vi.fn();
 Element.prototype.scrollIntoView = mockScrollIntoView;
 
-describe('App', () => {
+describe('YearView', () => {
   // Mock useData hook
   const mockUseData = vi.spyOn(useDataHook, 'useData');
 
@@ -26,13 +29,14 @@ describe('App', () => {
       typeColors: { 'Exam': '#FF0000', 'Mock': '#00FF00' },
       filename: 'Test Calendar',
       sourceUrl: 'http://test.com',
-      generatedAt: '2024-02-13T12:00:00Z' // Yesterday relative to 2024-02-14
+      generatedAt: '2024-02-13T12:00:00Z', // Yesterday relative to 2024-02-14
+      yearData: { types: {}, schedule: [] } // Required for the check in YearView
   };
 
   const originalInnerWidth = window.innerWidth;
 
   beforeEach(() => {
-    mockUseData.mockReturnValue(defaultMockData);
+    mockUseData.mockReturnValue(defaultMockData as any);
     mockScrollIntoView.mockClear();
     vi.clearAllMocks();
 
@@ -49,21 +53,29 @@ describe('App', () => {
       window.innerWidth = originalInnerWidth;
   });
 
+  const renderYearView = () => render(
+      <MemoryRouter initialEntries={['/year-10']}>
+          <Routes>
+              <Route path="/:yearId" element={<YearView />} />
+          </Routes>
+      </MemoryRouter>
+  );
+
   it('renders with correct title', () => {
-    render(<App />);
+    renderYearView();
     expect(screen.getByRole('heading', { name: 'Test Calendar' })).toBeInTheDocument();
     expect(screen.getByText('2025-2026 Academic Year')).toBeInTheDocument();
   });
 
   it('renders last updated text in footer', () => {
-    render(<App />);
+    renderYearView();
     // Since generatedAt is yesterday relative to system time
     expect(screen.getByText('(last updated yesterday)', { exact: false })).toBeInTheDocument();
   });
 
   it('switches between Timeline and Calendar views', async () => {
     const user = userEvent.setup();
-    render(<App />);
+    renderYearView();
 
     const select = screen.getByRole('combobox');
     expect(select).toHaveValue('month-5day');
@@ -80,9 +92,9 @@ describe('App', () => {
       mockUseData.mockReturnValue({
           ...defaultMockData,
           selectedSubjects: ['Maths'],
-      });
+      } as any);
 
-      render(<App />);
+      renderYearView();
 
       expect(screen.getByText('Filters Active')).toBeInTheDocument();
   });
@@ -94,15 +106,15 @@ describe('App', () => {
       mockUseData.mockReturnValue({
           ...defaultMockData,
           selectedSubjects: ['Maths'],
-      });
-      render(<App />);
+      } as any);
+      renderYearView();
 
       expect(screen.queryByText('Filters Active')).not.toBeInTheDocument();
   });
 
   it('opens mobile menu', async () => {
       const user = userEvent.setup();
-      render(<App />);
+      renderYearView();
 
       const menuBtn = screen.getByRole('button', { name: /Open main menu/i });
       await user.click(menuBtn);
@@ -112,7 +124,7 @@ describe('App', () => {
 
   it('handles assessment click to open modal', async () => {
       const user = userEvent.setup();
-      render(<App />);
+      renderYearView();
 
       const assessmentText = screen.getByText('Maths:', { exact: false });
       const btn = assessmentText.closest('button');

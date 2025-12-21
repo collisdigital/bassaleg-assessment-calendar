@@ -2,6 +2,7 @@ import { describe, it, expect, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { FilterBar } from './FilterBar';
+import { YearData } from '../types';
 
 describe('FilterBar', () => {
   const mockProps = {
@@ -15,7 +16,8 @@ describe('FilterBar', () => {
     schedule: [],
     filename: '',
     sourceUrl: '',
-    generatedAt: '2023-01-01T00:00:00.000Z'
+    generatedAt: '2023-01-01T00:00:00.000Z',
+    yearData: { types: {}, schedule: [] } as unknown as YearData
   };
 
   it('renders all filter options', () => {

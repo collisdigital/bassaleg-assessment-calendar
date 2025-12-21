@@ -1,22 +1,27 @@
 {
-  "filename": "E2E Test Calendar",
-  "sourceUrl": "http://localhost/test",
-  "types": {
-    "FF0000": "Exam",
-    "00FF00": "Coursework"
-  },
-  "schedule": [
-    {
-      "date": "2025-09-01",
-      "isSchoolDay": true,
-      "assessments": [
+  "generatedAt": "2025-01-01T00:00:00Z",
+  "years": {
+    "year-10": {
+      "filename": "E2E Test Calendar",
+      "sourceUrl": "http://localhost/test",
+      "types": {
+        "FF0000": "Exam",
+        "00FF00": "Coursework"
+      },
+      "schedule": [
         {
-          "subject": "E2E Subject",
-          "type": "Exam",
-          "label": "Test Exam",
-          "color": "FF0000"
+          "date": "2025-09-01",
+          "isSchoolDay": true,
+          "assessments": [
+            {
+              "subject": "E2E Subject",
+              "type": "Exam",
+              "label": "Test Exam",
+              "color": "FF0000"
+            }
+          ]
         }
       ]
     }
-  ]
+  }
 }
