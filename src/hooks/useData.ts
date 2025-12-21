@@ -3,10 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import rawData from '../data.json';
 import { AppData, YearData } from '../types';
 
-// Allow injection of data via window object for E2E testing
-const appData = (typeof window !== 'undefined' && window.APP_DATA)
-  ? window.APP_DATA as AppData
-  : (rawData as unknown as AppData);
+const appData = rawData as unknown as AppData;
 
 function createSlug(str: string): string {
   return str.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');

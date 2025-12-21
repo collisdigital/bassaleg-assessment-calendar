@@ -16,8 +16,18 @@ const TYPES = {
 };
 const TYPE_KEYS = Object.keys(TYPES);
 
+// Seeded Random Number Generator
+let seed = 123456;
+function seededRandom() {
+    const a = 1664525;
+    const c = 1013904223;
+    const m = 4294967296; // 2^32
+    seed = (a * seed + c) % m;
+    return seed / m;
+}
+
 function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+    return Math.floor(seededRandom() * (max - min + 1)) + min;
 }
 
 function getRandomItem(arr) {
@@ -25,10 +35,14 @@ function getRandomItem(arr) {
 }
 
 function generateYearData(yearName) {
-    const startDate = new Date();
-    // Start from the beginning of the current week to align nicely
+    // Fixed start date: Monday, Sept 1st 2025
+    const startDate = new Date('2025-09-01T12:00:00Z');
+
+    // Ensure it's a Monday (Sept 1 2025 is a Monday)
     const dayOfWeek = startDate.getDay();
-    startDate.setDate(startDate.getDate() - dayOfWeek + 1); // Monday
+    if (dayOfWeek !== 1) {
+         // Adjust if needed, but 2025-09-01 is Monday.
+    }
 
     const schedule = [];
     const numWeeks = 20; // Approx 5 months
@@ -48,7 +62,6 @@ function generateYearData(yearName) {
         const isInsetWeek = weekIndex === insetWeekIndex;
 
         // Random INSET day once per month (approx every 30 days), if not already inset week
-        // Simple logic: if day index % 30 == 0 (and not weekend)
         const isRandomInset = (i > 0 && i % 25 === 0);
 
         const isInset = !isWeekend && (isInsetWeek || isRandomInset);
@@ -62,11 +75,18 @@ function generateYearData(yearName) {
 
         if (!isWeekend && !isInset) {
             // Generate assessments
-            // Requirement: "at least 5 assessments per week".
-            // We'll aim for avg 1 per day, but random.
-            // Let's say 20% chance of 0, 40% chance of 1, 30% chance of 2, 10% chance of 3.
+            // To ensure consistency for tests, let's force the first day (Sept 1st)
+            // to always have a specific assessment if it's the first day of loop.
+            if (i === 0) {
+                 dayRecord.assessments.push({
+                    subject: 'Maths',
+                    type: 'Exam',
+                    label: `${yearName} Maths Exam - Topic: Algebra`,
+                    color: '#EF4444' // Red
+                });
+            }
 
-            // To ensure 5 per week approx, we need avg 1 per day.
+            // Normal random generation
             const numAssessments = getRandomInt(0, 3);
 
             for (let j = 0; j < numAssessments; j++) {
