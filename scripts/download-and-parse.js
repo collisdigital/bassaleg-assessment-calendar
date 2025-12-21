@@ -15,7 +15,7 @@ if (process.argv.includes('--test')) {
 }
 
 const OUTPUT_FILE = path.join(__dirname, '../src/data.json');
-const CONFIG_FILE = path.join(__dirname, '../src/config/years.json');
+const CONFIG_FILE = path.join(__dirname, 'years-config.json');
 
 // Read Config
 let yearsConfig = [];
@@ -300,6 +300,7 @@ async function parseSheet(filePath) {
             const data = await parseSheet(downloadPath);
 
             appData.years[year.id] = {
+                name: year.name, // Add name from config
                 filename: filename || `${year.name} Assessment Calendar`,
                 sourceUrl: sheetUrl,
                 types: data.types,

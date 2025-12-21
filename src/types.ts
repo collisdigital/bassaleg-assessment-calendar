@@ -15,6 +15,7 @@ export interface DayInfo {
 }
 
 export interface YearData {
+  name: string;
   sourceUrl?: string;
   filename?: string;
   types: Record<string, string>;

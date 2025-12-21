@@ -110,6 +110,7 @@ function generateYearData(yearName) {
     }
 
     return {
+        name: yearName,
         filename: `${yearName} Assessment Calendar`,
         sourceUrl: `http://example.com/${yearName}`,
         types: TYPES,

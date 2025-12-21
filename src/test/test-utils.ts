@@ -5,6 +5,7 @@ import { AppData, YearData, Assessment, DayInfo } from '../types';
  */
 export function createMockYearData(overrides: Partial<YearData> = {}): YearData {
   const defaultData: YearData = {
+    name: 'Test Year',
     filename: 'test-data.xlsx',
     sourceUrl: 'http://example.com/sheet',
     types: {

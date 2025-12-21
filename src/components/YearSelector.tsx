@@ -1,12 +1,14 @@
 import { Link } from 'react-router-dom';
-import yearsConfig from '../config/years.json';
+import { useAllYears } from '../hooks/useData';
 
 export function YearSelector() {
+  const years = useAllYears();
+
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-4">
       <h1 className="text-3xl font-bold text-gray-900 mb-8 text-center">Bassaleg Assessment Calendars</h1>
       <div className="grid gap-6 w-full max-w-md">
-        {yearsConfig.map(year => (
+        {years.map(year => (
           <Link
             key={year.id}
             to={`/${year.id}`}

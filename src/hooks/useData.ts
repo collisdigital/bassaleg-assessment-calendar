@@ -9,6 +9,16 @@ function createSlug(str: string): string {
   return str.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 }
 
+export function useAllYears() {
+  return useMemo(() => {
+    if (!appData.years) return [];
+    return Object.entries(appData.years).map(([id, data]) => ({
+      id,
+      name: data.name
+    })).sort((a, b) => a.id.localeCompare(b.id));
+  }, []);
+}
+
 export function useData(yearId: string) {
   const [searchParams, setSearchParams] = useSearchParams();
 
