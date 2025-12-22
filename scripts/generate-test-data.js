@@ -36,12 +36,8 @@ function getRandomItem(arr) {
 
 function generateYearData(yearName, subjects, types) {
     const typeKeys = Object.keys(types);
+    // Fixed start date: Monday, Sept 1st 2025
     const startDate = new Date('2025-09-01T12:00:00Z');
-
-    const dayOfWeek = startDate.getDay();
-    if (dayOfWeek !== 1) {
-         // Adjust if needed
-    }
 
     const schedule = [];
     const numWeeks = 20;

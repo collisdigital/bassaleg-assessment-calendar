@@ -138,6 +138,7 @@ async function parseSheet(filePath) {
           const color = normalizeColor(fill.fgColor.argb);
           if (color) {
               typeMap[color] = val.toString().trim();
+              console.log(`Found Type: ${val} = ${color}`);
           }
       }
   }
@@ -158,6 +159,7 @@ async function parseSheet(filePath) {
       const dateCell = row.getCell(COL_DATE);
       const dateVal = dateCell.value;
 
+      // Stop if empty date
       if (!dateVal) {
           if (!row.getCell(COL_WEEK).value) {
              break;
@@ -165,12 +167,22 @@ async function parseSheet(filePath) {
           continue;
       }
 
+      // Date Parsing
       let dateObj = null;
       if (dateVal instanceof Date) {
           dateObj = dateVal;
       } else {
+          // Regex for "3rd Nov", "3 Nov", "3rt Nov" etc.
+          // Matches: Number, optional rubbish, Month Name
+          // Relaxed to allow any chars between number and month
+          const dateRegex = new RegExp(
+              "(\\d+)" +       // Day number
+              ".*?\\s+" +      // Any characters (non-greedy) followed by whitespace
+              "([a-zA-Z]+)",   // Month name
+              "i"              // Case insensitive
+          );
           const dateStr = dateVal.toString();
-          const match = dateStr.match(/(\d+)(?:st|nd|rd|th|rt|\s)*\s+([a-zA-Z]+)/i);
+          const match = dateStr.match(dateRegex);
 
           if (match) {
              const day = parseInt(match[1]);
@@ -209,12 +221,14 @@ async function parseSheet(filePath) {
           assessments: []
       };
 
+      // Check Subject Columns
       for(let c = COL_SUBJECT_START; c < colKeyType; c++) {
           const subject = subjects[c];
           if (!subject) continue;
 
           const cell = row.getCell(c);
 
+          // Check for merge master to avoid duplicates
           if (cell.master && cell.master.address !== cell.address) {
               continue;
           }

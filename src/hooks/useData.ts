@@ -45,7 +45,10 @@ export function useData(yearId: string) {
   const selectedSubjects = useMemo(() => {
     const param = searchParams.get('lesson');
     if (!param) return [];
+    // Split by space (which is how multiple values are encoded in one param if we use '+')
+    // URLSearchParams decodes '+' to space automatically.
     const slugs = param.split(' ');
+    // Map slugs back to original subjects
     return allSubjects.filter(subject => slugs.includes(createSlug(subject)));
   }, [searchParams, allSubjects]);
 
