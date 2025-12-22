@@ -76,6 +76,12 @@ Before submitting any changes, run the following commands to ensure the project 
 6.  `npm run test:e2e` - Runs E2E smoke tests against the production build.
 7.  `npm run preview` - Starts a local server to preview the production build.
 
+### Defect/Issue Fixing Workflow
+When fixing defects or issues, follow this test-driven approach:
+1.  **Add Failing Test**: Create a new automated test (unit, integration, or e2e, as appropriate) that specifically checks for the desired behavior or fix. Verify that this new test 'fails', demonstrating that the defect or issue is currently present.
+2.  **Analyze and Fix**: Investigate the codebase, identify the root cause of the issue, and implement the necessary code changes to address it.
+3.  **Verify Passing Test**: Run the tests again to ensure that the newly added test now 'passes', confirming that the issue has been resolved.
+
 ## 6. Testing Strategy
 
 ### Unit Tests (Vitest)
@@ -106,7 +112,8 @@ Adhere to the following principles to maintain a clean, readable, and maintainab
 -   **Refactor Continuously**: Don't be afraid to improve existing code. Small, incremental refactorings improve readability, maintainability, and performance over time.
 -   **Decompose Functions**: Keep functions and components small, focused, and single-purpose. If a function is doing too many things, break it down into smaller, more manageable units.
 -   **Meaningful Naming**: Use descriptive names for variables, functions, and components that clearly convey their purpose.
--   **Comments for 'Why'**: Add comments only when necessary to explain *why* a particular piece of code exists, *why* a certain decision was made, or to clarify complex business logic. Avoid comments that merely restate *what* the code is doing or *how* it works (these should be evident from the code itself).
+-   **Comments for 'Why'**: Add comments only when necessary to explain *why* a particular piece of code exists, *why* a certain decision was made, or to clarify complex business logic. 
+-   **Comments for 'Sign-posting'**: Add comments that clarify non-obvious behaviour or add a helpful tip or signpost for a future reader of the code.
 -   **No "Thinking" Comments**: Do not leave comments in the codebase that describe your thought process, temporary debugging steps, or instructions to yourself (e.g., "TODO: fix this later," "Agent thought: I need to check X"). These must be removed before completing any task.
 
 ### File Structure
