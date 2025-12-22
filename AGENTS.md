@@ -76,6 +76,8 @@ Before submitting any changes, run the following commands to ensure the project 
 6.  `npm run test:e2e` - Runs E2E smoke tests against the production build.
 7.  `npm run preview` - Starts a local server to preview the production build.
 
+**Do not commit verification images or temporary scripts.** When creating temporary scripts (e.g., Playwright verification scripts) or generating screenshots/images during testing, ensure they are deleted or not included in your commit. Clean up your workspace before submitting.
+
 ### Defect/Issue Fixing Workflow
 When fixing defects or issues, follow this test-driven approach:
 1.  **Add Failing Test**: Create a new automated test (unit, integration, or e2e, as appropriate) that specifically checks for the desired behavior or fix. Verify that this new test 'fails', demonstrating that the defect or issue is currently present.

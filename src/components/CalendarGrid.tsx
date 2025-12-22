@@ -1,4 +1,4 @@
-import { useState, useMemo, useRef } from 'react';
+import { useState, useMemo } from 'react';
 import { useSwipeable } from 'react-swipeable';
 import { DayInfo, ViewMode } from '../types';
 import { DayCell } from './DayCell';
@@ -23,7 +23,7 @@ export function CalendarGrid({ schedule, viewMode, onAssessmentClick }: Calendar
   // Swipe animation state
   const [swipeOffset, setSwipeOffset] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
-  const containerRef = useRef<HTMLDivElement>(null);
+  const [containerNode, setContainerNode] = useState<HTMLDivElement | null>(null);
 
   // Navigation
   const changeMonth = (offset: number) => {
@@ -130,7 +130,7 @@ export function CalendarGrid({ schedule, viewMode, onAssessmentClick }: Calendar
         const threshold = 75; // px threshold to trigger switch
         const { deltaX } = eventData;
         // eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
-        const width = containerRef.current?.offsetWidth || window.innerWidth;
+        const width = containerNode?.offsetWidth || window.innerWidth;
 
         if (Math.abs(deltaX) > threshold) {
              // Drag Right (positive) -> Prev Month
@@ -171,9 +171,8 @@ export function CalendarGrid({ schedule, viewMode, onAssessmentClick }: Calendar
   const refPassthrough = (el: HTMLDivElement) => {
       // Call handlers ref
       swipeRef(el);
-      // Set our local ref
-      // @ts-expect-error - containerRef is RefObject
-      containerRef.current = el;
+      // Save element to state
+      setContainerNode(el);
   };
 
   return (
