@@ -176,10 +176,7 @@ export function YearView() {
               <div className="flex items-center gap-3 pl-8 sm:pl-0">
                  <button
                    type="button"
-                   onClick={() => {
-                     dataHook.setSelectedSubjects([]);
-                     dataHook.setSelectedTypes([]);
-                   }}
+                   onClick={dataHook.clearAllFilters}
                    className="text-sm font-medium text-yellow-800 hover:text-yellow-900 underline decoration-yellow-800/30 hover:decoration-yellow-900"
                  >
                    Clear all filters

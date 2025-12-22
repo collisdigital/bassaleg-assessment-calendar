@@ -80,6 +80,13 @@ export function useData(yearId: string) {
     setSearchParams(newParams, { replace: true });
   };
 
+  const clearAllFilters = () => {
+    const newParams = new URLSearchParams(searchParams);
+    newParams.delete('lesson');
+    newParams.delete('type');
+    setSearchParams(newParams, { replace: true });
+  };
+
   const typeColors = useMemo(() => {
     if (!yearData) return {};
     const map: Record<string, string> = {};
@@ -114,6 +121,7 @@ export function useData(yearId: string) {
     setSelectedSubjects,
     selectedTypes,
     setSelectedTypes,
+    clearAllFilters,
     typeColors,
     filename: yearData?.filename,
     sourceUrl: yearData?.sourceUrl,

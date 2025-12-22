@@ -16,6 +16,7 @@ export function FilterBar({
   setSelectedSubjects,
   selectedTypes,
   setSelectedTypes,
+  clearAllFilters,
   allSubjects,
   allTypes,
   typeColors,
@@ -106,7 +107,7 @@ export function FilterBar({
             <div className="flex items-center gap-2 text-sm text-gray-500">
                 <span>Active Filters:</span>
                 <button
-                    onClick={() => { setSelectedSubjects([]); setSelectedTypes([]); }}
+                    onClick={clearAllFilters}
                     className="text-red-600 hover:underline"
                     aria-label="Clear all active filters"
                 >
