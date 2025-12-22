@@ -123,11 +123,21 @@ export function CalendarGrid({ schedule, viewMode, onAssessmentClick }: Calendar
   // Swipe handlers
   const handlers = useSwipeable({
     onSwiping: (eventData) => {
-        setSwipeOffset(eventData.deltaX);
-        setIsAnimating(false);
+        // Only animate the swiping of the grid if the user 
+        // hasn't scrolled vertically more than the threshold
+        // to prevent the grid from being moved during vertical
+        // scrolling.
+        const thresholdY = 50; 
+        if (Math.abs(eventData.deltaY) < thresholdY) {
+            setSwipeOffset(eventData.deltaX);
+            setIsAnimating(false);
+        } else {
+            setIsAnimating(true);
+            setSwipeOffset(0);
+        }
     },
     onSwiped: (eventData) => {
-        const threshold = 75; // px threshold to trigger switch
+        const threshold = 150; // px threshold to trigger switch
         const { deltaX } = eventData;
         // eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
         const width = containerNode?.offsetWidth || window.innerWidth;
@@ -161,7 +171,7 @@ export function CalendarGrid({ schedule, viewMode, onAssessmentClick }: Calendar
     },
     trackMouse: false,
     trackTouch: true,
-    delta: 30, // Minimum distance to start swiping
+    delta: 50, // Minimum distance to start swiping
     preventScrollOnSwipe: true // Prevents vertical scrolling while swiping horizontally
   });
 
