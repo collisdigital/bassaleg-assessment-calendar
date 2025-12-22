@@ -159,9 +159,9 @@ export function CalendarGrid({ schedule, viewMode, onAssessmentClick }: Calendar
             setSwipeOffset(0);
         }
     },
-    trackMouse: true,
+    trackMouse: false,
     trackTouch: true,
-    delta: 10, // Minimum distance to start swiping
+    delta: 30, // Minimum distance to start swiping
     preventScrollOnSwipe: true // Prevents vertical scrolling while swiping horizontally
   });
 
@@ -201,7 +201,7 @@ export function CalendarGrid({ schedule, viewMode, onAssessmentClick }: Calendar
         <div
             data-testid="swipe-wrapper"
             ref={refPassthrough}
-            className="flex-1 overflow-hidden relative"
+            className="flex-1 overflow-hidden relative touch-pan-y"
             {...restHandlers}
         >
             <div
