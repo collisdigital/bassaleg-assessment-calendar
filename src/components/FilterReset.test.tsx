@@ -7,7 +7,7 @@ import { MemoryRouter, Routes, Route } from 'react-router-dom';
 // Mock scrollIntoView
 Element.prototype.scrollIntoView = vi.fn();
 
-describe('Filter Reset Bug', () => {
+describe('Filter Reset Behavior', () => {
   beforeEach(() => {
     vi.resetModules();
     vi.mock('../data.json', () => ({
@@ -43,17 +43,24 @@ describe('Filter Reset Bug', () => {
           </MemoryRouter>
       );
 
-      // Verify "Clear All" button is present (FilterBar)
-      // Note: FilterBar shows "Clear All" if filters > 0
+      // Verify "Clear All" button is present
       const clearBtn = await screen.findByText('Clear All');
       expect(clearBtn).toBeInTheDocument();
+
+      // Verify buttons are selected (aria-pressed="true")
+      const mathsBtn = screen.getByRole('button', { name: 'Maths' });
+      const examBtn = screen.getByRole('button', { name: 'Exam' });
+      expect(mathsBtn).toHaveAttribute('aria-pressed', 'true');
+      expect(examBtn).toHaveAttribute('aria-pressed', 'true');
 
       // Click Clear All
       await user.click(clearBtn);
 
-      // Expect "Clear All" to disappear.
-      // If the bug exists, one filter will remain (e.g. 'lesson=maths'), so "Clear All" will still be visible.
-      // We expect it to NOT be in document.
+      // Verify buttons are NOT selected (aria-pressed="false")
+      expect(mathsBtn).toHaveAttribute('aria-pressed', 'false');
+      expect(examBtn).toHaveAttribute('aria-pressed', 'false');
+
+      // Expect "Clear All" to disappear
       expect(screen.queryByText('Clear All')).not.toBeInTheDocument();
   });
 });
