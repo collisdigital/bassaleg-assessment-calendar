@@ -1,4 +1,5 @@
 import { Assessment } from '../types';
+import { normalizeHexColor } from '../utils/colorUtils';
 
 interface AssessmentPillProps {
   assessment: Assessment;
@@ -6,12 +7,7 @@ interface AssessmentPillProps {
 }
 
 export function AssessmentPill({ assessment, onClick }: AssessmentPillProps) {
-  // We can use the color from the assessment, or map it to Tailwind classes if preferred.
-  // Since we have hex colors from Excel, we'll use inline styles for the background.
-  // We need to ensure text contrast. Most seem light enough for black text, or we can use a helper.
-
-  // ARGB from Excel is FFRRGGBB.
-  const hex = assessment.color.length === 8 ? '#' + assessment.color.substring(2) : '#' + assessment.color;
+  const hex = normalizeHexColor(assessment.color);
 
   return (
     <button

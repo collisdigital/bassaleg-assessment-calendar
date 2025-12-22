@@ -30,40 +30,17 @@ jobs:
         run: |
           npm ci
 
-      - name: Build Year 10
-        env:
-          VITE_APP_TITLE: "Year 10 Assessment Calendar"
+      - name: Generate Data
         run: |
-          # Read SHEET_URL from file
-          export SHEET_URL=$(cat scripts/year-10-sheet-url.txt)
-          # Generate Data
-          node scripts/download-and-parse.js
-          # Build with Base URL - including repo name
-          npm run build -- --base=/bassaleg-assessment-calendar/year-10/
-          # Move to artifacts
-          mkdir -p build_artifacts/year-10
-          cp -r dist/* build_artifacts/year-10/
+          npm run data:fetch
 
-      - name: Build Year 11
-        env:
-          VITE_APP_TITLE: "Year 11 Assessment Calendar"
+      - name: Build App
         run: |
-          # Read SHEET_URL from file
-          export SHEET_URL=$(cat scripts/year-11-sheet-url.txt)
-          # Generate Data
-          node scripts/download-and-parse.js
           # Build with Base URL - including repo name
-          npm run build -- --base=/bassaleg-assessment-calendar/year-11/
-          # Move to artifacts
-          mkdir -p build_artifacts/year-11
-          cp -r dist/* build_artifacts/year-11/
-
-      - name: Create Landing Page
-        run: |
-          cp .github/workflows/landing-page.html build_artifacts/index.html
+          npm run build -- --base=/bassaleg-assessment-calendar/
 
       - name: Deploy to gh-pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: build_artifacts
+          folder: dist
           branch: gh-pages

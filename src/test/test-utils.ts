@@ -1,11 +1,11 @@
-import { Data, Assessment, DayInfo } from '../types';
+import { AppData, YearData, Assessment, DayInfo } from '../types';
 
 /**
- * Creates a mock Data object for testing.
+ * Creates a mock YearData object for testing.
  */
-export function createMockData(overrides: Partial<Data> = {}): Data {
-  const defaultData: Data = {
-    generatedAt: '2024-01-01T00:00:00.000Z',
+export function createMockYearData(overrides: Partial<YearData> = {}): YearData {
+  const defaultData: YearData = {
+    name: 'Test Year',
     filename: 'test-data.xlsx',
     sourceUrl: 'http://example.com/sheet',
     types: {
@@ -17,6 +17,16 @@ export function createMockData(overrides: Partial<Data> = {}): Data {
   };
 
   return { ...defaultData, ...overrides };
+}
+
+/**
+ * Creates a mock AppData object with specified years.
+ */
+export function createMockAppData(years: Record<string, YearData> = {}): AppData {
+  return {
+    generatedAt: '2024-01-01T00:00:00.000Z',
+    years
+  };
 }
 
 /**

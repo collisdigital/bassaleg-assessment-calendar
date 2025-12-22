@@ -10,7 +10,7 @@ A web application designed to visualize assessment timetables for Year 10 and Ye
 - **Filtering**: Filter assessments by subject and assessment type (e.g., Exam, Mock, NEA).
 - **Responsive Design**: Optimized for both desktop and mobile devices.
 - **Automated Data Updates**: The build process fetches the latest data directly from managed Google Sheets.
-- **Multi-Year Support**: Deploys separate instances for Year 10 and Year 11 with a unified landing page.
+- **Multi-Year Support**: Supports Year 10, Year 11, and more in a single application with client-side routing.
 
 ## 🛠️ Tech Stack
 
@@ -25,19 +25,16 @@ A web application designed to visualize assessment timetables for Year 10 and Ye
 
 ```text
 /
-├── .github/workflows/   # CI/CD pipelines (Deploy Assessment Timetables)
+├── .github/workflows/   # CI/CD pipelines
 ├── e2e/                 # End-to-End tests (Playwright)
-│   ├── fixtures/        # Test data fixtures
-│   └── smoke.spec.ts    # Smoke tests
-├── scripts/             # Data fetching and parsing scripts
-│   ├── download-and-parse.js  # Main script to fetch Google Sheet & generate JSON
-│   ├── year-10-sheet-url.txt  # Source URL for Year 10
-│   └── year-11-sheet-url.txt  # Source URL for Year 11
+├── scripts/             # Data scripts
+│   ├── fetch-live-data.js    # Fetches real Google Sheets data
+│   ├── generate-test-data.js # Generates deterministic mock data
+│   └── years-config.json     # Configuration for year groups
 ├── src/                 # React application source
-│   ├── components/      # UI Components (Calendar, Timeline, Filters)
-│   ├── hooks/           # Custom hooks (useData)
-│   ├── types.ts         # TypeScript definitions
-│   └── App.tsx          # Main application component
+│   ├── components/      # UI Components
+│   ├── hooks/           # Custom hooks
+│   └── App.tsx          # Main router component
 ├── index.html           # Entry point
 └── package.json         # Dependencies and scripts
 ```
@@ -59,7 +56,7 @@ Once you have successfully launched Codespaces, dependencies will be automatical
 installed. You can start the development server from the VS Code Terminal:
 
 ```bash
-    npm run dev
+npm run dev
 ```
 
 You will be prompted to **Open in Browser** to view the locally running site.
@@ -88,15 +85,21 @@ is faster on subsequent launches as the environment is then cached.
    npm install
    ```
 
-### Linting
+### Data Generation
 
-To check code style and catch potential errors:
+The application relies on `src/data.json`. You can generate this data in two ways:
 
-```bash
-npm run lint
-```
+1.  **Generate Test Data (For Development):**
+    Creates deterministic test data for Year 10, 11, and 12.
+    ```bash
+    npm run data:generate
+    ```
 
-This command uses ESLint with TypeScript and React-specific rules to ensure code quality and consistency.
+2.  **Fetch Live Data (For Production):**
+    Downloads and parses the Google Sheets defined in `scripts/years-config.json`.
+    ```bash
+    npm run data:fetch
+    ```
 
 ### Running Locally
 
@@ -107,23 +110,13 @@ npm run dev
 ```
 
 This will start the Vite dev server, typically at `http://localhost:5173`.
-*Note: The app requires `src/data.json` to exist. If missing, run the data script first (see below).*
 
-### generating Data
+### Linting
 
-The application relies on `src/data.json`, which is generated from the Google Sheet.
-
-To generate the data locally using the default Year 10 sheet:
+To check code style and catch potential errors:
 
 ```bash
-node scripts/download-and-parse.js
-```
-
-To generate data for a specific sheet (e.g., Year 11):
-
-```bash
-export SHEET_URL=$(cat scripts/year-11-sheet-url.txt)
-node scripts/download-and-parse.js
+npm run lint
 ```
 
 ### Building for Production
@@ -158,32 +151,15 @@ npm run test:e2e
 npm run test:e2e:ui
 ```
 
-*Note: E2E tests run against the production build (`vite build` -> `vite preview`).*
-
-## ⚙️ Configuration
-
-The application uses the following environment variables (mostly used during the build/data generation phase):
-
-- `SHEET_URL`: The URL of the Google Sheet to process (without `/export?format=xlsx`).
-- `VITE_APP_TITLE`: Sets the title displayed in the application header (e.g., "Year 10 Assessment Calendar").
-
 ## 🚀 Deployment (GitHub Actions)
 
-The repository is configured to automatically deploy to GitHub Pages on every push to the `main` branch.
+The repository is configured to automatically deploy to GitHub Pages on every push to the `main` branch via `.github/workflows/deploy-timetables.yml`.
 
-The workflow `.github/workflows/deploy-timetables.yml` performs the following steps:
-
-1.  **Checkout & Setup**: Sets up the Node.js environment.
-2.  **Build Year 10**:
-    -   Reads the URL from `scripts/year-10-sheet-url.txt`.
-    -   Runs `download-and-parse.js` to generate `src/data.json`.
-    -   Builds the React app with base path `/bassaleg-assessment-calendar/year-10/`.
-3.  **Build Year 11**:
-    -   Reads the URL from `scripts/year-11-sheet-url.txt`.
-    -   Runs `download-and-parse.js` to generate `src/data.json`.
-    -   Builds the React app with base path `/bassaleg-assessment-calendar/year-11/`.
-4.  **Create Landing Page**: Copies `.github/workflows/landing-page.html` to the root `index.html`.
-5.  **Deploy**: Pushes the combined artifacts to the `gh-pages` branch.
+The workflow:
+1.  Sets up Node.js.
+2.  Fetches live data (`npm run data:fetch`).
+3.  Builds the Single Page Application (`npm run build`).
+4.  Deploys the `dist` folder to the `gh-pages` branch.
 
 ## 📄 License
 

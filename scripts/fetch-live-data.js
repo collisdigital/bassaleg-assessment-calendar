@@ -6,79 +6,30 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Helper to read default URL from file
-function readDefaultUrl() {
-    try {
-        const urlPath = path.join(__dirname, 'year-10-sheet-url.txt');
-        if (fs.existsSync(urlPath)) {
-            return fs.readFileSync(urlPath, 'utf-8').trim();
-        }
-    } catch (e) {
-        console.warn("Could not read default URL file:", e);
-    }
-    return null;
-}
+const OUTPUT_FILE = path.join(__dirname, '../src/data.json');
+const CONFIG_FILE = path.join(__dirname, 'years-config.json');
 
-const RAW_SHEET_URL = process.env.SHEET_URL || readDefaultUrl();
-
-if (!RAW_SHEET_URL) {
-    console.error("Error: No SHEET_URL provided and default file could not be read.");
+// Read Config
+let yearsConfig = [];
+try {
+    const configFileContent = fs.readFileSync(CONFIG_FILE, 'utf-8');
+    yearsConfig = JSON.parse(configFileContent);
+} catch (e) {
+    console.error("Failed to read years config:", e);
     process.exit(1);
 }
-
-// Append export format if not present
-const DOWNLOAD_URL = RAW_SHEET_URL.endsWith('/export?format=xlsx') 
-    ? RAW_SHEET_URL 
-    : `${RAW_SHEET_URL}/export?format=xlsx`;
-
-const OUTPUT_FILE = path.join(__dirname, '../src/data.json');
-const DOWNLOAD_PATH = path.join(__dirname, 'temp_sheet.xlsx');
-
-console.log(`Using Base URL: ${RAW_SHEET_URL}`);
 
 const COL_DATE = 2; // B
 const COL_WEEK = 3; // C
 const COL_INSET = 4; // D
 const COL_SUBJECT_START = 5; // E
-
-let sheetFilename = "Assessment Calendar.xlsx"; // Default fallback
-
-async function downloadSheet() {
-  console.log('Downloading spreadsheet...');
-  const response = await fetch(DOWNLOAD_URL);
-  if (!response.ok) throw new Error(`Failed to download: ${response.statusText}`);
-  
-  // Try to extract filename from Content-Disposition header
-  const contentDisposition = response.headers.get('content-disposition');
-  if (contentDisposition) {
-      fs.writeFileSync(path.join(__dirname, 'debug_log.txt'), `Content-Disposition: ${contentDisposition}\n`);
-
-      const filenameStarMatch = contentDisposition.match(/filename\*=UTF-8''([^;]+)/i);
-      if (filenameStarMatch && filenameStarMatch[1]) {
-          sheetFilename = decodeURIComponent(filenameStarMatch[1]);
-      } else {
-          const filenameMatch = contentDisposition.match(/filename="?([^"]+)"?/);
-          if (filenameMatch && filenameMatch[1]) {
-              sheetFilename = filenameMatch[1].replace(/\+/g, ' ');
-          }
-      }
-  }
-  
-  console.log(`Detected filename: ${sheetFilename}`);
-  fs.appendFileSync(path.join(__dirname, 'debug_log.txt'), `Extracted Filename: ${sheetFilename}\n`);
-
-  const arrayBuffer = await response.arrayBuffer();
-  fs.writeFileSync(DOWNLOAD_PATH, Buffer.from(arrayBuffer));
-  console.log('Download complete.');
-}
+const NOTE_COLOR = 'FFE5E7EB';
 
 // Helper to normalize ARGB colors from Excel
 function normalizeColor(argb) {
   if (!argb) return null;
   return argb;
 }
-
-const NOTE_COLOR = 'FFE5E7EB'; // Light Gray (Tailwind gray-200 approx)
 
 // Helper to extract text from cell value (handling Rich Text)
 function getCellValue(cell) {
@@ -96,20 +47,53 @@ function getCellValue(cell) {
         }
         // Handle Date object
         if (val instanceof Date) {
-            return val.toISOString(); // Or leave as is? We usually parse date cells separately.
+            return val.toISOString();
         }
     }
 
     return val.toString();
 }
 
-async function parseSheet() {
+async function downloadSheet(url, downloadPath) {
+  console.log(`Downloading spreadsheet from ${url}...`);
+  // Append export format if not present
+  const downloadUrl = url.endsWith('/export?format=xlsx') ? url : `${url}/export?format=xlsx`;
+
+  const response = await fetch(downloadUrl);
+  if (!response.ok) throw new Error(`Failed to download: ${response.statusText}`);
+
+  let sheetFilename = null;
+  // Try to extract filename from Content-Disposition header
+  const contentDisposition = response.headers.get('content-disposition');
+  if (contentDisposition) {
+      const filenameStarMatch = contentDisposition.match(/filename\*=UTF-8''([^;]+)/i);
+      if (filenameStarMatch && filenameStarMatch[1]) {
+          sheetFilename = decodeURIComponent(filenameStarMatch[1]);
+      } else {
+          const filenameMatch = contentDisposition.match(/filename="?([^"]+)"?/);
+          if (filenameMatch && filenameMatch[1]) {
+              sheetFilename = filenameMatch[1].replace(/\+/g, ' ');
+          }
+      }
+  }
+
+  if (sheetFilename) {
+      console.log(`Detected filename: ${sheetFilename}`);
+      sheetFilename = sheetFilename.replace(/\.xlsx$/i, ''); // Clean extension
+  }
+
+  const arrayBuffer = await response.arrayBuffer();
+  fs.writeFileSync(downloadPath, Buffer.from(arrayBuffer));
+  console.log('Download complete.');
+  return sheetFilename;
+}
+
+async function parseSheet(filePath) {
   const workbook = new ExcelJS.Workbook();
-  await workbook.xlsx.readFile(DOWNLOAD_PATH);
+  await workbook.xlsx.readFile(filePath);
   const sheet = workbook.getWorksheet(1); // Assuming first sheet
 
   // 1. Discover Columns and Key Location
-  // We expect subjects starting at Col 5. We look for "Key" to end.
   const subjects = [];
   let colKeyType = -1;
   const row1 = sheet.getRow(1);
@@ -120,7 +104,6 @@ async function parseSheet() {
       let val = getCellValue(cell);
       val = val ? val.trim() : '';
 
-      // Handle Merged Cells (Value usually in master)
       if (!val && cell.master) {
           const masterVal = getCellValue(cell.master);
           if (masterVal) val = masterVal.trim();
@@ -139,16 +122,14 @@ async function parseSheet() {
   }
 
   if (colKeyType === -1) {
-      // If we didn't find "Key", assume it's the one after the last subject?
       const lastSubjectCol = subjects.length - 1;
       colKeyType = lastSubjectCol + 1;
       console.warn(`"Key" header not found. Assuming Column ${colKeyType} (after last subject) is Key.`);
   }
 
   // 2. Parse Legend/Key
-  const typeMap = {}; // Color -> Type Name
+  const typeMap = {};
   console.log('Parsing Key...');
-  // Scan rows 2 to 20 for key items
   for (let r = 2; r <= 20; r++) {
       const cell = sheet.getCell(r, colKeyType);
       const val = cell.value;
@@ -162,14 +143,13 @@ async function parseSheet() {
       }
   }
 
-  // Ensure "Note" type is registered
   if (!Object.values(typeMap).includes('Note')) {
       typeMap[NOTE_COLOR] = 'Note';
   }
 
   // 3. Parse Data Rows
   const data = [];
-  let currentYear = 2025;
+  let currentYear = 2025; // TODO: Maybe make this configurable or smarter?
   let lastMonthIndex = 8; // Starts in Sept
 
   const MAX_ROWS = 1000;
@@ -194,8 +174,15 @@ async function parseSheet() {
       } else {
           // Regex for "3rd Nov", "3 Nov", "3rt Nov" etc.
           // Matches: Number, optional rubbish, Month Name
+          // Relaxed to allow any chars between number and month
+          const dateRegex = new RegExp(
+              "(\\d+)" +       // Day number
+              ".*?\\s+" +      // Any characters (non-greedy) followed by whitespace
+              "([a-zA-Z]+)",   // Month name
+              "i"              // Case insensitive
+          );
           const dateStr = dateVal.toString();
-          const match = dateStr.match(/(\d+)(?:st|nd|rd|th|rt|\s)*\s+([a-zA-Z]+)/i);
+          const match = dateStr.match(dateRegex);
 
           if (match) {
              const day = parseInt(match[1]);
@@ -276,24 +263,51 @@ async function parseSheet() {
       data.push(dayRecord);
   }
 
-  const output = {
-      generatedAt: new Date().toISOString(),
-      sourceUrl: RAW_SHEET_URL,
-      filename: sheetFilename.replace(/\.xlsx$/i, ''), // Remove extension for display
-      types: typeMap,
-      schedule: data
-  };
-
-  fs.writeFileSync(OUTPUT_FILE, JSON.stringify(output, null, 2));
-  console.log(`Success! Parsed ${data.length} days. Saved to ${OUTPUT_FILE}`);
+  return { types: typeMap, schedule: data };
 }
 
 (async () => {
-    try {
-        await downloadSheet();
-        await parseSheet();
-    } catch (e) {
-        console.error(e);
-        process.exit(1);
+    const appData = {
+        generatedAt: new Date().toISOString(),
+        years: {}
+    };
+
+    console.log(`Starting multi-year build... Found ${yearsConfig.length} years config.`);
+
+    for (const year of yearsConfig) {
+        console.log(`\n--- Processing ${year.name} (${year.id}) ---`);
+
+        const sheetUrl = year.sheetUrl;
+
+        if (!sheetUrl) {
+            console.warn(`No URL found for ${year.id}. Skipping.`);
+            continue;
+        }
+
+        const downloadPath = path.join(__dirname, `temp_${year.id}.xlsx`);
+
+        try {
+            const filename = await downloadSheet(sheetUrl, downloadPath);
+            const data = await parseSheet(downloadPath);
+
+            appData.years[year.id] = {
+                name: year.name, // Add name from config
+                filename: filename || `${year.name} Assessment Calendar`,
+                sourceUrl: sheetUrl,
+                types: data.types,
+                schedule: data.schedule
+            };
+
+            // Cleanup
+            if (fs.existsSync(downloadPath)) {
+                fs.unlinkSync(downloadPath);
+            }
+        } catch (e) {
+            console.error(`Failed to process ${year.id}:`, e);
+            process.exit(1);
+        }
     }
+
+    fs.writeFileSync(OUTPUT_FILE, JSON.stringify(appData, null, 2));
+    console.log(`\nTotal Success! Data saved to ${OUTPUT_FILE}`);
 })();

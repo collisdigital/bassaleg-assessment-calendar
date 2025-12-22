@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "data:fetch": "node scripts/fetch-live-data.js",
+    "data:generate": "node scripts/generate-test-data.js",
     "lint": "eslint .",
     "test": "vitest",
     "test:coverage": "vitest run --coverage",
@@ -18,7 +20,8 @@
     "eslint-plugin-react": "^7.37.5",
     "exceljs": "^4.4.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.11.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",

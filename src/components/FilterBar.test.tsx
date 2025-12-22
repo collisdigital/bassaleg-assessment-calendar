@@ -2,6 +2,7 @@ import { describe, it, expect, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { FilterBar } from './FilterBar';
+import { YearData } from '../types';
 
 describe('FilterBar', () => {
   const mockProps = {
@@ -9,13 +10,15 @@ describe('FilterBar', () => {
     setSelectedSubjects: vi.fn(),
     selectedTypes: [],
     setSelectedTypes: vi.fn(),
+    clearAllFilters: vi.fn(),
     allSubjects: ['Maths', 'English', 'Science'],
     allTypes: ['Exam', 'Mock'],
     typeColors: { 'Exam': '#FF0000', 'Mock': '#00FF00' },
     schedule: [],
     filename: '',
     sourceUrl: '',
-    generatedAt: '2023-01-01T00:00:00.000Z'
+    generatedAt: '2023-01-01T00:00:00.000Z',
+    yearData: { types: {}, schedule: [] } as unknown as YearData
   };
 
   it('renders all filter options', () => {
@@ -73,7 +76,6 @@ describe('FilterBar', () => {
     const clearBtn = screen.getByText('Clear All');
     await user.click(clearBtn);
 
-    expect(mockProps.setSelectedSubjects).toHaveBeenCalledWith([]);
-    expect(mockProps.setSelectedTypes).toHaveBeenCalledWith([]);
+    expect(mockProps.clearAllFilters).toHaveBeenCalled();
   });
 });

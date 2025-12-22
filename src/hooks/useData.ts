@@ -1,112 +1,104 @@
-import { useState, useMemo, useEffect } from 'react';
+import { useMemo } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import rawData from '../data.json';
-import { Data } from '../types';
+import { AppData, YearData } from '../types';
+import { normalizeHexColor } from '../utils/colorUtils';
 
-// Allow injection of data via window object for E2E testing
-const data = (typeof window !== 'undefined' && window.APP_DATA)
-  ? window.APP_DATA
-  : (rawData as Data);
+const appData = rawData as unknown as AppData;
 
 function createSlug(str: string): string {
   return str.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 }
 
-export function useData() {
+export function useAllYears() {
+  return useMemo(() => {
+    if (!appData.years) return [];
+    return Object.entries(appData.years).map(([id, data]) => ({
+      id,
+      name: data.name
+    })).sort((a, b) => a.id.localeCompare(b.id));
+  }, []);
+}
+
+export function useData(yearId: string) {
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  // Retrieve the specific year data
+  const yearData: YearData | undefined = appData.years[yearId];
+
   // Extract all unique subjects and types for the filter options
   const allSubjects = useMemo(() => {
+    if (!yearData) return [];
     const subjects = new Set<string>();
-    data.schedule.forEach(day => {
+    yearData.schedule.forEach(day => {
       day.assessments.forEach(a => subjects.add(a.subject));
     });
     return Array.from(subjects).sort();
-  }, []);
+  }, [yearData]);
 
   const allTypes = useMemo(() => {
-    // We can use the types map from the data, or extract from assessments
-    return Object.values(data.types).sort();
-  }, []);
+    if (!yearData) return [];
+    return Object.values(yearData.types).sort();
+  }, [yearData]);
 
-  const [selectedSubjects, setSelectedSubjects] = useState<string[]>(() => {
-    if (typeof window === 'undefined') return [];
-    const params = new URLSearchParams(window.location.search);
-    const param = params.get('lesson');
+  // Read state from URL
+  const selectedSubjects = useMemo(() => {
+    const param = searchParams.get('lesson');
     if (!param) return [];
-
     // Split by space (which is how multiple values are encoded in one param if we use '+')
     // URLSearchParams decodes '+' to space automatically.
     const slugs = param.split(' ');
-
     // Map slugs back to original subjects
     return allSubjects.filter(subject => slugs.includes(createSlug(subject)));
-  });
+  }, [searchParams, allSubjects]);
 
-  const [selectedTypes, setSelectedTypes] = useState<string[]>(() => {
-    if (typeof window === 'undefined') return [];
-    const params = new URLSearchParams(window.location.search);
-    const param = params.get('type');
+  const selectedTypes = useMemo(() => {
+    const param = searchParams.get('type');
     if (!param) return [];
-
     const slugs = param.split(' ');
     return allTypes.filter(type => slugs.includes(createSlug(type)));
-  });
+  }, [searchParams, allTypes]);
 
-  // Sync state to URL
-  useEffect(() => {
-    if (typeof window === 'undefined') return;
-
-    const params = new URLSearchParams(window.location.search);
-
-    // Update 'lesson' (subjects)
-    if (selectedSubjects.length > 0) {
-      const slug = selectedSubjects.map(createSlug).join(' ');
-      params.set('lesson', slug);
+  // Setters wrapper to update URL
+  const setSelectedSubjects = (subjects: string[]) => {
+    const newParams = new URLSearchParams(searchParams);
+    if (subjects.length > 0) {
+      newParams.set('lesson', subjects.map(createSlug).join(' '));
     } else {
-      params.delete('lesson');
+      newParams.delete('lesson');
     }
+    setSearchParams(newParams, { replace: true });
+  };
 
-    // Update 'type'
-    if (selectedTypes.length > 0) {
-      const slug = selectedTypes.map(createSlug).join(' ');
-      params.set('type', slug);
+  const setSelectedTypes = (types: string[]) => {
+    const newParams = new URLSearchParams(searchParams);
+    if (types.length > 0) {
+      newParams.set('type', types.map(createSlug).join(' '));
     } else {
-      params.delete('type');
+      newParams.delete('type');
     }
+    setSearchParams(newParams, { replace: true });
+  };
 
-    const queryString = params.toString();
-    const newUrl = queryString
-      ? `${window.location.pathname}?${queryString}`
-      : window.location.pathname;
-
-    const currentSearch = window.location.search;
-    const newSearch = queryString ? `?${queryString}` : '';
-
-    // Only update if changed to avoid loops/redundant calls
-    if (currentSearch !== newSearch) {
-      window.history.replaceState(null, '', newUrl);
-    }
-  }, [selectedSubjects, selectedTypes]);
+  const clearAllFilters = () => {
+    const newParams = new URLSearchParams(searchParams);
+    newParams.delete('lesson');
+    newParams.delete('type');
+    setSearchParams(newParams, { replace: true });
+  };
 
   const typeColors = useMemo(() => {
+    if (!yearData) return {};
     const map: Record<string, string> = {};
-    for (const [color, type] of Object.entries(data.types)) {
-        // Convert ARGB to Hex if needed (assuming color in types is raw from ExcelJS logic)
-        // In download-and-parse, normalizeColor just returns argb string.
-        // We need to ensure it's a valid CSS color.
-        // Excel ARGB is usually 8 hex chars.
-        let hex = color;
-        if (color.length === 8) {
-            hex = '#' + color.substring(2);
-        } else if (color.length === 6) {
-             hex = '#' + color;
-        }
-        map[type] = hex;
+    for (const [color, type] of Object.entries(yearData.types)) {
+        map[type] = normalizeHexColor(color);
     }
     return map;
-  }, []);
+  }, [yearData]);
 
   const filteredSchedule = useMemo(() => {
-    return data.schedule.map(day => {
-      // Filter assessments within the day
+    if (!yearData) return [];
+    return yearData.schedule.map(day => {
       const filteredAssessments = day.assessments.filter(assessment => {
         const subjectMatch = selectedSubjects.length === 0 || selectedSubjects.includes(assessment.subject);
         const typeMatch = selectedTypes.length === 0 || selectedTypes.includes(assessment.type);
@@ -118,9 +110,10 @@ export function useData() {
         assessments: filteredAssessments
       };
     });
-  }, [selectedSubjects, selectedTypes]);
+  }, [yearData, selectedSubjects, selectedTypes]);
 
   return {
+    yearData, // Expose raw year data if needed (e.g. checks)
     schedule: filteredSchedule,
     allSubjects,
     allTypes,
@@ -128,9 +121,10 @@ export function useData() {
     setSelectedSubjects,
     selectedTypes,
     setSelectedTypes,
+    clearAllFilters,
     typeColors,
-    filename: data.filename,
-    sourceUrl: data.sourceUrl,
-    generatedAt: data.generatedAt
+    filename: yearData?.filename,
+    sourceUrl: yearData?.sourceUrl,
+    generatedAt: appData.generatedAt // Global generatedAt
   };
 }

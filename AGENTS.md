@@ -7,7 +7,7 @@ This file provides context, rules, and instructions for AI agents working on the
 This is a React application built with Vite, TypeScript, and Tailwind CSS. It visualizes assessment timetables from Google Sheets data in two primary views: a **Monthly Calendar** and a **Linear Timeline**.
 
 ### Key Characteristics
--   **Dual Build**: The project is deployed as two separate instances (Year 10 and Year 11) from the same codebase, differing only by the source data URL.
+-   **Multi-Year Support**: The project supports multiple year groups (e.g., Year 10, Year 11) within a single Single Page Application (SPA).
 -   **Static Data**: Data is fetched and processed at build time. The application reads data directly from `src/data.json`.
 -   **Performance Focused**: The application is optimized for rendering potentially large schedules efficiently.
 
@@ -39,37 +39,32 @@ This is a React application built with Vite, TypeScript, and Tailwind CSS. It vi
 
 ### Data Pipeline
 1.  **Source**: Data is managed by school staff in a Google Sheet.
-2.  **Fetch Script**: The `scripts/download-and-parse.js` script downloads the Google Sheet as an XLSX file and parses it.
-    -   **Input**: The script uses the URL from the `SHEET_URL` environment variable if it is set. Otherwise, it defaults to the URL in `scripts/year-10-sheet-url.txt`.
+2.  **Fetch Script**: The `scripts/fetch-live-data.js` script downloads the Google Sheets as XLSX files and parses them.
+    -   **Input**: The script reads `scripts/years-config.json` to find the source URLs.
     -   **Output**: The script generates the `src/data.json` file.
-3.  **Application**: The React application loads the data from `src/data.json`. For E2E tests, data is injected via `window.APP_DATA`.
+3.  **Application**: The React application loads the data from `src/data.json`.
 
-### Multi-Year Deployment & CI/CD Pipeline
+### CI/CD Pipeline
 The deployment process is automated via a GitHub Actions workflow defined in `.github/workflows/deploy-timetables.yml`. This workflow deploys the site to GitHub Pages.
 
 Key steps in the pipeline:
 1.  **Trigger**: The workflow runs on a nightly schedule or on any push to the `main` branch.
-2.  **Dual Build**: It performs two separate production builds:
-    -   One for **Year 10**, using the data URL from `scripts/year-10-sheet-url.txt`.
-    -   One for **Year 11**, using the data URL from `scripts/year-11-sheet-url.txt`.
-3.  **Output**: Each build is placed into a subdirectory (`year-10/` and `year-11/`).
-4.  **Landing Page**: A simple `index.html` is added to the root to provide links to both calendars.
-5.  **Deploy**: The final directory containing both builds and the landing page is pushed to the `gh-pages` branch, which is then served by GitHub Pages.
-
-To run a specific year's build locally, you can set the `SHEET_URL` environment variable before running the script:
-```bash
-SHEET_URL=$(cat scripts/year-11-sheet-url.txt)
-node scripts/download-and-parse.js
-```
+2.  **Data Fetch**: It runs `npm run data:fetch` to get the latest live data.
+3.  **Build**: It runs `npm run build` to compile the application.
+4.  **Deploy**: The `dist/` directory is pushed to the `gh-pages` branch.
 
 ## 5. Development Workflow
 
 ### Setup & Run
 ```bash
 npm install # Install all dependencies
-node scripts/download-and-parse.js  # Generate the necessary data.json file
+npm run data:generate # Generate mock data for development
 npm run dev # Start the development server
 ```
+
+### Data Commands
+- `npm run data:fetch` - Fetches live data from Google Sheets (requires configuration).
+- `npm run data:generate` - Generates deterministic test data for Years 10, 11, and 12.
 
 ### Verification Checklist
 Before submitting any changes, run the following commands to ensure the project is in a good state:
@@ -78,8 +73,14 @@ Before submitting any changes, run the following commands to ensure the project 
 3.  `npm run test` - Runs all unit tests. All tests must pass, and new features should have corresponding tests.
 4.  `npm run test:coverage` - Reports unit test coverage. Aim to maintain or improve coverage.
 5.  `npm run build` - Ensures the production build is successful.
-6.  `npm run test:e2E` - Runs E2E smoke tests against the production build.
+6.  `npm run test:e2e` - Runs E2E smoke tests against the production build.
 7.  `npm run preview` - Starts a local server to preview the production build.
+
+### Defect/Issue Fixing Workflow
+When fixing defects or issues, follow this test-driven approach:
+1.  **Add Failing Test**: Create a new automated test (unit, integration, or e2e, as appropriate) that specifically checks for the desired behavior or fix. Verify that this new test 'fails', demonstrating that the defect or issue is currently present.
+2.  **Analyze and Fix**: Investigate the codebase, identify the root cause of the issue, and implement the necessary code changes to address it.
+3.  **Verify Passing Test**: Run the tests again to ensure that the newly added test now 'passes', confirming that the issue has been resolved.
 
 ## 6. Testing Strategy
 
@@ -90,8 +91,8 @@ Before submitting any changes, run the following commands to ensure the project 
 
 ### End-to-End (Playwright)
 -   **Environment**: E2E tests run against a production build using the `preview` server.
--   **Data Injection**: Tests inject mock data using `window.APP_DATA` to ensure consistent test runs. See `e2e/smoke.spec.ts` for an example.
--   **Date Mocking**: Use `page.add_init_script` to mock the `Date` object if you are testing scenarios that depend on a specific date.
+-   **Data**: E2E tests run against the built data (usually generated via `data:generate` locally).
+-   **Date Mocking**: Use `page.clock.install` to control the time in E2E tests.
 
 ## 7. Coding Standards
 
@@ -111,7 +112,8 @@ Adhere to the following principles to maintain a clean, readable, and maintainab
 -   **Refactor Continuously**: Don't be afraid to improve existing code. Small, incremental refactorings improve readability, maintainability, and performance over time.
 -   **Decompose Functions**: Keep functions and components small, focused, and single-purpose. If a function is doing too many things, break it down into smaller, more manageable units.
 -   **Meaningful Naming**: Use descriptive names for variables, functions, and components that clearly convey their purpose.
--   **Comments for 'Why'**: Add comments only when necessary to explain *why* a particular piece of code exists, *why* a certain decision was made, or to clarify complex business logic. Avoid comments that merely restate *what* the code is doing or *how* it works (these should be evident from the code itself).
+-   **Comments for 'Why'**: Add comments only when necessary to explain *why* a particular piece of code exists, *why* a certain decision was made, or to clarify complex business logic. 
+-   **Comments for 'Sign-posting'**: Add comments that clarify non-obvious behaviour or add a helpful tip or signpost for a future reader of the code.
 -   **No "Thinking" Comments**: Do not leave comments in the codebase that describe your thought process, temporary debugging steps, or instructions to yourself (e.g., "TODO: fix this later," "Agent thought: I need to check X"). These must be removed before completing any task.
 
 ### File Structure
@@ -122,11 +124,8 @@ Adhere to the following principles to maintain a clean, readable, and maintainab
 
 The application uses React's built-in hooks (`useState`, `useMemo`, `useCallback`) for state management. There is no external state management library like Redux or Zustand.
 
--   **`useData` Hook**: The core logic for data handling is encapsulated in the `src/hooks/useData.ts` custom hook. This hook is the single source of truth for assessment data and provides:
-    -   The filtered schedule based on selected filters.
-    -   Lists of all available subjects and assessment types.
-    -   State variables (`selectedSubjects`, `selectedTypes`) and their setters.
--   **URL Syncing**: The `useData` hook also synchronizes the filter state with the browser's URL query parameters (e.g., `?lesson=math&type=exam`). This ensures that filtered views can be shared via URL. All filter state management should be handled within this hook.
+-   **`useData` Hook**: The core logic for data handling is encapsulated in the `src/hooks/useData.ts` custom hook. This hook is the single source of truth for assessment data.
+-   **URL Syncing**: The `useData` hook also synchronizes the filter state with the browser's URL query parameters (e.g., `?lesson=math&type=exam`).
 
 ## 9. UI & Component Philosophy
 

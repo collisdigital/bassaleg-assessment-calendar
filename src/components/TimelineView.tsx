@@ -1,5 +1,6 @@
 import { useEffect, useRef, memo } from 'react';
 import { DayInfo, Assessment } from '../types';
+import { normalizeHexColor } from '../utils/colorUtils';
 
 interface TimelineViewProps {
   schedule: DayInfo[];
@@ -91,7 +92,6 @@ export const TimelineView = memo(function TimelineView({ schedule, onAssessmentC
             ref={isRef ? activeRef : null}
             className={`flex flex-col md:flex-row gap-2 md:gap-4 p-4 rounded-lg ${appearanceClasses}`}
           >
-            {/* Date Column */}
             <div className="md:w-32 flex-shrink-0">
                <span className={`text-lg font-bold ${isCurrentDay ? 'text-blue-700' : 'text-gray-700'}`}>
                  {dateLabel}
@@ -99,17 +99,13 @@ export const TimelineView = memo(function TimelineView({ schedule, onAssessmentC
                {day.isInset && <span className="ml-2 inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">INSET</span>}
             </div>
 
-            {/* Assessments Column */}
             <div className="flex-1 flex flex-col gap-2">
                {day.assessments.length === 0 && (
                    <span className="text-gray-400 text-sm italic">No assessments</span>
                )}
                {day.assessments.map((assessment, i) => {
-                   // Handle hex color for border/bg
-                   const rawColor = assessment.color;
-                   const hex = rawColor.length === 8 ? '#' + rawColor.substring(2) : '#' + rawColor;
+                   const hex = normalizeHexColor(assessment.color);
 
-                   // Override color for past events
                    const dotStyle = isPastDay
                      ? { backgroundColor: undefined }
                      : { backgroundColor: hex };
