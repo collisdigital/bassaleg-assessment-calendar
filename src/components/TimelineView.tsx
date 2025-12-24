@@ -1,14 +1,14 @@
 import { useEffect, useRef, memo } from 'react';
 import { DayInfo, Assessment } from '../types';
-import { normalizeHexColor } from '../utils/colorUtils';
 
 interface TimelineViewProps {
   schedule: DayInfo[];
+  typeColors: Record<string, string>;
   onAssessmentClick: (assessment: Assessment, date: string) => void;
   scrollRef?: React.RefObject<HTMLDivElement>;
 }
 
-export const TimelineView = memo(function TimelineView({ schedule, onAssessmentClick, scrollRef }: TimelineViewProps) {
+export const TimelineView = memo(function TimelineView({ schedule, typeColors, onAssessmentClick, scrollRef }: TimelineViewProps) {
   const internalRef = useRef<HTMLDivElement>(null);
   const activeRef = scrollRef ?? internalRef;
 
@@ -104,11 +104,11 @@ export const TimelineView = memo(function TimelineView({ schedule, onAssessmentC
                    <span className="text-gray-400 text-sm italic">No assessments</span>
                )}
                {day.assessments.map((assessment, i) => {
-                   const hex = normalizeHexColor(assessment.color);
+                   const color = typeColors[assessment.type] || '#E5E7EB';
 
                    const dotStyle = isPastDay
                      ? { backgroundColor: undefined }
-                     : { backgroundColor: hex };
+                     : { backgroundColor: color };
 
                    const dotClass = `flex-shrink-0 w-3 h-3 mt-1.5 rounded-full ${isPastDay ? 'bg-gray-400' : ''}`;
 

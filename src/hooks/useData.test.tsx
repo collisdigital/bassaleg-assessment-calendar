@@ -44,7 +44,7 @@ describe('useData Hook', () => {
                 createMockAssessment('English', 'Mock')
             ])
         ],
-        types: { '#FF0000': 'Exam', '#00FF00': 'Mock' }
+        types: { 'Exam': '#FF0000', 'Mock': '#00FF00' }
     });
     const useData = await loadUseData(createMockAppData({ 'year-10': yearData }));
 
@@ -57,11 +57,11 @@ describe('useData Hook', () => {
   it('should switch data when yearId changes', async () => {
     const year10 = createMockYearData({
         schedule: [createMockDay('2024-01-01', [createMockAssessment('Maths', 'Exam')])],
-        types: { '#FF0000': 'Exam' }
+        types: { 'Exam': '#FF0000' }
     });
     const year11 = createMockYearData({
         schedule: [createMockDay('2024-01-01', [createMockAssessment('Physics', 'Exam')])],
-        types: { '#FF0000': 'Exam' }
+        types: { 'Exam': '#FF0000' }
     });
 
     const useData = await loadUseData(createMockAppData({
@@ -83,7 +83,7 @@ describe('useData Hook', () => {
   it('should initialize filters from URL parameters', async () => {
      const yearData = createMockYearData({
          schedule: [createMockDay('2024-01-01', [createMockAssessment('Maths', 'Exam')])],
-         types: { '#FF0000': 'Exam' }
+         types: { 'Exam': '#FF0000' }
     });
     const useData = await loadUseData(createMockAppData({ 'year-10': yearData }));
 
@@ -99,7 +99,7 @@ describe('useData Hook', () => {
   it('should update filters', async () => {
     const yearData = createMockYearData({
         schedule: [createMockDay('2024-01-01', [createMockAssessment('Maths', 'Exam')])],
-        types: { '#FF0000': 'Exam' }
+        types: { 'Exam': '#FF0000' }
     });
     const useData = await loadUseData(createMockAppData({ 'year-10': yearData }));
 
@@ -120,7 +120,7 @@ describe('useData Hook', () => {
                createMockAssessment('English', 'Mock')
            ])
        ],
-       types: { '#FF0000': 'Exam', '#00FF00': 'Mock' }
+       types: { 'Exam': '#FF0000', 'Mock': '#00FF00' }
    });
    const useData = await loadUseData(createMockAppData({ 'year-10': yearData }));
 
@@ -139,7 +139,7 @@ describe('useData Hook', () => {
  it('should handle special characters in subjects for URL slugs', async () => {
     const yearData = createMockYearData({
        schedule: [createMockDay('2024-01-01', [createMockAssessment('Science & Tech', 'Exam')])],
-       types: { '#FF0000': 'Exam' }
+       types: { 'Exam': '#FF0000' }
    });
    const useData = await loadUseData(createMockAppData({ 'year-10': yearData }));
 

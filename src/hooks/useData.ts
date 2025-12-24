@@ -2,7 +2,6 @@ import { useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import rawData from '../data.json';
 import { AppData, YearData } from '../types';
-import { normalizeHexColor } from '../utils/colorUtils';
 
 const appData = rawData as unknown as AppData;
 
@@ -38,7 +37,8 @@ export function useData(yearId: string) {
 
   const allTypes = useMemo(() => {
     if (!yearData) return [];
-    return Object.values(yearData.types).sort();
+    // keys of types object are now the Type Names
+    return Object.keys(yearData.types).sort();
   }, [yearData]);
 
   // Read state from URL
@@ -89,11 +89,8 @@ export function useData(yearId: string) {
 
   const typeColors = useMemo(() => {
     if (!yearData) return {};
-    const map: Record<string, string> = {};
-    for (const [color, type] of Object.entries(yearData.types)) {
-        map[type] = normalizeHexColor(color);
-    }
-    return map;
+    // Types is already Type -> Color
+    return yearData.types;
   }, [yearData]);
 
   const filteredSchedule = useMemo(() => {

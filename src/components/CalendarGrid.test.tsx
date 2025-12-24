@@ -6,6 +6,7 @@ import { createMockDay, createMockAssessment } from '../test/test-utils';
 
 describe('CalendarGrid', () => {
   const mockOnAssessmentClick = vi.fn();
+  const mockTypeColors = { Exam: '#FF0000' };
   // 2024-02-14 is a Wednesday.
   const initialDate = new Date('2024-02-14T12:00:00Z');
 
@@ -24,6 +25,7 @@ describe('CalendarGrid', () => {
       <CalendarGrid
         schedule={[]}
         viewMode="month-7day"
+        typeColors={mockTypeColors}
         onAssessmentClick={mockOnAssessmentClick}
       />
     );
@@ -36,6 +38,7 @@ describe('CalendarGrid', () => {
       <CalendarGrid
         schedule={[]}
         viewMode="month-7day"
+        typeColors={mockTypeColors}
         onAssessmentClick={mockOnAssessmentClick}
       />
     );
@@ -50,6 +53,7 @@ describe('CalendarGrid', () => {
       <CalendarGrid
         schedule={[]}
         viewMode="month-7day"
+        typeColors={mockTypeColors}
         onAssessmentClick={mockOnAssessmentClick}
       />
     );
@@ -74,6 +78,7 @@ describe('CalendarGrid', () => {
       <CalendarGrid
         schedule={schedule}
         viewMode="month-7day"
+        typeColors={mockTypeColors}
         onAssessmentClick={mockOnAssessmentClick}
       />
     );
@@ -86,6 +91,7 @@ describe('CalendarGrid', () => {
       <CalendarGrid
         schedule={[]}
         viewMode="month-5day"
+        typeColors={mockTypeColors}
         onAssessmentClick={mockOnAssessmentClick}
       />
     );
@@ -101,6 +107,7 @@ describe('CalendarGrid', () => {
       <CalendarGrid
         schedule={[]}
         viewMode="month-7day"
+        typeColors={mockTypeColors}
         onAssessmentClick={mockOnAssessmentClick}
       />
     );
@@ -118,6 +125,7 @@ describe('CalendarGrid', () => {
         <CalendarGrid
             schedule={schedule}
             viewMode="month-7day"
+            typeColors={mockTypeColors}
             onAssessmentClick={mockOnAssessmentClick}
         />
       );
@@ -130,7 +138,7 @@ describe('CalendarGrid', () => {
 
   it('jumps to today when Today button is clicked', async () => {
       const user = userEvent.setup();
-      render(<CalendarGrid schedule={[]} viewMode="month-7day" onAssessmentClick={mockOnAssessmentClick} />);
+      render(<CalendarGrid schedule={[]} viewMode="month-7day" typeColors={mockTypeColors} onAssessmentClick={mockOnAssessmentClick} />);
 
       // Navigate away
       await user.click(screen.getByText('Next →'));

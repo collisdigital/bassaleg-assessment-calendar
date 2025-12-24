@@ -7,10 +7,11 @@ import { Assessment } from '../types';
 interface CalendarGridProps {
   schedule: DayInfo[];
   viewMode: ViewMode;
+  typeColors: Record<string, string>;
   onAssessmentClick: (assessment: Assessment, date: string) => void;
 }
 
-export function CalendarGrid({ schedule, viewMode, onAssessmentClick }: CalendarGridProps) {
+export function CalendarGrid({ schedule, viewMode, typeColors, onAssessmentClick }: CalendarGridProps) {
   // Determine the date range from the schedule to set initial view
   // User request: Start with current month containing today
 
@@ -143,6 +144,7 @@ export function CalendarGrid({ schedule, viewMode, onAssessmentClick }: Calendar
                     key={idx}
                     day={slot.day}
                     isCurrentMonth={slot.isCurrentMonth}
+                    typeColors={typeColors}
                     onAssessmentClick={onAssessmentClick}
                 />
             ))}

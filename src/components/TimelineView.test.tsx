@@ -8,6 +8,7 @@ import { DayInfo } from '../types';
 describe('TimelineView', () => {
   const mockOnAssessmentClick = vi.fn();
   const mockScrollIntoView = vi.fn();
+  const mockTypeColors = { Exam: '#FF0000', Mock: '#00FF00' };
 
   beforeEach(() => {
     Element.prototype.scrollIntoView = mockScrollIntoView;
@@ -26,6 +27,7 @@ describe('TimelineView', () => {
     render(
       <TimelineView
         schedule={[]}
+        typeColors={mockTypeColors}
         onAssessmentClick={mockOnAssessmentClick}
       />
     );
@@ -42,6 +44,7 @@ describe('TimelineView', () => {
     render(
       <TimelineView
         schedule={schedule}
+        typeColors={mockTypeColors}
         onAssessmentClick={mockOnAssessmentClick}
       />
     );
@@ -59,6 +62,7 @@ describe('TimelineView', () => {
     render(
       <TimelineView
         schedule={schedule}
+        typeColors={mockTypeColors}
         onAssessmentClick={mockOnAssessmentClick}
       />
     );
@@ -77,6 +81,7 @@ describe('TimelineView', () => {
     render(
       <TimelineView
         schedule={schedule}
+        typeColors={mockTypeColors}
         onAssessmentClick={mockOnAssessmentClick}
       />
     );
@@ -98,6 +103,7 @@ describe('TimelineView', () => {
     render(
       <TimelineView
         schedule={schedule}
+        typeColors={mockTypeColors}
         onAssessmentClick={mockOnAssessmentClick}
       />
     );
@@ -119,6 +125,7 @@ describe('TimelineView', () => {
     render(
       <TimelineView
         schedule={schedule}
+        typeColors={mockTypeColors}
         onAssessmentClick={mockOnAssessmentClick}
       />
     );
@@ -133,7 +140,7 @@ describe('TimelineView', () => {
           createMockDay('2024-01-16', [])  // Future empty
       ];
 
-      render(<TimelineView schedule={schedule} onAssessmentClick={mockOnAssessmentClick} />);
+      render(<TimelineView schedule={schedule} typeColors={mockTypeColors} onAssessmentClick={mockOnAssessmentClick} />);
 
       expect(screen.queryByText(/Jan 14/)).not.toBeInTheDocument();
       expect(screen.getByText(/Mon, Jan 15/i)).toBeInTheDocument();

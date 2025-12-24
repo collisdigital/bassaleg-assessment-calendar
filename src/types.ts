@@ -4,7 +4,6 @@ export interface Assessment {
   subject: string;
   type: string;
   label: string;
-  color: string;
 }
 
 export interface DayInfo {
@@ -18,7 +17,7 @@ export interface YearData {
   name: string;
   sourceUrl?: string;
   filename?: string;
-  types: Record<string, string>;
+  types: Record<string, string>; // Type -> Color (Hex)
   schedule: DayInfo[];
 }
 

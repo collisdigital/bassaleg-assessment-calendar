@@ -23,12 +23,23 @@ const COL_DATE = 2; // B
 const COL_WEEK = 3; // C
 const COL_INSET = 4; // D
 const COL_SUBJECT_START = 5; // E
-const NOTE_COLOR = 'FFE5E7EB';
 
-// Helper to normalize ARGB colors from Excel
-function normalizeColor(argb) {
-  if (!argb) return null;
-  return argb;
+// Colors
+const NOTE_COLOR = '#E5E7EB'; // CSS Hex for Note (Gray-200)
+
+// Helper to normalize Color to CSS Hex
+function normalizeColor(value) {
+  if (!value) return null;
+  let hex = value.toString();
+  // If Excel returns ARGB (8 chars), e.g., FFE5E7EB, strip alpha (first 2 chars)
+  if (hex.length === 8) {
+      hex = hex.substring(2);
+  }
+  // Ensure hash prefix
+  if (!hex.startsWith('#')) {
+      hex = '#' + hex;
+  }
+  return hex.toUpperCase(); // Standardize to uppercase
 }
 
 // Helper to extract text from cell value (handling Rich Text)
@@ -128,23 +139,41 @@ async function parseSheet(filePath) {
   }
 
   // 2. Parse Legend/Key
-  const typeMap = {};
+  // Map: Color (Hex) -> Type (String) used for lookup during row parsing
+  const colorToTypeMap = {};
+  // Map: Type (String) -> Color (Hex) used for final output
+  const outputTypes = {};
+
   console.log('Parsing Key...');
   for (let r = 2; r <= 20; r++) {
       const cell = sheet.getCell(r, colKeyType);
       const val = cell.value;
       const fill = cell.fill;
       if (val && fill && fill.type === 'pattern' && fill.fgColor) {
-          const color = normalizeColor(fill.fgColor.argb);
-          if (color) {
-              typeMap[color] = val.toString().trim();
-              console.log(`Found Type: ${val} = ${color}`);
+          const typeName = val.toString().trim();
+          const colorHex = normalizeColor(fill.fgColor.argb);
+
+          if (colorHex) {
+            // Check for duplicate type names with different colors
+            if (outputTypes[typeName] && outputTypes[typeName] !== colorHex) {
+                console.warn(`WARNING: Duplicate Key found for type "${typeName}" with different color! Existing: ${outputTypes[typeName]}, New: ${colorHex}. Keeping existing.`);
+            } else {
+                outputTypes[typeName] = colorHex;
+                // Also store reverse mapping for lookup
+                colorToTypeMap[colorHex] = typeName;
+                console.log(`Found Type: ${typeName} = ${colorHex}`);
+            }
           }
       }
   }
 
-  if (!Object.values(typeMap).includes('Note')) {
-      typeMap[NOTE_COLOR] = 'Note';
+  // Ensure "Note" type exists
+  if (!outputTypes['Note']) {
+      outputTypes['Note'] = NOTE_COLOR;
+      colorToTypeMap[NOTE_COLOR] = 'Note';
+      console.log(`Added default Type: Note = ${NOTE_COLOR}`);
+  } else if (outputTypes['Note'] !== NOTE_COLOR) {
+      console.warn(`WARNING: "Note" type already defined with color ${outputTypes['Note']}. Keeping it, but expected ${NOTE_COLOR}.`);
   }
 
   // 3. Parse Data Rows
@@ -239,13 +268,25 @@ async function parseSheet(filePath) {
           if (hasText) {
               const fill = cell.fill;
               let type = 'Note';
-              let color = NOTE_COLOR;
+              let color = NOTE_COLOR; // For lookup only
 
               if (fill && fill.type === 'pattern' && fill.fgColor) {
-                  const c = normalizeColor(fill.fgColor.argb);
-                  if (typeMap[c]) {
-                      type = typeMap[c];
-                      color = c;
+                  const normalizedColor = normalizeColor(fill.fgColor.argb);
+                  if (normalizedColor) {
+                    color = normalizedColor;
+                    if (colorToTypeMap[color]) {
+                        type = colorToTypeMap[color];
+                    } else {
+                        // Unknown color
+                        type = 'Other';
+                        console.warn(`WARNING: Unknown color ${color} found for subject ${subject} at row ${r}. Assigning type "Other".`);
+
+                        // Add Other to output definitions if not present
+                        if (!outputTypes['Other']) {
+                             outputTypes['Other'] = color;
+                             // We don't add to colorToTypeMap to prevent "Other" from swallowing other valid identical colors if they appear later in the Key (unlikely but safe)
+                        }
+                    }
                   }
               }
 
@@ -254,8 +295,8 @@ async function parseSheet(filePath) {
               dayRecord.assessments.push({
                   subject: subject,
                   type: type,
-                  label: label,
-                  color: color
+                  label: label
+                  // color is removed
               });
           }
       }
@@ -263,7 +304,7 @@ async function parseSheet(filePath) {
       data.push(dayRecord);
   }
 
-  return { types: typeMap, schedule: data };
+  return { types: outputTypes, schedule: data };
 }
 
 (async () => {
@@ -294,7 +335,7 @@ async function parseSheet(filePath) {
                 name: year.name, // Add name from config
                 filename: filename || `${year.name} Assessment Calendar`,
                 sourceUrl: sheetUrl,
-                types: data.types,
+                types: data.types, // Type -> Color mapping
                 schedule: data.schedule
             };
 
@@ -304,7 +345,8 @@ async function parseSheet(filePath) {
             }
         } catch (e) {
             console.error(`Failed to process ${year.id}:`, e);
-            process.exit(1);
+            // Don't kill process so other years can try?
+            // process.exit(1);
         }
     }
 

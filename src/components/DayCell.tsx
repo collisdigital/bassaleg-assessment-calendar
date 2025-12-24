@@ -6,10 +6,11 @@ import { Assessment } from '../types';
 interface DayCellProps {
   day: DayInfo;
   isCurrentMonth: boolean;
+  typeColors: Record<string, string>;
   onAssessmentClick: (assessment: Assessment, date: string) => void;
 }
 
-export function DayCell({ day, isCurrentMonth, onAssessmentClick }: DayCellProps) {
+export function DayCell({ day, isCurrentMonth, typeColors, onAssessmentClick }: DayCellProps) {
   const dateObj = new Date(day.date);
   const dayNumber = dateObj.getDate();
   const isToday = new Date().toDateString() === dateObj.toDateString();
@@ -43,6 +44,7 @@ export function DayCell({ day, isCurrentMonth, onAssessmentClick }: DayCellProps
           <AssessmentPill
             key={i}
             assessment={assessment}
+            color={typeColors[assessment.type] || '#E5E7EB'}
             onClick={() => onAssessmentClick(assessment, day.date)}
           />
         ))}
