@@ -37,7 +37,6 @@ export function useData(yearId: string) {
 
   const allTypes = useMemo(() => {
     if (!yearData) return [];
-    // keys of types object are now the Type Names
     return Object.keys(yearData.types).sort();
   }, [yearData]);
 
@@ -89,7 +88,6 @@ export function useData(yearId: string) {
 
   const typeColors = useMemo(() => {
     if (!yearData) return {};
-    // Types is already Type -> Color
     return yearData.types;
   }, [yearData]);
 

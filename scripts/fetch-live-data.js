@@ -296,7 +296,6 @@ async function parseSheet(filePath) {
                   subject: subject,
                   type: type,
                   label: label
-                  // color is removed
               });
           }
       }
@@ -345,8 +344,7 @@ async function parseSheet(filePath) {
             }
         } catch (e) {
             console.error(`Failed to process ${year.id}:`, e);
-            // Don't kill process so other years can try?
-            // process.exit(1);
+            process.exit(1);
         }
     }
 

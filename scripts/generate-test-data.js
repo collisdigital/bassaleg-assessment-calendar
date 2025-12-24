@@ -11,7 +11,6 @@ const SUBJECTS_Y10 = ['Maths', 'English', 'Science', 'History', 'Geography', 'Ar
 const SUBJECTS_Y11 = ['Maths', 'English Lit', 'Physics', 'Chemistry', 'Biology', 'Computer Science'];
 const SUBJECTS_Y12 = ['Psychology', 'Sociology', 'Economics', 'Further Maths'];
 
-// Inverted: Key is Type, Value is CSS Hex Color
 const TYPES_COMMON = { 'Exam': '#EF4444' };
 const TYPES_Y10 = { ...TYPES_COMMON, 'Mock': '#F59E0B', 'Coursework': '#3B82F6' };
 const TYPES_Y11 = { ...TYPES_COMMON, 'Practical': '#10B981', 'Speaking': '#8B5CF6' };
@@ -36,7 +35,7 @@ function getRandomItem(arr) {
 }
 
 function generateYearData(yearName, subjects, types) {
-    const typeKeys = Object.keys(types); // Now ['Exam', 'Mock', ...]
+    const typeKeys = Object.keys(types);
     // Fixed start date: Monday, Sept 1st 2025
     const startDate = new Date('2025-09-01T12:00:00Z');
 
@@ -76,7 +75,6 @@ function generateYearData(yearName, subjects, types) {
                         subject: 'Maths',
                         type: 'Exam',
                         label: `${yearName} Maths Exam - Topic: Algebra`,
-                        // color removed
                     });
                  } else {
                      // Fallback

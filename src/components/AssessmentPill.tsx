@@ -7,7 +7,6 @@ interface AssessmentPillProps {
 }
 
 export function AssessmentPill({ assessment, color, onClick }: AssessmentPillProps) {
-  // Color is now passed as a prop, already normalized hex
   return (
     <button
         type="button"
