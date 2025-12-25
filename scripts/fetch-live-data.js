@@ -6,6 +6,8 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+const debugMode = process.argv.includes('--debug');
+
 const OUTPUT_FILE = path.join(__dirname, '../src/data.json');
 const CONFIG_FILE = path.join(__dirname, 'years-config.json');
 
@@ -50,15 +52,20 @@ function getCellValue(cell) {
     // Handle Rich Text
     if (typeof val === 'object') {
         if (val.richText && Array.isArray(val.richText)) {
-            return val.richText.map(part => part.text).join('');
+            const text = val.richText.map(part => part.text).join('');
+            if (debugMode) console.log(`TRACE: getCellValue - Stripped formatting from richText cell. Original: %o, Result: ${text}`, val);
+            return text;
         }
         // Handle Hyperlink { text: '...', hyperlink: '...' }
         if (val.text) {
+            if (debugMode) console.log(`TRACE: getCellValue - Extracted text from hyperlink cell. Original: %o, Result: ${val.text}`, val);
             return val.text;
         }
         // Handle Date object
         if (val instanceof Date) {
-            return val.toISOString();
+            const isoDate = val.toISOString();
+            if (debugMode) console.log(`TRACE: getCellValue - Converted Date object to ISO string. Original: %o, Result: ${isoDate}`, val);
+            return isoDate;
         }
     }
 
@@ -133,9 +140,8 @@ async function parseSheet(filePath) {
   }
 
   if (colKeyType === -1) {
-      const lastSubjectCol = subjects.length - 1;
-      colKeyType = lastSubjectCol + 1;
-      console.warn(`"Key" header not found. Assuming Column ${colKeyType} (after last subject) is Key.`);
+      console.error('ERROR: "Key" header column not found in the spreadsheet. It is required.');
+      process.exit(1);
   }
 
   // 2. Parse Legend/Key
@@ -147,10 +153,11 @@ async function parseSheet(filePath) {
   console.log('Parsing Key...');
   for (let r = 2; r <= 20; r++) {
       const cell = sheet.getCell(r, colKeyType);
-      const val = cell.value;
       const fill = cell.fill;
+      const val = getCellValue(cell);
+
       if (val && fill && fill.type === 'pattern' && fill.fgColor) {
-          const typeName = val.toString().trim();
+          const typeName = val.trim();
           const colorHex = normalizeColor(fill.fgColor.argb);
 
           if (colorHex) {
@@ -189,8 +196,8 @@ async function parseSheet(filePath) {
       const dateVal = dateCell.value;
 
       // Stop if empty date
-      if (!dateVal) {
-          if (!row.getCell(COL_WEEK).value) {
+      if (!getCellValue(dateCell)) {
+          if (!getCellValue(row.getCell(COL_WEEK))) {
              break;
           }
           continue;
@@ -198,8 +205,8 @@ async function parseSheet(filePath) {
 
       // Date Parsing
       let dateObj = null;
-      if (dateVal instanceof Date) {
-          dateObj = dateVal;
+      if (dateCell.value instanceof Date) {
+          dateObj = dateCell.value;
       } else {
           // Regex for "3rd Nov", "3 Nov", "3rt Nov" etc.
           // Matches: Number, optional rubbish, Month Name
@@ -210,7 +217,7 @@ async function parseSheet(filePath) {
               "([a-zA-Z]+)",   // Month name
               "i"              // Case insensitive
           );
-          const dateStr = dateVal.toString();
+          const dateStr = getCellValue(dateCell);
           const match = dateStr.match(dateRegex);
 
           if (match) {
@@ -223,8 +230,10 @@ async function parseSheet(filePath) {
              const monthIndex = months[monthStr.toLowerCase().substr(0,3)];
 
              if (monthIndex !== undefined) {
+                 // If we cross from December (11) to January (0), increment year
                  if (lastMonthIndex === 11 && monthIndex === 0) {
                      currentYear++;
+                 // Heuristic for academic year rollover: if month goes significantly backwards (e.g., Sep to Jan), increment year
                  } else if (lastMonthIndex > monthIndex && (lastMonthIndex - monthIndex) > 6) {
                     currentYear++;
                  }
@@ -240,12 +249,12 @@ async function parseSheet(filePath) {
           continue;
       }
 
-      const weekVal = row.getCell(COL_WEEK).value;
-      const isInset = !!row.getCell(COL_INSET).value;
+      const weekCell = row.getCell(COL_WEEK);
+      const isInset = !!getCellValue(row.getCell(COL_INSET));
 
       const dayRecord = {
           date: dateObj.toISOString(),
-          week: weekVal ? weekVal.toString() : null,
+          week: getCellValue(weekCell),
           isInset: isInset,
           assessments: []
       };
