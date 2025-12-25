@@ -9,9 +9,9 @@ export function createMockYearData(overrides: Partial<YearData> = {}): YearData 
     filename: 'test-data.xlsx',
     sourceUrl: 'http://example.com/sheet',
     types: {
-      'FFFF0000': 'Exam',
-      'FF00FF00': 'Mock',
-      'FF0000FF': 'NEA',
+      'Exam': '#EF4444',
+      'Mock': '#F59E0B',
+      'NEA': '#3B82F6',
     },
     schedule: [],
   };
@@ -52,6 +52,5 @@ export function createMockAssessment(
     subject,
     type,
     label: `${subject} (${type})`,
-    color: 'FFFF0000'
   };
 }

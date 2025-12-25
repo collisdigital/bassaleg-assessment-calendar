@@ -8,7 +8,6 @@ import { ViewSelector } from './ViewSelector';
 import { ViewMode, Assessment } from '../types';
 import { Modal } from './Modal';
 import { formatLastUpdated } from '../utils/dateUtils';
-import { normalizeHexColor } from '../utils/colorUtils';
 
 // Moved outside component to prevent re-creation on every render
 const CalendarDayIcon = ({ day }: { day: number }) => (
@@ -248,6 +247,7 @@ export function YearView() {
           {viewMode === 'timeline' ? (
              <TimelineView
                 schedule={dataHook.schedule}
+                typeColors={dataHook.typeColors}
                 onAssessmentClick={handleAssessmentClick}
                 scrollRef={timelineScrollRef}
              />
@@ -255,6 +255,7 @@ export function YearView() {
             <CalendarGrid
                 schedule={dataHook.schedule}
                 viewMode={viewMode}
+                typeColors={dataHook.typeColors}
                 onAssessmentClick={handleAssessmentClick}
             />
           )}
@@ -278,10 +279,10 @@ export function YearView() {
               <div>
                 <h4 className="text-sm font-medium text-gray-500">Type</h4>
                 {(() => {
-                  const hex = normalizeHexColor(selectedAssessment.data.color);
+                  const color = dataHook.typeColors[selectedAssessment.data.type] || '#E5E7EB';
                   return (
                     <span className="inline-flex items-center rounded-md px-2 py-1 text-xs font-medium ring-1 ring-inset ring-gray-500/10 mt-1"
-                          style={{ backgroundColor: hex }}>
+                          style={{ backgroundColor: color }}>
                       {selectedAssessment.data.type}
                     </span>
                   );

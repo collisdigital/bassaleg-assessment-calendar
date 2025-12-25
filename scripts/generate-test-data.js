@@ -11,10 +11,10 @@ const SUBJECTS_Y10 = ['Maths', 'English', 'Science', 'History', 'Geography', 'Ar
 const SUBJECTS_Y11 = ['Maths', 'English Lit', 'Physics', 'Chemistry', 'Biology', 'Computer Science'];
 const SUBJECTS_Y12 = ['Psychology', 'Sociology', 'Economics', 'Further Maths'];
 
-const TYPES_COMMON = { '#EF4444': 'Exam' };
-const TYPES_Y10 = { ...TYPES_COMMON, '#F59E0B': 'Mock', '#3B82F6': 'Coursework' };
-const TYPES_Y11 = { ...TYPES_COMMON, '#10B981': 'Practical', '#8B5CF6': 'Speaking' };
-const TYPES_Y12 = { ...TYPES_COMMON, '#EC4899': 'Essay', '#6366F1': 'Presentation' };
+const TYPES_COMMON = { 'Exam': '#EF4444' };
+const TYPES_Y10 = { ...TYPES_COMMON, 'Mock': '#F59E0B', 'Coursework': '#3B82F6' };
+const TYPES_Y11 = { ...TYPES_COMMON, 'Practical': '#10B981', 'Speaking': '#8B5CF6' };
+const TYPES_Y12 = { ...TYPES_COMMON, 'Essay': '#EC4899', 'Presentation': '#6366F1' };
 
 // Seeded Random Number Generator
 let seed = 123456;
@@ -68,25 +68,22 @@ function generateYearData(yearName, subjects, types) {
             // Force first day assessment
             if (i === 0) {
                  const hasMaths = subjects.includes('Maths');
-                 // Find key for 'Exam'
-                 const examColor = Object.keys(types).find(k => types[k] === 'Exam');
+                 const hasExam = typeKeys.includes('Exam');
 
-                 if (hasMaths && examColor) {
+                 if (hasMaths && hasExam) {
                      dayRecord.assessments.push({
                         subject: 'Maths',
                         type: 'Exam',
                         label: `${yearName} Maths Exam - Topic: Algebra`,
-                        color: examColor
                     });
                  } else {
                      // Fallback
                      const fallbackSub = subjects[0];
-                     const fallbackColor = typeKeys[0];
+                     const fallbackType = typeKeys[0];
                      dayRecord.assessments.push({
                         subject: fallbackSub,
-                        type: types[fallbackColor],
-                        label: `${yearName} ${fallbackSub} ${types[fallbackColor]} - Intro`,
-                        color: fallbackColor
+                        type: fallbackType,
+                        label: `${yearName} ${fallbackSub} ${fallbackType} - Intro`,
                     });
                  }
             }
@@ -95,13 +92,12 @@ function generateYearData(yearName, subjects, types) {
             const numAssessments = getRandomInt(0, 3);
 
             for (let j = 0; j < numAssessments; j++) {
-                const color = getRandomItem(typeKeys);
+                const type = getRandomItem(typeKeys);
                 const subject = getRandomItem(subjects);
                 dayRecord.assessments.push({
                     subject: subject,
-                    type: types[color],
-                    label: `${yearName} ${subject} ${types[color]} - Topic: ${getRandomItem(['Topic A', 'Topic B', 'Topic C', 'Topic D'])}`,
-                    color: color
+                    type: type,
+                    label: `${yearName} ${subject} ${type} - Topic: ${getRandomItem(['Topic A', 'Topic B', 'Topic C', 'Topic D'])}`,
                 });
             }
         }

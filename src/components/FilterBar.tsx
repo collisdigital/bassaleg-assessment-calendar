@@ -1,14 +1,8 @@
 import { useData } from '../hooks/useData';
+import { hexToRgba } from '../utils/colorUtils';
 
 interface FilterBarProps extends ReturnType<typeof useData> {
   className?: string;
-}
-
-function hexToRgba(hex: string, alpha: number) {
-    const r = parseInt(hex.slice(1, 3), 16);
-    const g = parseInt(hex.slice(3, 5), 16);
-    const b = parseInt(hex.slice(5, 7), 16);
-    return `rgba(${r}, ${g}, ${b}, ${alpha})`;
 }
 
 export function FilterBar({
@@ -52,7 +46,7 @@ export function FilterBar({
             <div className="flex flex-wrap gap-2">
               {allTypes.map(type => {
                 const isSelected = selectedTypes.includes(type);
-                const color = typeColors[type] || '#e5e7eb'; // Default gray-200
+                const color = typeColors[type] || '#E5E7EB'; // Default gray-200
 
                 const style = isSelected
                     ? { backgroundColor: color, borderColor: color }

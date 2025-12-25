@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2025-12-21T14:48:08.156Z",
+  "generatedAt": "2025-12-24T18:25:03.238Z",
   "years": {
     "year-10": {
       "name": "Year 10",
       "filename": "Year 10 Assessment Calendar",
       "sourceUrl": "http://example.com/Year 10",
       "types": {
-        "#EF4444": "Exam",
-        "#F59E0B": "Mock",
-        "#3B82F6": "Coursework"
+        "Exam": "#EF4444",
+        "Mock": "#F59E0B",
+        "Coursework": "#3B82F6"
       },
       "schedule": [
         {
@@ -19,8 +19,7 @@
             {
               "subject": "Maths",
               "type": "Exam",
-              "label": "Year 10 Maths Exam - Topic: Algebra",
-              "color": "#EF4444"
+              "label": "Year 10 Maths Exam - Topic: Algebra"
             }
           ]
         },
@@ -38,14 +37,12 @@
             {
               "subject": "Maths",
               "type": "Mock",
-              "label": "Year 10 Maths Mock - Topic: Topic B",
-              "color": "#F59E0B"
+              "label": "Year 10 Maths Mock - Topic: Topic B"
             },
             {
               "subject": "Science",
               "type": "Exam",
-              "label": "Year 10 Science Exam - Topic: Topic D",
-              "color": "#EF4444"
+              "label": "Year 10 Science Exam - Topic: Topic D"
             }
           ]
         },
@@ -57,20 +54,17 @@
             {
               "subject": "Art",
               "type": "Coursework",
-              "label": "Year 10 Art Coursework - Topic: Topic B",
-              "color": "#3B82F6"
+              "label": "Year 10 Art Coursework - Topic: Topic B"
             },
             {
               "subject": "Geography",
               "type": "Exam",
-              "label": "Year 10 Geography Exam - Topic: Topic C",
-              "color": "#EF4444"
+              "label": "Year 10 Geography Exam - Topic: Topic C"
             },
             {
               "subject": "Science",
               "type": "Coursework",
-              "label": "Year 10 Science Coursework - Topic: Topic A",
-              "color": "#3B82F6"
+              "label": "Year 10 Science Coursework - Topic: Topic A"
             }
           ]
         },
@@ -82,8 +76,7 @@
             {
               "subject": "History",
               "type": "Exam",
-              "label": "Year 10 History Exam - Topic: Topic A",
-              "color": "#EF4444"
+              "label": "Year 10 History Exam - Topic: Topic A"
             }
           ]
         },
@@ -107,8 +100,7 @@
             {
               "subject": "Science",
               "type": "Mock",
-              "label": "Year 10 Science Mock - Topic: Topic C",
-              "color": "#F59E0B"
+              "label": "Year 10 Science Mock - Topic: Topic C"
             }
           ]
         },
@@ -120,14 +112,12 @@
             {
               "subject": "History",
               "type": "Exam",
-              "label": "Year 10 History Exam - Topic: Topic D",
-              "color": "#EF4444"
+              "label": "Year 10 History Exam - Topic: Topic D"
             },
             {
               "subject": "Maths",
               "type": "Exam",
-              "label": "Year 10 Maths Exam - Topic: Topic A",
-              "color": "#EF4444"
+              "label": "Year 10 Maths Exam - Topic: Topic A"
             }
           ]
         },
@@ -139,14 +129,12 @@
             {
               "subject": "English",
               "type": "Coursework",
-              "label": "Year 10 English Coursework - Topic: Topic C",
-              "color": "#3B82F6"
+              "label": "Year 10 English Coursework - Topic: Topic C"
             },
             {
               "subject": "Art",
               "type": "Exam",
-              "label": "Year 10 Art Exam - Topic: Topic A",
-              "color": "#EF4444"
+              "label": "Year 10 Art Exam - Topic: Topic A"
             }
           ]
         },
@@ -158,14 +146,12 @@
             {
               "subject": "Maths",
               "type": "Mock",
-              "label": "Year 10 Maths Mock - Topic: Topic A",
-              "color": "#F59E0B"
+              "label": "Year 10 Maths Mock - Topic: Topic A"
             },
             {
               "subject": "English",
               "type": "Coursework",
-              "label": "Year 10 English Coursework - Topic: Topic C",
-              "color": "#3B82F6"
+              "label": "Year 10 English Coursework - Topic: Topic C"
             }
           ]
         },
@@ -177,14 +163,12 @@
             {
               "subject": "Art",
               "type": "Exam",
-              "label": "Year 10 Art Exam - Topic: Topic D",
-              "color": "#EF4444"
+              "label": "Year 10 Art Exam - Topic: Topic D"
             },
             {
               "subject": "Art",
               "type": "Exam",
-              "label": "Year 10 Art Exam - Topic: Topic D",
-              "color": "#EF4444"
+              "label": "Year 10 Art Exam - Topic: Topic D"
             }
           ]
         },
@@ -208,14 +192,12 @@
             {
               "subject": "Geography",
               "type": "Coursework",
-              "label": "Year 10 Geography Coursework - Topic: Topic A",
-              "color": "#3B82F6"
+              "label": "Year 10 Geography Coursework - Topic: Topic A"
             },
             {
               "subject": "Art",
               "type": "Mock",
-              "label": "Year 10 Art Mock - Topic: Topic A",
-              "color": "#F59E0B"
+              "label": "Year 10 Art Mock - Topic: Topic A"
             }
           ]
         },
@@ -227,8 +209,7 @@
             {
               "subject": "Art",
               "type": "Mock",
-              "label": "Year 10 Art Mock - Topic: Topic B",
-              "color": "#F59E0B"
+              "label": "Year 10 Art Mock - Topic: Topic B"
             }
           ]
         },
@@ -246,14 +227,12 @@
             {
               "subject": "English",
               "type": "Mock",
-              "label": "Year 10 English Mock - Topic: Topic A",
-              "color": "#F59E0B"
+              "label": "Year 10 English Mock - Topic: Topic A"
             },
             {
               "subject": "History",
               "type": "Coursework",
-              "label": "Year 10 History Coursework - Topic: Topic C",
-              "color": "#3B82F6"
+              "label": "Year 10 History Coursework - Topic: Topic C"
             }
           ]
         },
@@ -265,14 +244,12 @@
             {
               "subject": "English",
               "type": "Exam",
-              "label": "Year 10 English Exam - Topic: Topic A",
-              "color": "#EF4444"
+              "label": "Year 10 English Exam - Topic: Topic A"
             },
             {
               "subject": "Maths",
               "type": "Mock",
-              "label": "Year 10 Maths Mock - Topic: Topic D",
-              "color": "#F59E0B"
+              "label": "Year 10 Maths Mock - Topic: Topic D"
             }
           ]
         },
@@ -296,8 +273,7 @@
             {
               "subject": "Science",
               "type": "Coursework",
-              "label": "Year 10 Science Coursework - Topic: Topic B",
-              "color": "#3B82F6"
+              "label": "Year 10 Science Coursework - Topic: Topic B"
             }
           ]
         },
@@ -309,14 +285,12 @@
             {
               "subject": "Science",
               "type": "Coursework",
-              "label": "Year 10 Science Coursework - Topic: Topic C",
-              "color": "#3B82F6"
+              "label": "Year 10 Science Coursework - Topic: Topic C"
             },
             {
               "subject": "English",
               "type": "Mock",
-              "label": "Year 10 English Mock - Topic: Topic B",
-              "color": "#F59E0B"
+              "label": "Year 10 English Mock - Topic: Topic B"
             }
           ]
         },
@@ -328,20 +302,17 @@
             {
               "subject": "Art",
               "type": "Exam",
-              "label": "Year 10 Art Exam - Topic: Topic C",
-              "color": "#EF4444"
+              "label": "Year 10 Art Exam - Topic: Topic C"
             },
             {
               "subject": "Maths",
               "type": "Coursework",
-              "label": "Year 10 Maths Coursework - Topic: Topic D",
-              "color": "#3B82F6"
+              "label": "Year 10 Maths Coursework - Topic: Topic D"
             },
             {
               "subject": "Maths",
               "type": "Coursework",
-              "label": "Year 10 Maths Coursework - Topic: Topic D",
-              "color": "#3B82F6"
+              "label": "Year 10 Maths Coursework - Topic: Topic D"
             }
           ]
         },
@@ -353,8 +324,7 @@
             {
               "subject": "Geography",
               "type": "Coursework",
-              "label": "Year 10 Geography Coursework - Topic: Topic A",
-              "color": "#3B82F6"
+              "label": "Year 10 Geography Coursework - Topic: Topic A"
             }
           ]
         },
@@ -390,14 +360,12 @@
             {
               "subject": "Geography",
               "type": "Coursework",
-              "label": "Year 10 Geography Coursework - Topic: Topic A",
-              "color": "#3B82F6"
+              "label": "Year 10 Geography Coursework - Topic: Topic A"
             },
             {
               "subject": "Science",
               "type": "Coursework",
-              "label": "Year 10 Science Coursework - Topic: Topic B",
-              "color": "#3B82F6"
+              "label": "Year 10 Science Coursework - Topic: Topic B"
             }
           ]
         },
@@ -409,14 +377,12 @@
             {
               "subject": "English",
               "type": "Coursework",
-              "label": "Year 10 English Coursework - Topic: Topic C",
-              "color": "#3B82F6"
+              "label": "Year 10 English Coursework - Topic: Topic C"
             },
             {
               "subject": "English",
               "type": "Mock",
-              "label": "Year 10 English Mock - Topic: Topic B",
-              "color": "#F59E0B"
+              "label": "Year 10 English Mock - Topic: Topic B"
             }
           ]
         },
@@ -428,20 +394,17 @@
             {
               "subject": "History",
               "type": "Exam",
-              "label": "Year 10 History Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 10 History Exam - Topic: Topic B"
             },
             {
               "subject": "English",
               "type": "Mock",
-              "label": "Year 10 English Mock - Topic: Topic C",
-              "color": "#F59E0B"
+              "label": "Year 10 English Mock - Topic: Topic C"
             },
             {
               "subject": "Art",
               "type": "Coursework",
-              "label": "Year 10 Art Coursework - Topic: Topic C",
-              "color": "#3B82F6"
+              "label": "Year 10 Art Coursework - Topic: Topic C"
             }
           ]
         },
@@ -453,14 +416,12 @@
             {
               "subject": "English",
               "type": "Mock",
-              "label": "Year 10 English Mock - Topic: Topic C",
-              "color": "#F59E0B"
+              "label": "Year 10 English Mock - Topic: Topic C"
             },
             {
               "subject": "English",
               "type": "Coursework",
-              "label": "Year 10 English Coursework - Topic: Topic C",
-              "color": "#3B82F6"
+              "label": "Year 10 English Coursework - Topic: Topic C"
             }
           ]
         },
@@ -526,20 +487,17 @@
             {
               "subject": "Maths",
               "type": "Mock",
-              "label": "Year 10 Maths Mock - Topic: Topic A",
-              "color": "#F59E0B"
+              "label": "Year 10 Maths Mock - Topic: Topic A"
             },
             {
               "subject": "Art",
               "type": "Mock",
-              "label": "Year 10 Art Mock - Topic: Topic A",
-              "color": "#F59E0B"
+              "label": "Year 10 Art Mock - Topic: Topic A"
             },
             {
               "subject": "History",
               "type": "Coursework",
-              "label": "Year 10 History Coursework - Topic: Topic A",
-              "color": "#3B82F6"
+              "label": "Year 10 History Coursework - Topic: Topic A"
             }
           ]
         },
@@ -551,14 +509,12 @@
             {
               "subject": "Maths",
               "type": "Mock",
-              "label": "Year 10 Maths Mock - Topic: Topic A",
-              "color": "#F59E0B"
+              "label": "Year 10 Maths Mock - Topic: Topic A"
             },
             {
               "subject": "Maths",
               "type": "Mock",
-              "label": "Year 10 Maths Mock - Topic: Topic B",
-              "color": "#F59E0B"
+              "label": "Year 10 Maths Mock - Topic: Topic B"
             }
           ]
         },
@@ -570,14 +526,12 @@
             {
               "subject": "Science",
               "type": "Exam",
-              "label": "Year 10 Science Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 10 Science Exam - Topic: Topic B"
             },
             {
               "subject": "Science",
               "type": "Mock",
-              "label": "Year 10 Science Mock - Topic: Topic D",
-              "color": "#F59E0B"
+              "label": "Year 10 Science Mock - Topic: Topic D"
             }
           ]
         },
@@ -589,20 +543,17 @@
             {
               "subject": "English",
               "type": "Mock",
-              "label": "Year 10 English Mock - Topic: Topic A",
-              "color": "#F59E0B"
+              "label": "Year 10 English Mock - Topic: Topic A"
             },
             {
               "subject": "Geography",
               "type": "Mock",
-              "label": "Year 10 Geography Mock - Topic: Topic B",
-              "color": "#F59E0B"
+              "label": "Year 10 Geography Mock - Topic: Topic B"
             },
             {
               "subject": "History",
               "type": "Exam",
-              "label": "Year 10 History Exam - Topic: Topic D",
-              "color": "#EF4444"
+              "label": "Year 10 History Exam - Topic: Topic D"
             }
           ]
         },
@@ -632,8 +583,7 @@
             {
               "subject": "Science",
               "type": "Mock",
-              "label": "Year 10 Science Mock - Topic: Topic C",
-              "color": "#F59E0B"
+              "label": "Year 10 Science Mock - Topic: Topic C"
             }
           ]
         },
@@ -651,14 +601,12 @@
             {
               "subject": "Maths",
               "type": "Exam",
-              "label": "Year 10 Maths Exam - Topic: Topic D",
-              "color": "#EF4444"
+              "label": "Year 10 Maths Exam - Topic: Topic D"
             },
             {
               "subject": "Art",
               "type": "Coursework",
-              "label": "Year 10 Art Coursework - Topic: Topic B",
-              "color": "#3B82F6"
+              "label": "Year 10 Art Coursework - Topic: Topic B"
             }
           ]
         },
@@ -670,14 +618,12 @@
             {
               "subject": "Geography",
               "type": "Mock",
-              "label": "Year 10 Geography Mock - Topic: Topic C",
-              "color": "#F59E0B"
+              "label": "Year 10 Geography Mock - Topic: Topic C"
             },
             {
               "subject": "Geography",
               "type": "Exam",
-              "label": "Year 10 Geography Exam - Topic: Topic A",
-              "color": "#EF4444"
+              "label": "Year 10 Geography Exam - Topic: Topic A"
             }
           ]
         },
@@ -689,8 +635,7 @@
             {
               "subject": "History",
               "type": "Mock",
-              "label": "Year 10 History Mock - Topic: Topic C",
-              "color": "#F59E0B"
+              "label": "Year 10 History Mock - Topic: Topic C"
             }
           ]
         },
@@ -714,20 +659,17 @@
             {
               "subject": "English",
               "type": "Mock",
-              "label": "Year 10 English Mock - Topic: Topic A",
-              "color": "#F59E0B"
+              "label": "Year 10 English Mock - Topic: Topic A"
             },
             {
               "subject": "History",
               "type": "Mock",
-              "label": "Year 10 History Mock - Topic: Topic D",
-              "color": "#F59E0B"
+              "label": "Year 10 History Mock - Topic: Topic D"
             },
             {
               "subject": "Science",
               "type": "Mock",
-              "label": "Year 10 Science Mock - Topic: Topic C",
-              "color": "#F59E0B"
+              "label": "Year 10 Science Mock - Topic: Topic C"
             }
           ]
         },
@@ -739,20 +681,17 @@
             {
               "subject": "Geography",
               "type": "Coursework",
-              "label": "Year 10 Geography Coursework - Topic: Topic B",
-              "color": "#3B82F6"
+              "label": "Year 10 Geography Coursework - Topic: Topic B"
             },
             {
               "subject": "Maths",
               "type": "Exam",
-              "label": "Year 10 Maths Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 10 Maths Exam - Topic: Topic B"
             },
             {
               "subject": "English",
               "type": "Coursework",
-              "label": "Year 10 English Coursework - Topic: Topic C",
-              "color": "#3B82F6"
+              "label": "Year 10 English Coursework - Topic: Topic C"
             }
           ]
         },
@@ -764,14 +703,12 @@
             {
               "subject": "Geography",
               "type": "Coursework",
-              "label": "Year 10 Geography Coursework - Topic: Topic D",
-              "color": "#3B82F6"
+              "label": "Year 10 Geography Coursework - Topic: Topic D"
             },
             {
               "subject": "English",
               "type": "Coursework",
-              "label": "Year 10 English Coursework - Topic: Topic C",
-              "color": "#3B82F6"
+              "label": "Year 10 English Coursework - Topic: Topic C"
             }
           ]
         },
@@ -783,20 +720,17 @@
             {
               "subject": "Art",
               "type": "Exam",
-              "label": "Year 10 Art Exam - Topic: Topic D",
-              "color": "#EF4444"
+              "label": "Year 10 Art Exam - Topic: Topic D"
             },
             {
               "subject": "History",
               "type": "Coursework",
-              "label": "Year 10 History Coursework - Topic: Topic A",
-              "color": "#3B82F6"
+              "label": "Year 10 History Coursework - Topic: Topic A"
             },
             {
               "subject": "Maths",
               "type": "Coursework",
-              "label": "Year 10 Maths Coursework - Topic: Topic A",
-              "color": "#3B82F6"
+              "label": "Year 10 Maths Coursework - Topic: Topic A"
             }
           ]
         },
@@ -826,20 +760,17 @@
             {
               "subject": "English",
               "type": "Coursework",
-              "label": "Year 10 English Coursework - Topic: Topic B",
-              "color": "#3B82F6"
+              "label": "Year 10 English Coursework - Topic: Topic B"
             },
             {
               "subject": "Maths",
               "type": "Coursework",
-              "label": "Year 10 Maths Coursework - Topic: Topic B",
-              "color": "#3B82F6"
+              "label": "Year 10 Maths Coursework - Topic: Topic B"
             },
             {
               "subject": "History",
               "type": "Mock",
-              "label": "Year 10 History Mock - Topic: Topic D",
-              "color": "#F59E0B"
+              "label": "Year 10 History Mock - Topic: Topic D"
             }
           ]
         },
@@ -851,8 +782,7 @@
             {
               "subject": "Maths",
               "type": "Mock",
-              "label": "Year 10 Maths Mock - Topic: Topic C",
-              "color": "#F59E0B"
+              "label": "Year 10 Maths Mock - Topic: Topic C"
             }
           ]
         },
@@ -870,8 +800,7 @@
             {
               "subject": "History",
               "type": "Coursework",
-              "label": "Year 10 History Coursework - Topic: Topic A",
-              "color": "#3B82F6"
+              "label": "Year 10 History Coursework - Topic: Topic A"
             }
           ]
         },
@@ -883,8 +812,7 @@
             {
               "subject": "Art",
               "type": "Mock",
-              "label": "Year 10 Art Mock - Topic: Topic D",
-              "color": "#F59E0B"
+              "label": "Year 10 Art Mock - Topic: Topic D"
             }
           ]
         },
@@ -908,20 +836,17 @@
             {
               "subject": "History",
               "type": "Exam",
-              "label": "Year 10 History Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 10 History Exam - Topic: Topic B"
             },
             {
               "subject": "Art",
               "type": "Coursework",
-              "label": "Year 10 Art Coursework - Topic: Topic B",
-              "color": "#3B82F6"
+              "label": "Year 10 Art Coursework - Topic: Topic B"
             },
             {
               "subject": "History",
               "type": "Mock",
-              "label": "Year 10 History Mock - Topic: Topic B",
-              "color": "#F59E0B"
+              "label": "Year 10 History Mock - Topic: Topic B"
             }
           ]
         },
@@ -939,8 +864,7 @@
             {
               "subject": "Geography",
               "type": "Coursework",
-              "label": "Year 10 Geography Coursework - Topic: Topic C",
-              "color": "#3B82F6"
+              "label": "Year 10 Geography Coursework - Topic: Topic C"
             }
           ]
         },
@@ -952,8 +876,7 @@
             {
               "subject": "History",
               "type": "Coursework",
-              "label": "Year 10 History Coursework - Topic: Topic D",
-              "color": "#3B82F6"
+              "label": "Year 10 History Coursework - Topic: Topic D"
             }
           ]
         },
@@ -965,8 +888,7 @@
             {
               "subject": "English",
               "type": "Coursework",
-              "label": "Year 10 English Coursework - Topic: Topic D",
-              "color": "#3B82F6"
+              "label": "Year 10 English Coursework - Topic: Topic D"
             }
           ]
         },
@@ -990,8 +912,7 @@
             {
               "subject": "Art",
               "type": "Exam",
-              "label": "Year 10 Art Exam - Topic: Topic C",
-              "color": "#EF4444"
+              "label": "Year 10 Art Exam - Topic: Topic C"
             }
           ]
         },
@@ -1003,14 +924,12 @@
             {
               "subject": "Geography",
               "type": "Exam",
-              "label": "Year 10 Geography Exam - Topic: Topic D",
-              "color": "#EF4444"
+              "label": "Year 10 Geography Exam - Topic: Topic D"
             },
             {
               "subject": "Maths",
               "type": "Exam",
-              "label": "Year 10 Maths Exam - Topic: Topic D",
-              "color": "#EF4444"
+              "label": "Year 10 Maths Exam - Topic: Topic D"
             }
           ]
         },
@@ -1022,20 +941,17 @@
             {
               "subject": "History",
               "type": "Exam",
-              "label": "Year 10 History Exam - Topic: Topic D",
-              "color": "#EF4444"
+              "label": "Year 10 History Exam - Topic: Topic D"
             },
             {
               "subject": "Art",
               "type": "Exam",
-              "label": "Year 10 Art Exam - Topic: Topic D",
-              "color": "#EF4444"
+              "label": "Year 10 Art Exam - Topic: Topic D"
             },
             {
               "subject": "Science",
               "type": "Coursework",
-              "label": "Year 10 Science Coursework - Topic: Topic C",
-              "color": "#3B82F6"
+              "label": "Year 10 Science Coursework - Topic: Topic C"
             }
           ]
         },
@@ -1047,20 +963,17 @@
             {
               "subject": "Maths",
               "type": "Mock",
-              "label": "Year 10 Maths Mock - Topic: Topic B",
-              "color": "#F59E0B"
+              "label": "Year 10 Maths Mock - Topic: Topic B"
             },
             {
               "subject": "English",
               "type": "Mock",
-              "label": "Year 10 English Mock - Topic: Topic B",
-              "color": "#F59E0B"
+              "label": "Year 10 English Mock - Topic: Topic B"
             },
             {
               "subject": "Maths",
               "type": "Mock",
-              "label": "Year 10 Maths Mock - Topic: Topic C",
-              "color": "#F59E0B"
+              "label": "Year 10 Maths Mock - Topic: Topic C"
             }
           ]
         },
@@ -1072,8 +985,7 @@
             {
               "subject": "Science",
               "type": "Coursework",
-              "label": "Year 10 Science Coursework - Topic: Topic A",
-              "color": "#3B82F6"
+              "label": "Year 10 Science Coursework - Topic: Topic A"
             }
           ]
         },
@@ -1103,20 +1015,17 @@
             {
               "subject": "English",
               "type": "Exam",
-              "label": "Year 10 English Exam - Topic: Topic A",
-              "color": "#EF4444"
+              "label": "Year 10 English Exam - Topic: Topic A"
             },
             {
               "subject": "Geography",
               "type": "Coursework",
-              "label": "Year 10 Geography Coursework - Topic: Topic D",
-              "color": "#3B82F6"
+              "label": "Year 10 Geography Coursework - Topic: Topic D"
             },
             {
               "subject": "Science",
               "type": "Coursework",
-              "label": "Year 10 Science Coursework - Topic: Topic C",
-              "color": "#3B82F6"
+              "label": "Year 10 Science Coursework - Topic: Topic C"
             }
           ]
         },
@@ -1128,8 +1037,7 @@
             {
               "subject": "Art",
               "type": "Exam",
-              "label": "Year 10 Art Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 10 Art Exam - Topic: Topic B"
             }
           ]
         },
@@ -1141,20 +1049,17 @@
             {
               "subject": "Art",
               "type": "Coursework",
-              "label": "Year 10 Art Coursework - Topic: Topic A",
-              "color": "#3B82F6"
+              "label": "Year 10 Art Coursework - Topic: Topic A"
             },
             {
               "subject": "Science",
               "type": "Coursework",
-              "label": "Year 10 Science Coursework - Topic: Topic C",
-              "color": "#3B82F6"
+              "label": "Year 10 Science Coursework - Topic: Topic C"
             },
             {
               "subject": "English",
               "type": "Mock",
-              "label": "Year 10 English Mock - Topic: Topic B",
-              "color": "#F59E0B"
+              "label": "Year 10 English Mock - Topic: Topic B"
             }
           ]
         },
@@ -1184,8 +1089,7 @@
             {
               "subject": "Art",
               "type": "Exam",
-              "label": "Year 10 Art Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 10 Art Exam - Topic: Topic B"
             }
           ]
         },
@@ -1215,14 +1119,12 @@
             {
               "subject": "Science",
               "type": "Coursework",
-              "label": "Year 10 Science Coursework - Topic: Topic D",
-              "color": "#3B82F6"
+              "label": "Year 10 Science Coursework - Topic: Topic D"
             },
             {
               "subject": "Science",
               "type": "Coursework",
-              "label": "Year 10 Science Coursework - Topic: Topic D",
-              "color": "#3B82F6"
+              "label": "Year 10 Science Coursework - Topic: Topic D"
             }
           ]
         },
@@ -1246,14 +1148,12 @@
             {
               "subject": "English",
               "type": "Coursework",
-              "label": "Year 10 English Coursework - Topic: Topic D",
-              "color": "#3B82F6"
+              "label": "Year 10 English Coursework - Topic: Topic D"
             },
             {
               "subject": "Science",
               "type": "Mock",
-              "label": "Year 10 Science Mock - Topic: Topic D",
-              "color": "#F59E0B"
+              "label": "Year 10 Science Mock - Topic: Topic D"
             }
           ]
         },
@@ -1283,14 +1183,12 @@
             {
               "subject": "English",
               "type": "Mock",
-              "label": "Year 10 English Mock - Topic: Topic C",
-              "color": "#F59E0B"
+              "label": "Year 10 English Mock - Topic: Topic C"
             },
             {
               "subject": "Geography",
               "type": "Coursework",
-              "label": "Year 10 Geography Coursework - Topic: Topic A",
-              "color": "#3B82F6"
+              "label": "Year 10 Geography Coursework - Topic: Topic A"
             }
           ]
         },
@@ -1314,8 +1212,7 @@
             {
               "subject": "Maths",
               "type": "Mock",
-              "label": "Year 10 Maths Mock - Topic: Topic B",
-              "color": "#F59E0B"
+              "label": "Year 10 Maths Mock - Topic: Topic B"
             }
           ]
         },
@@ -1333,8 +1230,7 @@
             {
               "subject": "Art",
               "type": "Coursework",
-              "label": "Year 10 Art Coursework - Topic: Topic C",
-              "color": "#3B82F6"
+              "label": "Year 10 Art Coursework - Topic: Topic C"
             }
           ]
         },
@@ -1346,20 +1242,17 @@
             {
               "subject": "History",
               "type": "Mock",
-              "label": "Year 10 History Mock - Topic: Topic D",
-              "color": "#F59E0B"
+              "label": "Year 10 History Mock - Topic: Topic D"
             },
             {
               "subject": "English",
               "type": "Mock",
-              "label": "Year 10 English Mock - Topic: Topic D",
-              "color": "#F59E0B"
+              "label": "Year 10 English Mock - Topic: Topic D"
             },
             {
               "subject": "Science",
               "type": "Mock",
-              "label": "Year 10 Science Mock - Topic: Topic A",
-              "color": "#F59E0B"
+              "label": "Year 10 Science Mock - Topic: Topic A"
             }
           ]
         },
@@ -1389,8 +1282,7 @@
             {
               "subject": "Maths",
               "type": "Exam",
-              "label": "Year 10 Maths Exam - Topic: Topic C",
-              "color": "#EF4444"
+              "label": "Year 10 Maths Exam - Topic: Topic C"
             }
           ]
         },
@@ -1402,14 +1294,12 @@
             {
               "subject": "Geography",
               "type": "Exam",
-              "label": "Year 10 Geography Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 10 Geography Exam - Topic: Topic B"
             },
             {
               "subject": "History",
               "type": "Exam",
-              "label": "Year 10 History Exam - Topic: Topic C",
-              "color": "#EF4444"
+              "label": "Year 10 History Exam - Topic: Topic C"
             }
           ]
         },
@@ -1421,8 +1311,7 @@
             {
               "subject": "Art",
               "type": "Coursework",
-              "label": "Year 10 Art Coursework - Topic: Topic A",
-              "color": "#3B82F6"
+              "label": "Year 10 Art Coursework - Topic: Topic A"
             }
           ]
         },
@@ -1440,8 +1329,7 @@
             {
               "subject": "Maths",
               "type": "Exam",
-              "label": "Year 10 Maths Exam - Topic: Topic A",
-              "color": "#EF4444"
+              "label": "Year 10 Maths Exam - Topic: Topic A"
             }
           ]
         },
@@ -1465,20 +1353,17 @@
             {
               "subject": "Science",
               "type": "Mock",
-              "label": "Year 10 Science Mock - Topic: Topic B",
-              "color": "#F59E0B"
+              "label": "Year 10 Science Mock - Topic: Topic B"
             },
             {
               "subject": "English",
               "type": "Mock",
-              "label": "Year 10 English Mock - Topic: Topic C",
-              "color": "#F59E0B"
+              "label": "Year 10 English Mock - Topic: Topic C"
             },
             {
               "subject": "English",
               "type": "Mock",
-              "label": "Year 10 English Mock - Topic: Topic B",
-              "color": "#F59E0B"
+              "label": "Year 10 English Mock - Topic: Topic B"
             }
           ]
         },
@@ -1490,8 +1375,7 @@
             {
               "subject": "Maths",
               "type": "Exam",
-              "label": "Year 10 Maths Exam - Topic: Topic C",
-              "color": "#EF4444"
+              "label": "Year 10 Maths Exam - Topic: Topic C"
             }
           ]
         },
@@ -1503,8 +1387,7 @@
             {
               "subject": "Science",
               "type": "Coursework",
-              "label": "Year 10 Science Coursework - Topic: Topic A",
-              "color": "#3B82F6"
+              "label": "Year 10 Science Coursework - Topic: Topic A"
             }
           ]
         },
@@ -1516,14 +1399,12 @@
             {
               "subject": "Geography",
               "type": "Exam",
-              "label": "Year 10 Geography Exam - Topic: Topic D",
-              "color": "#EF4444"
+              "label": "Year 10 Geography Exam - Topic: Topic D"
             },
             {
               "subject": "History",
               "type": "Coursework",
-              "label": "Year 10 History Coursework - Topic: Topic C",
-              "color": "#3B82F6"
+              "label": "Year 10 History Coursework - Topic: Topic C"
             }
           ]
         },
@@ -1535,14 +1416,12 @@
             {
               "subject": "Science",
               "type": "Coursework",
-              "label": "Year 10 Science Coursework - Topic: Topic A",
-              "color": "#3B82F6"
+              "label": "Year 10 Science Coursework - Topic: Topic A"
             },
             {
               "subject": "History",
               "type": "Exam",
-              "label": "Year 10 History Exam - Topic: Topic A",
-              "color": "#EF4444"
+              "label": "Year 10 History Exam - Topic: Topic A"
             }
           ]
         },
@@ -1566,20 +1445,17 @@
             {
               "subject": "English",
               "type": "Mock",
-              "label": "Year 10 English Mock - Topic: Topic B",
-              "color": "#F59E0B"
+              "label": "Year 10 English Mock - Topic: Topic B"
             },
             {
               "subject": "English",
               "type": "Coursework",
-              "label": "Year 10 English Coursework - Topic: Topic B",
-              "color": "#3B82F6"
+              "label": "Year 10 English Coursework - Topic: Topic B"
             },
             {
               "subject": "Art",
               "type": "Exam",
-              "label": "Year 10 Art Exam - Topic: Topic C",
-              "color": "#EF4444"
+              "label": "Year 10 Art Exam - Topic: Topic C"
             }
           ]
         },
@@ -1591,14 +1467,12 @@
             {
               "subject": "Art",
               "type": "Coursework",
-              "label": "Year 10 Art Coursework - Topic: Topic B",
-              "color": "#3B82F6"
+              "label": "Year 10 Art Coursework - Topic: Topic B"
             },
             {
               "subject": "History",
               "type": "Mock",
-              "label": "Year 10 History Mock - Topic: Topic A",
-              "color": "#F59E0B"
+              "label": "Year 10 History Mock - Topic: Topic A"
             }
           ]
         },
@@ -1610,8 +1484,7 @@
             {
               "subject": "History",
               "type": "Exam",
-              "label": "Year 10 History Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 10 History Exam - Topic: Topic B"
             }
           ]
         },
@@ -1629,14 +1502,12 @@
             {
               "subject": "Science",
               "type": "Coursework",
-              "label": "Year 10 Science Coursework - Topic: Topic D",
-              "color": "#3B82F6"
+              "label": "Year 10 Science Coursework - Topic: Topic D"
             },
             {
               "subject": "English",
               "type": "Mock",
-              "label": "Year 10 English Mock - Topic: Topic B",
-              "color": "#F59E0B"
+              "label": "Year 10 English Mock - Topic: Topic B"
             }
           ]
         },
@@ -1666,14 +1537,12 @@
             {
               "subject": "Science",
               "type": "Mock",
-              "label": "Year 10 Science Mock - Topic: Topic B",
-              "color": "#F59E0B"
+              "label": "Year 10 Science Mock - Topic: Topic B"
             },
             {
               "subject": "Science",
               "type": "Mock",
-              "label": "Year 10 Science Mock - Topic: Topic D",
-              "color": "#F59E0B"
+              "label": "Year 10 Science Mock - Topic: Topic D"
             }
           ]
         },
@@ -1685,8 +1554,7 @@
             {
               "subject": "Art",
               "type": "Exam",
-              "label": "Year 10 Art Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 10 Art Exam - Topic: Topic B"
             }
           ]
         },
@@ -1698,8 +1566,7 @@
             {
               "subject": "History",
               "type": "Exam",
-              "label": "Year 10 History Exam - Topic: Topic A",
-              "color": "#EF4444"
+              "label": "Year 10 History Exam - Topic: Topic A"
             }
           ]
         },
@@ -1711,8 +1578,7 @@
             {
               "subject": "Art",
               "type": "Coursework",
-              "label": "Year 10 Art Coursework - Topic: Topic C",
-              "color": "#3B82F6"
+              "label": "Year 10 Art Coursework - Topic: Topic C"
             }
           ]
         },
@@ -1735,9 +1601,9 @@
       "filename": "Year 11 Assessment Calendar",
       "sourceUrl": "http://example.com/Year 11",
       "types": {
-        "#EF4444": "Exam",
-        "#10B981": "Practical",
-        "#8B5CF6": "Speaking"
+        "Exam": "#EF4444",
+        "Practical": "#10B981",
+        "Speaking": "#8B5CF6"
       },
       "schedule": [
         {
@@ -1748,8 +1614,7 @@
             {
               "subject": "Maths",
               "type": "Exam",
-              "label": "Year 11 Maths Exam - Topic: Algebra",
-              "color": "#EF4444"
+              "label": "Year 11 Maths Exam - Topic: Algebra"
             }
           ]
         },
@@ -1761,20 +1626,17 @@
             {
               "subject": "Maths",
               "type": "Practical",
-              "label": "Year 11 Maths Practical - Topic: Topic B",
-              "color": "#10B981"
+              "label": "Year 11 Maths Practical - Topic: Topic B"
             },
             {
               "subject": "Computer Science",
               "type": "Practical",
-              "label": "Year 11 Computer Science Practical - Topic: Topic B",
-              "color": "#10B981"
+              "label": "Year 11 Computer Science Practical - Topic: Topic B"
             },
             {
               "subject": "Computer Science",
               "type": "Speaking",
-              "label": "Year 11 Computer Science Speaking - Topic: Topic D",
-              "color": "#8B5CF6"
+              "label": "Year 11 Computer Science Speaking - Topic: Topic D"
             }
           ]
         },
@@ -1792,14 +1654,12 @@
             {
               "subject": "Chemistry",
               "type": "Practical",
-              "label": "Year 11 Chemistry Practical - Topic: Topic B",
-              "color": "#10B981"
+              "label": "Year 11 Chemistry Practical - Topic: Topic B"
             },
             {
               "subject": "Chemistry",
               "type": "Exam",
-              "label": "Year 11 Chemistry Exam - Topic: Topic C",
-              "color": "#EF4444"
+              "label": "Year 11 Chemistry Exam - Topic: Topic C"
             }
           ]
         },
@@ -1811,20 +1671,17 @@
             {
               "subject": "Biology",
               "type": "Speaking",
-              "label": "Year 11 Biology Speaking - Topic: Topic A",
-              "color": "#8B5CF6"
+              "label": "Year 11 Biology Speaking - Topic: Topic A"
             },
             {
               "subject": "Biology",
               "type": "Practical",
-              "label": "Year 11 Biology Practical - Topic: Topic B",
-              "color": "#10B981"
+              "label": "Year 11 Biology Practical - Topic: Topic B"
             },
             {
               "subject": "Physics",
               "type": "Exam",
-              "label": "Year 11 Physics Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 11 Physics Exam - Topic: Topic B"
             }
           ]
         },
@@ -1848,20 +1705,17 @@
             {
               "subject": "Physics",
               "type": "Speaking",
-              "label": "Year 11 Physics Speaking - Topic: Topic C",
-              "color": "#8B5CF6"
+              "label": "Year 11 Physics Speaking - Topic: Topic C"
             },
             {
               "subject": "Computer Science",
               "type": "Exam",
-              "label": "Year 11 Computer Science Exam - Topic: Topic D",
-              "color": "#EF4444"
+              "label": "Year 11 Computer Science Exam - Topic: Topic D"
             },
             {
               "subject": "Physics",
               "type": "Exam",
-              "label": "Year 11 Physics Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 11 Physics Exam - Topic: Topic B"
             }
           ]
         },
@@ -1873,20 +1727,17 @@
             {
               "subject": "Computer Science",
               "type": "Practical",
-              "label": "Year 11 Computer Science Practical - Topic: Topic C",
-              "color": "#10B981"
+              "label": "Year 11 Computer Science Practical - Topic: Topic C"
             },
             {
               "subject": "Maths",
               "type": "Speaking",
-              "label": "Year 11 Maths Speaking - Topic: Topic C",
-              "color": "#8B5CF6"
+              "label": "Year 11 Maths Speaking - Topic: Topic C"
             },
             {
               "subject": "Maths",
               "type": "Exam",
-              "label": "Year 11 Maths Exam - Topic: Topic C",
-              "color": "#EF4444"
+              "label": "Year 11 Maths Exam - Topic: Topic C"
             }
           ]
         },
@@ -1898,20 +1749,17 @@
             {
               "subject": "Chemistry",
               "type": "Practical",
-              "label": "Year 11 Chemistry Practical - Topic: Topic C",
-              "color": "#10B981"
+              "label": "Year 11 Chemistry Practical - Topic: Topic C"
             },
             {
               "subject": "Chemistry",
               "type": "Practical",
-              "label": "Year 11 Chemistry Practical - Topic: Topic C",
-              "color": "#10B981"
+              "label": "Year 11 Chemistry Practical - Topic: Topic C"
             },
             {
               "subject": "Biology",
               "type": "Speaking",
-              "label": "Year 11 Biology Speaking - Topic: Topic D",
-              "color": "#8B5CF6"
+              "label": "Year 11 Biology Speaking - Topic: Topic D"
             }
           ]
         },
@@ -1923,8 +1771,7 @@
             {
               "subject": "English Lit",
               "type": "Exam",
-              "label": "Year 11 English Lit Exam - Topic: Topic A",
-              "color": "#EF4444"
+              "label": "Year 11 English Lit Exam - Topic: Topic A"
             }
           ]
         },
@@ -1954,20 +1801,17 @@
             {
               "subject": "Biology",
               "type": "Speaking",
-              "label": "Year 11 Biology Speaking - Topic: Topic B",
-              "color": "#8B5CF6"
+              "label": "Year 11 Biology Speaking - Topic: Topic B"
             },
             {
               "subject": "Computer Science",
               "type": "Exam",
-              "label": "Year 11 Computer Science Exam - Topic: Topic A",
-              "color": "#EF4444"
+              "label": "Year 11 Computer Science Exam - Topic: Topic A"
             },
             {
               "subject": "Chemistry",
               "type": "Practical",
-              "label": "Year 11 Chemistry Practical - Topic: Topic C",
-              "color": "#10B981"
+              "label": "Year 11 Chemistry Practical - Topic: Topic C"
             }
           ]
         },
@@ -1979,20 +1823,17 @@
             {
               "subject": "Physics",
               "type": "Exam",
-              "label": "Year 11 Physics Exam - Topic: Topic D",
-              "color": "#EF4444"
+              "label": "Year 11 Physics Exam - Topic: Topic D"
             },
             {
               "subject": "Biology",
               "type": "Practical",
-              "label": "Year 11 Biology Practical - Topic: Topic A",
-              "color": "#10B981"
+              "label": "Year 11 Biology Practical - Topic: Topic A"
             },
             {
               "subject": "Computer Science",
               "type": "Practical",
-              "label": "Year 11 Computer Science Practical - Topic: Topic A",
-              "color": "#10B981"
+              "label": "Year 11 Computer Science Practical - Topic: Topic A"
             }
           ]
         },
@@ -2010,20 +1851,17 @@
             {
               "subject": "English Lit",
               "type": "Exam",
-              "label": "Year 11 English Lit Exam - Topic: Topic D",
-              "color": "#EF4444"
+              "label": "Year 11 English Lit Exam - Topic: Topic D"
             },
             {
               "subject": "Chemistry",
               "type": "Practical",
-              "label": "Year 11 Chemistry Practical - Topic: Topic B",
-              "color": "#10B981"
+              "label": "Year 11 Chemistry Practical - Topic: Topic B"
             },
             {
               "subject": "English Lit",
               "type": "Speaking",
-              "label": "Year 11 English Lit Speaking - Topic: Topic A",
-              "color": "#8B5CF6"
+              "label": "Year 11 English Lit Speaking - Topic: Topic A"
             }
           ]
         },
@@ -2035,20 +1873,17 @@
             {
               "subject": "Computer Science",
               "type": "Practical",
-              "label": "Year 11 Computer Science Practical - Topic: Topic A",
-              "color": "#10B981"
+              "label": "Year 11 Computer Science Practical - Topic: Topic A"
             },
             {
               "subject": "Chemistry",
               "type": "Speaking",
-              "label": "Year 11 Chemistry Speaking - Topic: Topic B",
-              "color": "#8B5CF6"
+              "label": "Year 11 Chemistry Speaking - Topic: Topic B"
             },
             {
               "subject": "Computer Science",
               "type": "Exam",
-              "label": "Year 11 Computer Science Exam - Topic: Topic A",
-              "color": "#EF4444"
+              "label": "Year 11 Computer Science Exam - Topic: Topic A"
             }
           ]
         },
@@ -2072,20 +1907,17 @@
             {
               "subject": "Chemistry",
               "type": "Practical",
-              "label": "Year 11 Chemistry Practical - Topic: Topic C",
-              "color": "#10B981"
+              "label": "Year 11 Chemistry Practical - Topic: Topic C"
             },
             {
               "subject": "English Lit",
               "type": "Exam",
-              "label": "Year 11 English Lit Exam - Topic: Topic A",
-              "color": "#EF4444"
+              "label": "Year 11 English Lit Exam - Topic: Topic A"
             },
             {
               "subject": "English Lit",
               "type": "Exam",
-              "label": "Year 11 English Lit Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 11 English Lit Exam - Topic: Topic B"
             }
           ]
         },
@@ -2103,20 +1935,17 @@
             {
               "subject": "Maths",
               "type": "Practical",
-              "label": "Year 11 Maths Practical - Topic: Topic D",
-              "color": "#10B981"
+              "label": "Year 11 Maths Practical - Topic: Topic D"
             },
             {
               "subject": "Physics",
               "type": "Practical",
-              "label": "Year 11 Physics Practical - Topic: Topic D",
-              "color": "#10B981"
+              "label": "Year 11 Physics Practical - Topic: Topic D"
             },
             {
               "subject": "English Lit",
               "type": "Speaking",
-              "label": "Year 11 English Lit Speaking - Topic: Topic D",
-              "color": "#8B5CF6"
+              "label": "Year 11 English Lit Speaking - Topic: Topic D"
             }
           ]
         },
@@ -2128,14 +1957,12 @@
             {
               "subject": "Chemistry",
               "type": "Practical",
-              "label": "Year 11 Chemistry Practical - Topic: Topic C",
-              "color": "#10B981"
+              "label": "Year 11 Chemistry Practical - Topic: Topic C"
             },
             {
               "subject": "Maths",
               "type": "Exam",
-              "label": "Year 11 Maths Exam - Topic: Topic A",
-              "color": "#EF4444"
+              "label": "Year 11 Maths Exam - Topic: Topic A"
             }
           ]
         },
@@ -2171,14 +1998,12 @@
             {
               "subject": "Biology",
               "type": "Speaking",
-              "label": "Year 11 Biology Speaking - Topic: Topic A",
-              "color": "#8B5CF6"
+              "label": "Year 11 Biology Speaking - Topic: Topic A"
             },
             {
               "subject": "Maths",
               "type": "Practical",
-              "label": "Year 11 Maths Practical - Topic: Topic B",
-              "color": "#10B981"
+              "label": "Year 11 Maths Practical - Topic: Topic B"
             }
           ]
         },
@@ -2190,8 +2015,7 @@
             {
               "subject": "Chemistry",
               "type": "Exam",
-              "label": "Year 11 Chemistry Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 11 Chemistry Exam - Topic: Topic B"
             }
           ]
         },
@@ -2209,20 +2033,17 @@
             {
               "subject": "English Lit",
               "type": "Practical",
-              "label": "Year 11 English Lit Practical - Topic: Topic D",
-              "color": "#10B981"
+              "label": "Year 11 English Lit Practical - Topic: Topic D"
             },
             {
               "subject": "Chemistry",
               "type": "Practical",
-              "label": "Year 11 Chemistry Practical - Topic: Topic D",
-              "color": "#10B981"
+              "label": "Year 11 Chemistry Practical - Topic: Topic D"
             },
             {
               "subject": "Biology",
               "type": "Speaking",
-              "label": "Year 11 Biology Speaking - Topic: Topic A",
-              "color": "#8B5CF6"
+              "label": "Year 11 Biology Speaking - Topic: Topic A"
             }
           ]
         },
@@ -2246,8 +2067,7 @@
             {
               "subject": "Maths",
               "type": "Practical",
-              "label": "Year 11 Maths Practical - Topic: Topic A",
-              "color": "#10B981"
+              "label": "Year 11 Maths Practical - Topic: Topic A"
             }
           ]
         },
@@ -2259,14 +2079,12 @@
             {
               "subject": "Physics",
               "type": "Exam",
-              "label": "Year 11 Physics Exam - Topic: Topic A",
-              "color": "#EF4444"
+              "label": "Year 11 Physics Exam - Topic: Topic A"
             },
             {
               "subject": "Maths",
               "type": "Exam",
-              "label": "Year 11 Maths Exam - Topic: Topic D",
-              "color": "#EF4444"
+              "label": "Year 11 Maths Exam - Topic: Topic D"
             }
           ]
         },
@@ -2278,14 +2096,12 @@
             {
               "subject": "Computer Science",
               "type": "Speaking",
-              "label": "Year 11 Computer Science Speaking - Topic: Topic D",
-              "color": "#8B5CF6"
+              "label": "Year 11 Computer Science Speaking - Topic: Topic D"
             },
             {
               "subject": "Physics",
               "type": "Practical",
-              "label": "Year 11 Physics Practical - Topic: Topic B",
-              "color": "#10B981"
+              "label": "Year 11 Physics Practical - Topic: Topic B"
             }
           ]
         },
@@ -2297,8 +2113,7 @@
             {
               "subject": "Biology",
               "type": "Practical",
-              "label": "Year 11 Biology Practical - Topic: Topic A",
-              "color": "#10B981"
+              "label": "Year 11 Biology Practical - Topic: Topic A"
             }
           ]
         },
@@ -2310,8 +2125,7 @@
             {
               "subject": "Chemistry",
               "type": "Practical",
-              "label": "Year 11 Chemistry Practical - Topic: Topic C",
-              "color": "#10B981"
+              "label": "Year 11 Chemistry Practical - Topic: Topic C"
             }
           ]
         },
@@ -2335,14 +2149,12 @@
             {
               "subject": "Maths",
               "type": "Practical",
-              "label": "Year 11 Maths Practical - Topic: Topic C",
-              "color": "#10B981"
+              "label": "Year 11 Maths Practical - Topic: Topic C"
             },
             {
               "subject": "Biology",
               "type": "Practical",
-              "label": "Year 11 Biology Practical - Topic: Topic B",
-              "color": "#10B981"
+              "label": "Year 11 Biology Practical - Topic: Topic B"
             }
           ]
         },
@@ -2354,8 +2166,7 @@
             {
               "subject": "Biology",
               "type": "Speaking",
-              "label": "Year 11 Biology Speaking - Topic: Topic A",
-              "color": "#8B5CF6"
+              "label": "Year 11 Biology Speaking - Topic: Topic A"
             }
           ]
         },
@@ -2367,8 +2178,7 @@
             {
               "subject": "Physics",
               "type": "Speaking",
-              "label": "Year 11 Physics Speaking - Topic: Topic A",
-              "color": "#8B5CF6"
+              "label": "Year 11 Physics Speaking - Topic: Topic A"
             }
           ]
         },
@@ -2380,14 +2190,12 @@
             {
               "subject": "Computer Science",
               "type": "Exam",
-              "label": "Year 11 Computer Science Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 11 Computer Science Exam - Topic: Topic B"
             },
             {
               "subject": "Chemistry",
               "type": "Speaking",
-              "label": "Year 11 Chemistry Speaking - Topic: Topic C",
-              "color": "#8B5CF6"
+              "label": "Year 11 Chemistry Speaking - Topic: Topic C"
             }
           ]
         },
@@ -2399,8 +2207,7 @@
             {
               "subject": "Maths",
               "type": "Speaking",
-              "label": "Year 11 Maths Speaking - Topic: Topic B",
-              "color": "#8B5CF6"
+              "label": "Year 11 Maths Speaking - Topic: Topic B"
             }
           ]
         },
@@ -2424,20 +2231,17 @@
             {
               "subject": "Maths",
               "type": "Speaking",
-              "label": "Year 11 Maths Speaking - Topic: Topic B",
-              "color": "#8B5CF6"
+              "label": "Year 11 Maths Speaking - Topic: Topic B"
             },
             {
               "subject": "Maths",
               "type": "Practical",
-              "label": "Year 11 Maths Practical - Topic: Topic C",
-              "color": "#10B981"
+              "label": "Year 11 Maths Practical - Topic: Topic C"
             },
             {
               "subject": "Computer Science",
               "type": "Speaking",
-              "label": "Year 11 Computer Science Speaking - Topic: Topic B",
-              "color": "#8B5CF6"
+              "label": "Year 11 Computer Science Speaking - Topic: Topic B"
             }
           ]
         },
@@ -2461,14 +2265,12 @@
             {
               "subject": "Biology",
               "type": "Practical",
-              "label": "Year 11 Biology Practical - Topic: Topic B",
-              "color": "#10B981"
+              "label": "Year 11 Biology Practical - Topic: Topic B"
             },
             {
               "subject": "Computer Science",
               "type": "Exam",
-              "label": "Year 11 Computer Science Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 11 Computer Science Exam - Topic: Topic B"
             }
           ]
         },
@@ -2480,14 +2282,12 @@
             {
               "subject": "Biology",
               "type": "Exam",
-              "label": "Year 11 Biology Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 11 Biology Exam - Topic: Topic B"
             },
             {
               "subject": "Computer Science",
               "type": "Practical",
-              "label": "Year 11 Computer Science Practical - Topic: Topic A",
-              "color": "#10B981"
+              "label": "Year 11 Computer Science Practical - Topic: Topic A"
             }
           ]
         },
@@ -2517,8 +2317,7 @@
             {
               "subject": "Biology",
               "type": "Practical",
-              "label": "Year 11 Biology Practical - Topic: Topic C",
-              "color": "#10B981"
+              "label": "Year 11 Biology Practical - Topic: Topic C"
             }
           ]
         },
@@ -2530,20 +2329,17 @@
             {
               "subject": "Chemistry",
               "type": "Speaking",
-              "label": "Year 11 Chemistry Speaking - Topic: Topic C",
-              "color": "#8B5CF6"
+              "label": "Year 11 Chemistry Speaking - Topic: Topic C"
             },
             {
               "subject": "Computer Science",
               "type": "Speaking",
-              "label": "Year 11 Computer Science Speaking - Topic: Topic C",
-              "color": "#8B5CF6"
+              "label": "Year 11 Computer Science Speaking - Topic: Topic C"
             },
             {
               "subject": "English Lit",
               "type": "Speaking",
-              "label": "Year 11 English Lit Speaking - Topic: Topic D",
-              "color": "#8B5CF6"
+              "label": "Year 11 English Lit Speaking - Topic: Topic D"
             }
           ]
         },
@@ -2555,8 +2351,7 @@
             {
               "subject": "English Lit",
               "type": "Practical",
-              "label": "Year 11 English Lit Practical - Topic: Topic B",
-              "color": "#10B981"
+              "label": "Year 11 English Lit Practical - Topic: Topic B"
             }
           ]
         },
@@ -2568,14 +2363,12 @@
             {
               "subject": "Biology",
               "type": "Practical",
-              "label": "Year 11 Biology Practical - Topic: Topic C",
-              "color": "#10B981"
+              "label": "Year 11 Biology Practical - Topic: Topic C"
             },
             {
               "subject": "English Lit",
               "type": "Exam",
-              "label": "Year 11 English Lit Exam - Topic: Topic D",
-              "color": "#EF4444"
+              "label": "Year 11 English Lit Exam - Topic: Topic D"
             }
           ]
         },
@@ -2605,14 +2398,12 @@
             {
               "subject": "Maths",
               "type": "Exam",
-              "label": "Year 11 Maths Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 11 Maths Exam - Topic: Topic B"
             },
             {
               "subject": "Chemistry",
               "type": "Practical",
-              "label": "Year 11 Chemistry Practical - Topic: Topic D",
-              "color": "#10B981"
+              "label": "Year 11 Chemistry Practical - Topic: Topic D"
             }
           ]
         },
@@ -2630,8 +2421,7 @@
             {
               "subject": "Chemistry",
               "type": "Speaking",
-              "label": "Year 11 Chemistry Speaking - Topic: Topic A",
-              "color": "#8B5CF6"
+              "label": "Year 11 Chemistry Speaking - Topic: Topic A"
             }
           ]
         },
@@ -2643,20 +2433,17 @@
             {
               "subject": "Biology",
               "type": "Exam",
-              "label": "Year 11 Biology Exam - Topic: Topic A",
-              "color": "#EF4444"
+              "label": "Year 11 Biology Exam - Topic: Topic A"
             },
             {
               "subject": "Biology",
               "type": "Exam",
-              "label": "Year 11 Biology Exam - Topic: Topic D",
-              "color": "#EF4444"
+              "label": "Year 11 Biology Exam - Topic: Topic D"
             },
             {
               "subject": "Chemistry",
               "type": "Speaking",
-              "label": "Year 11 Chemistry Speaking - Topic: Topic B",
-              "color": "#8B5CF6"
+              "label": "Year 11 Chemistry Speaking - Topic: Topic B"
             }
           ]
         },
@@ -2680,20 +2467,17 @@
             {
               "subject": "Computer Science",
               "type": "Practical",
-              "label": "Year 11 Computer Science Practical - Topic: Topic D",
-              "color": "#10B981"
+              "label": "Year 11 Computer Science Practical - Topic: Topic D"
             },
             {
               "subject": "English Lit",
               "type": "Exam",
-              "label": "Year 11 English Lit Exam - Topic: Topic C",
-              "color": "#EF4444"
+              "label": "Year 11 English Lit Exam - Topic: Topic C"
             },
             {
               "subject": "English Lit",
               "type": "Speaking",
-              "label": "Year 11 English Lit Speaking - Topic: Topic A",
-              "color": "#8B5CF6"
+              "label": "Year 11 English Lit Speaking - Topic: Topic A"
             }
           ]
         },
@@ -2705,20 +2489,17 @@
             {
               "subject": "Biology",
               "type": "Speaking",
-              "label": "Year 11 Biology Speaking - Topic: Topic B",
-              "color": "#8B5CF6"
+              "label": "Year 11 Biology Speaking - Topic: Topic B"
             },
             {
               "subject": "Physics",
               "type": "Practical",
-              "label": "Year 11 Physics Practical - Topic: Topic B",
-              "color": "#10B981"
+              "label": "Year 11 Physics Practical - Topic: Topic B"
             },
             {
               "subject": "Physics",
               "type": "Speaking",
-              "label": "Year 11 Physics Speaking - Topic: Topic D",
-              "color": "#8B5CF6"
+              "label": "Year 11 Physics Speaking - Topic: Topic D"
             }
           ]
         },
@@ -2730,8 +2511,7 @@
             {
               "subject": "Computer Science",
               "type": "Exam",
-              "label": "Year 11 Computer Science Exam - Topic: Topic C",
-              "color": "#EF4444"
+              "label": "Year 11 Computer Science Exam - Topic: Topic C"
             }
           ]
         },
@@ -2743,14 +2523,12 @@
             {
               "subject": "English Lit",
               "type": "Practical",
-              "label": "Year 11 English Lit Practical - Topic: Topic C",
-              "color": "#10B981"
+              "label": "Year 11 English Lit Practical - Topic: Topic C"
             },
             {
               "subject": "Biology",
               "type": "Exam",
-              "label": "Year 11 Biology Exam - Topic: Topic C",
-              "color": "#EF4444"
+              "label": "Year 11 Biology Exam - Topic: Topic C"
             }
           ]
         },
@@ -2762,14 +2540,12 @@
             {
               "subject": "Computer Science",
               "type": "Exam",
-              "label": "Year 11 Computer Science Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 11 Computer Science Exam - Topic: Topic B"
             },
             {
               "subject": "Computer Science",
               "type": "Speaking",
-              "label": "Year 11 Computer Science Speaking - Topic: Topic C",
-              "color": "#8B5CF6"
+              "label": "Year 11 Computer Science Speaking - Topic: Topic C"
             }
           ]
         },
@@ -2799,8 +2575,7 @@
             {
               "subject": "Biology",
               "type": "Exam",
-              "label": "Year 11 Biology Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 11 Biology Exam - Topic: Topic B"
             }
           ]
         },
@@ -2812,14 +2587,12 @@
             {
               "subject": "Physics",
               "type": "Speaking",
-              "label": "Year 11 Physics Speaking - Topic: Topic B",
-              "color": "#8B5CF6"
+              "label": "Year 11 Physics Speaking - Topic: Topic B"
             },
             {
               "subject": "Computer Science",
               "type": "Exam",
-              "label": "Year 11 Computer Science Exam - Topic: Topic D",
-              "color": "#EF4444"
+              "label": "Year 11 Computer Science Exam - Topic: Topic D"
             }
           ]
         },
@@ -2831,14 +2604,12 @@
             {
               "subject": "Physics",
               "type": "Exam",
-              "label": "Year 11 Physics Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 11 Physics Exam - Topic: Topic B"
             },
             {
               "subject": "Biology",
               "type": "Practical",
-              "label": "Year 11 Biology Practical - Topic: Topic A",
-              "color": "#10B981"
+              "label": "Year 11 Biology Practical - Topic: Topic A"
             }
           ]
         },
@@ -2868,20 +2639,17 @@
             {
               "subject": "English Lit",
               "type": "Practical",
-              "label": "Year 11 English Lit Practical - Topic: Topic A",
-              "color": "#10B981"
+              "label": "Year 11 English Lit Practical - Topic: Topic A"
             },
             {
               "subject": "Maths",
               "type": "Speaking",
-              "label": "Year 11 Maths Speaking - Topic: Topic B",
-              "color": "#8B5CF6"
+              "label": "Year 11 Maths Speaking - Topic: Topic B"
             },
             {
               "subject": "Computer Science",
               "type": "Exam",
-              "label": "Year 11 Computer Science Exam - Topic: Topic A",
-              "color": "#EF4444"
+              "label": "Year 11 Computer Science Exam - Topic: Topic A"
             }
           ]
         },
@@ -2899,8 +2667,7 @@
             {
               "subject": "Biology",
               "type": "Practical",
-              "label": "Year 11 Biology Practical - Topic: Topic D",
-              "color": "#10B981"
+              "label": "Year 11 Biology Practical - Topic: Topic D"
             }
           ]
         },
@@ -2912,14 +2679,12 @@
             {
               "subject": "Biology",
               "type": "Exam",
-              "label": "Year 11 Biology Exam - Topic: Topic A",
-              "color": "#EF4444"
+              "label": "Year 11 Biology Exam - Topic: Topic A"
             },
             {
               "subject": "Biology",
               "type": "Practical",
-              "label": "Year 11 Biology Practical - Topic: Topic D",
-              "color": "#10B981"
+              "label": "Year 11 Biology Practical - Topic: Topic D"
             }
           ]
         },
@@ -2931,20 +2696,17 @@
             {
               "subject": "English Lit",
               "type": "Speaking",
-              "label": "Year 11 English Lit Speaking - Topic: Topic C",
-              "color": "#8B5CF6"
+              "label": "Year 11 English Lit Speaking - Topic: Topic C"
             },
             {
               "subject": "Physics",
               "type": "Speaking",
-              "label": "Year 11 Physics Speaking - Topic: Topic A",
-              "color": "#8B5CF6"
+              "label": "Year 11 Physics Speaking - Topic: Topic A"
             },
             {
               "subject": "Chemistry",
               "type": "Exam",
-              "label": "Year 11 Chemistry Exam - Topic: Topic D",
-              "color": "#EF4444"
+              "label": "Year 11 Chemistry Exam - Topic: Topic D"
             }
           ]
         },
@@ -3010,14 +2772,12 @@
             {
               "subject": "Chemistry",
               "type": "Practical",
-              "label": "Year 11 Chemistry Practical - Topic: Topic D",
-              "color": "#10B981"
+              "label": "Year 11 Chemistry Practical - Topic: Topic D"
             },
             {
               "subject": "Chemistry",
               "type": "Exam",
-              "label": "Year 11 Chemistry Exam - Topic: Topic C",
-              "color": "#EF4444"
+              "label": "Year 11 Chemistry Exam - Topic: Topic C"
             }
           ]
         },
@@ -3029,20 +2789,17 @@
             {
               "subject": "Computer Science",
               "type": "Practical",
-              "label": "Year 11 Computer Science Practical - Topic: Topic D",
-              "color": "#10B981"
+              "label": "Year 11 Computer Science Practical - Topic: Topic D"
             },
             {
               "subject": "Chemistry",
               "type": "Exam",
-              "label": "Year 11 Chemistry Exam - Topic: Topic C",
-              "color": "#EF4444"
+              "label": "Year 11 Chemistry Exam - Topic: Topic C"
             },
             {
               "subject": "Biology",
               "type": "Practical",
-              "label": "Year 11 Biology Practical - Topic: Topic C",
-              "color": "#10B981"
+              "label": "Year 11 Biology Practical - Topic: Topic C"
             }
           ]
         },
@@ -3060,20 +2817,17 @@
             {
               "subject": "Biology",
               "type": "Exam",
-              "label": "Year 11 Biology Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 11 Biology Exam - Topic: Topic B"
             },
             {
               "subject": "Computer Science",
               "type": "Practical",
-              "label": "Year 11 Computer Science Practical - Topic: Topic C",
-              "color": "#10B981"
+              "label": "Year 11 Computer Science Practical - Topic: Topic C"
             },
             {
               "subject": "Chemistry",
               "type": "Speaking",
-              "label": "Year 11 Chemistry Speaking - Topic: Topic B",
-              "color": "#8B5CF6"
+              "label": "Year 11 Chemistry Speaking - Topic: Topic B"
             }
           ]
         },
@@ -3085,14 +2839,12 @@
             {
               "subject": "Computer Science",
               "type": "Practical",
-              "label": "Year 11 Computer Science Practical - Topic: Topic B",
-              "color": "#10B981"
+              "label": "Year 11 Computer Science Practical - Topic: Topic B"
             },
             {
               "subject": "Computer Science",
               "type": "Exam",
-              "label": "Year 11 Computer Science Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 11 Computer Science Exam - Topic: Topic B"
             }
           ]
         },
@@ -3116,20 +2868,17 @@
             {
               "subject": "English Lit",
               "type": "Speaking",
-              "label": "Year 11 English Lit Speaking - Topic: Topic A",
-              "color": "#8B5CF6"
+              "label": "Year 11 English Lit Speaking - Topic: Topic A"
             },
             {
               "subject": "Chemistry",
               "type": "Exam",
-              "label": "Year 11 Chemistry Exam - Topic: Topic D",
-              "color": "#EF4444"
+              "label": "Year 11 Chemistry Exam - Topic: Topic D"
             },
             {
               "subject": "Maths",
               "type": "Practical",
-              "label": "Year 11 Maths Practical - Topic: Topic B",
-              "color": "#10B981"
+              "label": "Year 11 Maths Practical - Topic: Topic B"
             }
           ]
         },
@@ -3141,8 +2890,7 @@
             {
               "subject": "Computer Science",
               "type": "Exam",
-              "label": "Year 11 Computer Science Exam - Topic: Topic A",
-              "color": "#EF4444"
+              "label": "Year 11 Computer Science Exam - Topic: Topic A"
             }
           ]
         },
@@ -3154,20 +2902,17 @@
             {
               "subject": "Physics",
               "type": "Practical",
-              "label": "Year 11 Physics Practical - Topic: Topic C",
-              "color": "#10B981"
+              "label": "Year 11 Physics Practical - Topic: Topic C"
             },
             {
               "subject": "Computer Science",
               "type": "Practical",
-              "label": "Year 11 Computer Science Practical - Topic: Topic C",
-              "color": "#10B981"
+              "label": "Year 11 Computer Science Practical - Topic: Topic C"
             },
             {
               "subject": "Chemistry",
               "type": "Practical",
-              "label": "Year 11 Chemistry Practical - Topic: Topic D",
-              "color": "#10B981"
+              "label": "Year 11 Chemistry Practical - Topic: Topic D"
             }
           ]
         },
@@ -3185,14 +2930,12 @@
             {
               "subject": "English Lit",
               "type": "Exam",
-              "label": "Year 11 English Lit Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 11 English Lit Exam - Topic: Topic B"
             },
             {
               "subject": "Physics",
               "type": "Speaking",
-              "label": "Year 11 Physics Speaking - Topic: Topic C",
-              "color": "#8B5CF6"
+              "label": "Year 11 Physics Speaking - Topic: Topic C"
             }
           ]
         },
@@ -3216,14 +2959,12 @@
             {
               "subject": "Physics",
               "type": "Speaking",
-              "label": "Year 11 Physics Speaking - Topic: Topic D",
-              "color": "#8B5CF6"
+              "label": "Year 11 Physics Speaking - Topic: Topic D"
             },
             {
               "subject": "Physics",
               "type": "Practical",
-              "label": "Year 11 Physics Practical - Topic: Topic D",
-              "color": "#10B981"
+              "label": "Year 11 Physics Practical - Topic: Topic D"
             }
           ]
         },
@@ -3241,14 +2982,12 @@
             {
               "subject": "Biology",
               "type": "Speaking",
-              "label": "Year 11 Biology Speaking - Topic: Topic B",
-              "color": "#8B5CF6"
+              "label": "Year 11 Biology Speaking - Topic: Topic B"
             },
             {
               "subject": "Physics",
               "type": "Speaking",
-              "label": "Year 11 Physics Speaking - Topic: Topic C",
-              "color": "#8B5CF6"
+              "label": "Year 11 Physics Speaking - Topic: Topic C"
             }
           ]
         },
@@ -3260,20 +2999,17 @@
             {
               "subject": "Maths",
               "type": "Exam",
-              "label": "Year 11 Maths Exam - Topic: Topic D",
-              "color": "#EF4444"
+              "label": "Year 11 Maths Exam - Topic: Topic D"
             },
             {
               "subject": "Biology",
               "type": "Practical",
-              "label": "Year 11 Biology Practical - Topic: Topic A",
-              "color": "#10B981"
+              "label": "Year 11 Biology Practical - Topic: Topic A"
             },
             {
               "subject": "Computer Science",
               "type": "Practical",
-              "label": "Year 11 Computer Science Practical - Topic: Topic C",
-              "color": "#10B981"
+              "label": "Year 11 Computer Science Practical - Topic: Topic C"
             }
           ]
         },
@@ -3285,8 +3021,7 @@
             {
               "subject": "Maths",
               "type": "Speaking",
-              "label": "Year 11 Maths Speaking - Topic: Topic C",
-              "color": "#8B5CF6"
+              "label": "Year 11 Maths Speaking - Topic: Topic C"
             }
           ]
         },
@@ -3322,8 +3057,7 @@
             {
               "subject": "Physics",
               "type": "Speaking",
-              "label": "Year 11 Physics Speaking - Topic: Topic C",
-              "color": "#8B5CF6"
+              "label": "Year 11 Physics Speaking - Topic: Topic C"
             }
           ]
         },
@@ -3335,20 +3069,17 @@
             {
               "subject": "Biology",
               "type": "Exam",
-              "label": "Year 11 Biology Exam - Topic: Topic A",
-              "color": "#EF4444"
+              "label": "Year 11 Biology Exam - Topic: Topic A"
             },
             {
               "subject": "Chemistry",
               "type": "Speaking",
-              "label": "Year 11 Chemistry Speaking - Topic: Topic A",
-              "color": "#8B5CF6"
+              "label": "Year 11 Chemistry Speaking - Topic: Topic A"
             },
             {
               "subject": "Physics",
               "type": "Speaking",
-              "label": "Year 11 Physics Speaking - Topic: Topic D",
-              "color": "#8B5CF6"
+              "label": "Year 11 Physics Speaking - Topic: Topic D"
             }
           ]
         },
@@ -3378,14 +3109,12 @@
             {
               "subject": "Biology",
               "type": "Speaking",
-              "label": "Year 11 Biology Speaking - Topic: Topic B",
-              "color": "#8B5CF6"
+              "label": "Year 11 Biology Speaking - Topic: Topic B"
             },
             {
               "subject": "Physics",
               "type": "Exam",
-              "label": "Year 11 Physics Exam - Topic: Topic C",
-              "color": "#EF4444"
+              "label": "Year 11 Physics Exam - Topic: Topic C"
             }
           ]
         },
@@ -3397,20 +3126,17 @@
             {
               "subject": "Computer Science",
               "type": "Practical",
-              "label": "Year 11 Computer Science Practical - Topic: Topic C",
-              "color": "#10B981"
+              "label": "Year 11 Computer Science Practical - Topic: Topic C"
             },
             {
               "subject": "Chemistry",
               "type": "Exam",
-              "label": "Year 11 Chemistry Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 11 Chemistry Exam - Topic: Topic B"
             },
             {
               "subject": "Computer Science",
               "type": "Speaking",
-              "label": "Year 11 Computer Science Speaking - Topic: Topic A",
-              "color": "#8B5CF6"
+              "label": "Year 11 Computer Science Speaking - Topic: Topic A"
             }
           ]
         },
@@ -3422,8 +3148,7 @@
             {
               "subject": "Computer Science",
               "type": "Speaking",
-              "label": "Year 11 Computer Science Speaking - Topic: Topic C",
-              "color": "#8B5CF6"
+              "label": "Year 11 Computer Science Speaking - Topic: Topic C"
             }
           ]
         },
@@ -3465,14 +3190,12 @@
             {
               "subject": "English Lit",
               "type": "Speaking",
-              "label": "Year 11 English Lit Speaking - Topic: Topic D",
-              "color": "#8B5CF6"
+              "label": "Year 11 English Lit Speaking - Topic: Topic D"
             },
             {
               "subject": "Computer Science",
               "type": "Exam",
-              "label": "Year 11 Computer Science Exam - Topic: Topic C",
-              "color": "#EF4444"
+              "label": "Year 11 Computer Science Exam - Topic: Topic C"
             }
           ]
         },
@@ -3484,8 +3207,7 @@
             {
               "subject": "Chemistry",
               "type": "Practical",
-              "label": "Year 11 Chemistry Practical - Topic: Topic A",
-              "color": "#10B981"
+              "label": "Year 11 Chemistry Practical - Topic: Topic A"
             }
           ]
         },
@@ -3497,8 +3219,7 @@
             {
               "subject": "Physics",
               "type": "Practical",
-              "label": "Year 11 Physics Practical - Topic: Topic A",
-              "color": "#10B981"
+              "label": "Year 11 Physics Practical - Topic: Topic A"
             }
           ]
         },
@@ -3510,20 +3231,17 @@
             {
               "subject": "English Lit",
               "type": "Exam",
-              "label": "Year 11 English Lit Exam - Topic: Topic C",
-              "color": "#EF4444"
+              "label": "Year 11 English Lit Exam - Topic: Topic C"
             },
             {
               "subject": "Chemistry",
               "type": "Speaking",
-              "label": "Year 11 Chemistry Speaking - Topic: Topic B",
-              "color": "#8B5CF6"
+              "label": "Year 11 Chemistry Speaking - Topic: Topic B"
             },
             {
               "subject": "Maths",
               "type": "Practical",
-              "label": "Year 11 Maths Practical - Topic: Topic B",
-              "color": "#10B981"
+              "label": "Year 11 Maths Practical - Topic: Topic B"
             }
           ]
         },
@@ -3546,9 +3264,9 @@
       "filename": "Year 12 Assessment Calendar",
       "sourceUrl": "http://example.com/Year 12",
       "types": {
-        "#EF4444": "Exam",
-        "#EC4899": "Essay",
-        "#6366F1": "Presentation"
+        "Exam": "#EF4444",
+        "Essay": "#EC4899",
+        "Presentation": "#6366F1"
       },
       "schedule": [
         {
@@ -3559,26 +3277,22 @@
             {
               "subject": "Psychology",
               "type": "Exam",
-              "label": "Year 12 Psychology Exam - Intro",
-              "color": "#EF4444"
+              "label": "Year 12 Psychology Exam - Intro"
             },
             {
               "subject": "Psychology",
               "type": "Essay",
-              "label": "Year 12 Psychology Essay - Topic: Topic B",
-              "color": "#EC4899"
+              "label": "Year 12 Psychology Essay - Topic: Topic B"
             },
             {
               "subject": "Sociology",
               "type": "Presentation",
-              "label": "Year 12 Sociology Presentation - Topic: Topic D",
-              "color": "#6366F1"
+              "label": "Year 12 Sociology Presentation - Topic: Topic D"
             },
             {
               "subject": "Economics",
               "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic C",
-              "color": "#6366F1"
+              "label": "Year 12 Economics Presentation - Topic: Topic C"
             }
           ]
         },
@@ -3590,8 +3304,7 @@
             {
               "subject": "Further Maths",
               "type": "Essay",
-              "label": "Year 12 Further Maths Essay - Topic: Topic B",
-              "color": "#EC4899"
+              "label": "Year 12 Further Maths Essay - Topic: Topic B"
             }
           ]
         },
@@ -3603,8 +3316,7 @@
             {
               "subject": "Economics",
               "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic B",
-              "color": "#6366F1"
+              "label": "Year 12 Economics Presentation - Topic: Topic B"
             }
           ]
         },
@@ -3616,14 +3328,12 @@
             {
               "subject": "Further Maths",
               "type": "Presentation",
-              "label": "Year 12 Further Maths Presentation - Topic: Topic B",
-              "color": "#6366F1"
+              "label": "Year 12 Further Maths Presentation - Topic: Topic B"
             },
             {
               "subject": "Sociology",
               "type": "Exam",
-              "label": "Year 12 Sociology Exam - Topic: Topic C",
-              "color": "#EF4444"
+              "label": "Year 12 Sociology Exam - Topic: Topic C"
             }
           ]
         },
@@ -3635,8 +3345,7 @@
             {
               "subject": "Economics",
               "type": "Exam",
-              "label": "Year 12 Economics Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 12 Economics Exam - Topic: Topic B"
             }
           ]
         },
@@ -3660,14 +3369,12 @@
             {
               "subject": "Further Maths",
               "type": "Exam",
-              "label": "Year 12 Further Maths Exam - Topic: Topic D",
-              "color": "#EF4444"
+              "label": "Year 12 Further Maths Exam - Topic: Topic D"
             },
             {
               "subject": "Further Maths",
               "type": "Presentation",
-              "label": "Year 12 Further Maths Presentation - Topic: Topic A",
-              "color": "#6366F1"
+              "label": "Year 12 Further Maths Presentation - Topic: Topic A"
             }
           ]
         },
@@ -3679,14 +3386,12 @@
             {
               "subject": "Economics",
               "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic A",
-              "color": "#6366F1"
+              "label": "Year 12 Economics Presentation - Topic: Topic A"
             },
             {
               "subject": "Sociology",
               "type": "Exam",
-              "label": "Year 12 Sociology Exam - Topic: Topic A",
-              "color": "#EF4444"
+              "label": "Year 12 Sociology Exam - Topic: Topic A"
             }
           ]
         },
@@ -3698,8 +3403,7 @@
             {
               "subject": "Sociology",
               "type": "Exam",
-              "label": "Year 12 Sociology Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 12 Sociology Exam - Topic: Topic B"
             }
           ]
         },
@@ -3717,8 +3421,7 @@
             {
               "subject": "Economics",
               "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic D",
-              "color": "#6366F1"
+              "label": "Year 12 Economics Presentation - Topic: Topic D"
             }
           ]
         },
@@ -3742,20 +3445,17 @@
             {
               "subject": "Further Maths",
               "type": "Presentation",
-              "label": "Year 12 Further Maths Presentation - Topic: Topic D",
-              "color": "#6366F1"
+              "label": "Year 12 Further Maths Presentation - Topic: Topic D"
             },
             {
               "subject": "Economics",
               "type": "Exam",
-              "label": "Year 12 Economics Exam - Topic: Topic A",
-              "color": "#EF4444"
+              "label": "Year 12 Economics Exam - Topic: Topic A"
             },
             {
               "subject": "Psychology",
               "type": "Exam",
-              "label": "Year 12 Psychology Exam - Topic: Topic C",
-              "color": "#EF4444"
+              "label": "Year 12 Psychology Exam - Topic: Topic C"
             }
           ]
         },
@@ -3767,20 +3467,17 @@
             {
               "subject": "Economics",
               "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic D",
-              "color": "#6366F1"
+              "label": "Year 12 Economics Presentation - Topic: Topic D"
             },
             {
               "subject": "Economics",
               "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic A",
-              "color": "#6366F1"
+              "label": "Year 12 Economics Presentation - Topic: Topic A"
             },
             {
               "subject": "Psychology",
               "type": "Presentation",
-              "label": "Year 12 Psychology Presentation - Topic: Topic B",
-              "color": "#6366F1"
+              "label": "Year 12 Psychology Presentation - Topic: Topic B"
             }
           ]
         },
@@ -3792,20 +3489,17 @@
             {
               "subject": "Further Maths",
               "type": "Exam",
-              "label": "Year 12 Further Maths Exam - Topic: Topic D",
-              "color": "#EF4444"
+              "label": "Year 12 Further Maths Exam - Topic: Topic D"
             },
             {
               "subject": "Economics",
               "type": "Exam",
-              "label": "Year 12 Economics Exam - Topic: Topic C",
-              "color": "#EF4444"
+              "label": "Year 12 Economics Exam - Topic: Topic C"
             },
             {
               "subject": "Further Maths",
               "type": "Essay",
-              "label": "Year 12 Further Maths Essay - Topic: Topic A",
-              "color": "#EC4899"
+              "label": "Year 12 Further Maths Essay - Topic: Topic A"
             }
           ]
         },
@@ -3817,14 +3511,12 @@
             {
               "subject": "Sociology",
               "type": "Exam",
-              "label": "Year 12 Sociology Exam - Topic: Topic A",
-              "color": "#EF4444"
+              "label": "Year 12 Sociology Exam - Topic: Topic A"
             },
             {
               "subject": "Further Maths",
               "type": "Presentation",
-              "label": "Year 12 Further Maths Presentation - Topic: Topic C",
-              "color": "#6366F1"
+              "label": "Year 12 Further Maths Presentation - Topic: Topic C"
             }
           ]
         },
@@ -3854,20 +3546,17 @@
             {
               "subject": "Sociology",
               "type": "Exam",
-              "label": "Year 12 Sociology Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 12 Sociology Exam - Topic: Topic B"
             },
             {
               "subject": "Sociology",
               "type": "Presentation",
-              "label": "Year 12 Sociology Presentation - Topic: Topic C",
-              "color": "#6366F1"
+              "label": "Year 12 Sociology Presentation - Topic: Topic C"
             },
             {
               "subject": "Economics",
               "type": "Exam",
-              "label": "Year 12 Economics Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 12 Economics Exam - Topic: Topic B"
             }
           ]
         },
@@ -3879,20 +3568,17 @@
             {
               "subject": "Sociology",
               "type": "Presentation",
-              "label": "Year 12 Sociology Presentation - Topic: Topic D",
-              "color": "#6366F1"
+              "label": "Year 12 Sociology Presentation - Topic: Topic D"
             },
             {
               "subject": "Economics",
               "type": "Essay",
-              "label": "Year 12 Economics Essay - Topic: Topic B",
-              "color": "#EC4899"
+              "label": "Year 12 Economics Essay - Topic: Topic B"
             },
             {
               "subject": "Economics",
               "type": "Essay",
-              "label": "Year 12 Economics Essay - Topic: Topic C",
-              "color": "#EC4899"
+              "label": "Year 12 Economics Essay - Topic: Topic C"
             }
           ]
         },
@@ -3904,20 +3590,17 @@
             {
               "subject": "Further Maths",
               "type": "Presentation",
-              "label": "Year 12 Further Maths Presentation - Topic: Topic A",
-              "color": "#6366F1"
+              "label": "Year 12 Further Maths Presentation - Topic: Topic A"
             },
             {
               "subject": "Further Maths",
               "type": "Essay",
-              "label": "Year 12 Further Maths Essay - Topic: Topic C",
-              "color": "#EC4899"
+              "label": "Year 12 Further Maths Essay - Topic: Topic C"
             },
             {
               "subject": "Further Maths",
               "type": "Exam",
-              "label": "Year 12 Further Maths Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 12 Further Maths Exam - Topic: Topic B"
             }
           ]
         },
@@ -3929,8 +3612,7 @@
             {
               "subject": "Further Maths",
               "type": "Presentation",
-              "label": "Year 12 Further Maths Presentation - Topic: Topic B",
-              "color": "#6366F1"
+              "label": "Year 12 Further Maths Presentation - Topic: Topic B"
             }
           ]
         },
@@ -3960,14 +3642,12 @@
             {
               "subject": "Further Maths",
               "type": "Essay",
-              "label": "Year 12 Further Maths Essay - Topic: Topic A",
-              "color": "#EC4899"
+              "label": "Year 12 Further Maths Essay - Topic: Topic A"
             },
             {
               "subject": "Sociology",
               "type": "Essay",
-              "label": "Year 12 Sociology Essay - Topic: Topic B",
-              "color": "#EC4899"
+              "label": "Year 12 Sociology Essay - Topic: Topic B"
             }
           ]
         },
@@ -3985,8 +3665,7 @@
             {
               "subject": "Psychology",
               "type": "Presentation",
-              "label": "Year 12 Psychology Presentation - Topic: Topic D",
-              "color": "#6366F1"
+              "label": "Year 12 Psychology Presentation - Topic: Topic D"
             }
           ]
         },
@@ -3998,14 +3677,12 @@
             {
               "subject": "Psychology",
               "type": "Presentation",
-              "label": "Year 12 Psychology Presentation - Topic: Topic C",
-              "color": "#6366F1"
+              "label": "Year 12 Psychology Presentation - Topic: Topic C"
             },
             {
               "subject": "Sociology",
               "type": "Presentation",
-              "label": "Year 12 Sociology Presentation - Topic: Topic B",
-              "color": "#6366F1"
+              "label": "Year 12 Sociology Presentation - Topic: Topic B"
             }
           ]
         },
@@ -4035,20 +3712,17 @@
             {
               "subject": "Sociology",
               "type": "Presentation",
-              "label": "Year 12 Sociology Presentation - Topic: Topic A",
-              "color": "#6366F1"
+              "label": "Year 12 Sociology Presentation - Topic: Topic A"
             },
             {
               "subject": "Sociology",
               "type": "Exam",
-              "label": "Year 12 Sociology Exam - Topic: Topic A",
-              "color": "#EF4444"
+              "label": "Year 12 Sociology Exam - Topic: Topic A"
             },
             {
               "subject": "Economics",
               "type": "Essay",
-              "label": "Year 12 Economics Essay - Topic: Topic B",
-              "color": "#EC4899"
+              "label": "Year 12 Economics Essay - Topic: Topic B"
             }
           ]
         },
@@ -4066,8 +3740,7 @@
             {
               "subject": "Psychology",
               "type": "Essay",
-              "label": "Year 12 Psychology Essay - Topic: Topic C",
-              "color": "#EC4899"
+              "label": "Year 12 Psychology Essay - Topic: Topic C"
             }
           ]
         },
@@ -4085,8 +3758,7 @@
             {
               "subject": "Psychology",
               "type": "Presentation",
-              "label": "Year 12 Psychology Presentation - Topic: Topic B",
-              "color": "#6366F1"
+              "label": "Year 12 Psychology Presentation - Topic: Topic B"
             }
           ]
         },
@@ -4110,20 +3782,17 @@
             {
               "subject": "Economics",
               "type": "Essay",
-              "label": "Year 12 Economics Essay - Topic: Topic A",
-              "color": "#EC4899"
+              "label": "Year 12 Economics Essay - Topic: Topic A"
             },
             {
               "subject": "Economics",
               "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic A",
-              "color": "#6366F1"
+              "label": "Year 12 Economics Presentation - Topic: Topic A"
             },
             {
               "subject": "Economics",
               "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic C",
-              "color": "#6366F1"
+              "label": "Year 12 Economics Presentation - Topic: Topic C"
             }
           ]
         },
@@ -4135,8 +3804,7 @@
             {
               "subject": "Economics",
               "type": "Exam",
-              "label": "Year 12 Economics Exam - Topic: Topic A",
-              "color": "#EF4444"
+              "label": "Year 12 Economics Exam - Topic: Topic A"
             }
           ]
         },
@@ -4148,20 +3816,17 @@
             {
               "subject": "Further Maths",
               "type": "Exam",
-              "label": "Year 12 Further Maths Exam - Topic: Topic A",
-              "color": "#EF4444"
+              "label": "Year 12 Further Maths Exam - Topic: Topic A"
             },
             {
               "subject": "Economics",
               "type": "Essay",
-              "label": "Year 12 Economics Essay - Topic: Topic D",
-              "color": "#EC4899"
+              "label": "Year 12 Economics Essay - Topic: Topic D"
             },
             {
               "subject": "Psychology",
               "type": "Essay",
-              "label": "Year 12 Psychology Essay - Topic: Topic B",
-              "color": "#EC4899"
+              "label": "Year 12 Psychology Essay - Topic: Topic B"
             }
           ]
         },
@@ -4173,20 +3838,17 @@
             {
               "subject": "Economics",
               "type": "Exam",
-              "label": "Year 12 Economics Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 12 Economics Exam - Topic: Topic B"
             },
             {
               "subject": "Economics",
               "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic B",
-              "color": "#6366F1"
+              "label": "Year 12 Economics Presentation - Topic: Topic B"
             },
             {
               "subject": "Psychology",
               "type": "Essay",
-              "label": "Year 12 Psychology Essay - Topic: Topic B",
-              "color": "#EC4899"
+              "label": "Year 12 Psychology Essay - Topic: Topic B"
             }
           ]
         },
@@ -4198,14 +3860,12 @@
             {
               "subject": "Economics",
               "type": "Exam",
-              "label": "Year 12 Economics Exam - Topic: Topic D",
-              "color": "#EF4444"
+              "label": "Year 12 Economics Exam - Topic: Topic D"
             },
             {
               "subject": "Further Maths",
               "type": "Exam",
-              "label": "Year 12 Further Maths Exam - Topic: Topic D",
-              "color": "#EF4444"
+              "label": "Year 12 Further Maths Exam - Topic: Topic D"
             }
           ]
         },
@@ -4229,20 +3889,17 @@
             {
               "subject": "Sociology",
               "type": "Exam",
-              "label": "Year 12 Sociology Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 12 Sociology Exam - Topic: Topic B"
             },
             {
               "subject": "Sociology",
               "type": "Essay",
-              "label": "Year 12 Sociology Essay - Topic: Topic C",
-              "color": "#EC4899"
+              "label": "Year 12 Sociology Essay - Topic: Topic C"
             },
             {
               "subject": "Economics",
               "type": "Exam",
-              "label": "Year 12 Economics Exam - Topic: Topic C",
-              "color": "#EF4444"
+              "label": "Year 12 Economics Exam - Topic: Topic C"
             }
           ]
         },
@@ -4260,20 +3917,17 @@
             {
               "subject": "Further Maths",
               "type": "Presentation",
-              "label": "Year 12 Further Maths Presentation - Topic: Topic A",
-              "color": "#6366F1"
+              "label": "Year 12 Further Maths Presentation - Topic: Topic A"
             },
             {
               "subject": "Psychology",
               "type": "Essay",
-              "label": "Year 12 Psychology Essay - Topic: Topic B",
-              "color": "#EC4899"
+              "label": "Year 12 Psychology Essay - Topic: Topic B"
             },
             {
               "subject": "Further Maths",
               "type": "Essay",
-              "label": "Year 12 Further Maths Essay - Topic: Topic B",
-              "color": "#EC4899"
+              "label": "Year 12 Further Maths Essay - Topic: Topic B"
             }
           ]
         },
@@ -4285,14 +3939,12 @@
             {
               "subject": "Further Maths",
               "type": "Presentation",
-              "label": "Year 12 Further Maths Presentation - Topic: Topic C",
-              "color": "#6366F1"
+              "label": "Year 12 Further Maths Presentation - Topic: Topic C"
             },
             {
               "subject": "Further Maths",
               "type": "Presentation",
-              "label": "Year 12 Further Maths Presentation - Topic: Topic B",
-              "color": "#6366F1"
+              "label": "Year 12 Further Maths Presentation - Topic: Topic B"
             }
           ]
         },
@@ -4304,20 +3956,17 @@
             {
               "subject": "Further Maths",
               "type": "Essay",
-              "label": "Year 12 Further Maths Essay - Topic: Topic B",
-              "color": "#EC4899"
+              "label": "Year 12 Further Maths Essay - Topic: Topic B"
             },
             {
               "subject": "Further Maths",
               "type": "Presentation",
-              "label": "Year 12 Further Maths Presentation - Topic: Topic B",
-              "color": "#6366F1"
+              "label": "Year 12 Further Maths Presentation - Topic: Topic B"
             },
             {
               "subject": "Psychology",
               "type": "Presentation",
-              "label": "Year 12 Psychology Presentation - Topic: Topic B",
-              "color": "#6366F1"
+              "label": "Year 12 Psychology Presentation - Topic: Topic B"
             }
           ]
         },
@@ -4341,8 +3990,7 @@
             {
               "subject": "Psychology",
               "type": "Exam",
-              "label": "Year 12 Psychology Exam - Topic: Topic C",
-              "color": "#EF4444"
+              "label": "Year 12 Psychology Exam - Topic: Topic C"
             }
           ]
         },
@@ -4354,8 +4002,7 @@
             {
               "subject": "Sociology",
               "type": "Essay",
-              "label": "Year 12 Sociology Essay - Topic: Topic D",
-              "color": "#EC4899"
+              "label": "Year 12 Sociology Essay - Topic: Topic D"
             }
           ]
         },
@@ -4367,14 +4014,12 @@
             {
               "subject": "Psychology",
               "type": "Exam",
-              "label": "Year 12 Psychology Exam - Topic: Topic C",
-              "color": "#EF4444"
+              "label": "Year 12 Psychology Exam - Topic: Topic C"
             },
             {
               "subject": "Further Maths",
               "type": "Essay",
-              "label": "Year 12 Further Maths Essay - Topic: Topic D",
-              "color": "#EC4899"
+              "label": "Year 12 Further Maths Essay - Topic: Topic D"
             }
           ]
         },
@@ -4410,8 +4055,7 @@
             {
               "subject": "Further Maths",
               "type": "Exam",
-              "label": "Year 12 Further Maths Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 12 Further Maths Exam - Topic: Topic B"
             }
           ]
         },
@@ -4423,14 +4067,12 @@
             {
               "subject": "Further Maths",
               "type": "Exam",
-              "label": "Year 12 Further Maths Exam - Topic: Topic A",
-              "color": "#EF4444"
+              "label": "Year 12 Further Maths Exam - Topic: Topic A"
             },
             {
               "subject": "Psychology",
               "type": "Essay",
-              "label": "Year 12 Psychology Essay - Topic: Topic B",
-              "color": "#EC4899"
+              "label": "Year 12 Psychology Essay - Topic: Topic B"
             }
           ]
         },
@@ -4442,14 +4084,12 @@
             {
               "subject": "Psychology",
               "type": "Essay",
-              "label": "Year 12 Psychology Essay - Topic: Topic A",
-              "color": "#EC4899"
+              "label": "Year 12 Psychology Essay - Topic: Topic A"
             },
             {
               "subject": "Sociology",
               "type": "Essay",
-              "label": "Year 12 Sociology Essay - Topic: Topic A",
-              "color": "#EC4899"
+              "label": "Year 12 Sociology Essay - Topic: Topic A"
             }
           ]
         },
@@ -4461,14 +4101,12 @@
             {
               "subject": "Further Maths",
               "type": "Essay",
-              "label": "Year 12 Further Maths Essay - Topic: Topic B",
-              "color": "#EC4899"
+              "label": "Year 12 Further Maths Essay - Topic: Topic B"
             },
             {
               "subject": "Further Maths",
               "type": "Exam",
-              "label": "Year 12 Further Maths Exam - Topic: Topic A",
-              "color": "#EF4444"
+              "label": "Year 12 Further Maths Exam - Topic: Topic A"
             }
           ]
         },
@@ -4480,8 +4118,7 @@
             {
               "subject": "Psychology",
               "type": "Essay",
-              "label": "Year 12 Psychology Essay - Topic: Topic A",
-              "color": "#EC4899"
+              "label": "Year 12 Psychology Essay - Topic: Topic A"
             }
           ]
         },
@@ -4505,20 +4142,17 @@
             {
               "subject": "Sociology",
               "type": "Presentation",
-              "label": "Year 12 Sociology Presentation - Topic: Topic D",
-              "color": "#6366F1"
+              "label": "Year 12 Sociology Presentation - Topic: Topic D"
             },
             {
               "subject": "Sociology",
               "type": "Essay",
-              "label": "Year 12 Sociology Essay - Topic: Topic C",
-              "color": "#EC4899"
+              "label": "Year 12 Sociology Essay - Topic: Topic C"
             },
             {
               "subject": "Further Maths",
               "type": "Presentation",
-              "label": "Year 12 Further Maths Presentation - Topic: Topic A",
-              "color": "#6366F1"
+              "label": "Year 12 Further Maths Presentation - Topic: Topic A"
             }
           ]
         },
@@ -4530,20 +4164,17 @@
             {
               "subject": "Economics",
               "type": "Essay",
-              "label": "Year 12 Economics Essay - Topic: Topic B",
-              "color": "#EC4899"
+              "label": "Year 12 Economics Essay - Topic: Topic B"
             },
             {
               "subject": "Further Maths",
               "type": "Presentation",
-              "label": "Year 12 Further Maths Presentation - Topic: Topic A",
-              "color": "#6366F1"
+              "label": "Year 12 Further Maths Presentation - Topic: Topic A"
             },
             {
               "subject": "Economics",
               "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic B",
-              "color": "#6366F1"
+              "label": "Year 12 Economics Presentation - Topic: Topic B"
             }
           ]
         },
@@ -4555,20 +4186,17 @@
             {
               "subject": "Further Maths",
               "type": "Essay",
-              "label": "Year 12 Further Maths Essay - Topic: Topic B",
-              "color": "#EC4899"
+              "label": "Year 12 Further Maths Essay - Topic: Topic B"
             },
             {
               "subject": "Economics",
               "type": "Essay",
-              "label": "Year 12 Economics Essay - Topic: Topic D",
-              "color": "#EC4899"
+              "label": "Year 12 Economics Essay - Topic: Topic D"
             },
             {
               "subject": "Psychology",
               "type": "Presentation",
-              "label": "Year 12 Psychology Presentation - Topic: Topic B",
-              "color": "#6366F1"
+              "label": "Year 12 Psychology Presentation - Topic: Topic B"
             }
           ]
         },
@@ -4586,8 +4214,7 @@
             {
               "subject": "Further Maths",
               "type": "Essay",
-              "label": "Year 12 Further Maths Essay - Topic: Topic D",
-              "color": "#EC4899"
+              "label": "Year 12 Further Maths Essay - Topic: Topic D"
             }
           ]
         },
@@ -4653,20 +4280,17 @@
             {
               "subject": "Psychology",
               "type": "Presentation",
-              "label": "Year 12 Psychology Presentation - Topic: Topic C",
-              "color": "#6366F1"
+              "label": "Year 12 Psychology Presentation - Topic: Topic C"
             },
             {
               "subject": "Economics",
               "type": "Exam",
-              "label": "Year 12 Economics Exam - Topic: Topic D",
-              "color": "#EF4444"
+              "label": "Year 12 Economics Exam - Topic: Topic D"
             },
             {
               "subject": "Economics",
               "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic C",
-              "color": "#6366F1"
+              "label": "Year 12 Economics Presentation - Topic: Topic C"
             }
           ]
         },
@@ -4678,8 +4302,7 @@
             {
               "subject": "Sociology",
               "type": "Exam",
-              "label": "Year 12 Sociology Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 12 Sociology Exam - Topic: Topic B"
             }
           ]
         },
@@ -4691,14 +4314,12 @@
             {
               "subject": "Psychology",
               "type": "Presentation",
-              "label": "Year 12 Psychology Presentation - Topic: Topic B",
-              "color": "#6366F1"
+              "label": "Year 12 Psychology Presentation - Topic: Topic B"
             },
             {
               "subject": "Psychology",
               "type": "Essay",
-              "label": "Year 12 Psychology Essay - Topic: Topic D",
-              "color": "#EC4899"
+              "label": "Year 12 Psychology Essay - Topic: Topic D"
             }
           ]
         },
@@ -4710,8 +4331,7 @@
             {
               "subject": "Sociology",
               "type": "Essay",
-              "label": "Year 12 Sociology Essay - Topic: Topic C",
-              "color": "#EC4899"
+              "label": "Year 12 Sociology Essay - Topic: Topic C"
             }
           ]
         },
@@ -4723,8 +4343,7 @@
             {
               "subject": "Sociology",
               "type": "Exam",
-              "label": "Year 12 Sociology Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 12 Sociology Exam - Topic: Topic B"
             }
           ]
         },
@@ -4754,20 +4373,17 @@
             {
               "subject": "Sociology",
               "type": "Essay",
-              "label": "Year 12 Sociology Essay - Topic: Topic A",
-              "color": "#EC4899"
+              "label": "Year 12 Sociology Essay - Topic: Topic A"
             },
             {
               "subject": "Economics",
               "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic D",
-              "color": "#6366F1"
+              "label": "Year 12 Economics Presentation - Topic: Topic D"
             },
             {
               "subject": "Psychology",
               "type": "Presentation",
-              "label": "Year 12 Psychology Presentation - Topic: Topic D",
-              "color": "#6366F1"
+              "label": "Year 12 Psychology Presentation - Topic: Topic D"
             }
           ]
         },
@@ -4779,20 +4395,17 @@
             {
               "subject": "Psychology",
               "type": "Exam",
-              "label": "Year 12 Psychology Exam - Topic: Topic C",
-              "color": "#EF4444"
+              "label": "Year 12 Psychology Exam - Topic: Topic C"
             },
             {
               "subject": "Sociology",
               "type": "Presentation",
-              "label": "Year 12 Sociology Presentation - Topic: Topic B",
-              "color": "#6366F1"
+              "label": "Year 12 Sociology Presentation - Topic: Topic B"
             },
             {
               "subject": "Further Maths",
               "type": "Exam",
-              "label": "Year 12 Further Maths Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 12 Further Maths Exam - Topic: Topic B"
             }
           ]
         },
@@ -4804,14 +4417,12 @@
             {
               "subject": "Psychology",
               "type": "Essay",
-              "label": "Year 12 Psychology Essay - Topic: Topic B",
-              "color": "#EC4899"
+              "label": "Year 12 Psychology Essay - Topic: Topic B"
             },
             {
               "subject": "Sociology",
               "type": "Presentation",
-              "label": "Year 12 Sociology Presentation - Topic: Topic A",
-              "color": "#6366F1"
+              "label": "Year 12 Sociology Presentation - Topic: Topic A"
             }
           ]
         },
@@ -4823,20 +4434,17 @@
             {
               "subject": "Sociology",
               "type": "Exam",
-              "label": "Year 12 Sociology Exam - Topic: Topic C",
-              "color": "#EF4444"
+              "label": "Year 12 Sociology Exam - Topic: Topic C"
             },
             {
               "subject": "Sociology",
               "type": "Essay",
-              "label": "Year 12 Sociology Essay - Topic: Topic D",
-              "color": "#EC4899"
+              "label": "Year 12 Sociology Essay - Topic: Topic D"
             },
             {
               "subject": "Psychology",
               "type": "Presentation",
-              "label": "Year 12 Psychology Presentation - Topic: Topic C",
-              "color": "#6366F1"
+              "label": "Year 12 Psychology Presentation - Topic: Topic C"
             }
           ]
         },
@@ -4860,8 +4468,7 @@
             {
               "subject": "Psychology",
               "type": "Exam",
-              "label": "Year 12 Psychology Exam - Topic: Topic C",
-              "color": "#EF4444"
+              "label": "Year 12 Psychology Exam - Topic: Topic C"
             }
           ]
         },
@@ -4873,14 +4480,12 @@
             {
               "subject": "Sociology",
               "type": "Essay",
-              "label": "Year 12 Sociology Essay - Topic: Topic B",
-              "color": "#EC4899"
+              "label": "Year 12 Sociology Essay - Topic: Topic B"
             },
             {
               "subject": "Sociology",
               "type": "Presentation",
-              "label": "Year 12 Sociology Presentation - Topic: Topic D",
-              "color": "#6366F1"
+              "label": "Year 12 Sociology Presentation - Topic: Topic D"
             }
           ]
         },
@@ -4898,14 +4503,12 @@
             {
               "subject": "Economics",
               "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic D",
-              "color": "#6366F1"
+              "label": "Year 12 Economics Presentation - Topic: Topic D"
             },
             {
               "subject": "Sociology",
               "type": "Presentation",
-              "label": "Year 12 Sociology Presentation - Topic: Topic C",
-              "color": "#6366F1"
+              "label": "Year 12 Sociology Presentation - Topic: Topic C"
             }
           ]
         },
@@ -4917,8 +4520,7 @@
             {
               "subject": "Economics",
               "type": "Exam",
-              "label": "Year 12 Economics Exam - Topic: Topic D",
-              "color": "#EF4444"
+              "label": "Year 12 Economics Exam - Topic: Topic D"
             }
           ]
         },
@@ -4942,8 +4544,7 @@
             {
               "subject": "Sociology",
               "type": "Essay",
-              "label": "Year 12 Sociology Essay - Topic: Topic C",
-              "color": "#EC4899"
+              "label": "Year 12 Sociology Essay - Topic: Topic C"
             }
           ]
         },
@@ -4955,20 +4556,17 @@
             {
               "subject": "Further Maths",
               "type": "Exam",
-              "label": "Year 12 Further Maths Exam - Topic: Topic D",
-              "color": "#EF4444"
+              "label": "Year 12 Further Maths Exam - Topic: Topic D"
             },
             {
               "subject": "Further Maths",
               "type": "Presentation",
-              "label": "Year 12 Further Maths Presentation - Topic: Topic C",
-              "color": "#6366F1"
+              "label": "Year 12 Further Maths Presentation - Topic: Topic C"
             },
             {
               "subject": "Psychology",
               "type": "Essay",
-              "label": "Year 12 Psychology Essay - Topic: Topic B",
-              "color": "#EC4899"
+              "label": "Year 12 Psychology Essay - Topic: Topic B"
             }
           ]
         },
@@ -4980,8 +4578,7 @@
             {
               "subject": "Psychology",
               "type": "Exam",
-              "label": "Year 12 Psychology Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 12 Psychology Exam - Topic: Topic B"
             }
           ]
         },
@@ -4993,14 +4590,12 @@
             {
               "subject": "Psychology",
               "type": "Presentation",
-              "label": "Year 12 Psychology Presentation - Topic: Topic A",
-              "color": "#6366F1"
+              "label": "Year 12 Psychology Presentation - Topic: Topic A"
             },
             {
               "subject": "Sociology",
               "type": "Essay",
-              "label": "Year 12 Sociology Essay - Topic: Topic C",
-              "color": "#EC4899"
+              "label": "Year 12 Sociology Essay - Topic: Topic C"
             }
           ]
         },
@@ -5012,14 +4607,12 @@
             {
               "subject": "Sociology",
               "type": "Essay",
-              "label": "Year 12 Sociology Essay - Topic: Topic D",
-              "color": "#EC4899"
+              "label": "Year 12 Sociology Essay - Topic: Topic D"
             },
             {
               "subject": "Sociology",
               "type": "Exam",
-              "label": "Year 12 Sociology Exam - Topic: Topic A",
-              "color": "#EF4444"
+              "label": "Year 12 Sociology Exam - Topic: Topic A"
             }
           ]
         },
@@ -5043,14 +4636,12 @@
             {
               "subject": "Economics",
               "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic C",
-              "color": "#6366F1"
+              "label": "Year 12 Economics Presentation - Topic: Topic C"
             },
             {
               "subject": "Economics",
               "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic A",
-              "color": "#6366F1"
+              "label": "Year 12 Economics Presentation - Topic: Topic A"
             }
           ]
         },
@@ -5062,8 +4653,7 @@
             {
               "subject": "Further Maths",
               "type": "Essay",
-              "label": "Year 12 Further Maths Essay - Topic: Topic C",
-              "color": "#EC4899"
+              "label": "Year 12 Further Maths Essay - Topic: Topic C"
             }
           ]
         },
@@ -5075,14 +4665,12 @@
             {
               "subject": "Further Maths",
               "type": "Exam",
-              "label": "Year 12 Further Maths Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 12 Further Maths Exam - Topic: Topic B"
             },
             {
               "subject": "Sociology",
               "type": "Presentation",
-              "label": "Year 12 Sociology Presentation - Topic: Topic C",
-              "color": "#6366F1"
+              "label": "Year 12 Sociology Presentation - Topic: Topic C"
             }
           ]
         },
@@ -5100,8 +4688,7 @@
             {
               "subject": "Further Maths",
               "type": "Essay",
-              "label": "Year 12 Further Maths Essay - Topic: Topic C",
-              "color": "#EC4899"
+              "label": "Year 12 Further Maths Essay - Topic: Topic C"
             }
           ]
         },
@@ -5125,8 +4712,7 @@
             {
               "subject": "Economics",
               "type": "Exam",
-              "label": "Year 12 Economics Exam - Topic: Topic C",
-              "color": "#EF4444"
+              "label": "Year 12 Economics Exam - Topic: Topic C"
             }
           ]
         },
@@ -5150,14 +4736,12 @@
             {
               "subject": "Economics",
               "type": "Essay",
-              "label": "Year 12 Economics Essay - Topic: Topic A",
-              "color": "#EC4899"
+              "label": "Year 12 Economics Essay - Topic: Topic A"
             },
             {
               "subject": "Psychology",
               "type": "Essay",
-              "label": "Year 12 Psychology Essay - Topic: Topic A",
-              "color": "#EC4899"
+              "label": "Year 12 Psychology Essay - Topic: Topic A"
             }
           ]
         },
@@ -5169,8 +4753,7 @@
             {
               "subject": "Sociology",
               "type": "Exam",
-              "label": "Year 12 Sociology Exam - Topic: Topic C",
-              "color": "#EF4444"
+              "label": "Year 12 Sociology Exam - Topic: Topic C"
             }
           ]
         },
@@ -5200,14 +4783,12 @@
             {
               "subject": "Sociology",
               "type": "Exam",
-              "label": "Year 12 Sociology Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 12 Sociology Exam - Topic: Topic B"
             },
             {
               "subject": "Psychology",
               "type": "Essay",
-              "label": "Year 12 Psychology Essay - Topic: Topic B",
-              "color": "#EC4899"
+              "label": "Year 12 Psychology Essay - Topic: Topic B"
             }
           ]
         },
@@ -5219,20 +4800,17 @@
             {
               "subject": "Psychology",
               "type": "Exam",
-              "label": "Year 12 Psychology Exam - Topic: Topic A",
-              "color": "#EF4444"
+              "label": "Year 12 Psychology Exam - Topic: Topic A"
             },
             {
               "subject": "Further Maths",
               "type": "Essay",
-              "label": "Year 12 Further Maths Essay - Topic: Topic B",
-              "color": "#EC4899"
+              "label": "Year 12 Further Maths Essay - Topic: Topic B"
             },
             {
               "subject": "Further Maths",
               "type": "Exam",
-              "label": "Year 12 Further Maths Exam - Topic: Topic B",
-              "color": "#EF4444"
+              "label": "Year 12 Further Maths Exam - Topic: Topic B"
             }
           ]
         },
@@ -5244,8 +4822,7 @@
             {
               "subject": "Economics",
               "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic C",
-              "color": "#6366F1"
+              "label": "Year 12 Economics Presentation - Topic: Topic C"
             }
           ]
         },
@@ -5257,8 +4834,7 @@
             {
               "subject": "Psychology",
               "type": "Exam",
-              "label": "Year 12 Psychology Exam - Topic: Topic C",
-              "color": "#EF4444"
+              "label": "Year 12 Psychology Exam - Topic: Topic C"
             }
           ]
         },
@@ -5294,14 +4870,12 @@
             {
               "subject": "Economics",
               "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic B",
-              "color": "#6366F1"
+              "label": "Year 12 Economics Presentation - Topic: Topic B"
             },
             {
               "subject": "Sociology",
               "type": "Presentation",
-              "label": "Year 12 Sociology Presentation - Topic: Topic A",
-              "color": "#6366F1"
+              "label": "Year 12 Sociology Presentation - Topic: Topic A"
             }
           ]
         },
@@ -5313,14 +4887,12 @@
             {
               "subject": "Further Maths",
               "type": "Essay",
-              "label": "Year 12 Further Maths Essay - Topic: Topic A",
-              "color": "#EC4899"
+              "label": "Year 12 Further Maths Essay - Topic: Topic A"
             },
             {
               "subject": "Psychology",
               "type": "Essay",
-              "label": "Year 12 Psychology Essay - Topic: Topic B",
-              "color": "#EC4899"
+              "label": "Year 12 Psychology Essay - Topic: Topic B"
             }
           ]
         },
@@ -5332,14 +4904,12 @@
             {
               "subject": "Further Maths",
               "type": "Exam",
-              "label": "Year 12 Further Maths Exam - Topic: Topic C",
-              "color": "#EF4444"
+              "label": "Year 12 Further Maths Exam - Topic: Topic C"
             },
             {
               "subject": "Sociology",
               "type": "Presentation",
-              "label": "Year 12 Sociology Presentation - Topic: Topic B",
-              "color": "#6366F1"
+              "label": "Year 12 Sociology Presentation - Topic: Topic B"
             }
           ]
         },

@@ -15,13 +15,13 @@ describe('Filter Reset Behavior', () => {
             years: {
                 'year-10': {
                     name: 'Year 10',
-                    types: { '#FF0000': 'Exam' },
+                    types: { 'Exam': '#FF0000' },
                     schedule: [
                         {
                             date: '2025-01-01',
                             week: '1',
                             isInset: false,
-                            assessments: [{ subject: 'Maths', type: 'Exam', color: '#FF0000', label: 'Test' }]
+                            assessments: [{ subject: 'Maths', type: 'Exam', label: 'Test' }]
                         }
                     ]
                 }
