@@ -279,7 +279,7 @@ async function parseSheet(filePath) {
                     } else {
                         // Unknown color
                         type = 'Other';
-                        console.warn(`WARNING: Unknown color ${color} found for subject ${subject} at row ${r}. Assigning type "Other".`);
+                        console.warn(`WARNING: Unknown color ${color} found for subject ${subject} at column ${c} row ${r}. Assigning type "Other".`);
 
                         // Add Other to output definitions if not present
                         if (!outputTypes['Other']) {
