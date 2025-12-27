@@ -49,13 +49,7 @@ describe('FormattedText', () => {
 
   it('handles incomplete tags gracefully', () => {
     render(<FormattedText text="**Bold _Unclosed" />);
-    // Should render "**Bold " then "_Unclosed" or similar depending on greedy match
-    // Actually our parser looks for PAIRS.
-    // **Bold _Unclosed
-    // It sees ** but no closing **?
-    // Wait, regex `\*\*(.*?)\*\*` finds pairs.
-    // If no closing `**`, no match.
-    // So it should render plain text.
+    // The parser enforces pairs, so unclosed tags are treated as plain text
     expect(screen.getByText('**Bold _Unclosed')).toBeInTheDocument();
   });
 });
