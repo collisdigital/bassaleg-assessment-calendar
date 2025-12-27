@@ -9,6 +9,12 @@ function createSlug(str: string): string {
   return str.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 }
 
+export function useAppMetadata() {
+  return {
+    generatedAt: appData.generatedAt
+  };
+}
+
 export function useAllYears() {
   return useMemo(() => {
     if (!appData.years) return [];
