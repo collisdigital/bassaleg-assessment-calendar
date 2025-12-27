@@ -26,7 +26,7 @@ export function Footer({ generatedAt, filename, sourceUrl }: FooterProps) {
           ))}
           {generatedAt && (
             <span className={filename ? 'mx-1' : ''}>
-              {filename ? '(' : ''}last updated {formatLastUpdated(generatedAt)}{filename ? ')' : ''}
+              last updated {formatLastUpdated(generatedAt)}
             </span>
           )}
         </p>
