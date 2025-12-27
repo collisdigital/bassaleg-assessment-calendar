@@ -44,6 +44,68 @@ function normalizeColor(value) {
   return hex.toUpperCase(); // Standardize to uppercase
 }
 
+// Helper to convert rich text to Markdown, correctly handling state.
+function richTextToMarkdown(richText) {
+    if (!richText || !Array.isArray(richText)) return '';
+
+    let markdown = '';
+    let isBoldOpen = false;
+    let isItalicOpen = false;
+
+    for (const fragment of richText) {
+        const text = fragment.text || '';
+        const font = fragment.font || {};
+        const shouldBeBold = !!font.bold;
+        const shouldBeItalic = !!font.italic;
+
+        // Close bold tag if the style ends
+        if (isBoldOpen && !shouldBeBold) {
+            markdown += '**';
+            isBoldOpen = false;
+        }
+        // Close italic tag if the style ends
+        if (isItalicOpen && !shouldBeItalic) {
+            markdown += '_';
+            isItalicOpen = false;
+        }
+        
+        // Separate whitespace from core text
+        const leadingSpace = text.match(/^\s*/)[0];
+        const trailingSpace = text.match(/\s*$/)[0];
+        const coreText = text.substring(leadingSpace.length, text.length - trailingSpace.length);
+
+        // Append leading space, applying styles if any are open
+        markdown += leadingSpace;
+
+        if (coreText) {
+            // Open bold tag if a new bold section starts
+            if (!isBoldOpen && shouldBeBold) {
+                markdown += '**';
+                isBoldOpen = true;
+            }
+            // Open italic tag if a new italic section starts
+            if (!isItalicOpen && shouldBeItalic) {
+                markdown += '_';
+                isItalicOpen = true;
+            }
+            markdown += coreText;
+        }
+
+        // Append trailing space, applying styles if any are open
+        markdown += trailingSpace;
+    }
+
+    // Close any remaining open tags
+    if (isBoldOpen) {
+        markdown += '**';
+    }
+    if (isItalicOpen) {
+        markdown += '_';
+    }
+
+    return markdown;
+}
+
 // Helper to extract text from cell value (handling Rich Text)
 function getCellValue(cell) {
     const val = cell.value;
@@ -52,8 +114,8 @@ function getCellValue(cell) {
     // Handle Rich Text
     if (typeof val === 'object') {
         if (val.richText && Array.isArray(val.richText)) {
-            const text = val.richText.map(part => part.text).join('');
-            if (debugMode) console.log(`TRACE: getCellValue - Stripped formatting from richText cell. Original: %o, Result: ${text}`, val);
+            const text = richTextToMarkdown(val.richText);
+            if (debugMode) console.log(`TRACE: getCellValue - Converted richText cell to Markdown. Original: %o, Result: ${text}`, val);
             return text;
         }
         // Handle Hyperlink { text: '...', hyperlink: '...' }

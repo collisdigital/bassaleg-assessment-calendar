@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-24T18:25:03.238Z",
+  "generatedAt": "2025-12-27T02:06:20.188Z",
   "years": {
     "year-10": {
       "name": "Year 10",
@@ -146,7 +146,7 @@
             {
               "subject": "Maths",
               "type": "Mock",
-              "label": "Year 10 Maths Mock - Topic: Topic A"
+              "label": "Year 10 **Maths** Mock - Topic: Topic A"
             },
             {
               "subject": "English",
@@ -197,7 +197,7 @@
             {
               "subject": "Art",
               "type": "Mock",
-              "label": "Year 10 Art Mock - Topic: Topic A"
+              "label": "Year 10 Art Mock - _Topic: Topic A_"
             }
           ]
         },
@@ -209,7 +209,7 @@
             {
               "subject": "Art",
               "type": "Mock",
-              "label": "Year 10 Art Mock - Topic: Topic B"
+              "label": "Year 10 **Art** Mock - Topic: Topic B"
             }
           ]
         },
@@ -377,7 +377,7 @@
             {
               "subject": "English",
               "type": "Coursework",
-              "label": "Year 10 English Coursework - Topic: Topic C"
+              "label": "Year 10 **English** Coursework - Topic: Topic C"
             },
             {
               "subject": "English",
@@ -492,7 +492,7 @@
             {
               "subject": "Art",
               "type": "Mock",
-              "label": "Year 10 Art Mock - Topic: Topic A"
+              "label": "Year 10 Art Mock - _Topic: Topic A_"
             },
             {
               "subject": "History",
@@ -543,7 +543,7 @@
             {
               "subject": "English",
               "type": "Mock",
-              "label": "Year 10 English Mock - Topic: Topic A"
+              "label": "Year 10 **English** Mock - Topic: Topic A"
             },
             {
               "subject": "Geography",
@@ -664,7 +664,7 @@
             {
               "subject": "History",
               "type": "Mock",
-              "label": "Year 10 History Mock - Topic: Topic D"
+              "label": "Year 10 History Mock - _Topic: Topic D_"
             },
             {
               "subject": "Science",
@@ -765,7 +765,7 @@
             {
               "subject": "Maths",
               "type": "Coursework",
-              "label": "Year 10 Maths Coursework - Topic: Topic B"
+              "label": "Year 10 Maths Coursework - _Topic: Topic B_"
             },
             {
               "subject": "History",
@@ -836,12 +836,12 @@
             {
               "subject": "History",
               "type": "Exam",
-              "label": "Year 10 History Exam - Topic: Topic B"
+              "label": "Year 10 **History** Exam - Topic: Topic B"
             },
             {
               "subject": "Art",
               "type": "Coursework",
-              "label": "Year 10 Art Coursework - Topic: Topic B"
+              "label": "Year 10 Art Coursework - _Topic: Topic B_"
             },
             {
               "subject": "History",
@@ -963,7 +963,7 @@
             {
               "subject": "Maths",
               "type": "Mock",
-              "label": "Year 10 Maths Mock - Topic: Topic B"
+              "label": "Year 10 **Maths** Mock - Topic: Topic B"
             },
             {
               "subject": "English",
@@ -1015,7 +1015,7 @@
             {
               "subject": "English",
               "type": "Exam",
-              "label": "Year 10 English Exam - Topic: Topic A"
+              "label": "Year 10 **English** Exam - Topic: Topic A"
             },
             {
               "subject": "Geography",
@@ -1119,7 +1119,7 @@
             {
               "subject": "Science",
               "type": "Coursework",
-              "label": "Year 10 Science Coursework - Topic: Topic D"
+              "label": "Year 10 **Science** Coursework - Topic: Topic D"
             },
             {
               "subject": "Science",
@@ -1153,7 +1153,7 @@
             {
               "subject": "Science",
               "type": "Mock",
-              "label": "Year 10 Science Mock - Topic: Topic D"
+              "label": "Year 10 Science Mock - _Topic: Topic D_"
             }
           ]
         },
@@ -1212,7 +1212,7 @@
             {
               "subject": "Maths",
               "type": "Mock",
-              "label": "Year 10 Maths Mock - Topic: Topic B"
+              "label": "Year 10 **Maths** Mock - Topic: Topic B"
             }
           ]
         },
@@ -1358,7 +1358,7 @@
             {
               "subject": "English",
               "type": "Mock",
-              "label": "Year 10 English Mock - Topic: Topic C"
+              "label": "Year 10 English Mock - _Topic: Topic C_"
             },
             {
               "subject": "English",
@@ -1375,7 +1375,7 @@
             {
               "subject": "Maths",
               "type": "Exam",
-              "label": "Year 10 Maths Exam - Topic: Topic C"
+              "label": "Year 10 **Maths** Exam - Topic: Topic C"
             }
           ]
         },
@@ -1450,7 +1450,7 @@
             {
               "subject": "English",
               "type": "Coursework",
-              "label": "Year 10 English Coursework - Topic: Topic B"
+              "label": "Year 10 English Coursework - _Topic: Topic B_"
             },
             {
               "subject": "Art",
@@ -1502,7 +1502,7 @@
             {
               "subject": "Science",
               "type": "Coursework",
-              "label": "Year 10 Science Coursework - Topic: Topic D"
+              "label": "Year 10 **Science** Coursework - Topic: Topic D"
             },
             {
               "subject": "English",
@@ -1554,7 +1554,7 @@
             {
               "subject": "Art",
               "type": "Exam",
-              "label": "Year 10 Art Exam - Topic: Topic B"
+              "label": "Year 10 **Art** Exam - Topic: Topic B"
             }
           ]
         },
@@ -1710,7 +1710,7 @@
             {
               "subject": "Computer Science",
               "type": "Exam",
-              "label": "Year 11 Computer Science Exam - Topic: Topic D"
+              "label": "Year 11 Computer Science Exam - _Topic: Topic D_"
             },
             {
               "subject": "Physics",
@@ -1771,7 +1771,7 @@
             {
               "subject": "English Lit",
               "type": "Exam",
-              "label": "Year 11 English Lit Exam - Topic: Topic A"
+              "label": "Year 11 **English Lit** Exam - Topic: Topic A"
             }
           ]
         },
@@ -1806,7 +1806,7 @@
             {
               "subject": "Computer Science",
               "type": "Exam",
-              "label": "Year 11 Computer Science Exam - Topic: Topic A"
+              "label": "Year 11 Computer Science Exam - _Topic: Topic A_"
             },
             {
               "subject": "Chemistry",
@@ -1823,7 +1823,7 @@
             {
               "subject": "Physics",
               "type": "Exam",
-              "label": "Year 11 Physics Exam - Topic: Topic D"
+              "label": "Year 11 **Physics** Exam - Topic: Topic D"
             },
             {
               "subject": "Biology",
@@ -1912,7 +1912,7 @@
             {
               "subject": "English Lit",
               "type": "Exam",
-              "label": "Year 11 English Lit Exam - Topic: Topic A"
+              "label": "Year 11 English Lit Exam - _Topic: Topic A_"
             },
             {
               "subject": "English Lit",
@@ -2015,7 +2015,7 @@
             {
               "subject": "Chemistry",
               "type": "Exam",
-              "label": "Year 11 Chemistry Exam - Topic: Topic B"
+              "label": "Year 11 **Chemistry** Exam - Topic: Topic B"
             }
           ]
         },
@@ -2067,7 +2067,7 @@
             {
               "subject": "Maths",
               "type": "Practical",
-              "label": "Year 11 Maths Practical - Topic: Topic A"
+              "label": "Year 11 **Maths** Practical - Topic: Topic A"
             }
           ]
         },
@@ -2154,7 +2154,7 @@
             {
               "subject": "Biology",
               "type": "Practical",
-              "label": "Year 11 Biology Practical - Topic: Topic B"
+              "label": "Year 11 Biology Practical - _Topic: Topic B_"
             }
           ]
         },
@@ -2190,7 +2190,7 @@
             {
               "subject": "Computer Science",
               "type": "Exam",
-              "label": "Year 11 Computer Science Exam - Topic: Topic B"
+              "label": "Year 11 **Computer Science** Exam - Topic: Topic B"
             },
             {
               "subject": "Chemistry",
@@ -2236,7 +2236,7 @@
             {
               "subject": "Maths",
               "type": "Practical",
-              "label": "Year 11 Maths Practical - Topic: Topic C"
+              "label": "Year 11 Maths Practical - _Topic: Topic C_"
             },
             {
               "subject": "Computer Science",
@@ -2363,7 +2363,7 @@
             {
               "subject": "Biology",
               "type": "Practical",
-              "label": "Year 11 Biology Practical - Topic: Topic C"
+              "label": "Year 11 **Biology** Practical - Topic: Topic C"
             },
             {
               "subject": "English Lit",
@@ -2467,12 +2467,12 @@
             {
               "subject": "Computer Science",
               "type": "Practical",
-              "label": "Year 11 Computer Science Practical - Topic: Topic D"
+              "label": "Year 11 **Computer Science** Practical - Topic: Topic D"
             },
             {
               "subject": "English Lit",
               "type": "Exam",
-              "label": "Year 11 English Lit Exam - Topic: Topic C"
+              "label": "Year 11 English Lit Exam - _Topic: Topic C_"
             },
             {
               "subject": "English Lit",
@@ -2604,7 +2604,7 @@
             {
               "subject": "Physics",
               "type": "Exam",
-              "label": "Year 11 Physics Exam - Topic: Topic B"
+              "label": "Year 11 **Physics** Exam - Topic: Topic B"
             },
             {
               "subject": "Biology",
@@ -2644,7 +2644,7 @@
             {
               "subject": "Maths",
               "type": "Speaking",
-              "label": "Year 11 Maths Speaking - Topic: Topic B"
+              "label": "Year 11 Maths Speaking - _Topic: Topic B_"
             },
             {
               "subject": "Computer Science",
@@ -2706,7 +2706,7 @@
             {
               "subject": "Chemistry",
               "type": "Exam",
-              "label": "Year 11 Chemistry Exam - Topic: Topic D"
+              "label": "Year 11 **Chemistry** Exam - _Topic: Topic D_"
             }
           ]
         },
@@ -2777,7 +2777,7 @@
             {
               "subject": "Chemistry",
               "type": "Exam",
-              "label": "Year 11 Chemistry Exam - Topic: Topic C"
+              "label": "Year 11 Chemistry Exam - _Topic: Topic C_"
             }
           ]
         },
@@ -2799,7 +2799,7 @@
             {
               "subject": "Biology",
               "type": "Practical",
-              "label": "Year 11 Biology Practical - Topic: Topic C"
+              "label": "Year 11 **Biology** Practical - _Topic: Topic C_"
             }
           ]
         },
@@ -2868,12 +2868,12 @@
             {
               "subject": "English Lit",
               "type": "Speaking",
-              "label": "Year 11 English Lit Speaking - Topic: Topic A"
+              "label": "Year 11 **English Lit** Speaking - Topic: Topic A"
             },
             {
               "subject": "Chemistry",
               "type": "Exam",
-              "label": "Year 11 Chemistry Exam - Topic: Topic D"
+              "label": "Year 11 Chemistry Exam - _Topic: Topic D_"
             },
             {
               "subject": "Maths",
@@ -2964,7 +2964,7 @@
             {
               "subject": "Physics",
               "type": "Practical",
-              "label": "Year 11 Physics Practical - Topic: Topic D"
+              "label": "Year 11 Physics Practical - _Topic: Topic D_"
             }
           ]
         },
@@ -2999,7 +2999,7 @@
             {
               "subject": "Maths",
               "type": "Exam",
-              "label": "Year 11 Maths Exam - Topic: Topic D"
+              "label": "Year 11 **Maths** Exam - Topic: Topic D"
             },
             {
               "subject": "Biology",
@@ -3114,7 +3114,7 @@
             {
               "subject": "Physics",
               "type": "Exam",
-              "label": "Year 11 Physics Exam - Topic: Topic C"
+              "label": "Year 11 Physics Exam - _Topic: Topic C_"
             }
           ]
         },
@@ -3207,7 +3207,7 @@
             {
               "subject": "Chemistry",
               "type": "Practical",
-              "label": "Year 11 Chemistry Practical - Topic: Topic A"
+              "label": "Year 11 **Chemistry** Practical - Topic: Topic A"
             }
           ]
         },
@@ -3282,17 +3282,17 @@
             {
               "subject": "Psychology",
               "type": "Essay",
-              "label": "Year 12 Psychology Essay - Topic: Topic B"
+              "label": "Year 12 **Psychology** Essay - Topic: Topic B"
             },
             {
               "subject": "Sociology",
               "type": "Presentation",
-              "label": "Year 12 Sociology Presentation - Topic: Topic D"
+              "label": "Year 12 Sociology Presentation - _Topic: Topic D_"
             },
             {
               "subject": "Economics",
               "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic C"
+              "label": "Year 12 **Economics** Presentation - _Topic: Topic C_"
             }
           ]
         },
@@ -3374,7 +3374,7 @@
             {
               "subject": "Further Maths",
               "type": "Presentation",
-              "label": "Year 12 Further Maths Presentation - Topic: Topic A"
+              "label": "Year 12 Further Maths Presentation - _Topic: Topic A_"
             }
           ]
         },
@@ -3450,7 +3450,7 @@
             {
               "subject": "Economics",
               "type": "Exam",
-              "label": "Year 12 Economics Exam - Topic: Topic A"
+              "label": "Year 12 Economics Exam - _Topic: Topic A_"
             },
             {
               "subject": "Psychology",
@@ -3467,7 +3467,7 @@
             {
               "subject": "Economics",
               "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic D"
+              "label": "Year 12 **Economics** Presentation - Topic: Topic D"
             },
             {
               "subject": "Economics",
@@ -3551,7 +3551,7 @@
             {
               "subject": "Sociology",
               "type": "Presentation",
-              "label": "Year 12 Sociology Presentation - Topic: Topic C"
+              "label": "Year 12 Sociology Presentation - _Topic: Topic C_"
             },
             {
               "subject": "Economics",
@@ -3578,7 +3578,7 @@
             {
               "subject": "Economics",
               "type": "Essay",
-              "label": "Year 12 Economics Essay - Topic: Topic C"
+              "label": "Year 12 **Economics** Essay - _Topic: Topic C_"
             }
           ]
         },
@@ -3647,7 +3647,7 @@
             {
               "subject": "Sociology",
               "type": "Essay",
-              "label": "Year 12 Sociology Essay - Topic: Topic B"
+              "label": "Year 12 Sociology Essay - _Topic: Topic B_"
             }
           ]
         },
@@ -3665,7 +3665,7 @@
             {
               "subject": "Psychology",
               "type": "Presentation",
-              "label": "Year 12 Psychology Presentation - Topic: Topic D"
+              "label": "Year 12 **Psychology** Presentation - Topic: Topic D"
             }
           ]
         },
@@ -3712,12 +3712,12 @@
             {
               "subject": "Sociology",
               "type": "Presentation",
-              "label": "Year 12 Sociology Presentation - Topic: Topic A"
+              "label": "Year 12 **Sociology** Presentation - Topic: Topic A"
             },
             {
               "subject": "Sociology",
               "type": "Exam",
-              "label": "Year 12 Sociology Exam - Topic: Topic A"
+              "label": "Year 12 Sociology Exam - _Topic: Topic A_"
             },
             {
               "subject": "Economics",
@@ -3787,7 +3787,7 @@
             {
               "subject": "Economics",
               "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic A"
+              "label": "Year 12 Economics Presentation - _Topic: Topic A_"
             },
             {
               "subject": "Economics",
@@ -3826,7 +3826,7 @@
             {
               "subject": "Psychology",
               "type": "Essay",
-              "label": "Year 12 Psychology Essay - Topic: Topic B"
+              "label": "Year 12 **Psychology** Essay - _Topic: Topic B_"
             }
           ]
         },
@@ -3838,7 +3838,7 @@
             {
               "subject": "Economics",
               "type": "Exam",
-              "label": "Year 12 Economics Exam - Topic: Topic B"
+              "label": "Year 12 **Economics** Exam - Topic: Topic B"
             },
             {
               "subject": "Economics",
@@ -3894,7 +3894,7 @@
             {
               "subject": "Sociology",
               "type": "Essay",
-              "label": "Year 12 Sociology Essay - Topic: Topic C"
+              "label": "Year 12 Sociology Essay - _Topic: Topic C_"
             },
             {
               "subject": "Economics",
@@ -4084,7 +4084,7 @@
             {
               "subject": "Psychology",
               "type": "Essay",
-              "label": "Year 12 Psychology Essay - Topic: Topic A"
+              "label": "Year 12 **Psychology** Essay - Topic: Topic A"
             },
             {
               "subject": "Sociology",
@@ -4142,12 +4142,12 @@
             {
               "subject": "Sociology",
               "type": "Presentation",
-              "label": "Year 12 Sociology Presentation - Topic: Topic D"
+              "label": "Year 12 **Sociology** Presentation - Topic: Topic D"
             },
             {
               "subject": "Sociology",
               "type": "Essay",
-              "label": "Year 12 Sociology Essay - Topic: Topic C"
+              "label": "Year 12 Sociology Essay - _Topic: Topic C_"
             },
             {
               "subject": "Further Maths",
@@ -4285,7 +4285,7 @@
             {
               "subject": "Economics",
               "type": "Exam",
-              "label": "Year 12 Economics Exam - Topic: Topic D"
+              "label": "Year 12 Economics Exam - _Topic: Topic D_"
             },
             {
               "subject": "Economics",
@@ -4302,7 +4302,7 @@
             {
               "subject": "Sociology",
               "type": "Exam",
-              "label": "Year 12 Sociology Exam - Topic: Topic B"
+              "label": "Year 12 **Sociology** Exam - Topic: Topic B"
             }
           ]
         },
@@ -4434,7 +4434,7 @@
             {
               "subject": "Sociology",
               "type": "Exam",
-              "label": "Year 12 Sociology Exam - Topic: Topic C"
+              "label": "Year 12 **Sociology** Exam - Topic: Topic C"
             },
             {
               "subject": "Sociology",
@@ -4544,7 +4544,7 @@
             {
               "subject": "Sociology",
               "type": "Essay",
-              "label": "Year 12 Sociology Essay - Topic: Topic C"
+              "label": "Year 12 **Sociology** Essay - Topic: Topic C"
             }
           ]
         },
@@ -4641,7 +4641,7 @@
             {
               "subject": "Economics",
               "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic A"
+              "label": "Year 12 Economics Presentation - _Topic: Topic A_"
             }
           ]
         },
@@ -4834,7 +4834,7 @@
             {
               "subject": "Psychology",
               "type": "Exam",
-              "label": "Year 12 Psychology Exam - Topic: Topic C"
+              "label": "Year 12 **Psychology** Exam - Topic: Topic C"
             }
           ]
         },
@@ -4870,7 +4870,7 @@
             {
               "subject": "Economics",
               "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic B"
+              "label": "Year 12 **Economics** Presentation - Topic: Topic B"
             },
             {
               "subject": "Sociology",
