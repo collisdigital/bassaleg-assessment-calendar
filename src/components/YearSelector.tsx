@@ -5,7 +5,7 @@ import { Footer } from './Footer';
 
 export function YearSelector() {
   const years = useAllYears();
-  const { generatedAt } = useAppMetadata();
+  const appMetadata = useAppMetadata();
 
   useEffect(() => {
     document.title = 'Bassaleg Assessment Calendars';
@@ -28,7 +28,7 @@ export function YearSelector() {
           ))}
         </div>
       </div>
-      <Footer generatedAt={generatedAt} />
+      <Footer generatedAt={appMetadata.generatedAt} />
     </div>
   );
 }

@@ -11,7 +11,7 @@ export function Footer({ generatedAt, filename, sourceUrl }: FooterProps) {
     <footer className="bg-white border-t border-gray-200 mt-auto">
       <div className="max-w-7xl mx-auto px-4 py-6 text-center text-gray-400 text-sm">
         <p>
-          {filename ? (
+          {filename && (
             <>
               Generated from{' '}
               {sourceUrl ? (
@@ -26,14 +26,12 @@ export function Footer({ generatedAt, filename, sourceUrl }: FooterProps) {
               ) : (
                 filename
               )}
-              {generatedAt && (
-                <span className="mx-1">
-                  (last updated {formatLastUpdated(generatedAt)})
-                </span>
-              )}
             </>
-          ) : (
-            generatedAt && <span>Last updated {formatLastUpdated(generatedAt)}</span>
+          )}
+          {generatedAt && (
+            <span className={filename ? 'mx-1' : ''}>
+              {filename ? '(' : ''}last updated {formatLastUpdated(generatedAt)}{filename ? ')' : ''}
+            </span>
           )}
         </p>
         <div className="mt-4 flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-4">
