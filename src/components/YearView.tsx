@@ -314,7 +314,7 @@ export function YearView() {
 
       <Footer
         generatedAt={dataHook.generatedAt}
-        filename={dataHook.filename ?? 'Assessment Calendar Spreadsheet'}
+        filename={dataHook.filename}
         sourceUrl={dataHook.sourceUrl}
       />
     </div>

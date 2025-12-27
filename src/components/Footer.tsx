@@ -11,23 +11,19 @@ export function Footer({ generatedAt, filename, sourceUrl }: FooterProps) {
     <footer className="bg-white border-t border-gray-200 mt-auto">
       <div className="max-w-7xl mx-auto px-4 py-6 text-center text-gray-400 text-sm">
         <p>
-          {filename && (
-            <>
-              Generated from{' '}
-              {sourceUrl ? (
-                <a
-                  href={sourceUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-800 underline decoration-blue-300 hover:decoration-blue-800 transition-colors"
-                >
-                  {filename}
-                </a>
-              ) : (
-                filename
-              )}
-            </>
-          )}
+          {filename && 'Generated from '}
+          {filename && (sourceUrl ? (
+            <a
+              href={sourceUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-800 underline decoration-blue-300 hover:decoration-blue-800 transition-colors"
+            >
+              {filename}
+            </a>
+          ) : (
+            filename
+          ))}
           {generatedAt && (
             <span className={filename ? 'mx-1' : ''}>
               {filename ? '(' : ''}last updated {formatLastUpdated(generatedAt)}{filename ? ')' : ''}
