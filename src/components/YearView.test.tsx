@@ -70,7 +70,7 @@ describe('YearView', () => {
   it('renders last updated text in footer', () => {
     renderYearView();
     // Since generatedAt is yesterday relative to system time
-    expect(screen.getByText('(last updated yesterday)', { exact: false })).toBeInTheDocument();
+    expect(screen.getByText('Last updated yesterday', { exact: false })).toBeInTheDocument();
   });
 
   it('switches between Timeline and Calendar views', async () => {
