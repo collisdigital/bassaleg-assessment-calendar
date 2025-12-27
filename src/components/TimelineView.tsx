@@ -97,7 +97,7 @@ export const TimelineView = memo(function TimelineView({ schedule, typeColors, o
                <span className={`text-lg font-bold ${isCurrentDay ? 'text-blue-700' : 'text-gray-700'}`}>
                  {dateLabel}
                </span>
-               {day.isInset && <span className="ml-2 inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">INSET</span>}
+               {day.isInset && <span className="ml-2 inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">SCHOOL CLOSED</span>}
             </div>
 
             <div className="flex-1 flex flex-col gap-2">
