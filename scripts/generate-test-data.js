@@ -94,10 +94,21 @@ function generateYearData(yearName, subjects, types) {
             for (let j = 0; j < numAssessments; j++) {
                 const type = getRandomItem(typeKeys);
                 const subject = getRandomItem(subjects);
+
+                // Add random Markdown formatting for testing
+                let label = `${yearName} ${subject} ${type} - Topic: ${getRandomItem(['Topic A', 'Topic B', 'Topic C', 'Topic D'])}`;
+                if (j === 0 && i % 5 === 0) { // Occasional bold
+                    label = `${yearName} **${subject}** ${type} - Topic: ${getRandomItem(['Topic A', 'Topic B', 'Topic C', 'Topic D'])}`;
+                } else if (j === 1 && i % 7 === 0) { // Occasional italic
+                    label = `${yearName} ${subject} ${type} - _Topic: ${getRandomItem(['Topic A', 'Topic B', 'Topic C', 'Topic D'])}_`;
+                } else if (j === 2 && i % 11 === 0) { // Occasional mixed
+                    label = `${yearName} **${subject}** ${type} - _Topic: ${getRandomItem(['Topic A', 'Topic B', 'Topic C', 'Topic D'])}_`;
+                }
+
                 dayRecord.assessments.push({
                     subject: subject,
                     type: type,
-                    label: `${yearName} ${subject} ${type} - Topic: ${getRandomItem(['Topic A', 'Topic B', 'Topic C', 'Topic D'])}`,
+                    label: label,
                 });
             }
         }

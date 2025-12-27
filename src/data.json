@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-24T18:25:03.238Z",
+  "generatedAt": "2025-12-27T00:20:44.951Z",
   "years": {
     "year-10": {
       "name": "Year 10",
@@ -146,12 +146,12 @@
             {
               "subject": "Maths",
               "type": "Mock",
-              "label": "Year 10 Maths Mock - Topic: Topic A"
+              "label": "Year 10 **Maths** Mock - Topic: Topic D"
             },
             {
-              "subject": "English",
-              "type": "Coursework",
-              "label": "Year 10 English Coursework - Topic: Topic C"
+              "subject": "Geography",
+              "type": "Exam",
+              "label": "Year 10 Geography Exam - Topic: Topic C"
             }
           ]
         },
@@ -159,18 +159,7 @@
           "date": "2025-09-12T12:00:00.000Z",
           "week": "Week 2",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Art",
-              "type": "Exam",
-              "label": "Year 10 Art Exam - Topic: Topic D"
-            },
-            {
-              "subject": "Art",
-              "type": "Exam",
-              "label": "Year 10 Art Exam - Topic: Topic D"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2025-09-13T12:00:00.000Z",
@@ -190,19 +179,30 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
+              "subject": "English",
               "type": "Coursework",
-              "label": "Year 10 Geography Coursework - Topic: Topic A"
+              "label": "Year 10 English Coursework - Topic: Topic D"
             },
             {
-              "subject": "Art",
-              "type": "Mock",
-              "label": "Year 10 Art Mock - Topic: Topic A"
+              "subject": "History",
+              "type": "Coursework",
+              "label": "Year 10 History Coursework - _Topic: Topic C_"
+            },
+            {
+              "subject": "Science",
+              "type": "Exam",
+              "label": "Year 10 Science Exam - Topic: Topic D"
             }
           ]
         },
         {
           "date": "2025-09-16T12:00:00.000Z",
+          "week": "Week 3",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-09-17T12:00:00.000Z",
           "week": "Week 3",
           "isInset": false,
           "assessments": [
@@ -214,13 +214,13 @@
           ]
         },
         {
-          "date": "2025-09-17T12:00:00.000Z",
+          "date": "2025-09-18T12:00:00.000Z",
           "week": "Week 3",
           "isInset": false,
           "assessments": []
         },
         {
-          "date": "2025-09-18T12:00:00.000Z",
+          "date": "2025-09-19T12:00:00.000Z",
           "week": "Week 3",
           "isInset": false,
           "assessments": [
@@ -233,23 +233,6 @@
               "subject": "History",
               "type": "Coursework",
               "label": "Year 10 History Coursework - Topic: Topic C"
-            }
-          ]
-        },
-        {
-          "date": "2025-09-19T12:00:00.000Z",
-          "week": "Week 3",
-          "isInset": false,
-          "assessments": [
-            {
-              "subject": "English",
-              "type": "Exam",
-              "label": "Year 10 English Exam - Topic: Topic A"
-            },
-            {
-              "subject": "Maths",
-              "type": "Mock",
-              "label": "Year 10 Maths Mock - Topic: Topic D"
             }
           ]
         },
@@ -271,9 +254,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Science",
-              "type": "Coursework",
-              "label": "Year 10 Science Coursework - Topic: Topic B"
+              "subject": "English",
+              "type": "Exam",
+              "label": "Year 10 English Exam - Topic: Topic A"
+            },
+            {
+              "subject": "Maths",
+              "type": "Mock",
+              "label": "Year 10 Maths Mock - _Topic: Topic B_"
             }
           ]
         },
@@ -283,6 +271,11 @@
           "isInset": false,
           "assessments": [
             {
+              "subject": "English",
+              "type": "Mock",
+              "label": "Year 10 English Mock - Topic: Topic C"
+            },
+            {
               "subject": "Science",
               "type": "Coursework",
               "label": "Year 10 Science Coursework - Topic: Topic C"
@@ -290,7 +283,7 @@
             {
               "subject": "English",
               "type": "Mock",
-              "label": "Year 10 English Mock - Topic: Topic B"
+              "label": "Year 10 **English** Mock - _Topic: Topic D_"
             }
           ]
         },
@@ -298,23 +291,7 @@
           "date": "2025-09-24T12:00:00.000Z",
           "week": "Week 4",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Art",
-              "type": "Exam",
-              "label": "Year 10 Art Exam - Topic: Topic C"
-            },
-            {
-              "subject": "Maths",
-              "type": "Coursework",
-              "label": "Year 10 Maths Coursework - Topic: Topic D"
-            },
-            {
-              "subject": "Maths",
-              "type": "Coursework",
-              "label": "Year 10 Maths Coursework - Topic: Topic D"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2025-09-25T12:00:00.000Z",
@@ -322,9 +299,19 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
+              "subject": "Art",
               "type": "Coursework",
-              "label": "Year 10 Geography Coursework - Topic: Topic A"
+              "label": "Year 10 Art Coursework - Topic: Topic A"
+            },
+            {
+              "subject": "Art",
+              "type": "Coursework",
+              "label": "Year 10 Art Coursework - Topic: Topic A"
+            },
+            {
+              "subject": "English",
+              "type": "Coursework",
+              "label": "Year 10 English Coursework - Topic: Topic D"
             }
           ]
         },
@@ -350,7 +337,18 @@
           "date": "2025-09-29T12:00:00.000Z",
           "week": "Week 5",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Maths",
+              "type": "Exam",
+              "label": "Year 10 Maths Exam - Topic: Topic C"
+            },
+            {
+              "subject": "Geography",
+              "type": "Coursework",
+              "label": "Year 10 Geography Coursework - _Topic: Topic D_"
+            }
+          ]
         },
         {
           "date": "2025-09-30T12:00:00.000Z",
@@ -358,14 +356,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
-              "type": "Coursework",
-              "label": "Year 10 Geography Coursework - Topic: Topic A"
-            },
-            {
-              "subject": "Science",
-              "type": "Coursework",
-              "label": "Year 10 Science Coursework - Topic: Topic B"
+              "subject": "History",
+              "type": "Mock",
+              "label": "Year 10 History Mock - Topic: Topic C"
             }
           ]
         },
@@ -375,14 +368,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "English",
-              "type": "Coursework",
-              "label": "Year 10 English Coursework - Topic: Topic C"
-            },
-            {
-              "subject": "English",
+              "subject": "History",
               "type": "Mock",
-              "label": "Year 10 English Mock - Topic: Topic B"
+              "label": "Year 10 **History** Mock - Topic: Topic B"
             }
           ]
         },
@@ -492,12 +480,12 @@
             {
               "subject": "Art",
               "type": "Mock",
-              "label": "Year 10 Art Mock - Topic: Topic A"
+              "label": "Year 10 Art Mock - _Topic: Topic C_"
             },
             {
-              "subject": "History",
-              "type": "Coursework",
-              "label": "Year 10 History Coursework - Topic: Topic A"
+              "subject": "English",
+              "type": "Mock",
+              "label": "Year 10 English Mock - Topic: Topic C"
             }
           ]
         },
@@ -507,14 +495,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Maths",
-              "type": "Mock",
-              "label": "Year 10 Maths Mock - Topic: Topic A"
+              "subject": "English",
+              "type": "Exam",
+              "label": "Year 10 English Exam - Topic: Topic C"
             },
             {
-              "subject": "Maths",
-              "type": "Mock",
-              "label": "Year 10 Maths Mock - Topic: Topic B"
+              "subject": "Science",
+              "type": "Exam",
+              "label": "Year 10 Science Exam - Topic: Topic C"
             }
           ]
         },
@@ -522,21 +510,22 @@
           "date": "2025-10-15T12:00:00.000Z",
           "week": "Week 7",
           "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-10-16T12:00:00.000Z",
+          "week": "Week 7",
+          "isInset": false,
           "assessments": [
             {
-              "subject": "Science",
+              "subject": "History",
               "type": "Exam",
-              "label": "Year 10 Science Exam - Topic: Topic B"
-            },
-            {
-              "subject": "Science",
-              "type": "Mock",
-              "label": "Year 10 Science Mock - Topic: Topic D"
+              "label": "Year 10 **History** Exam - Topic: Topic D"
             }
           ]
         },
         {
-          "date": "2025-10-16T12:00:00.000Z",
+          "date": "2025-10-17T12:00:00.000Z",
           "week": "Week 7",
           "isInset": false,
           "assessments": [
@@ -558,12 +547,6 @@
           ]
         },
         {
-          "date": "2025-10-17T12:00:00.000Z",
-          "week": "Week 7",
-          "isInset": false,
-          "assessments": []
-        },
-        {
           "date": "2025-10-18T12:00:00.000Z",
           "week": null,
           "isInset": false,
@@ -579,13 +562,7 @@
           "date": "2025-10-20T12:00:00.000Z",
           "week": "Week 8",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Science",
-              "type": "Mock",
-              "label": "Year 10 Science Mock - Topic: Topic C"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2025-10-21T12:00:00.000Z",
@@ -595,6 +572,18 @@
         },
         {
           "date": "2025-10-22T12:00:00.000Z",
+          "week": "Week 8",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science",
+              "type": "Mock",
+              "label": "Year 10 Science Mock - Topic: Topic C"
+            }
+          ]
+        },
+        {
+          "date": "2025-10-23T12:00:00.000Z",
           "week": "Week 8",
           "isInset": false,
           "assessments": [
@@ -611,7 +600,7 @@
           ]
         },
         {
-          "date": "2025-10-23T12:00:00.000Z",
+          "date": "2025-10-24T12:00:00.000Z",
           "week": "Week 8",
           "isInset": false,
           "assessments": [
@@ -624,18 +613,6 @@
               "subject": "Geography",
               "type": "Exam",
               "label": "Year 10 Geography Exam - Topic: Topic A"
-            }
-          ]
-        },
-        {
-          "date": "2025-10-24T12:00:00.000Z",
-          "week": "Week 8",
-          "isInset": false,
-          "assessments": [
-            {
-              "subject": "History",
-              "type": "Mock",
-              "label": "Year 10 History Mock - Topic: Topic C"
             }
           ]
         },
@@ -657,6 +634,18 @@
           "isInset": false,
           "assessments": [
             {
+              "subject": "History",
+              "type": "Mock",
+              "label": "Year 10 History Mock - Topic: Topic C"
+            }
+          ]
+        },
+        {
+          "date": "2025-10-28T12:00:00.000Z",
+          "week": "Week 9",
+          "isInset": false,
+          "assessments": [
+            {
               "subject": "English",
               "type": "Mock",
               "label": "Year 10 English Mock - Topic: Topic A"
@@ -674,7 +663,7 @@
           ]
         },
         {
-          "date": "2025-10-28T12:00:00.000Z",
+          "date": "2025-10-29T12:00:00.000Z",
           "week": "Week 9",
           "isInset": false,
           "assessments": [
@@ -696,7 +685,7 @@
           ]
         },
         {
-          "date": "2025-10-29T12:00:00.000Z",
+          "date": "2025-10-30T12:00:00.000Z",
           "week": "Week 9",
           "isInset": false,
           "assessments": [
@@ -713,32 +702,26 @@
           ]
         },
         {
-          "date": "2025-10-30T12:00:00.000Z",
+          "date": "2025-10-31T12:00:00.000Z",
           "week": "Week 9",
           "isInset": false,
           "assessments": [
             {
               "subject": "Art",
               "type": "Exam",
-              "label": "Year 10 Art Exam - Topic: Topic D"
+              "label": "Year 10 **Art** Exam - Topic: Topic D"
             },
             {
-              "subject": "History",
-              "type": "Coursework",
-              "label": "Year 10 History Coursework - Topic: Topic A"
+              "subject": "English",
+              "type": "Mock",
+              "label": "Year 10 English Mock - Topic: Topic D"
             },
             {
               "subject": "Maths",
-              "type": "Coursework",
-              "label": "Year 10 Maths Coursework - Topic: Topic A"
+              "type": "Exam",
+              "label": "Year 10 Maths Exam - Topic: Topic A"
             }
           ]
-        },
-        {
-          "date": "2025-10-31T12:00:00.000Z",
-          "week": "Week 9",
-          "isInset": false,
-          "assessments": []
         },
         {
           "date": "2025-11-01T12:00:00.000Z",
@@ -765,12 +748,12 @@
             {
               "subject": "Maths",
               "type": "Coursework",
-              "label": "Year 10 Maths Coursework - Topic: Topic B"
+              "label": "Year 10 Maths Coursework - _Topic: Topic B_"
             },
             {
-              "subject": "History",
+              "subject": "Art",
               "type": "Mock",
-              "label": "Year 10 History Mock - Topic: Topic D"
+              "label": "Year 10 Art Mock - Topic: Topic B"
             }
           ]
         },
@@ -780,9 +763,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Maths",
-              "type": "Mock",
-              "label": "Year 10 Maths Mock - Topic: Topic C"
+              "subject": "History",
+              "type": "Exam",
+              "label": "Year 10 History Exam - Topic: Topic A"
             }
           ]
         },
@@ -790,7 +773,13 @@
           "date": "2025-11-05T12:00:00.000Z",
           "week": "Week 10",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "History",
+              "type": "Coursework",
+              "label": "Year 10 **History** Coursework - Topic: Topic B"
+            }
+          ]
         },
         {
           "date": "2025-11-06T12:00:00.000Z",
@@ -798,9 +787,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "History",
+              "subject": "Geography",
               "type": "Coursework",
-              "label": "Year 10 History Coursework - Topic: Topic A"
+              "label": "Year 10 Geography Coursework - Topic: Topic D"
+            },
+            {
+              "subject": "History",
+              "type": "Exam",
+              "label": "Year 10 History Exam - Topic: Topic B"
             }
           ]
         },
@@ -809,6 +803,16 @@
           "week": "Week 10",
           "isInset": false,
           "assessments": [
+            {
+              "subject": "English",
+              "type": "Coursework",
+              "label": "Year 10 English Coursework - Topic: Topic B"
+            },
+            {
+              "subject": "Science",
+              "type": "Mock",
+              "label": "Year 10 Science Mock - Topic: Topic A"
+            },
             {
               "subject": "Art",
               "type": "Mock",
@@ -834,19 +838,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "History",
-              "type": "Exam",
-              "label": "Year 10 History Exam - Topic: Topic B"
-            },
-            {
               "subject": "Art",
-              "type": "Coursework",
-              "label": "Year 10 Art Coursework - Topic: Topic B"
+              "type": "Exam",
+              "label": "Year 10 **Art** Exam - Topic: Topic D"
             },
             {
-              "subject": "History",
+              "subject": "Geography",
               "type": "Mock",
-              "label": "Year 10 History Mock - Topic: Topic B"
+              "label": "Year 10 Geography Mock - _Topic: Topic D_"
             }
           ]
         },
@@ -854,7 +853,13 @@
           "date": "2025-11-11T12:00:00.000Z",
           "week": "Week 11",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Art",
+              "type": "Exam",
+              "label": "Year 10 Art Exam - Topic: Topic C"
+            }
+          ]
         },
         {
           "date": "2025-11-12T12:00:00.000Z",
@@ -863,8 +868,13 @@
           "assessments": [
             {
               "subject": "Geography",
-              "type": "Coursework",
-              "label": "Year 10 Geography Coursework - Topic: Topic C"
+              "type": "Exam",
+              "label": "Year 10 Geography Exam - Topic: Topic D"
+            },
+            {
+              "subject": "Maths",
+              "type": "Exam",
+              "label": "Year 10 Maths Exam - Topic: Topic D"
             }
           ]
         },
@@ -875,8 +885,18 @@
           "assessments": [
             {
               "subject": "History",
+              "type": "Exam",
+              "label": "Year 10 History Exam - Topic: Topic D"
+            },
+            {
+              "subject": "Art",
+              "type": "Exam",
+              "label": "Year 10 Art Exam - Topic: Topic D"
+            },
+            {
+              "subject": "Science",
               "type": "Coursework",
-              "label": "Year 10 History Coursework - Topic: Topic D"
+              "label": "Year 10 Science Coursework - Topic: Topic C"
             }
           ]
         },
@@ -886,9 +906,19 @@
           "isInset": false,
           "assessments": [
             {
+              "subject": "Maths",
+              "type": "Mock",
+              "label": "Year 10 Maths Mock - Topic: Topic B"
+            },
+            {
               "subject": "English",
-              "type": "Coursework",
-              "label": "Year 10 English Coursework - Topic: Topic D"
+              "type": "Mock",
+              "label": "Year 10 English Mock - Topic: Topic B"
+            },
+            {
+              "subject": "Maths",
+              "type": "Mock",
+              "label": "Year 10 Maths Mock - Topic: Topic C"
             }
           ]
         },
@@ -910,79 +940,6 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
-              "type": "Exam",
-              "label": "Year 10 Art Exam - Topic: Topic C"
-            }
-          ]
-        },
-        {
-          "date": "2025-11-18T12:00:00.000Z",
-          "week": "Week 12",
-          "isInset": false,
-          "assessments": [
-            {
-              "subject": "Geography",
-              "type": "Exam",
-              "label": "Year 10 Geography Exam - Topic: Topic D"
-            },
-            {
-              "subject": "Maths",
-              "type": "Exam",
-              "label": "Year 10 Maths Exam - Topic: Topic D"
-            }
-          ]
-        },
-        {
-          "date": "2025-11-19T12:00:00.000Z",
-          "week": "Week 12",
-          "isInset": false,
-          "assessments": [
-            {
-              "subject": "History",
-              "type": "Exam",
-              "label": "Year 10 History Exam - Topic: Topic D"
-            },
-            {
-              "subject": "Art",
-              "type": "Exam",
-              "label": "Year 10 Art Exam - Topic: Topic D"
-            },
-            {
-              "subject": "Science",
-              "type": "Coursework",
-              "label": "Year 10 Science Coursework - Topic: Topic C"
-            }
-          ]
-        },
-        {
-          "date": "2025-11-20T12:00:00.000Z",
-          "week": "Week 12",
-          "isInset": false,
-          "assessments": [
-            {
-              "subject": "Maths",
-              "type": "Mock",
-              "label": "Year 10 Maths Mock - Topic: Topic B"
-            },
-            {
-              "subject": "English",
-              "type": "Mock",
-              "label": "Year 10 English Mock - Topic: Topic B"
-            },
-            {
-              "subject": "Maths",
-              "type": "Mock",
-              "label": "Year 10 Maths Mock - Topic: Topic C"
-            }
-          ]
-        },
-        {
-          "date": "2025-11-21T12:00:00.000Z",
-          "week": "Week 12",
-          "isInset": false,
-          "assessments": [
-            {
               "subject": "Science",
               "type": "Coursework",
               "label": "Year 10 Science Coursework - Topic: Topic A"
@@ -990,26 +947,14 @@
           ]
         },
         {
-          "date": "2025-11-22T12:00:00.000Z",
-          "week": null,
+          "date": "2025-11-18T12:00:00.000Z",
+          "week": "Week 12",
           "isInset": false,
           "assessments": []
         },
         {
-          "date": "2025-11-23T12:00:00.000Z",
-          "week": null,
-          "isInset": false,
-          "assessments": []
-        },
-        {
-          "date": "2025-11-24T12:00:00.000Z",
-          "week": "Week 13",
-          "isInset": false,
-          "assessments": []
-        },
-        {
-          "date": "2025-11-25T12:00:00.000Z",
-          "week": "Week 13",
+          "date": "2025-11-19T12:00:00.000Z",
+          "week": "Week 12",
           "isInset": false,
           "assessments": [
             {
@@ -1030,7 +975,53 @@
           ]
         },
         {
-          "date": "2025-11-26T12:00:00.000Z",
+          "date": "2025-11-20T12:00:00.000Z",
+          "week": "Week 12",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Art",
+              "type": "Exam",
+              "label": "Year 10 **Art** Exam - Topic: Topic D"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-21T12:00:00.000Z",
+          "week": "Week 12",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Maths",
+              "type": "Coursework",
+              "label": "Year 10 Maths Coursework - Topic: Topic D"
+            },
+            {
+              "subject": "History",
+              "type": "Mock",
+              "label": "Year 10 History Mock - Topic: Topic B"
+            },
+            {
+              "subject": "Science",
+              "type": "Exam",
+              "label": "Year 10 Science Exam - Topic: Topic A"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-22T12:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-23T12:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-24T12:00:00.000Z",
           "week": "Week 13",
           "isInset": false,
           "assessments": [
@@ -1042,32 +1033,39 @@
           ]
         },
         {
+          "date": "2025-11-25T12:00:00.000Z",
+          "week": "Week 13",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-26T12:00:00.000Z",
+          "week": "Week 13",
+          "isInset": false,
+          "assessments": []
+        },
+        {
           "date": "2025-11-27T12:00:00.000Z",
           "week": "Week 13",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Art",
-              "type": "Coursework",
-              "label": "Year 10 Art Coursework - Topic: Topic A"
-            },
-            {
-              "subject": "Science",
-              "type": "Coursework",
-              "label": "Year 10 Science Coursework - Topic: Topic C"
-            },
-            {
-              "subject": "English",
-              "type": "Mock",
-              "label": "Year 10 English Mock - Topic: Topic B"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2025-11-28T12:00:00.000Z",
           "week": "Week 13",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Science",
+              "type": "Coursework",
+              "label": "Year 10 Science Coursework - Topic: Topic D"
+            },
+            {
+              "subject": "Science",
+              "type": "Coursework",
+              "label": "Year 10 Science Coursework - Topic: Topic D"
+            }
+          ]
         },
         {
           "date": "2025-11-29T12:00:00.000Z",
@@ -1087,9 +1085,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
-              "type": "Exam",
-              "label": "Year 10 Art Exam - Topic: Topic B"
+              "subject": "English",
+              "type": "Coursework",
+              "label": "Year 10 English Coursework - Topic: Topic D"
+            },
+            {
+              "subject": "Science",
+              "type": "Mock",
+              "label": "Year 10 Science Mock - _Topic: Topic A_"
             }
           ]
         },
@@ -1103,30 +1106,36 @@
           "date": "2025-12-03T12:00:00.000Z",
           "week": "Week 14",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "English",
+              "type": "Mock",
+              "label": "Year 10 English Mock - Topic: Topic C"
+            },
+            {
+              "subject": "Geography",
+              "type": "Coursework",
+              "label": "Year 10 Geography Coursework - Topic: Topic A"
+            }
+          ]
         },
         {
           "date": "2025-12-04T12:00:00.000Z",
           "week": "Week 14",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Maths",
+              "type": "Mock",
+              "label": "Year 10 Maths Mock - Topic: Topic B"
+            }
+          ]
         },
         {
           "date": "2025-12-05T12:00:00.000Z",
           "week": "Week 14",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Science",
-              "type": "Coursework",
-              "label": "Year 10 Science Coursework - Topic: Topic D"
-            },
-            {
-              "subject": "Science",
-              "type": "Coursework",
-              "label": "Year 10 Science Coursework - Topic: Topic D"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2025-12-06T12:00:00.000Z",
@@ -1146,14 +1155,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "English",
+              "subject": "Art",
               "type": "Coursework",
-              "label": "Year 10 English Coursework - Topic: Topic D"
-            },
-            {
-              "subject": "Science",
-              "type": "Mock",
-              "label": "Year 10 Science Mock - Topic: Topic D"
+              "label": "Year 10 Art Coursework - Topic: Topic C"
             }
           ]
         },
@@ -1161,7 +1165,23 @@
           "date": "2025-12-09T12:00:00.000Z",
           "week": "Week 15",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "History",
+              "type": "Mock",
+              "label": "Year 10 History Mock - Topic: Topic D"
+            },
+            {
+              "subject": "English",
+              "type": "Mock",
+              "label": "Year 10 English Mock - Topic: Topic D"
+            },
+            {
+              "subject": "Science",
+              "type": "Mock",
+              "label": "Year 10 **Science** Mock - _Topic: Topic A_"
+            }
+          ]
         },
         {
           "date": "2025-12-10T12:00:00.000Z",
@@ -1173,7 +1193,13 @@
           "date": "2025-12-11T12:00:00.000Z",
           "week": "Week 15",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Maths",
+              "type": "Exam",
+              "label": "Year 10 Maths Exam - Topic: Topic C"
+            }
+          ]
         },
         {
           "date": "2025-12-12T12:00:00.000Z",
@@ -1181,14 +1207,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "English",
-              "type": "Mock",
-              "label": "Year 10 English Mock - Topic: Topic C"
+              "subject": "Geography",
+              "type": "Exam",
+              "label": "Year 10 Geography Exam - Topic: Topic B"
             },
             {
-              "subject": "Geography",
-              "type": "Coursework",
-              "label": "Year 10 Geography Coursework - Topic: Topic A"
+              "subject": "History",
+              "type": "Exam",
+              "label": "Year 10 History Exam - Topic: Topic C"
             }
           ]
         },
@@ -1210,9 +1236,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Maths",
-              "type": "Mock",
-              "label": "Year 10 Maths Mock - Topic: Topic B"
+              "subject": "Art",
+              "type": "Coursework",
+              "label": "Year 10 **Art** Coursework - Topic: Topic A"
             }
           ]
         },
@@ -1220,7 +1246,13 @@
           "date": "2025-12-16T12:00:00.000Z",
           "week": "Week 16",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Maths",
+              "type": "Exam",
+              "label": "Year 10 Maths Exam - Topic: Topic A"
+            }
+          ]
         },
         {
           "date": "2025-12-17T12:00:00.000Z",
@@ -1228,9 +1260,19 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
-              "type": "Coursework",
-              "label": "Year 10 Art Coursework - Topic: Topic C"
+              "subject": "Science",
+              "type": "Mock",
+              "label": "Year 10 Science Mock - Topic: Topic B"
+            },
+            {
+              "subject": "English",
+              "type": "Mock",
+              "label": "Year 10 English Mock - Topic: Topic C"
+            },
+            {
+              "subject": "English",
+              "type": "Mock",
+              "label": "Year 10 English Mock - Topic: Topic B"
             }
           ]
         },
@@ -1240,19 +1282,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "History",
-              "type": "Mock",
-              "label": "Year 10 History Mock - Topic: Topic D"
-            },
-            {
-              "subject": "English",
-              "type": "Mock",
-              "label": "Year 10 English Mock - Topic: Topic D"
-            },
-            {
-              "subject": "Science",
-              "type": "Mock",
-              "label": "Year 10 Science Mock - Topic: Topic A"
+              "subject": "Maths",
+              "type": "Exam",
+              "label": "Year 10 Maths Exam - Topic: Topic C"
             }
           ]
         },
@@ -1260,7 +1292,13 @@
           "date": "2025-12-19T12:00:00.000Z",
           "week": "Week 16",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Science",
+              "type": "Coursework",
+              "label": "Year 10 Science Coursework - Topic: Topic A"
+            }
+          ]
         },
         {
           "date": "2025-12-20T12:00:00.000Z",
@@ -1280,9 +1318,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Maths",
+              "subject": "Geography",
               "type": "Exam",
-              "label": "Year 10 Maths Exam - Topic: Topic C"
+              "label": "Year 10 Geography Exam - Topic: Topic D"
+            },
+            {
+              "subject": "History",
+              "type": "Coursework",
+              "label": "Year 10 History Coursework - _Topic: Topic C_"
             }
           ]
         },
@@ -1292,14 +1335,19 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
-              "type": "Exam",
-              "label": "Year 10 Geography Exam - Topic: Topic B"
+              "subject": "Maths",
+              "type": "Mock",
+              "label": "Year 10 Maths Mock - Topic: Topic B"
             },
             {
-              "subject": "History",
-              "type": "Exam",
-              "label": "Year 10 History Exam - Topic: Topic C"
+              "subject": "Maths",
+              "type": "Mock",
+              "label": "Year 10 Maths Mock - Topic: Topic D"
+            },
+            {
+              "subject": "English",
+              "type": "Mock",
+              "label": "Year 10 English Mock - Topic: Topic B"
             }
           ]
         },
@@ -1309,9 +1357,19 @@
           "isInset": false,
           "assessments": [
             {
+              "subject": "Science",
+              "type": "Exam",
+              "label": "Year 10 Science Exam - Topic: Topic A"
+            },
+            {
+              "subject": "Geography",
+              "type": "Coursework",
+              "label": "Year 10 Geography Coursework - Topic: Topic C"
+            },
+            {
               "subject": "Art",
               "type": "Coursework",
-              "label": "Year 10 Art Coursework - Topic: Topic A"
+              "label": "Year 10 Art Coursework - Topic: Topic B"
             }
           ]
         },
@@ -1319,7 +1377,13 @@
           "date": "2025-12-25T12:00:00.000Z",
           "week": "Week 17",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Maths",
+              "type": "Mock",
+              "label": "Year 10 **Maths** Mock - Topic: Topic A"
+            }
+          ]
         },
         {
           "date": "2025-12-26T12:00:00.000Z",
@@ -1329,7 +1393,12 @@
             {
               "subject": "Maths",
               "type": "Exam",
-              "label": "Year 10 Maths Exam - Topic: Topic A"
+              "label": "Year 10 Maths Exam - Topic: Topic C"
+            },
+            {
+              "subject": "Science",
+              "type": "Coursework",
+              "label": "Year 10 Science Coursework - Topic: Topic D"
             }
           ]
         },
@@ -1351,19 +1420,14 @@
           "isInset": false,
           "assessments": [
             {
+              "subject": "English",
+              "type": "Exam",
+              "label": "Year 10 English Exam - Topic: Topic A"
+            },
+            {
               "subject": "Science",
               "type": "Mock",
-              "label": "Year 10 Science Mock - Topic: Topic B"
-            },
-            {
-              "subject": "English",
-              "type": "Mock",
-              "label": "Year 10 English Mock - Topic: Topic C"
-            },
-            {
-              "subject": "English",
-              "type": "Mock",
-              "label": "Year 10 English Mock - Topic: Topic B"
+              "label": "Year 10 Science Mock - _Topic: Topic B_"
             }
           ]
         },
@@ -1373,9 +1437,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Maths",
-              "type": "Exam",
-              "label": "Year 10 Maths Exam - Topic: Topic C"
+              "subject": "Art",
+              "type": "Mock",
+              "label": "Year 10 **Art** Mock - Topic: Topic A"
             }
           ]
         },
@@ -1386,8 +1450,18 @@
           "assessments": [
             {
               "subject": "Science",
+              "type": "Mock",
+              "label": "Year 10 Science Mock - Topic: Topic A"
+            },
+            {
+              "subject": "Maths",
+              "type": "Mock",
+              "label": "Year 10 Maths Mock - Topic: Topic B"
+            },
+            {
+              "subject": "Art",
               "type": "Coursework",
-              "label": "Year 10 Science Coursework - Topic: Topic A"
+              "label": "Year 10 **Art** Coursework - _Topic: Topic D_"
             }
           ]
         },
@@ -1395,18 +1469,7 @@
           "date": "2026-01-01T12:00:00.000Z",
           "week": "Week 18",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Geography",
-              "type": "Exam",
-              "label": "Year 10 Geography Exam - Topic: Topic D"
-            },
-            {
-              "subject": "History",
-              "type": "Coursework",
-              "label": "Year 10 History Coursework - Topic: Topic C"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2026-01-02T12:00:00.000Z",
@@ -1414,14 +1477,19 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Science",
-              "type": "Coursework",
-              "label": "Year 10 Science Coursework - Topic: Topic A"
+              "subject": "Maths",
+              "type": "Mock",
+              "label": "Year 10 Maths Mock - Topic: Topic B"
             },
             {
-              "subject": "History",
-              "type": "Exam",
-              "label": "Year 10 History Exam - Topic: Topic A"
+              "subject": "Art",
+              "type": "Mock",
+              "label": "Year 10 Art Mock - Topic: Topic B"
+            },
+            {
+              "subject": "Art",
+              "type": "Coursework",
+              "label": "Year 10 Art Coursework - Topic: Topic D"
             }
           ]
         },
@@ -1441,23 +1509,7 @@
           "date": "2026-01-05T12:00:00.000Z",
           "week": "Week 19",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "English",
-              "type": "Mock",
-              "label": "Year 10 English Mock - Topic: Topic B"
-            },
-            {
-              "subject": "English",
-              "type": "Coursework",
-              "label": "Year 10 English Coursework - Topic: Topic B"
-            },
-            {
-              "subject": "Art",
-              "type": "Exam",
-              "label": "Year 10 Art Exam - Topic: Topic C"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2026-01-06T12:00:00.000Z",
@@ -1465,14 +1517,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Art",
-              "type": "Coursework",
-              "label": "Year 10 Art Coursework - Topic: Topic B"
+              "subject": "History",
+              "type": "Mock",
+              "label": "Year 10 History Mock - Topic: Topic B"
             },
             {
               "subject": "History",
-              "type": "Mock",
-              "label": "Year 10 History Mock - Topic: Topic A"
+              "type": "Exam",
+              "label": "Year 10 History Exam - Topic: Topic C"
             }
           ]
         },
@@ -1482,9 +1534,19 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "History",
+              "subject": "Geography",
+              "type": "Coursework",
+              "label": "Year 10 Geography Coursework - Topic: Topic A"
+            },
+            {
+              "subject": "Geography",
+              "type": "Mock",
+              "label": "Year 10 Geography Mock - Topic: Topic B"
+            },
+            {
+              "subject": "Science",
               "type": "Exam",
-              "label": "Year 10 History Exam - Topic: Topic B"
+              "label": "Year 10 Science Exam - Topic: Topic B"
             }
           ]
         },
@@ -1492,7 +1554,23 @@
           "date": "2026-01-08T12:00:00.000Z",
           "week": "Week 19",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Science",
+              "type": "Coursework",
+              "label": "Year 10 Science Coursework - Topic: Topic C"
+            },
+            {
+              "subject": "Art",
+              "type": "Exam",
+              "label": "Year 10 Art Exam - Topic: Topic D"
+            },
+            {
+              "subject": "Science",
+              "type": "Exam",
+              "label": "Year 10 Science Exam - Topic: Topic B"
+            }
+          ]
         },
         {
           "date": "2026-01-09T12:00:00.000Z",
@@ -1500,14 +1578,19 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Science",
-              "type": "Coursework",
-              "label": "Year 10 Science Coursework - Topic: Topic D"
+              "subject": "Art",
+              "type": "Mock",
+              "label": "Year 10 **Art** Mock - Topic: Topic D"
             },
             {
-              "subject": "English",
-              "type": "Mock",
-              "label": "Year 10 English Mock - Topic: Topic B"
+              "subject": "History",
+              "type": "Exam",
+              "label": "Year 10 History Exam - Topic: Topic A"
+            },
+            {
+              "subject": "History",
+              "type": "Exam",
+              "label": "Year 10 History Exam - Topic: Topic D"
             }
           ]
         },
@@ -1527,7 +1610,13 @@
           "date": "2026-01-12T12:00:00.000Z",
           "week": "Week 20",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "History",
+              "type": "Mock",
+              "label": "Year 10 History Mock - Topic: Topic B"
+            }
+          ]
         },
         {
           "date": "2026-01-13T12:00:00.000Z",
@@ -1535,14 +1624,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Science",
+              "subject": "Geography",
               "type": "Mock",
-              "label": "Year 10 Science Mock - Topic: Topic B"
+              "label": "Year 10 Geography Mock - Topic: Topic D"
             },
             {
-              "subject": "Science",
-              "type": "Mock",
-              "label": "Year 10 Science Mock - Topic: Topic D"
+              "subject": "English",
+              "type": "Coursework",
+              "label": "Year 10 English Coursework - Topic: Topic A"
             }
           ]
         },
@@ -1550,37 +1639,19 @@
           "date": "2026-01-14T12:00:00.000Z",
           "week": "Week 20",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Art",
-              "type": "Exam",
-              "label": "Year 10 Art Exam - Topic: Topic B"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2026-01-15T12:00:00.000Z",
           "week": "Week 20",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "History",
-              "type": "Exam",
-              "label": "Year 10 History Exam - Topic: Topic A"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2026-01-16T12:00:00.000Z",
           "week": "Week 20",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Art",
-              "type": "Coursework",
-              "label": "Year 10 Art Coursework - Topic: Topic C"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2026-01-17T12:00:00.000Z",
@@ -1615,6 +1686,21 @@
               "subject": "Maths",
               "type": "Exam",
               "label": "Year 11 Maths Exam - Topic: Algebra"
+            },
+            {
+              "subject": "Physics",
+              "type": "Speaking",
+              "label": "Year 11 **Physics** Speaking - Topic: Topic D"
+            },
+            {
+              "subject": "Physics",
+              "type": "Exam",
+              "label": "Year 11 Physics Exam - _Topic: Topic C_"
+            },
+            {
+              "subject": "Maths",
+              "type": "Speaking",
+              "label": "Year 11 **Maths** Speaking - _Topic: Topic D_"
             }
           ]
         },
@@ -1625,18 +1711,8 @@
           "assessments": [
             {
               "subject": "Maths",
-              "type": "Practical",
-              "label": "Year 11 Maths Practical - Topic: Topic B"
-            },
-            {
-              "subject": "Computer Science",
-              "type": "Practical",
-              "label": "Year 11 Computer Science Practical - Topic: Topic B"
-            },
-            {
-              "subject": "Computer Science",
               "type": "Speaking",
-              "label": "Year 11 Computer Science Speaking - Topic: Topic D"
+              "label": "Year 11 Maths Speaking - Topic: Topic C"
             }
           ]
         },
@@ -1644,7 +1720,23 @@
           "date": "2025-09-03T12:00:00.000Z",
           "week": "Week 1",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Maths",
+              "type": "Exam",
+              "label": "Year 11 Maths Exam - Topic: Topic D"
+            },
+            {
+              "subject": "English Lit",
+              "type": "Exam",
+              "label": "Year 11 English Lit Exam - Topic: Topic D"
+            },
+            {
+              "subject": "Chemistry",
+              "type": "Practical",
+              "label": "Year 11 Chemistry Practical - Topic: Topic B"
+            }
+          ]
         },
         {
           "date": "2025-09-04T12:00:00.000Z",
@@ -1652,14 +1744,19 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Chemistry",
+              "subject": "English Lit",
+              "type": "Exam",
+              "label": "Year 11 English Lit Exam - Topic: Topic D"
+            },
+            {
+              "subject": "Computer Science",
               "type": "Practical",
-              "label": "Year 11 Chemistry Practical - Topic: Topic B"
+              "label": "Year 11 Computer Science Practical - Topic: Topic A"
             },
             {
               "subject": "Chemistry",
-              "type": "Exam",
-              "label": "Year 11 Chemistry Exam - Topic: Topic C"
+              "type": "Speaking",
+              "label": "Year 11 Chemistry Speaking - Topic: Topic B"
             }
           ]
         },
@@ -1667,23 +1764,7 @@
           "date": "2025-09-05T12:00:00.000Z",
           "week": "Week 1",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Biology",
-              "type": "Speaking",
-              "label": "Year 11 Biology Speaking - Topic: Topic A"
-            },
-            {
-              "subject": "Biology",
-              "type": "Practical",
-              "label": "Year 11 Biology Practical - Topic: Topic B"
-            },
-            {
-              "subject": "Physics",
-              "type": "Exam",
-              "label": "Year 11 Physics Exam - Topic: Topic B"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2025-09-06T12:00:00.000Z",
@@ -1703,19 +1784,19 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Physics",
-              "type": "Speaking",
-              "label": "Year 11 Physics Speaking - Topic: Topic C"
+              "subject": "Biology",
+              "type": "Exam",
+              "label": "Year 11 Biology Exam - Topic: Topic C"
             },
             {
-              "subject": "Computer Science",
-              "type": "Exam",
-              "label": "Year 11 Computer Science Exam - Topic: Topic D"
+              "subject": "Chemistry",
+              "type": "Practical",
+              "label": "Year 11 Chemistry Practical - _Topic: Topic B_"
             },
             {
-              "subject": "Physics",
+              "subject": "Maths",
               "type": "Exam",
-              "label": "Year 11 Physics Exam - Topic: Topic B"
+              "label": "Year 11 Maths Exam - Topic: Topic A"
             }
           ]
         },
@@ -1725,19 +1806,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Computer Science",
-              "type": "Practical",
-              "label": "Year 11 Computer Science Practical - Topic: Topic C"
-            },
-            {
-              "subject": "Maths",
-              "type": "Speaking",
-              "label": "Year 11 Maths Speaking - Topic: Topic C"
-            },
-            {
-              "subject": "Maths",
+              "subject": "Biology",
               "type": "Exam",
-              "label": "Year 11 Maths Exam - Topic: Topic C"
+              "label": "Year 11 Biology Exam - Topic: Topic C"
             }
           ]
         },
@@ -1745,23 +1816,7 @@
           "date": "2025-09-10T12:00:00.000Z",
           "week": "Week 2",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Chemistry",
-              "type": "Practical",
-              "label": "Year 11 Chemistry Practical - Topic: Topic C"
-            },
-            {
-              "subject": "Chemistry",
-              "type": "Practical",
-              "label": "Year 11 Chemistry Practical - Topic: Topic C"
-            },
-            {
-              "subject": "Biology",
-              "type": "Speaking",
-              "label": "Year 11 Biology Speaking - Topic: Topic D"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2025-09-11T12:00:00.000Z",
@@ -1769,9 +1824,19 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "English Lit",
+              "subject": "Physics",
+              "type": "Practical",
+              "label": "Year 11 **Physics** Practical - Topic: Topic C"
+            },
+            {
+              "subject": "Computer Science",
               "type": "Exam",
-              "label": "Year 11 English Lit Exam - Topic: Topic A"
+              "label": "Year 11 Computer Science Exam - Topic: Topic C"
+            },
+            {
+              "subject": "Chemistry",
+              "type": "Practical",
+              "label": "Year 11 Chemistry Practical - Topic: Topic C"
             }
           ]
         },
@@ -1797,45 +1862,13 @@
           "date": "2025-09-15T12:00:00.000Z",
           "week": "Week 3",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Biology",
-              "type": "Speaking",
-              "label": "Year 11 Biology Speaking - Topic: Topic B"
-            },
-            {
-              "subject": "Computer Science",
-              "type": "Exam",
-              "label": "Year 11 Computer Science Exam - Topic: Topic A"
-            },
-            {
-              "subject": "Chemistry",
-              "type": "Practical",
-              "label": "Year 11 Chemistry Practical - Topic: Topic C"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2025-09-16T12:00:00.000Z",
           "week": "Week 3",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Physics",
-              "type": "Exam",
-              "label": "Year 11 Physics Exam - Topic: Topic D"
-            },
-            {
-              "subject": "Biology",
-              "type": "Practical",
-              "label": "Year 11 Biology Practical - Topic: Topic A"
-            },
-            {
-              "subject": "Computer Science",
-              "type": "Practical",
-              "label": "Year 11 Computer Science Practical - Topic: Topic A"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2025-09-17T12:00:00.000Z",
@@ -1849,19 +1882,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "English Lit",
-              "type": "Exam",
-              "label": "Year 11 English Lit Exam - Topic: Topic D"
-            },
-            {
-              "subject": "Chemistry",
-              "type": "Practical",
-              "label": "Year 11 Chemistry Practical - Topic: Topic B"
-            },
-            {
-              "subject": "English Lit",
+              "subject": "Biology",
               "type": "Speaking",
-              "label": "Year 11 English Lit Speaking - Topic: Topic A"
+              "label": "Year 11 Biology Speaking - Topic: Topic A"
+            },
+            {
+              "subject": "Maths",
+              "type": "Practical",
+              "label": "Year 11 Maths Practical - Topic: Topic B"
             }
           ]
         },
@@ -1871,19 +1899,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Computer Science",
-              "type": "Practical",
-              "label": "Year 11 Computer Science Practical - Topic: Topic A"
-            },
-            {
               "subject": "Chemistry",
-              "type": "Speaking",
-              "label": "Year 11 Chemistry Speaking - Topic: Topic B"
-            },
-            {
-              "subject": "Computer Science",
               "type": "Exam",
-              "label": "Year 11 Computer Science Exam - Topic: Topic A"
+              "label": "Year 11 Chemistry Exam - Topic: Topic B"
             }
           ]
         },
@@ -1903,29 +1921,29 @@
           "date": "2025-09-22T12:00:00.000Z",
           "week": "Week 4",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Chemistry",
-              "type": "Practical",
-              "label": "Year 11 Chemistry Practical - Topic: Topic C"
-            },
-            {
-              "subject": "English Lit",
-              "type": "Exam",
-              "label": "Year 11 English Lit Exam - Topic: Topic A"
-            },
-            {
-              "subject": "English Lit",
-              "type": "Exam",
-              "label": "Year 11 English Lit Exam - Topic: Topic B"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2025-09-23T12:00:00.000Z",
           "week": "Week 4",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "English Lit",
+              "type": "Practical",
+              "label": "Year 11 English Lit Practical - Topic: Topic D"
+            },
+            {
+              "subject": "Chemistry",
+              "type": "Practical",
+              "label": "Year 11 Chemistry Practical - Topic: Topic D"
+            },
+            {
+              "subject": "Biology",
+              "type": "Speaking",
+              "label": "Year 11 **Biology** Speaking - _Topic: Topic B_"
+            }
+          ]
         },
         {
           "date": "2025-09-24T12:00:00.000Z",
@@ -1933,19 +1951,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Maths",
-              "type": "Practical",
-              "label": "Year 11 Maths Practical - Topic: Topic D"
+              "subject": "English Lit",
+              "type": "Exam",
+              "label": "Year 11 English Lit Exam - Topic: Topic C"
             },
             {
               "subject": "Physics",
-              "type": "Practical",
-              "label": "Year 11 Physics Practical - Topic: Topic D"
-            },
-            {
-              "subject": "English Lit",
-              "type": "Speaking",
-              "label": "Year 11 English Lit Speaking - Topic: Topic D"
+              "type": "Exam",
+              "label": "Year 11 Physics Exam - Topic: Topic A"
             }
           ]
         },
@@ -1953,18 +1966,7 @@
           "date": "2025-09-25T12:00:00.000Z",
           "week": "Week 4",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Chemistry",
-              "type": "Practical",
-              "label": "Year 11 Chemistry Practical - Topic: Topic C"
-            },
-            {
-              "subject": "Maths",
-              "type": "Exam",
-              "label": "Year 11 Maths Exam - Topic: Topic A"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2025-09-26T12:00:00.000Z",
@@ -1996,14 +1998,19 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Biology",
+              "subject": "Computer Science",
               "type": "Speaking",
-              "label": "Year 11 Biology Speaking - Topic: Topic A"
+              "label": "Year 11 Computer Science Speaking - Topic: Topic D"
             },
             {
-              "subject": "Maths",
+              "subject": "Chemistry",
+              "type": "Speaking",
+              "label": "Year 11 Chemistry Speaking - Topic: Topic B"
+            },
+            {
+              "subject": "English Lit",
               "type": "Practical",
-              "label": "Year 11 Maths Practical - Topic: Topic B"
+              "label": "Year 11 English Lit Practical - Topic: Topic B"
             }
           ]
         },
@@ -2012,6 +2019,16 @@
           "week": "Week 5",
           "isInset": false,
           "assessments": [
+            {
+              "subject": "Physics",
+              "type": "Exam",
+              "label": "Year 11 **Physics** Exam - Topic: Topic C"
+            },
+            {
+              "subject": "Biology",
+              "type": "Speaking",
+              "label": "Year 11 Biology Speaking - Topic: Topic B"
+            },
             {
               "subject": "Chemistry",
               "type": "Exam",
@@ -2023,7 +2040,23 @@
           "date": "2025-10-02T12:00:00.000Z",
           "week": "Week 5",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "English Lit",
+              "type": "Practical",
+              "label": "Year 11 English Lit Practical - Topic: Topic C"
+            },
+            {
+              "subject": "English Lit",
+              "type": "Speaking",
+              "label": "Year 11 English Lit Speaking - Topic: Topic B"
+            },
+            {
+              "subject": "Physics",
+              "type": "Speaking",
+              "label": "Year 11 Physics Speaking - Topic: Topic A"
+            }
+          ]
         },
         {
           "date": "2025-10-03T12:00:00.000Z",
@@ -2031,19 +2064,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "English Lit",
-              "type": "Practical",
-              "label": "Year 11 English Lit Practical - Topic: Topic D"
+              "subject": "Computer Science",
+              "type": "Exam",
+              "label": "Year 11 Computer Science Exam - Topic: Topic B"
             },
             {
               "subject": "Chemistry",
-              "type": "Practical",
-              "label": "Year 11 Chemistry Practical - Topic: Topic D"
-            },
-            {
-              "subject": "Biology",
               "type": "Speaking",
-              "label": "Year 11 Biology Speaking - Topic: Topic A"
+              "label": "Year 11 Chemistry Speaking - Topic: Topic C"
             }
           ]
         },
@@ -2066,8 +2094,8 @@
           "assessments": [
             {
               "subject": "Maths",
-              "type": "Practical",
-              "label": "Year 11 Maths Practical - Topic: Topic A"
+              "type": "Speaking",
+              "label": "Year 11 **Maths** Speaking - Topic: Topic D"
             }
           ]
         },
@@ -2079,12 +2107,17 @@
             {
               "subject": "Physics",
               "type": "Exam",
-              "label": "Year 11 Physics Exam - Topic: Topic A"
+              "label": "Year 11 Physics Exam - Topic: Topic B"
             },
             {
-              "subject": "Maths",
+              "subject": "Chemistry",
               "type": "Exam",
-              "label": "Year 11 Maths Exam - Topic: Topic D"
+              "label": "Year 11 Chemistry Exam - Topic: Topic D"
+            },
+            {
+              "subject": "English Lit",
+              "type": "Speaking",
+              "label": "Year 11 English Lit Speaking - Topic: Topic A"
             }
           ]
         },
@@ -2094,14 +2127,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Computer Science",
-              "type": "Speaking",
-              "label": "Year 11 Computer Science Speaking - Topic: Topic D"
+              "subject": "Biology",
+              "type": "Practical",
+              "label": "Year 11 Biology Practical - Topic: Topic B"
             },
             {
-              "subject": "Physics",
-              "type": "Practical",
-              "label": "Year 11 Physics Practical - Topic: Topic B"
+              "subject": "Computer Science",
+              "type": "Exam",
+              "label": "Year 11 Computer Science Exam - Topic: Topic B"
             }
           ]
         },
@@ -2112,8 +2145,13 @@
           "assessments": [
             {
               "subject": "Biology",
+              "type": "Exam",
+              "label": "Year 11 Biology Exam - Topic: Topic B"
+            },
+            {
+              "subject": "Computer Science",
               "type": "Practical",
-              "label": "Year 11 Biology Practical - Topic: Topic A"
+              "label": "Year 11 Computer Science Practical - Topic: Topic A"
             }
           ]
         },
@@ -2121,13 +2159,7 @@
           "date": "2025-10-10T12:00:00.000Z",
           "week": "Week 6",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Chemistry",
-              "type": "Practical",
-              "label": "Year 11 Chemistry Practical - Topic: Topic C"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2025-10-11T12:00:00.000Z",
@@ -2147,174 +2179,6 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Maths",
-              "type": "Practical",
-              "label": "Year 11 Maths Practical - Topic: Topic C"
-            },
-            {
-              "subject": "Biology",
-              "type": "Practical",
-              "label": "Year 11 Biology Practical - Topic: Topic B"
-            }
-          ]
-        },
-        {
-          "date": "2025-10-14T12:00:00.000Z",
-          "week": "Week 7",
-          "isInset": false,
-          "assessments": [
-            {
-              "subject": "Biology",
-              "type": "Speaking",
-              "label": "Year 11 Biology Speaking - Topic: Topic A"
-            }
-          ]
-        },
-        {
-          "date": "2025-10-15T12:00:00.000Z",
-          "week": "Week 7",
-          "isInset": false,
-          "assessments": [
-            {
-              "subject": "Physics",
-              "type": "Speaking",
-              "label": "Year 11 Physics Speaking - Topic: Topic A"
-            }
-          ]
-        },
-        {
-          "date": "2025-10-16T12:00:00.000Z",
-          "week": "Week 7",
-          "isInset": false,
-          "assessments": [
-            {
-              "subject": "Computer Science",
-              "type": "Exam",
-              "label": "Year 11 Computer Science Exam - Topic: Topic B"
-            },
-            {
-              "subject": "Chemistry",
-              "type": "Speaking",
-              "label": "Year 11 Chemistry Speaking - Topic: Topic C"
-            }
-          ]
-        },
-        {
-          "date": "2025-10-17T12:00:00.000Z",
-          "week": "Week 7",
-          "isInset": false,
-          "assessments": [
-            {
-              "subject": "Maths",
-              "type": "Speaking",
-              "label": "Year 11 Maths Speaking - Topic: Topic B"
-            }
-          ]
-        },
-        {
-          "date": "2025-10-18T12:00:00.000Z",
-          "week": null,
-          "isInset": false,
-          "assessments": []
-        },
-        {
-          "date": "2025-10-19T12:00:00.000Z",
-          "week": null,
-          "isInset": false,
-          "assessments": []
-        },
-        {
-          "date": "2025-10-20T12:00:00.000Z",
-          "week": "Week 8",
-          "isInset": false,
-          "assessments": [
-            {
-              "subject": "Maths",
-              "type": "Speaking",
-              "label": "Year 11 Maths Speaking - Topic: Topic B"
-            },
-            {
-              "subject": "Maths",
-              "type": "Practical",
-              "label": "Year 11 Maths Practical - Topic: Topic C"
-            },
-            {
-              "subject": "Computer Science",
-              "type": "Speaking",
-              "label": "Year 11 Computer Science Speaking - Topic: Topic B"
-            }
-          ]
-        },
-        {
-          "date": "2025-10-21T12:00:00.000Z",
-          "week": "Week 8",
-          "isInset": true,
-          "assessments": []
-        },
-        {
-          "date": "2025-10-22T12:00:00.000Z",
-          "week": "Week 8",
-          "isInset": false,
-          "assessments": []
-        },
-        {
-          "date": "2025-10-23T12:00:00.000Z",
-          "week": "Week 8",
-          "isInset": false,
-          "assessments": [
-            {
-              "subject": "Biology",
-              "type": "Practical",
-              "label": "Year 11 Biology Practical - Topic: Topic B"
-            },
-            {
-              "subject": "Computer Science",
-              "type": "Exam",
-              "label": "Year 11 Computer Science Exam - Topic: Topic B"
-            }
-          ]
-        },
-        {
-          "date": "2025-10-24T12:00:00.000Z",
-          "week": "Week 8",
-          "isInset": false,
-          "assessments": [
-            {
-              "subject": "Biology",
-              "type": "Exam",
-              "label": "Year 11 Biology Exam - Topic: Topic B"
-            },
-            {
-              "subject": "Computer Science",
-              "type": "Practical",
-              "label": "Year 11 Computer Science Practical - Topic: Topic A"
-            }
-          ]
-        },
-        {
-          "date": "2025-10-25T12:00:00.000Z",
-          "week": null,
-          "isInset": false,
-          "assessments": []
-        },
-        {
-          "date": "2025-10-26T12:00:00.000Z",
-          "week": null,
-          "isInset": false,
-          "assessments": []
-        },
-        {
-          "date": "2025-10-27T12:00:00.000Z",
-          "week": "Week 9",
-          "isInset": false,
-          "assessments": []
-        },
-        {
-          "date": "2025-10-28T12:00:00.000Z",
-          "week": "Week 9",
-          "isInset": false,
-          "assessments": [
-            {
               "subject": "Biology",
               "type": "Practical",
               "label": "Year 11 Biology Practical - Topic: Topic C"
@@ -2322,8 +2186,8 @@
           ]
         },
         {
-          "date": "2025-10-29T12:00:00.000Z",
-          "week": "Week 9",
+          "date": "2025-10-14T12:00:00.000Z",
+          "week": "Week 7",
           "isInset": false,
           "assessments": [
             {
@@ -2344,8 +2208,8 @@
           ]
         },
         {
-          "date": "2025-10-30T12:00:00.000Z",
-          "week": "Week 9",
+          "date": "2025-10-15T12:00:00.000Z",
+          "week": "Week 7",
           "isInset": false,
           "assessments": [
             {
@@ -2356,19 +2220,213 @@
           ]
         },
         {
-          "date": "2025-10-31T12:00:00.000Z",
+          "date": "2025-10-16T12:00:00.000Z",
+          "week": "Week 7",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Biology",
+              "type": "Practical",
+              "label": "Year 11 **Biology** Practical - Topic: Topic A"
+            },
+            {
+              "subject": "Computer Science",
+              "type": "Exam",
+              "label": "Year 11 Computer Science Exam - Topic: Topic A"
+            }
+          ]
+        },
+        {
+          "date": "2025-10-17T12:00:00.000Z",
+          "week": "Week 7",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Maths",
+              "type": "Exam",
+              "label": "Year 11 Maths Exam - Topic: Topic B"
+            },
+            {
+              "subject": "Chemistry",
+              "type": "Practical",
+              "label": "Year 11 Chemistry Practical - Topic: Topic D"
+            }
+          ]
+        },
+        {
+          "date": "2025-10-18T12:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-10-19T12:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-10-20T12:00:00.000Z",
+          "week": "Week 8",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-10-21T12:00:00.000Z",
+          "week": "Week 8",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2025-10-22T12:00:00.000Z",
+          "week": "Week 8",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Chemistry",
+              "type": "Speaking",
+              "label": "Year 11 Chemistry Speaking - Topic: Topic A"
+            }
+          ]
+        },
+        {
+          "date": "2025-10-23T12:00:00.000Z",
+          "week": "Week 8",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Biology",
+              "type": "Exam",
+              "label": "Year 11 Biology Exam - Topic: Topic A"
+            },
+            {
+              "subject": "Biology",
+              "type": "Exam",
+              "label": "Year 11 Biology Exam - Topic: Topic D"
+            },
+            {
+              "subject": "Chemistry",
+              "type": "Speaking",
+              "label": "Year 11 Chemistry Speaking - Topic: Topic B"
+            }
+          ]
+        },
+        {
+          "date": "2025-10-24T12:00:00.000Z",
+          "week": "Week 8",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Computer Science",
+              "type": "Practical",
+              "label": "Year 11 Computer Science Practical - Topic: Topic D"
+            },
+            {
+              "subject": "English Lit",
+              "type": "Exam",
+              "label": "Year 11 English Lit Exam - Topic: Topic C"
+            },
+            {
+              "subject": "English Lit",
+              "type": "Speaking",
+              "label": "Year 11 English Lit Speaking - Topic: Topic A"
+            }
+          ]
+        },
+        {
+          "date": "2025-10-25T12:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-10-26T12:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-10-27T12:00:00.000Z",
+          "week": "Week 9",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Biology",
+              "type": "Speaking",
+              "label": "Year 11 Biology Speaking - Topic: Topic B"
+            },
+            {
+              "subject": "Physics",
+              "type": "Practical",
+              "label": "Year 11 Physics Practical - _Topic: Topic D_"
+            },
+            {
+              "subject": "Computer Science",
+              "type": "Practical",
+              "label": "Year 11 Computer Science Practical - Topic: Topic B"
+            }
+          ]
+        },
+        {
+          "date": "2025-10-28T12:00:00.000Z",
+          "week": "Week 9",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Biology",
+              "type": "Speaking",
+              "label": "Year 11 Biology Speaking - Topic: Topic C"
+            }
+          ]
+        },
+        {
+          "date": "2025-10-29T12:00:00.000Z",
+          "week": "Week 9",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Chemistry",
+              "type": "Exam",
+              "label": "Year 11 Chemistry Exam - Topic: Topic A"
+            }
+          ]
+        },
+        {
+          "date": "2025-10-30T12:00:00.000Z",
           "week": "Week 9",
           "isInset": false,
           "assessments": [
             {
               "subject": "Biology",
               "type": "Practical",
-              "label": "Year 11 Biology Practical - Topic: Topic C"
+              "label": "Year 11 Biology Practical - Topic: Topic A"
             },
             {
-              "subject": "English Lit",
-              "type": "Exam",
-              "label": "Year 11 English Lit Exam - Topic: Topic D"
+              "subject": "Physics",
+              "type": "Speaking",
+              "label": "Year 11 Physics Speaking - Topic: Topic D"
+            }
+          ]
+        },
+        {
+          "date": "2025-10-31T12:00:00.000Z",
+          "week": "Week 9",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Maths",
+              "type": "Practical",
+              "label": "Year 11 **Maths** Practical - Topic: Topic B"
+            },
+            {
+              "subject": "Physics",
+              "type": "Speaking",
+              "label": "Year 11 Physics Speaking - Topic: Topic C"
+            },
+            {
+              "subject": "Physics",
+              "type": "Speaking",
+              "label": "Year 11 Physics Speaking - Topic: Topic B"
             }
           ]
         },
@@ -2396,14 +2454,19 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Maths",
-              "type": "Exam",
-              "label": "Year 11 Maths Exam - Topic: Topic B"
+              "subject": "Chemistry",
+              "type": "Speaking",
+              "label": "Year 11 Chemistry Speaking - Topic: Topic A"
             },
             {
-              "subject": "Chemistry",
+              "subject": "Physics",
               "type": "Practical",
-              "label": "Year 11 Chemistry Practical - Topic: Topic D"
+              "label": "Year 11 Physics Practical - Topic: Topic B"
+            },
+            {
+              "subject": "English Lit",
+              "type": "Speaking",
+              "label": "Year 11 English Lit Speaking - Topic: Topic A"
             }
           ]
         },
@@ -2411,7 +2474,23 @@
           "date": "2025-11-05T12:00:00.000Z",
           "week": "Week 10",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "English Lit",
+              "type": "Practical",
+              "label": "Year 11 **English Lit** Practical - Topic: Topic D"
+            },
+            {
+              "subject": "Physics",
+              "type": "Exam",
+              "label": "Year 11 Physics Exam - Topic: Topic A"
+            },
+            {
+              "subject": "Maths",
+              "type": "Speaking",
+              "label": "Year 11 Maths Speaking - Topic: Topic A"
+            }
+          ]
         },
         {
           "date": "2025-11-06T12:00:00.000Z",
@@ -2419,9 +2498,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Chemistry",
-              "type": "Speaking",
-              "label": "Year 11 Chemistry Speaking - Topic: Topic A"
+              "subject": "Biology",
+              "type": "Practical",
+              "label": "Year 11 Biology Practical - Topic: Topic D"
             }
           ]
         },
@@ -2437,13 +2516,8 @@
             },
             {
               "subject": "Biology",
-              "type": "Exam",
-              "label": "Year 11 Biology Exam - Topic: Topic D"
-            },
-            {
-              "subject": "Chemistry",
-              "type": "Speaking",
-              "label": "Year 11 Chemistry Speaking - Topic: Topic B"
+              "type": "Practical",
+              "label": "Year 11 Biology Practical - Topic: Topic D"
             }
           ]
         },
@@ -2465,19 +2539,19 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Computer Science",
-              "type": "Practical",
-              "label": "Year 11 Computer Science Practical - Topic: Topic D"
-            },
-            {
-              "subject": "English Lit",
-              "type": "Exam",
-              "label": "Year 11 English Lit Exam - Topic: Topic C"
-            },
-            {
               "subject": "English Lit",
               "type": "Speaking",
-              "label": "Year 11 English Lit Speaking - Topic: Topic A"
+              "label": "Year 11 **English Lit** Speaking - Topic: Topic D"
+            },
+            {
+              "subject": "Maths",
+              "type": "Practical",
+              "label": "Year 11 Maths Practical - _Topic: Topic C_"
+            },
+            {
+              "subject": "Biology",
+              "type": "Speaking",
+              "label": "Year 11 Biology Speaking - Topic: Topic C"
             }
           ]
         },
@@ -2487,19 +2561,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Biology",
+              "subject": "Maths",
               "type": "Speaking",
-              "label": "Year 11 Biology Speaking - Topic: Topic B"
+              "label": "Year 11 Maths Speaking - Topic: Topic C"
             },
             {
-              "subject": "Physics",
+              "subject": "Computer Science",
               "type": "Practical",
-              "label": "Year 11 Physics Practical - Topic: Topic B"
-            },
-            {
-              "subject": "Physics",
-              "type": "Speaking",
-              "label": "Year 11 Physics Speaking - Topic: Topic D"
+              "label": "Year 11 Computer Science Practical - Topic: Topic B"
             }
           ]
         },
@@ -2509,9 +2578,19 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Computer Science",
-              "type": "Exam",
-              "label": "Year 11 Computer Science Exam - Topic: Topic C"
+              "subject": "Maths",
+              "type": "Speaking",
+              "label": "Year 11 Maths Speaking - Topic: Topic C"
+            },
+            {
+              "subject": "Chemistry",
+              "type": "Practical",
+              "label": "Year 11 Chemistry Practical - Topic: Topic C"
+            },
+            {
+              "subject": "Biology",
+              "type": "Practical",
+              "label": "Year 11 Biology Practical - Topic: Topic A"
             }
           ]
         },
@@ -2521,14 +2600,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "English Lit",
+              "subject": "Physics",
               "type": "Practical",
-              "label": "Year 11 English Lit Practical - Topic: Topic C"
+              "label": "Year 11 Physics Practical - Topic: Topic D"
             },
             {
               "subject": "Biology",
-              "type": "Exam",
-              "label": "Year 11 Biology Exam - Topic: Topic C"
+              "type": "Speaking",
+              "label": "Year 11 Biology Speaking - Topic: Topic C"
             }
           ]
         },
@@ -2538,14 +2617,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Computer Science",
-              "type": "Exam",
-              "label": "Year 11 Computer Science Exam - Topic: Topic B"
-            },
-            {
-              "subject": "Computer Science",
-              "type": "Speaking",
-              "label": "Year 11 Computer Science Speaking - Topic: Topic C"
+              "subject": "Chemistry",
+              "type": "Practical",
+              "label": "Year 11 Chemistry Practical - Topic: Topic D"
             }
           ]
         },
@@ -2565,282 +2639,7 @@
           "date": "2025-11-17T12:00:00.000Z",
           "week": "Week 12",
           "isInset": false,
-          "assessments": []
-        },
-        {
-          "date": "2025-11-18T12:00:00.000Z",
-          "week": "Week 12",
-          "isInset": false,
           "assessments": [
-            {
-              "subject": "Biology",
-              "type": "Exam",
-              "label": "Year 11 Biology Exam - Topic: Topic B"
-            }
-          ]
-        },
-        {
-          "date": "2025-11-19T12:00:00.000Z",
-          "week": "Week 12",
-          "isInset": false,
-          "assessments": [
-            {
-              "subject": "Physics",
-              "type": "Speaking",
-              "label": "Year 11 Physics Speaking - Topic: Topic B"
-            },
-            {
-              "subject": "Computer Science",
-              "type": "Exam",
-              "label": "Year 11 Computer Science Exam - Topic: Topic D"
-            }
-          ]
-        },
-        {
-          "date": "2025-11-20T12:00:00.000Z",
-          "week": "Week 12",
-          "isInset": false,
-          "assessments": [
-            {
-              "subject": "Physics",
-              "type": "Exam",
-              "label": "Year 11 Physics Exam - Topic: Topic B"
-            },
-            {
-              "subject": "Biology",
-              "type": "Practical",
-              "label": "Year 11 Biology Practical - Topic: Topic A"
-            }
-          ]
-        },
-        {
-          "date": "2025-11-21T12:00:00.000Z",
-          "week": "Week 12",
-          "isInset": false,
-          "assessments": []
-        },
-        {
-          "date": "2025-11-22T12:00:00.000Z",
-          "week": null,
-          "isInset": false,
-          "assessments": []
-        },
-        {
-          "date": "2025-11-23T12:00:00.000Z",
-          "week": null,
-          "isInset": false,
-          "assessments": []
-        },
-        {
-          "date": "2025-11-24T12:00:00.000Z",
-          "week": "Week 13",
-          "isInset": false,
-          "assessments": [
-            {
-              "subject": "English Lit",
-              "type": "Practical",
-              "label": "Year 11 English Lit Practical - Topic: Topic A"
-            },
-            {
-              "subject": "Maths",
-              "type": "Speaking",
-              "label": "Year 11 Maths Speaking - Topic: Topic B"
-            },
-            {
-              "subject": "Computer Science",
-              "type": "Exam",
-              "label": "Year 11 Computer Science Exam - Topic: Topic A"
-            }
-          ]
-        },
-        {
-          "date": "2025-11-25T12:00:00.000Z",
-          "week": "Week 13",
-          "isInset": false,
-          "assessments": []
-        },
-        {
-          "date": "2025-11-26T12:00:00.000Z",
-          "week": "Week 13",
-          "isInset": false,
-          "assessments": [
-            {
-              "subject": "Biology",
-              "type": "Practical",
-              "label": "Year 11 Biology Practical - Topic: Topic D"
-            }
-          ]
-        },
-        {
-          "date": "2025-11-27T12:00:00.000Z",
-          "week": "Week 13",
-          "isInset": false,
-          "assessments": [
-            {
-              "subject": "Biology",
-              "type": "Exam",
-              "label": "Year 11 Biology Exam - Topic: Topic A"
-            },
-            {
-              "subject": "Biology",
-              "type": "Practical",
-              "label": "Year 11 Biology Practical - Topic: Topic D"
-            }
-          ]
-        },
-        {
-          "date": "2025-11-28T12:00:00.000Z",
-          "week": "Week 13",
-          "isInset": false,
-          "assessments": [
-            {
-              "subject": "English Lit",
-              "type": "Speaking",
-              "label": "Year 11 English Lit Speaking - Topic: Topic C"
-            },
-            {
-              "subject": "Physics",
-              "type": "Speaking",
-              "label": "Year 11 Physics Speaking - Topic: Topic A"
-            },
-            {
-              "subject": "Chemistry",
-              "type": "Exam",
-              "label": "Year 11 Chemistry Exam - Topic: Topic D"
-            }
-          ]
-        },
-        {
-          "date": "2025-11-29T12:00:00.000Z",
-          "week": null,
-          "isInset": false,
-          "assessments": []
-        },
-        {
-          "date": "2025-11-30T12:00:00.000Z",
-          "week": null,
-          "isInset": false,
-          "assessments": []
-        },
-        {
-          "date": "2025-12-01T12:00:00.000Z",
-          "week": "Week 14",
-          "isInset": true,
-          "assessments": []
-        },
-        {
-          "date": "2025-12-02T12:00:00.000Z",
-          "week": "Week 14",
-          "isInset": true,
-          "assessments": []
-        },
-        {
-          "date": "2025-12-03T12:00:00.000Z",
-          "week": "Week 14",
-          "isInset": true,
-          "assessments": []
-        },
-        {
-          "date": "2025-12-04T12:00:00.000Z",
-          "week": "Week 14",
-          "isInset": true,
-          "assessments": []
-        },
-        {
-          "date": "2025-12-05T12:00:00.000Z",
-          "week": "Week 14",
-          "isInset": true,
-          "assessments": []
-        },
-        {
-          "date": "2025-12-06T12:00:00.000Z",
-          "week": null,
-          "isInset": false,
-          "assessments": []
-        },
-        {
-          "date": "2025-12-07T12:00:00.000Z",
-          "week": null,
-          "isInset": false,
-          "assessments": []
-        },
-        {
-          "date": "2025-12-08T12:00:00.000Z",
-          "week": "Week 15",
-          "isInset": false,
-          "assessments": [
-            {
-              "subject": "Chemistry",
-              "type": "Practical",
-              "label": "Year 11 Chemistry Practical - Topic: Topic D"
-            },
-            {
-              "subject": "Chemistry",
-              "type": "Exam",
-              "label": "Year 11 Chemistry Exam - Topic: Topic C"
-            }
-          ]
-        },
-        {
-          "date": "2025-12-09T12:00:00.000Z",
-          "week": "Week 15",
-          "isInset": false,
-          "assessments": [
-            {
-              "subject": "Computer Science",
-              "type": "Practical",
-              "label": "Year 11 Computer Science Practical - Topic: Topic D"
-            },
-            {
-              "subject": "Chemistry",
-              "type": "Exam",
-              "label": "Year 11 Chemistry Exam - Topic: Topic C"
-            },
-            {
-              "subject": "Biology",
-              "type": "Practical",
-              "label": "Year 11 Biology Practical - Topic: Topic C"
-            }
-          ]
-        },
-        {
-          "date": "2025-12-10T12:00:00.000Z",
-          "week": "Week 15",
-          "isInset": true,
-          "assessments": []
-        },
-        {
-          "date": "2025-12-11T12:00:00.000Z",
-          "week": "Week 15",
-          "isInset": false,
-          "assessments": [
-            {
-              "subject": "Biology",
-              "type": "Exam",
-              "label": "Year 11 Biology Exam - Topic: Topic B"
-            },
-            {
-              "subject": "Computer Science",
-              "type": "Practical",
-              "label": "Year 11 Computer Science Practical - Topic: Topic C"
-            },
-            {
-              "subject": "Chemistry",
-              "type": "Speaking",
-              "label": "Year 11 Chemistry Speaking - Topic: Topic B"
-            }
-          ]
-        },
-        {
-          "date": "2025-12-12T12:00:00.000Z",
-          "week": "Week 15",
-          "isInset": false,
-          "assessments": [
-            {
-              "subject": "Computer Science",
-              "type": "Practical",
-              "label": "Year 11 Computer Science Practical - Topic: Topic B"
-            },
             {
               "subject": "Computer Science",
               "type": "Exam",
@@ -2849,20 +2648,8 @@
           ]
         },
         {
-          "date": "2025-12-13T12:00:00.000Z",
-          "week": null,
-          "isInset": false,
-          "assessments": []
-        },
-        {
-          "date": "2025-12-14T12:00:00.000Z",
-          "week": null,
-          "isInset": false,
-          "assessments": []
-        },
-        {
-          "date": "2025-12-15T12:00:00.000Z",
-          "week": "Week 16",
+          "date": "2025-11-18T12:00:00.000Z",
+          "week": "Week 12",
           "isInset": false,
           "assessments": [
             {
@@ -2883,8 +2670,8 @@
           ]
         },
         {
-          "date": "2025-12-16T12:00:00.000Z",
-          "week": "Week 16",
+          "date": "2025-11-19T12:00:00.000Z",
+          "week": "Week 12",
           "isInset": false,
           "assessments": [
             {
@@ -2895,36 +2682,30 @@
           ]
         },
         {
-          "date": "2025-12-17T12:00:00.000Z",
-          "week": "Week 16",
+          "date": "2025-11-20T12:00:00.000Z",
+          "week": "Week 12",
           "isInset": false,
           "assessments": [
             {
               "subject": "Physics",
               "type": "Practical",
-              "label": "Year 11 Physics Practical - Topic: Topic C"
+              "label": "Year 11 **Physics** Practical - Topic: Topic C"
             },
             {
-              "subject": "Computer Science",
-              "type": "Practical",
-              "label": "Year 11 Computer Science Practical - Topic: Topic C"
+              "subject": "Biology",
+              "type": "Speaking",
+              "label": "Year 11 Biology Speaking - Topic: Topic C"
             },
             {
-              "subject": "Chemistry",
+              "subject": "Biology",
               "type": "Practical",
-              "label": "Year 11 Chemistry Practical - Topic: Topic D"
+              "label": "Year 11 Biology Practical - Topic: Topic A"
             }
           ]
         },
         {
-          "date": "2025-12-18T12:00:00.000Z",
-          "week": "Week 16",
-          "isInset": false,
-          "assessments": []
-        },
-        {
-          "date": "2025-12-19T12:00:00.000Z",
-          "week": "Week 16",
+          "date": "2025-11-21T12:00:00.000Z",
+          "week": "Week 12",
           "isInset": false,
           "assessments": [
             {
@@ -2936,6 +2717,309 @@
               "subject": "Physics",
               "type": "Speaking",
               "label": "Year 11 Physics Speaking - Topic: Topic C"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-22T12:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-23T12:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-24T12:00:00.000Z",
+          "week": "Week 13",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Physics",
+              "type": "Speaking",
+              "label": "Year 11 Physics Speaking - Topic: Topic D"
+            },
+            {
+              "subject": "Physics",
+              "type": "Practical",
+              "label": "Year 11 Physics Practical - _Topic: Topic A_"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-25T12:00:00.000Z",
+          "week": "Week 13",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Biology",
+              "type": "Speaking",
+              "label": "Year 11 **Biology** Speaking - Topic: Topic D"
+            },
+            {
+              "subject": "Biology",
+              "type": "Practical",
+              "label": "Year 11 Biology Practical - Topic: Topic D"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-26T12:00:00.000Z",
+          "week": "Week 13",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-27T12:00:00.000Z",
+          "week": "Week 13",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-28T12:00:00.000Z",
+          "week": "Week 13",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Biology",
+              "type": "Practical",
+              "label": "Year 11 Biology Practical - Topic: Topic A"
+            },
+            {
+              "subject": "Computer Science",
+              "type": "Practical",
+              "label": "Year 11 Computer Science Practical - Topic: Topic C"
+            },
+            {
+              "subject": "Computer Science",
+              "type": "Practical",
+              "label": "Year 11 **Computer Science** Practical - _Topic: Topic C_"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-29T12:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-30T12:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-01T12:00:00.000Z",
+          "week": "Week 14",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-02T12:00:00.000Z",
+          "week": "Week 14",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-03T12:00:00.000Z",
+          "week": "Week 14",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Physics",
+              "type": "Speaking",
+              "label": "Year 11 Physics Speaking - Topic: Topic C"
+            }
+          ]
+        },
+        {
+          "date": "2025-12-04T12:00:00.000Z",
+          "week": "Week 14",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Biology",
+              "type": "Exam",
+              "label": "Year 11 Biology Exam - Topic: Topic A"
+            },
+            {
+              "subject": "Chemistry",
+              "type": "Speaking",
+              "label": "Year 11 Chemistry Speaking - Topic: Topic A"
+            },
+            {
+              "subject": "Physics",
+              "type": "Speaking",
+              "label": "Year 11 Physics Speaking - Topic: Topic D"
+            }
+          ]
+        },
+        {
+          "date": "2025-12-05T12:00:00.000Z",
+          "week": "Week 14",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-06T12:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-07T12:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-08T12:00:00.000Z",
+          "week": "Week 15",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-09T12:00:00.000Z",
+          "week": "Week 15",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-10T12:00:00.000Z",
+          "week": "Week 15",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-11T12:00:00.000Z",
+          "week": "Week 15",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-12T12:00:00.000Z",
+          "week": "Week 15",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-13T12:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-14T12:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-15T12:00:00.000Z",
+          "week": "Week 16",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Biology",
+              "type": "Speaking",
+              "label": "Year 11 **Biology** Speaking - Topic: Topic A"
+            },
+            {
+              "subject": "Chemistry",
+              "type": "Practical",
+              "label": "Year 11 Chemistry Practical - _Topic: Topic C_"
+            }
+          ]
+        },
+        {
+          "date": "2025-12-16T12:00:00.000Z",
+          "week": "Week 16",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "English Lit",
+              "type": "Speaking",
+              "label": "Year 11 English Lit Speaking - Topic: Topic C"
+            },
+            {
+              "subject": "Biology",
+              "type": "Practical",
+              "label": "Year 11 Biology Practical - Topic: Topic D"
+            },
+            {
+              "subject": "Physics",
+              "type": "Exam",
+              "label": "Year 11 Physics Exam - Topic: Topic D"
+            }
+          ]
+        },
+        {
+          "date": "2025-12-17T12:00:00.000Z",
+          "week": "Week 16",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Maths",
+              "type": "Speaking",
+              "label": "Year 11 Maths Speaking - Topic: Topic A"
+            },
+            {
+              "subject": "Biology",
+              "type": "Exam",
+              "label": "Year 11 Biology Exam - Topic: Topic D"
+            },
+            {
+              "subject": "Computer Science",
+              "type": "Exam",
+              "label": "Year 11 Computer Science Exam - Topic: Topic A"
+            }
+          ]
+        },
+        {
+          "date": "2025-12-18T12:00:00.000Z",
+          "week": "Week 16",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "English Lit",
+              "type": "Practical",
+              "label": "Year 11 English Lit Practical - Topic: Topic B"
+            },
+            {
+              "subject": "Maths",
+              "type": "Practical",
+              "label": "Year 11 Maths Practical - Topic: Topic B"
+            },
+            {
+              "subject": "Physics",
+              "type": "Practical",
+              "label": "Year 11 Physics Practical - Topic: Topic A"
+            }
+          ]
+        },
+        {
+          "date": "2025-12-19T12:00:00.000Z",
+          "week": "Week 16",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "English Lit",
+              "type": "Exam",
+              "label": "Year 11 English Lit Exam - Topic: Topic C"
+            },
+            {
+              "subject": "Chemistry",
+              "type": "Speaking",
+              "label": "Year 11 Chemistry Speaking - Topic: Topic B"
+            },
+            {
+              "subject": "Maths",
+              "type": "Practical",
+              "label": "Year 11 Maths Practical - Topic: Topic B"
             }
           ]
         },
@@ -2957,14 +3041,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Physics",
+              "subject": "Chemistry",
               "type": "Speaking",
-              "label": "Year 11 Physics Speaking - Topic: Topic D"
+              "label": "Year 11 Chemistry Speaking - Topic: Topic A"
             },
             {
-              "subject": "Physics",
+              "subject": "Biology",
               "type": "Practical",
-              "label": "Year 11 Physics Practical - Topic: Topic D"
+              "label": "Year 11 Biology Practical - _Topic: Topic D_"
             }
           ]
         },
@@ -2972,39 +3056,16 @@
           "date": "2025-12-23T12:00:00.000Z",
           "week": "Week 17",
           "isInset": false,
-          "assessments": []
-        },
-        {
-          "date": "2025-12-24T12:00:00.000Z",
-          "week": "Week 17",
-          "isInset": false,
           "assessments": [
             {
-              "subject": "Biology",
-              "type": "Speaking",
-              "label": "Year 11 Biology Speaking - Topic: Topic B"
-            },
-            {
-              "subject": "Physics",
-              "type": "Speaking",
-              "label": "Year 11 Physics Speaking - Topic: Topic C"
-            }
-          ]
-        },
-        {
-          "date": "2025-12-25T12:00:00.000Z",
-          "week": "Week 17",
-          "isInset": false,
-          "assessments": [
-            {
-              "subject": "Maths",
-              "type": "Exam",
-              "label": "Year 11 Maths Exam - Topic: Topic D"
-            },
-            {
-              "subject": "Biology",
+              "subject": "Chemistry",
               "type": "Practical",
-              "label": "Year 11 Biology Practical - Topic: Topic A"
+              "label": "Year 11 Chemistry Practical - Topic: Topic B"
+            },
+            {
+              "subject": "Computer Science",
+              "type": "Practical",
+              "label": "Year 11 Computer Science Practical - Topic: Topic B"
             },
             {
               "subject": "Computer Science",
@@ -3014,16 +3075,34 @@
           ]
         },
         {
-          "date": "2025-12-26T12:00:00.000Z",
+          "date": "2025-12-24T12:00:00.000Z",
           "week": "Week 17",
           "isInset": false,
           "assessments": [
             {
-              "subject": "Maths",
-              "type": "Speaking",
-              "label": "Year 11 Maths Speaking - Topic: Topic C"
+              "subject": "Computer Science",
+              "type": "Practical",
+              "label": "Year 11 Computer Science Practical - Topic: Topic D"
             }
           ]
+        },
+        {
+          "date": "2025-12-25T12:00:00.000Z",
+          "week": "Week 17",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Physics",
+              "type": "Exam",
+              "label": "Year 11 **Physics** Exam - Topic: Topic B"
+            }
+          ]
+        },
+        {
+          "date": "2025-12-26T12:00:00.000Z",
+          "week": "Week 17",
+          "isInset": false,
+          "assessments": []
         },
         {
           "date": "2025-12-27T12:00:00.000Z",
@@ -3041,7 +3120,18 @@
           "date": "2025-12-29T12:00:00.000Z",
           "week": "Week 18",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Biology",
+              "type": "Exam",
+              "label": "Year 11 Biology Exam - Topic: Topic B"
+            },
+            {
+              "subject": "Biology",
+              "type": "Speaking",
+              "label": "Year 11 Biology Speaking - _Topic: Topic D_"
+            }
+          ]
         },
         {
           "date": "2025-12-30T12:00:00.000Z",
@@ -3055,9 +3145,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Physics",
+              "subject": "Chemistry",
               "type": "Speaking",
-              "label": "Year 11 Physics Speaking - Topic: Topic C"
+              "label": "Year 11 Chemistry Speaking - Topic: Topic A"
+            },
+            {
+              "subject": "English Lit",
+              "type": "Exam",
+              "label": "Year 11 English Lit Exam - Topic: Topic A"
             }
           ]
         },
@@ -3067,19 +3162,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Biology",
-              "type": "Exam",
-              "label": "Year 11 Biology Exam - Topic: Topic A"
-            },
-            {
-              "subject": "Chemistry",
-              "type": "Speaking",
-              "label": "Year 11 Chemistry Speaking - Topic: Topic A"
-            },
-            {
               "subject": "Physics",
-              "type": "Speaking",
-              "label": "Year 11 Physics Speaking - Topic: Topic D"
+              "type": "Exam",
+              "label": "Year 11 Physics Exam - Topic: Topic B"
             }
           ]
         },
@@ -3107,14 +3192,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Biology",
+              "subject": "Chemistry",
               "type": "Speaking",
-              "label": "Year 11 Biology Speaking - Topic: Topic B"
-            },
-            {
-              "subject": "Physics",
-              "type": "Exam",
-              "label": "Year 11 Physics Exam - Topic: Topic C"
+              "label": "Year 11 Chemistry Speaking - Topic: Topic D"
             }
           ]
         },
@@ -3124,19 +3204,19 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Computer Science",
-              "type": "Practical",
-              "label": "Year 11 Computer Science Practical - Topic: Topic C"
+              "subject": "Biology",
+              "type": "Speaking",
+              "label": "Year 11 Biology Speaking - Topic: Topic D"
             },
             {
               "subject": "Chemistry",
               "type": "Exam",
-              "label": "Year 11 Chemistry Exam - Topic: Topic B"
+              "label": "Year 11 Chemistry Exam - Topic: Topic A"
             },
             {
-              "subject": "Computer Science",
-              "type": "Speaking",
-              "label": "Year 11 Computer Science Speaking - Topic: Topic A"
+              "subject": "Maths",
+              "type": "Exam",
+              "label": "Year 11 Maths Exam - Topic: Topic C"
             }
           ]
         },
@@ -3146,9 +3226,19 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Computer Science",
+              "subject": "Chemistry",
               "type": "Speaking",
-              "label": "Year 11 Computer Science Speaking - Topic: Topic C"
+              "label": "Year 11 Chemistry Speaking - Topic: Topic D"
+            },
+            {
+              "subject": "Biology",
+              "type": "Speaking",
+              "label": "Year 11 Biology Speaking - Topic: Topic A"
+            },
+            {
+              "subject": "Maths",
+              "type": "Speaking",
+              "label": "Year 11 Maths Speaking - Topic: Topic B"
             }
           ]
         },
@@ -3156,13 +3246,40 @@
           "date": "2026-01-08T12:00:00.000Z",
           "week": "Week 19",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Biology",
+              "type": "Exam",
+              "label": "Year 11 Biology Exam - Topic: Topic D"
+            },
+            {
+              "subject": "Chemistry",
+              "type": "Exam",
+              "label": "Year 11 Chemistry Exam - Topic: Topic C"
+            },
+            {
+              "subject": "Biology",
+              "type": "Practical",
+              "label": "Year 11 Biology Practical - Topic: Topic A"
+            }
+          ]
         },
         {
           "date": "2026-01-09T12:00:00.000Z",
           "week": "Week 19",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Physics",
+              "type": "Exam",
+              "label": "Year 11 **Physics** Exam - Topic: Topic D"
+            },
+            {
+              "subject": "Chemistry",
+              "type": "Speaking",
+              "label": "Year 11 Chemistry Speaking - Topic: Topic A"
+            }
+          ]
         },
         {
           "date": "2026-01-10T12:00:00.000Z",
@@ -3180,7 +3297,23 @@
           "date": "2026-01-12T12:00:00.000Z",
           "week": "Week 20",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "English Lit",
+              "type": "Exam",
+              "label": "Year 11 English Lit Exam - Topic: Topic B"
+            },
+            {
+              "subject": "English Lit",
+              "type": "Speaking",
+              "label": "Year 11 English Lit Speaking - _Topic: Topic B_"
+            },
+            {
+              "subject": "Physics",
+              "type": "Practical",
+              "label": "Year 11 Physics Practical - Topic: Topic D"
+            }
+          ]
         },
         {
           "date": "2026-01-13T12:00:00.000Z",
@@ -3188,14 +3321,19 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "English Lit",
-              "type": "Speaking",
-              "label": "Year 11 English Lit Speaking - Topic: Topic D"
+              "subject": "Biology",
+              "type": "Exam",
+              "label": "Year 11 Biology Exam - Topic: Topic C"
             },
             {
-              "subject": "Computer Science",
-              "type": "Exam",
-              "label": "Year 11 Computer Science Exam - Topic: Topic C"
+              "subject": "Physics",
+              "type": "Practical",
+              "label": "Year 11 Physics Practical - Topic: Topic C"
+            },
+            {
+              "subject": "Biology",
+              "type": "Practical",
+              "label": "Year 11 Biology Practical - Topic: Topic D"
             }
           ]
         },
@@ -3205,9 +3343,19 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Chemistry",
+              "subject": "English Lit",
+              "type": "Speaking",
+              "label": "Year 11 **English Lit** Speaking - Topic: Topic D"
+            },
+            {
+              "subject": "English Lit",
+              "type": "Speaking",
+              "label": "Year 11 English Lit Speaking - Topic: Topic D"
+            },
+            {
+              "subject": "English Lit",
               "type": "Practical",
-              "label": "Year 11 Chemistry Practical - Topic: Topic A"
+              "label": "Year 11 English Lit Practical - Topic: Topic D"
             }
           ]
         },
@@ -3216,6 +3364,16 @@
           "week": "Week 20",
           "isInset": false,
           "assessments": [
+            {
+              "subject": "Chemistry",
+              "type": "Exam",
+              "label": "Year 11 Chemistry Exam - Topic: Topic B"
+            },
+            {
+              "subject": "Maths",
+              "type": "Speaking",
+              "label": "Year 11 Maths Speaking - Topic: Topic C"
+            },
             {
               "subject": "Physics",
               "type": "Practical",
@@ -3230,18 +3388,8 @@
           "assessments": [
             {
               "subject": "English Lit",
-              "type": "Exam",
-              "label": "Year 11 English Lit Exam - Topic: Topic C"
-            },
-            {
-              "subject": "Chemistry",
               "type": "Speaking",
-              "label": "Year 11 Chemistry Speaking - Topic: Topic B"
-            },
-            {
-              "subject": "Maths",
-              "type": "Practical",
-              "label": "Year 11 Maths Practical - Topic: Topic B"
+              "label": "Year 11 English Lit Speaking - Topic: Topic D"
             }
           ]
         },
@@ -3280,19 +3428,19 @@
               "label": "Year 12 Psychology Exam - Intro"
             },
             {
-              "subject": "Psychology",
-              "type": "Essay",
-              "label": "Year 12 Psychology Essay - Topic: Topic B"
-            },
-            {
-              "subject": "Sociology",
-              "type": "Presentation",
-              "label": "Year 12 Sociology Presentation - Topic: Topic D"
-            },
-            {
               "subject": "Economics",
-              "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic C"
+              "type": "Exam",
+              "label": "Year 12 **Economics** Exam - Topic: Topic B"
+            },
+            {
+              "subject": "Psychology",
+              "type": "Exam",
+              "label": "Year 12 Psychology Exam - _Topic: Topic D_"
+            },
+            {
+              "subject": "Psychology",
+              "type": "Exam",
+              "label": "Year 12 **Psychology** Exam - _Topic: Topic B_"
             }
           ]
         },
@@ -3300,13 +3448,7 @@
           "date": "2025-09-02T12:00:00.000Z",
           "week": "Week 1",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Further Maths",
-              "type": "Essay",
-              "label": "Year 12 Further Maths Essay - Topic: Topic B"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2025-09-03T12:00:00.000Z",
@@ -3314,9 +3456,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Economics",
+              "subject": "Sociology",
               "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic B"
+              "label": "Year 12 Sociology Presentation - Topic: Topic A"
+            },
+            {
+              "subject": "Economics",
+              "type": "Exam",
+              "label": "Year 12 Economics Exam - Topic: Topic A"
             }
           ]
         },
@@ -3326,14 +3473,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Further Maths",
-              "type": "Presentation",
-              "label": "Year 12 Further Maths Presentation - Topic: Topic B"
+              "subject": "Sociology",
+              "type": "Exam",
+              "label": "Year 12 Sociology Exam - Topic: Topic D"
             },
             {
               "subject": "Sociology",
               "type": "Exam",
-              "label": "Year 12 Sociology Exam - Topic: Topic C"
+              "label": "Year 12 Sociology Exam - Topic: Topic D"
             }
           ]
         },
@@ -3343,9 +3490,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Economics",
-              "type": "Exam",
-              "label": "Year 12 Economics Exam - Topic: Topic B"
+              "subject": "Psychology",
+              "type": "Essay",
+              "label": "Year 12 Psychology Essay - Topic: Topic D"
             }
           ]
         },
@@ -3367,14 +3514,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Further Maths",
+              "subject": "Economics",
               "type": "Exam",
-              "label": "Year 12 Further Maths Exam - Topic: Topic D"
+              "label": "Year 12 Economics Exam - Topic: Topic C"
             },
             {
-              "subject": "Further Maths",
+              "subject": "Sociology",
               "type": "Presentation",
-              "label": "Year 12 Further Maths Presentation - Topic: Topic A"
+              "label": "Year 12 Sociology Presentation - _Topic: Topic C_"
             }
           ]
         },
@@ -3382,18 +3529,7 @@
           "date": "2025-09-09T12:00:00.000Z",
           "week": "Week 2",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Economics",
-              "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic A"
-            },
-            {
-              "subject": "Sociology",
-              "type": "Exam",
-              "label": "Year 12 Sociology Exam - Topic: Topic A"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2025-09-10T12:00:00.000Z",
@@ -3401,9 +3537,19 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Sociology",
+              "subject": "Further Maths",
               "type": "Exam",
-              "label": "Year 12 Sociology Exam - Topic: Topic B"
+              "label": "Year 12 Further Maths Exam - Topic: Topic A"
+            },
+            {
+              "subject": "Economics",
+              "type": "Essay",
+              "label": "Year 12 Economics Essay - Topic: Topic D"
+            },
+            {
+              "subject": "Psychology",
+              "type": "Essay",
+              "label": "Year 12 Psychology Essay - Topic: Topic B"
             }
           ]
         },
@@ -3411,19 +3557,29 @@
           "date": "2025-09-11T12:00:00.000Z",
           "week": "Week 2",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Economics",
+              "type": "Exam",
+              "label": "Year 12 **Economics** Exam - Topic: Topic C"
+            },
+            {
+              "subject": "Sociology",
+              "type": "Presentation",
+              "label": "Year 12 Sociology Presentation - Topic: Topic B"
+            },
+            {
+              "subject": "Sociology",
+              "type": "Exam",
+              "label": "Year 12 Sociology Exam - Topic: Topic C"
+            }
+          ]
         },
         {
           "date": "2025-09-12T12:00:00.000Z",
           "week": "Week 2",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Economics",
-              "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic D"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2025-09-13T12:00:00.000Z",
@@ -3443,19 +3599,14 @@
           "isInset": false,
           "assessments": [
             {
+              "subject": "Sociology",
+              "type": "Presentation",
+              "label": "Year 12 Sociology Presentation - Topic: Topic D"
+            },
+            {
               "subject": "Further Maths",
               "type": "Presentation",
-              "label": "Year 12 Further Maths Presentation - Topic: Topic D"
-            },
-            {
-              "subject": "Economics",
-              "type": "Exam",
-              "label": "Year 12 Economics Exam - Topic: Topic A"
-            },
-            {
-              "subject": "Psychology",
-              "type": "Exam",
-              "label": "Year 12 Psychology Exam - Topic: Topic C"
+              "label": "Year 12 Further Maths Presentation - _Topic: Topic B_"
             }
           ]
         },
@@ -3465,19 +3616,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Economics",
-              "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic D"
-            },
-            {
-              "subject": "Economics",
-              "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic A"
-            },
-            {
-              "subject": "Psychology",
-              "type": "Presentation",
-              "label": "Year 12 Psychology Presentation - Topic: Topic B"
+              "subject": "Sociology",
+              "type": "Essay",
+              "label": "Year 12 **Sociology** Essay - Topic: Topic A"
             }
           ]
         },
@@ -3488,18 +3629,13 @@
           "assessments": [
             {
               "subject": "Further Maths",
-              "type": "Exam",
-              "label": "Year 12 Further Maths Exam - Topic: Topic D"
-            },
-            {
-              "subject": "Economics",
-              "type": "Exam",
-              "label": "Year 12 Economics Exam - Topic: Topic C"
-            },
-            {
-              "subject": "Further Maths",
               "type": "Essay",
-              "label": "Year 12 Further Maths Essay - Topic: Topic A"
+              "label": "Year 12 Further Maths Essay - Topic: Topic D"
+            },
+            {
+              "subject": "Psychology",
+              "type": "Presentation",
+              "label": "Year 12 Psychology Presentation - Topic: Topic C"
             }
           ]
         },
@@ -3507,24 +3643,19 @@
           "date": "2025-09-18T12:00:00.000Z",
           "week": "Week 3",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Sociology",
-              "type": "Exam",
-              "label": "Year 12 Sociology Exam - Topic: Topic A"
-            },
-            {
-              "subject": "Further Maths",
-              "type": "Presentation",
-              "label": "Year 12 Further Maths Presentation - Topic: Topic C"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2025-09-19T12:00:00.000Z",
           "week": "Week 3",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Further Maths",
+              "type": "Essay",
+              "label": "Year 12 Further Maths Essay - Topic: Topic B"
+            }
+          ]
         },
         {
           "date": "2025-09-20T12:00:00.000Z",
@@ -3544,19 +3675,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Sociology",
-              "type": "Exam",
-              "label": "Year 12 Sociology Exam - Topic: Topic B"
-            },
-            {
-              "subject": "Sociology",
+              "subject": "Further Maths",
               "type": "Presentation",
-              "label": "Year 12 Sociology Presentation - Topic: Topic C"
+              "label": "Year 12 Further Maths Presentation - Topic: Topic C"
             },
             {
-              "subject": "Economics",
-              "type": "Exam",
-              "label": "Year 12 Economics Exam - Topic: Topic B"
+              "subject": "Further Maths",
+              "type": "Presentation",
+              "label": "Year 12 Further Maths Presentation - _Topic: Topic D_"
             }
           ]
         },
@@ -3569,16 +3695,6 @@
               "subject": "Sociology",
               "type": "Presentation",
               "label": "Year 12 Sociology Presentation - Topic: Topic D"
-            },
-            {
-              "subject": "Economics",
-              "type": "Essay",
-              "label": "Year 12 Economics Essay - Topic: Topic B"
-            },
-            {
-              "subject": "Economics",
-              "type": "Essay",
-              "label": "Year 12 Economics Essay - Topic: Topic C"
             }
           ]
         },
@@ -3589,18 +3705,18 @@
           "assessments": [
             {
               "subject": "Further Maths",
-              "type": "Presentation",
-              "label": "Year 12 Further Maths Presentation - Topic: Topic A"
-            },
-            {
-              "subject": "Further Maths",
-              "type": "Essay",
-              "label": "Year 12 Further Maths Essay - Topic: Topic C"
-            },
-            {
-              "subject": "Further Maths",
               "type": "Exam",
-              "label": "Year 12 Further Maths Exam - Topic: Topic B"
+              "label": "Year 12 Further Maths Exam - Topic: Topic A"
+            },
+            {
+              "subject": "Sociology",
+              "type": "Essay",
+              "label": "Year 12 Sociology Essay - Topic: Topic A"
+            },
+            {
+              "subject": "Economics",
+              "type": "Exam",
+              "label": "Year 12 Economics Exam - Topic: Topic B"
             }
           ]
         },
@@ -3611,8 +3727,8 @@
           "assessments": [
             {
               "subject": "Further Maths",
-              "type": "Presentation",
-              "label": "Year 12 Further Maths Presentation - Topic: Topic B"
+              "type": "Exam",
+              "label": "Year 12 Further Maths Exam - Topic: Topic C"
             }
           ]
         },
@@ -3640,14 +3756,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Further Maths",
-              "type": "Essay",
-              "label": "Year 12 Further Maths Essay - Topic: Topic A"
-            },
-            {
-              "subject": "Sociology",
-              "type": "Essay",
-              "label": "Year 12 Sociology Essay - Topic: Topic B"
+              "subject": "Economics",
+              "type": "Exam",
+              "label": "Year 12 Economics Exam - Topic: Topic B"
             }
           ]
         },
@@ -3655,7 +3766,23 @@
           "date": "2025-09-30T12:00:00.000Z",
           "week": "Week 5",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Psychology",
+              "type": "Presentation",
+              "label": "Year 12 Psychology Presentation - Topic: Topic A"
+            },
+            {
+              "subject": "Sociology",
+              "type": "Exam",
+              "label": "Year 12 Sociology Exam - Topic: Topic D"
+            },
+            {
+              "subject": "Economics",
+              "type": "Essay",
+              "label": "Year 12 Economics Essay - Topic: Topic A"
+            }
+          ]
         },
         {
           "date": "2025-10-01T12:00:00.000Z",
@@ -3663,9 +3790,19 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Psychology",
+              "subject": "Sociology",
+              "type": "Exam",
+              "label": "Year 12 **Sociology** Exam - Topic: Topic B"
+            },
+            {
+              "subject": "Sociology",
               "type": "Presentation",
-              "label": "Year 12 Psychology Presentation - Topic: Topic D"
+              "label": "Year 12 Sociology Presentation - Topic: Topic A"
+            },
+            {
+              "subject": "Sociology",
+              "type": "Exam",
+              "label": "Year 12 Sociology Exam - Topic: Topic B"
             }
           ]
         },
@@ -3673,24 +3810,24 @@
           "date": "2025-10-02T12:00:00.000Z",
           "week": "Week 5",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Psychology",
-              "type": "Presentation",
-              "label": "Year 12 Psychology Presentation - Topic: Topic C"
-            },
-            {
-              "subject": "Sociology",
-              "type": "Presentation",
-              "label": "Year 12 Sociology Presentation - Topic: Topic B"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2025-10-03T12:00:00.000Z",
           "week": "Week 5",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Further Maths",
+              "type": "Essay",
+              "label": "Year 12 Further Maths Essay - Topic: Topic B"
+            },
+            {
+              "subject": "Further Maths",
+              "type": "Exam",
+              "label": "Year 12 Further Maths Exam - Topic: Topic A"
+            }
+          ]
         },
         {
           "date": "2025-10-04T12:00:00.000Z",
@@ -3710,19 +3847,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Sociology",
-              "type": "Presentation",
-              "label": "Year 12 Sociology Presentation - Topic: Topic A"
-            },
-            {
-              "subject": "Sociology",
-              "type": "Exam",
-              "label": "Year 12 Sociology Exam - Topic: Topic A"
-            },
-            {
-              "subject": "Economics",
+              "subject": "Psychology",
               "type": "Essay",
-              "label": "Year 12 Economics Essay - Topic: Topic B"
+              "label": "Year 12 **Psychology** Essay - Topic: Topic D"
             }
           ]
         },
@@ -3730,7 +3857,18 @@
           "date": "2025-10-07T12:00:00.000Z",
           "week": "Week 6",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Further Maths",
+              "type": "Exam",
+              "label": "Year 12 Further Maths Exam - Topic: Topic B"
+            },
+            {
+              "subject": "Economics",
+              "type": "Essay",
+              "label": "Year 12 Economics Essay - Topic: Topic C"
+            }
+          ]
         },
         {
           "date": "2025-10-08T12:00:00.000Z",
@@ -3738,9 +3876,19 @@
           "isInset": false,
           "assessments": [
             {
+              "subject": "Further Maths",
+              "type": "Exam",
+              "label": "Year 12 Further Maths Exam - Topic: Topic C"
+            },
+            {
+              "subject": "Sociology",
+              "type": "Presentation",
+              "label": "Year 12 Sociology Presentation - Topic: Topic C"
+            },
+            {
               "subject": "Psychology",
-              "type": "Essay",
-              "label": "Year 12 Psychology Essay - Topic: Topic C"
+              "type": "Presentation",
+              "label": "Year 12 Psychology Presentation - Topic: Topic D"
             }
           ]
         },
@@ -3748,7 +3896,18 @@
           "date": "2025-10-09T12:00:00.000Z",
           "week": "Week 6",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Further Maths",
+              "type": "Essay",
+              "label": "Year 12 Further Maths Essay - Topic: Topic B"
+            },
+            {
+              "subject": "Sociology",
+              "type": "Presentation",
+              "label": "Year 12 Sociology Presentation - Topic: Topic C"
+            }
+          ]
         },
         {
           "date": "2025-10-10T12:00:00.000Z",
@@ -3756,9 +3915,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Psychology",
+              "subject": "Economics",
               "type": "Presentation",
-              "label": "Year 12 Psychology Presentation - Topic: Topic B"
+              "label": "Year 12 Economics Presentation - Topic: Topic A"
+            },
+            {
+              "subject": "Psychology",
+              "type": "Essay",
+              "label": "Year 12 Psychology Essay - Topic: Topic B"
             }
           ]
         },
@@ -3780,19 +3944,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Economics",
-              "type": "Essay",
-              "label": "Year 12 Economics Essay - Topic: Topic A"
+              "subject": "Further Maths",
+              "type": "Presentation",
+              "label": "Year 12 Further Maths Presentation - Topic: Topic D"
             },
             {
-              "subject": "Economics",
+              "subject": "Psychology",
               "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic A"
-            },
-            {
-              "subject": "Economics",
-              "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic C"
+              "label": "Year 12 Psychology Presentation - _Topic: Topic B_"
             }
           ]
         },
@@ -3803,8 +3962,13 @@
           "assessments": [
             {
               "subject": "Economics",
-              "type": "Exam",
-              "label": "Year 12 Economics Exam - Topic: Topic A"
+              "type": "Presentation",
+              "label": "Year 12 Economics Presentation - Topic: Topic C"
+            },
+            {
+              "subject": "Sociology",
+              "type": "Presentation",
+              "label": "Year 12 Sociology Presentation - Topic: Topic B"
             }
           ]
         },
@@ -3814,19 +3978,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Further Maths",
-              "type": "Exam",
-              "label": "Year 12 Further Maths Exam - Topic: Topic A"
-            },
-            {
               "subject": "Economics",
               "type": "Essay",
               "label": "Year 12 Economics Essay - Topic: Topic D"
-            },
-            {
-              "subject": "Psychology",
-              "type": "Essay",
-              "label": "Year 12 Psychology Essay - Topic: Topic B"
             }
           ]
         },
@@ -3834,23 +3988,7 @@
           "date": "2025-10-16T12:00:00.000Z",
           "week": "Week 7",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Economics",
-              "type": "Exam",
-              "label": "Year 12 Economics Exam - Topic: Topic B"
-            },
-            {
-              "subject": "Economics",
-              "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic B"
-            },
-            {
-              "subject": "Psychology",
-              "type": "Essay",
-              "label": "Year 12 Psychology Essay - Topic: Topic B"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2025-10-17T12:00:00.000Z",
@@ -3858,14 +3996,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Economics",
-              "type": "Exam",
-              "label": "Year 12 Economics Exam - Topic: Topic D"
-            },
-            {
-              "subject": "Further Maths",
-              "type": "Exam",
-              "label": "Year 12 Further Maths Exam - Topic: Topic D"
+              "subject": "Psychology",
+              "type": "Essay",
+              "label": "Year 12 Psychology Essay - Topic: Topic D"
             }
           ]
         },
@@ -3888,18 +4021,8 @@
           "assessments": [
             {
               "subject": "Sociology",
-              "type": "Exam",
-              "label": "Year 12 Sociology Exam - Topic: Topic B"
-            },
-            {
-              "subject": "Sociology",
               "type": "Essay",
               "label": "Year 12 Sociology Essay - Topic: Topic C"
-            },
-            {
-              "subject": "Economics",
-              "type": "Exam",
-              "label": "Year 12 Economics Exam - Topic: Topic C"
             }
           ]
         },
@@ -3915,19 +4038,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Further Maths",
-              "type": "Presentation",
-              "label": "Year 12 Further Maths Presentation - Topic: Topic A"
-            },
-            {
-              "subject": "Psychology",
-              "type": "Essay",
-              "label": "Year 12 Psychology Essay - Topic: Topic B"
-            },
-            {
-              "subject": "Further Maths",
-              "type": "Essay",
-              "label": "Year 12 Further Maths Essay - Topic: Topic B"
+              "subject": "Sociology",
+              "type": "Exam",
+              "label": "Year 12 Sociology Exam - Topic: Topic B"
             }
           ]
         },
@@ -3935,18 +4048,7 @@
           "date": "2025-10-23T12:00:00.000Z",
           "week": "Week 8",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Further Maths",
-              "type": "Presentation",
-              "label": "Year 12 Further Maths Presentation - Topic: Topic C"
-            },
-            {
-              "subject": "Further Maths",
-              "type": "Presentation",
-              "label": "Year 12 Further Maths Presentation - Topic: Topic B"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2025-10-24T12:00:00.000Z",
@@ -3954,19 +4056,19 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Further Maths",
+              "subject": "Sociology",
               "type": "Essay",
-              "label": "Year 12 Further Maths Essay - Topic: Topic B"
+              "label": "Year 12 Sociology Essay - Topic: Topic A"
             },
             {
-              "subject": "Further Maths",
+              "subject": "Economics",
               "type": "Presentation",
-              "label": "Year 12 Further Maths Presentation - Topic: Topic B"
+              "label": "Year 12 Economics Presentation - Topic: Topic D"
             },
             {
               "subject": "Psychology",
               "type": "Presentation",
-              "label": "Year 12 Psychology Presentation - Topic: Topic B"
+              "label": "Year 12 Psychology Presentation - Topic: Topic D"
             }
           ]
         },
@@ -3991,6 +4093,16 @@
               "subject": "Psychology",
               "type": "Exam",
               "label": "Year 12 Psychology Exam - Topic: Topic C"
+            },
+            {
+              "subject": "Sociology",
+              "type": "Presentation",
+              "label": "Year 12 Sociology Presentation - _Topic: Topic B_"
+            },
+            {
+              "subject": "Sociology",
+              "type": "Presentation",
+              "label": "Year 12 Sociology Presentation - Topic: Topic C"
             }
           ]
         },
@@ -4001,8 +4113,13 @@
           "assessments": [
             {
               "subject": "Sociology",
+              "type": "Exam",
+              "label": "Year 12 Sociology Exam - Topic: Topic D"
+            },
+            {
+              "subject": "Psychology",
               "type": "Essay",
-              "label": "Year 12 Sociology Essay - Topic: Topic D"
+              "label": "Year 12 Psychology Essay - Topic: Topic D"
             }
           ]
         },
@@ -4010,30 +4127,41 @@
           "date": "2025-10-29T12:00:00.000Z",
           "week": "Week 9",
           "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-10-30T12:00:00.000Z",
+          "week": "Week 9",
+          "isInset": false,
           "assessments": [
+            {
+              "subject": "Sociology",
+              "type": "Essay",
+              "label": "Year 12 Sociology Essay - Topic: Topic B"
+            }
+          ]
+        },
+        {
+          "date": "2025-10-31T12:00:00.000Z",
+          "week": "Week 9",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Psychology",
+              "type": "Presentation",
+              "label": "Year 12 **Psychology** Presentation - Topic: Topic B"
+            },
             {
               "subject": "Psychology",
               "type": "Exam",
               "label": "Year 12 Psychology Exam - Topic: Topic C"
             },
             {
-              "subject": "Further Maths",
+              "subject": "Economics",
               "type": "Essay",
-              "label": "Year 12 Further Maths Essay - Topic: Topic D"
+              "label": "Year 12 Economics Essay - Topic: Topic B"
             }
           ]
-        },
-        {
-          "date": "2025-10-30T12:00:00.000Z",
-          "week": "Week 9",
-          "isInset": false,
-          "assessments": []
-        },
-        {
-          "date": "2025-10-31T12:00:00.000Z",
-          "week": "Week 9",
-          "isInset": false,
-          "assessments": []
         },
         {
           "date": "2025-11-01T12:00:00.000Z",
@@ -4053,9 +4181,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Further Maths",
-              "type": "Exam",
-              "label": "Year 12 Further Maths Exam - Topic: Topic B"
+              "subject": "Sociology",
+              "type": "Presentation",
+              "label": "Year 12 Sociology Presentation - Topic: Topic D"
             }
           ]
         },
@@ -4065,14 +4193,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Further Maths",
-              "type": "Exam",
-              "label": "Year 12 Further Maths Exam - Topic: Topic A"
+              "subject": "Economics",
+              "type": "Presentation",
+              "label": "Year 12 Economics Presentation - Topic: Topic D"
             },
             {
-              "subject": "Psychology",
-              "type": "Essay",
-              "label": "Year 12 Psychology Essay - Topic: Topic B"
+              "subject": "Sociology",
+              "type": "Presentation",
+              "label": "Year 12 Sociology Presentation - Topic: Topic C"
             }
           ]
         },
@@ -4082,14 +4210,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Psychology",
-              "type": "Essay",
-              "label": "Year 12 Psychology Essay - Topic: Topic A"
-            },
-            {
-              "subject": "Sociology",
-              "type": "Essay",
-              "label": "Year 12 Sociology Essay - Topic: Topic A"
+              "subject": "Economics",
+              "type": "Exam",
+              "label": "Year 12 **Economics** Exam - Topic: Topic B"
             }
           ]
         },
@@ -4099,14 +4222,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Further Maths",
+              "subject": "Economics",
               "type": "Essay",
-              "label": "Year 12 Further Maths Essay - Topic: Topic B"
+              "label": "Year 12 Economics Essay - Topic: Topic D"
             },
             {
               "subject": "Further Maths",
               "type": "Exam",
-              "label": "Year 12 Further Maths Exam - Topic: Topic A"
+              "label": "Year 12 Further Maths Exam - Topic: Topic D"
             }
           ]
         },
@@ -4116,9 +4239,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Psychology",
-              "type": "Essay",
-              "label": "Year 12 Psychology Essay - Topic: Topic A"
+              "subject": "Economics",
+              "type": "Presentation",
+              "label": "Year 12 Economics Presentation - Topic: Topic B"
+            },
+            {
+              "subject": "Sociology",
+              "type": "Exam",
+              "label": "Year 12 Sociology Exam - Topic: Topic B"
             }
           ]
         },
@@ -4138,45 +4266,13 @@
           "date": "2025-11-10T12:00:00.000Z",
           "week": "Week 11",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Sociology",
-              "type": "Presentation",
-              "label": "Year 12 Sociology Presentation - Topic: Topic D"
-            },
-            {
-              "subject": "Sociology",
-              "type": "Essay",
-              "label": "Year 12 Sociology Essay - Topic: Topic C"
-            },
-            {
-              "subject": "Further Maths",
-              "type": "Presentation",
-              "label": "Year 12 Further Maths Presentation - Topic: Topic A"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2025-11-11T12:00:00.000Z",
           "week": "Week 11",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Economics",
-              "type": "Essay",
-              "label": "Year 12 Economics Essay - Topic: Topic B"
-            },
-            {
-              "subject": "Further Maths",
-              "type": "Presentation",
-              "label": "Year 12 Further Maths Presentation - Topic: Topic A"
-            },
-            {
-              "subject": "Economics",
-              "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic B"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2025-11-12T12:00:00.000Z",
@@ -4186,17 +4282,7 @@
             {
               "subject": "Further Maths",
               "type": "Essay",
-              "label": "Year 12 Further Maths Essay - Topic: Topic B"
-            },
-            {
-              "subject": "Economics",
-              "type": "Essay",
-              "label": "Year 12 Economics Essay - Topic: Topic D"
-            },
-            {
-              "subject": "Psychology",
-              "type": "Presentation",
-              "label": "Year 12 Psychology Presentation - Topic: Topic B"
+              "label": "Year 12 Further Maths Essay - Topic: Topic A"
             }
           ]
         },
@@ -4212,9 +4298,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Further Maths",
+              "subject": "Economics",
+              "type": "Exam",
+              "label": "Year 12 Economics Exam - Topic: Topic C"
+            },
+            {
+              "subject": "Sociology",
               "type": "Essay",
-              "label": "Year 12 Further Maths Essay - Topic: Topic D"
+              "label": "Year 12 Sociology Essay - Topic: Topic D"
             }
           ]
         },
@@ -4276,23 +4367,7 @@
           "date": "2025-11-24T12:00:00.000Z",
           "week": "Week 13",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Psychology",
-              "type": "Presentation",
-              "label": "Year 12 Psychology Presentation - Topic: Topic C"
-            },
-            {
-              "subject": "Economics",
-              "type": "Exam",
-              "label": "Year 12 Economics Exam - Topic: Topic D"
-            },
-            {
-              "subject": "Economics",
-              "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic C"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2025-11-25T12:00:00.000Z",
@@ -4300,9 +4375,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Sociology",
+              "subject": "Economics",
               "type": "Exam",
-              "label": "Year 12 Sociology Exam - Topic: Topic B"
+              "label": "Year 12 **Economics** Exam - Topic: Topic C"
             }
           ]
         },
@@ -4312,14 +4387,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Psychology",
+              "subject": "Economics",
               "type": "Presentation",
-              "label": "Year 12 Psychology Presentation - Topic: Topic B"
+              "label": "Year 12 Economics Presentation - Topic: Topic A"
             },
             {
-              "subject": "Psychology",
-              "type": "Essay",
-              "label": "Year 12 Psychology Essay - Topic: Topic D"
+              "subject": "Sociology",
+              "type": "Exam",
+              "label": "Year 12 Sociology Exam - Topic: Topic D"
             }
           ]
         },
@@ -4329,9 +4404,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Sociology",
+              "subject": "Psychology",
+              "type": "Presentation",
+              "label": "Year 12 Psychology Presentation - Topic: Topic D"
+            },
+            {
+              "subject": "Economics",
               "type": "Essay",
-              "label": "Year 12 Sociology Essay - Topic: Topic C"
+              "label": "Year 12 Economics Essay - Topic: Topic B"
             }
           ]
         },
@@ -4344,6 +4424,11 @@
               "subject": "Sociology",
               "type": "Exam",
               "label": "Year 12 Sociology Exam - Topic: Topic B"
+            },
+            {
+              "subject": "Economics",
+              "type": "Presentation",
+              "label": "Year 12 Economics Presentation - Topic: Topic B"
             }
           ]
         },
@@ -4371,19 +4456,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Sociology",
-              "type": "Essay",
-              "label": "Year 12 Sociology Essay - Topic: Topic A"
-            },
-            {
-              "subject": "Economics",
-              "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic D"
-            },
-            {
               "subject": "Psychology",
+              "type": "Essay",
+              "label": "Year 12 Psychology Essay - Topic: Topic A"
+            },
+            {
+              "subject": "Sociology",
               "type": "Presentation",
-              "label": "Year 12 Psychology Presentation - Topic: Topic D"
+              "label": "Year 12 Sociology Presentation - Topic: Topic C"
             }
           ]
         },
@@ -4391,23 +4471,7 @@
           "date": "2025-12-03T12:00:00.000Z",
           "week": "Week 14",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Psychology",
-              "type": "Exam",
-              "label": "Year 12 Psychology Exam - Topic: Topic C"
-            },
-            {
-              "subject": "Sociology",
-              "type": "Presentation",
-              "label": "Year 12 Sociology Presentation - Topic: Topic B"
-            },
-            {
-              "subject": "Further Maths",
-              "type": "Exam",
-              "label": "Year 12 Further Maths Exam - Topic: Topic B"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2025-12-04T12:00:00.000Z",
@@ -4416,13 +4480,13 @@
           "assessments": [
             {
               "subject": "Psychology",
-              "type": "Essay",
-              "label": "Year 12 Psychology Essay - Topic: Topic B"
+              "type": "Exam",
+              "label": "Year 12 Psychology Exam - Topic: Topic B"
             },
             {
               "subject": "Sociology",
-              "type": "Presentation",
-              "label": "Year 12 Sociology Presentation - Topic: Topic A"
+              "type": "Exam",
+              "label": "Year 12 Sociology Exam - Topic: Topic C"
             }
           ]
         },
@@ -4430,23 +4494,7 @@
           "date": "2025-12-05T12:00:00.000Z",
           "week": "Week 14",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Sociology",
-              "type": "Exam",
-              "label": "Year 12 Sociology Exam - Topic: Topic C"
-            },
-            {
-              "subject": "Sociology",
-              "type": "Essay",
-              "label": "Year 12 Sociology Essay - Topic: Topic D"
-            },
-            {
-              "subject": "Psychology",
-              "type": "Presentation",
-              "label": "Year 12 Psychology Presentation - Topic: Topic C"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2025-12-06T12:00:00.000Z",
@@ -4466,9 +4514,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Psychology",
+              "subject": "Sociology",
               "type": "Exam",
-              "label": "Year 12 Psychology Exam - Topic: Topic C"
+              "label": "Year 12 Sociology Exam - Topic: Topic B"
+            },
+            {
+              "subject": "Psychology",
+              "type": "Essay",
+              "label": "Year 12 Psychology Essay - _Topic: Topic D_"
             }
           ]
         },
@@ -4476,18 +4529,7 @@
           "date": "2025-12-09T12:00:00.000Z",
           "week": "Week 15",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Sociology",
-              "type": "Essay",
-              "label": "Year 12 Sociology Essay - Topic: Topic B"
-            },
-            {
-              "subject": "Sociology",
-              "type": "Presentation",
-              "label": "Year 12 Sociology Presentation - Topic: Topic D"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2025-12-10T12:00:00.000Z",
@@ -4499,30 +4541,13 @@
           "date": "2025-12-11T12:00:00.000Z",
           "week": "Week 15",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Economics",
-              "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic D"
-            },
-            {
-              "subject": "Sociology",
-              "type": "Presentation",
-              "label": "Year 12 Sociology Presentation - Topic: Topic C"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2025-12-12T12:00:00.000Z",
           "week": "Week 15",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Economics",
-              "type": "Exam",
-              "label": "Year 12 Economics Exam - Topic: Topic D"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2025-12-13T12:00:00.000Z",
@@ -4543,8 +4568,8 @@
           "assessments": [
             {
               "subject": "Sociology",
-              "type": "Essay",
-              "label": "Year 12 Sociology Essay - Topic: Topic C"
+              "type": "Presentation",
+              "label": "Year 12 **Sociology** Presentation - Topic: Topic D"
             }
           ]
         },
@@ -4556,17 +4581,7 @@
             {
               "subject": "Further Maths",
               "type": "Exam",
-              "label": "Year 12 Further Maths Exam - Topic: Topic D"
-            },
-            {
-              "subject": "Further Maths",
-              "type": "Presentation",
-              "label": "Year 12 Further Maths Presentation - Topic: Topic C"
-            },
-            {
-              "subject": "Psychology",
-              "type": "Essay",
-              "label": "Year 12 Psychology Essay - Topic: Topic B"
+              "label": "Year 12 Further Maths Exam - Topic: Topic C"
             }
           ]
         },
@@ -4576,9 +4591,14 @@
           "isInset": false,
           "assessments": [
             {
+              "subject": "Sociology",
+              "type": "Essay",
+              "label": "Year 12 Sociology Essay - Topic: Topic A"
+            },
+            {
               "subject": "Psychology",
-              "type": "Exam",
-              "label": "Year 12 Psychology Exam - Topic: Topic B"
+              "type": "Essay",
+              "label": "Year 12 Psychology Essay - Topic: Topic A"
             }
           ]
         },
@@ -4588,14 +4608,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Psychology",
+              "subject": "Economics",
               "type": "Presentation",
-              "label": "Year 12 Psychology Presentation - Topic: Topic A"
+              "label": "Year 12 Economics Presentation - Topic: Topic B"
             },
             {
               "subject": "Sociology",
-              "type": "Essay",
-              "label": "Year 12 Sociology Essay - Topic: Topic C"
+              "type": "Presentation",
+              "label": "Year 12 Sociology Presentation - Topic: Topic A"
             }
           ]
         },
@@ -4605,14 +4625,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Sociology",
+              "subject": "Further Maths",
               "type": "Essay",
-              "label": "Year 12 Sociology Essay - Topic: Topic D"
+              "label": "Year 12 Further Maths Essay - Topic: Topic A"
             },
             {
-              "subject": "Sociology",
-              "type": "Exam",
-              "label": "Year 12 Sociology Exam - Topic: Topic A"
+              "subject": "Psychology",
+              "type": "Essay",
+              "label": "Year 12 Psychology Essay - Topic: Topic B"
             }
           ]
         },
@@ -4634,14 +4654,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Economics",
-              "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic C"
+              "subject": "Further Maths",
+              "type": "Exam",
+              "label": "Year 12 Further Maths Exam - Topic: Topic C"
             },
             {
-              "subject": "Economics",
+              "subject": "Sociology",
               "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic A"
+              "label": "Year 12 Sociology Presentation - _Topic: Topic C_"
             }
           ]
         },
@@ -4653,7 +4673,17 @@
             {
               "subject": "Further Maths",
               "type": "Essay",
-              "label": "Year 12 Further Maths Essay - Topic: Topic C"
+              "label": "Year 12 Further Maths Essay - Topic: Topic D"
+            },
+            {
+              "subject": "Psychology",
+              "type": "Exam",
+              "label": "Year 12 Psychology Exam - Topic: Topic A"
+            },
+            {
+              "subject": "Further Maths",
+              "type": "Presentation",
+              "label": "Year 12 Further Maths Presentation - Topic: Topic C"
             }
           ]
         },
@@ -4664,13 +4694,8 @@
           "assessments": [
             {
               "subject": "Further Maths",
-              "type": "Exam",
-              "label": "Year 12 Further Maths Exam - Topic: Topic B"
-            },
-            {
-              "subject": "Sociology",
               "type": "Presentation",
-              "label": "Year 12 Sociology Presentation - Topic: Topic C"
+              "label": "Year 12 Further Maths Presentation - Topic: Topic A"
             }
           ]
         },
@@ -4678,7 +4703,23 @@
           "date": "2025-12-25T12:00:00.000Z",
           "week": "Week 17",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Sociology",
+              "type": "Exam",
+              "label": "Year 12 **Sociology** Exam - Topic: Topic D"
+            },
+            {
+              "subject": "Psychology",
+              "type": "Exam",
+              "label": "Year 12 Psychology Exam - Topic: Topic B"
+            },
+            {
+              "subject": "Further Maths",
+              "type": "Exam",
+              "label": "Year 12 Further Maths Exam - Topic: Topic A"
+            }
+          ]
         },
         {
           "date": "2025-12-26T12:00:00.000Z",
@@ -4686,9 +4727,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Further Maths",
-              "type": "Essay",
-              "label": "Year 12 Further Maths Essay - Topic: Topic C"
+              "subject": "Psychology",
+              "type": "Presentation",
+              "label": "Year 12 Psychology Presentation - Topic: Topic B"
+            },
+            {
+              "subject": "Sociology",
+              "type": "Exam",
+              "label": "Year 12 Sociology Exam - Topic: Topic B"
             }
           ]
         },
@@ -4710,9 +4756,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Economics",
-              "type": "Exam",
-              "label": "Year 12 Economics Exam - Topic: Topic C"
+              "subject": "Sociology",
+              "type": "Essay",
+              "label": "Year 12 Sociology Essay - Topic: Topic B"
             }
           ]
         },
@@ -4720,13 +4766,25 @@
           "date": "2025-12-30T12:00:00.000Z",
           "week": "Week 18",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Sociology",
+              "type": "Essay",
+              "label": "Year 12 **Sociology** Essay - Topic: Topic D"
+            }
+          ]
         },
         {
           "date": "2025-12-31T12:00:00.000Z",
           "week": "Week 18",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Further Maths",
+              "type": "Essay",
+              "label": "Year 12 Further Maths Essay - Topic: Topic C"
+            }
+          ]
         },
         {
           "date": "2026-01-01T12:00:00.000Z",
@@ -4734,14 +4792,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Economics",
-              "type": "Essay",
-              "label": "Year 12 Economics Essay - Topic: Topic A"
-            },
-            {
               "subject": "Psychology",
-              "type": "Essay",
-              "label": "Year 12 Psychology Essay - Topic: Topic A"
+              "type": "Exam",
+              "label": "Year 12 Psychology Exam - Topic: Topic D"
             }
           ]
         },
@@ -4751,9 +4804,14 @@
           "isInset": false,
           "assessments": [
             {
+              "subject": "Further Maths",
+              "type": "Presentation",
+              "label": "Year 12 Further Maths Presentation - Topic: Topic A"
+            },
+            {
               "subject": "Sociology",
               "type": "Exam",
-              "label": "Year 12 Sociology Exam - Topic: Topic C"
+              "label": "Year 12 Sociology Exam - Topic: Topic A"
             }
           ]
         },
@@ -4773,7 +4831,23 @@
           "date": "2026-01-05T12:00:00.000Z",
           "week": "Week 19",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Sociology",
+              "type": "Presentation",
+              "label": "Year 12 Sociology Presentation - Topic: Topic B"
+            },
+            {
+              "subject": "Sociology",
+              "type": "Presentation",
+              "label": "Year 12 Sociology Presentation - _Topic: Topic B_"
+            },
+            {
+              "subject": "Sociology",
+              "type": "Presentation",
+              "label": "Year 12 Sociology Presentation - Topic: Topic C"
+            }
+          ]
         },
         {
           "date": "2026-01-06T12:00:00.000Z",
@@ -4781,14 +4855,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Sociology",
+              "subject": "Further Maths",
               "type": "Exam",
-              "label": "Year 12 Sociology Exam - Topic: Topic B"
-            },
-            {
-              "subject": "Psychology",
-              "type": "Essay",
-              "label": "Year 12 Psychology Essay - Topic: Topic B"
+              "label": "Year 12 Further Maths Exam - Topic: Topic B"
             }
           ]
         },
@@ -4798,19 +4867,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Psychology",
-              "type": "Exam",
-              "label": "Year 12 Psychology Exam - Topic: Topic A"
-            },
-            {
-              "subject": "Further Maths",
+              "subject": "Sociology",
               "type": "Essay",
-              "label": "Year 12 Further Maths Essay - Topic: Topic B"
+              "label": "Year 12 Sociology Essay - Topic: Topic D"
             },
             {
-              "subject": "Further Maths",
-              "type": "Exam",
-              "label": "Year 12 Further Maths Exam - Topic: Topic B"
+              "subject": "Sociology",
+              "type": "Presentation",
+              "label": "Year 12 Sociology Presentation - Topic: Topic C"
             }
           ]
         },
@@ -4820,9 +4884,14 @@
           "isInset": false,
           "assessments": [
             {
+              "subject": "Psychology",
+              "type": "Presentation",
+              "label": "Year 12 Psychology Presentation - Topic: Topic A"
+            },
+            {
               "subject": "Economics",
               "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic C"
+              "label": "Year 12 Economics Presentation - Topic: Topic D"
             }
           ]
         },
@@ -4832,9 +4901,14 @@
           "isInset": false,
           "assessments": [
             {
+              "subject": "Further Maths",
+              "type": "Essay",
+              "label": "Year 12 **Further Maths** Essay - Topic: Topic B"
+            },
+            {
               "subject": "Psychology",
-              "type": "Exam",
-              "label": "Year 12 Psychology Exam - Topic: Topic C"
+              "type": "Presentation",
+              "label": "Year 12 Psychology Presentation - Topic: Topic B"
             }
           ]
         },
@@ -4854,13 +4928,45 @@
           "date": "2026-01-12T12:00:00.000Z",
           "week": "Week 20",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Psychology",
+              "type": "Presentation",
+              "label": "Year 12 Psychology Presentation - Topic: Topic C"
+            },
+            {
+              "subject": "Further Maths",
+              "type": "Essay",
+              "label": "Year 12 Further Maths Essay - _Topic: Topic D_"
+            },
+            {
+              "subject": "Sociology",
+              "type": "Essay",
+              "label": "Year 12 Sociology Essay - Topic: Topic B"
+            }
+          ]
         },
         {
           "date": "2026-01-13T12:00:00.000Z",
           "week": "Week 20",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Psychology",
+              "type": "Exam",
+              "label": "Year 12 Psychology Exam - Topic: Topic D"
+            },
+            {
+              "subject": "Sociology",
+              "type": "Presentation",
+              "label": "Year 12 Sociology Presentation - Topic: Topic D"
+            },
+            {
+              "subject": "Sociology",
+              "type": "Essay",
+              "label": "Year 12 Sociology Essay - Topic: Topic D"
+            }
+          ]
         },
         {
           "date": "2026-01-14T12:00:00.000Z",
@@ -4868,14 +4974,19 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Economics",
-              "type": "Presentation",
-              "label": "Year 12 Economics Presentation - Topic: Topic B"
+              "subject": "Sociology",
+              "type": "Essay",
+              "label": "Year 12 **Sociology** Essay - Topic: Topic D"
             },
             {
               "subject": "Sociology",
-              "type": "Presentation",
-              "label": "Year 12 Sociology Presentation - Topic: Topic A"
+              "type": "Exam",
+              "label": "Year 12 Sociology Exam - Topic: Topic D"
+            },
+            {
+              "subject": "Sociology",
+              "type": "Essay",
+              "label": "Year 12 Sociology Essay - Topic: Topic C"
             }
           ]
         },
@@ -4886,13 +4997,13 @@
           "assessments": [
             {
               "subject": "Further Maths",
-              "type": "Essay",
-              "label": "Year 12 Further Maths Essay - Topic: Topic A"
+              "type": "Presentation",
+              "label": "Year 12 Further Maths Presentation - Topic: Topic C"
             },
             {
-              "subject": "Psychology",
-              "type": "Essay",
-              "label": "Year 12 Psychology Essay - Topic: Topic B"
+              "subject": "Sociology",
+              "type": "Exam",
+              "label": "Year 12 Sociology Exam - Topic: Topic C"
             }
           ]
         },
@@ -4902,14 +5013,14 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Further Maths",
-              "type": "Exam",
-              "label": "Year 12 Further Maths Exam - Topic: Topic C"
+              "subject": "Psychology",
+              "type": "Essay",
+              "label": "Year 12 Psychology Essay - Topic: Topic D"
             },
             {
-              "subject": "Sociology",
-              "type": "Presentation",
-              "label": "Year 12 Sociology Presentation - Topic: Topic B"
+              "subject": "Economics",
+              "type": "Exam",
+              "label": "Year 12 Economics Exam - Topic: Topic D"
             }
           ]
         },

@@ -8,6 +8,7 @@ import { ViewSelector } from './ViewSelector';
 import { ViewMode, Assessment } from '../types';
 import { Modal } from './Modal';
 import { formatLastUpdated } from '../utils/dateUtils';
+import { FormattedText } from './FormattedText';
 
 // Moved outside component to prevent re-creation on every render
 const CalendarDayIcon = ({ day }: { day: number }) => (
@@ -304,7 +305,7 @@ export function YearView() {
             <div>
               <h4 className="text-sm font-medium text-gray-500">Description</h4>
               <p className="mt-1 text-sm text-gray-900 whitespace-pre-wrap">
-                {selectedAssessment.data.label}
+                <FormattedText text={selectedAssessment.data.label} />
               </p>
             </div>
           </div>

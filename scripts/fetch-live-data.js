@@ -52,8 +52,17 @@ function getCellValue(cell) {
     // Handle Rich Text
     if (typeof val === 'object') {
         if (val.richText && Array.isArray(val.richText)) {
-            const text = val.richText.map(part => part.text).join('');
-            if (debugMode) console.log(`TRACE: getCellValue - Stripped formatting from richText cell. Original: %o, Result: ${text}`, val);
+            const text = val.richText.map(part => {
+                let t = part.text;
+                if (part.font && part.font.bold) {
+                    t = `**${t}**`;
+                }
+                if (part.font && part.font.italic) {
+                    t = `_${t}_`;
+                }
+                return t;
+            }).join('');
+            if (debugMode) console.log(`TRACE: getCellValue - Converted richText cell to Markdown. Original: %o, Result: ${text}`, val);
             return text;
         }
         // Handle Hyperlink { text: '...', hyperlink: '...' }
