@@ -1,8 +1,13 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useAllYears } from '../hooks/useData';
 
 export function YearSelector() {
   const years = useAllYears();
+
+  useEffect(() => {
+    document.title = 'Bassaleg Assessment Calendars';
+  }, []);
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-4">
