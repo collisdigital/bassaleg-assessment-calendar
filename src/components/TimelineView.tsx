@@ -1,6 +1,6 @@
 import { useEffect, useRef, memo } from 'react';
 import { DayInfo, Assessment } from '../types';
-import { FormattedText } from './FormattedText';
+import { stripMarkdown } from './FormattedText';
 
 interface TimelineViewProps {
   schedule: DayInfo[];
@@ -131,7 +131,7 @@ export const TimelineView = memo(function TimelineView({ schedule, typeColors, o
                                    </span>
                                </div>
                                <div className="text-sm text-gray-600 line-clamp-2">
-                                   <FormattedText text={assessment.label} />
+                                   {stripMarkdown(assessment.label)}
                                </div>
                            </div>
                        </button>

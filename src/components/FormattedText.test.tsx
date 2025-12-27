@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { FormattedText } from './FormattedText';
+import { FormattedText, stripMarkdown } from './FormattedText';
 import { describe, it, expect } from 'vitest';
 
 describe('FormattedText', () => {
@@ -51,5 +51,12 @@ describe('FormattedText', () => {
     render(<FormattedText text="**Bold _Unclosed" />);
     // The parser enforces pairs, so unclosed tags are treated as plain text
     expect(screen.getByText('**Bold _Unclosed')).toBeInTheDocument();
+  });
+
+  it('strips markdown from text', () => {
+    expect(stripMarkdown('Hello **Bold** World')).toBe('Hello Bold World');
+    expect(stripMarkdown('Hello _Italic_ World')).toBe('Hello Italic World');
+    expect(stripMarkdown('**Bold** and _Italic_')).toBe('Bold and Italic');
+    expect(stripMarkdown('No formatting')).toBe('No formatting');
   });
 });

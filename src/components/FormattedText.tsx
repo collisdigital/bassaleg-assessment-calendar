@@ -16,8 +16,8 @@ function parseMarkdown(input: string): ReactNode[] {
         // We look for the closing tag as well to ensure it's a valid pair.
         // We want to find the FIRST occurrence that has a valid closing tag.
 
-        const boldMatch = /\*\*(.*?)\*\*/.exec(remaining);
-        const italicMatch = /_(.*?)_/.exec(remaining);
+        const boldMatch = /\*\*(.*?)\*\*/s.exec(remaining);
+        const italicMatch = /_(.*?)_/s.exec(remaining);
 
         let bestMatch = null;
         let type = '';
@@ -63,6 +63,15 @@ function parseMarkdown(input: string): ReactNode[] {
         }
     }
     return nodes;
+}
+
+// Helper to strip markdown for plain text display
+export function stripMarkdown(input: string): string {
+  // Replace bold and italic markers with their content.
+  // The 's' flag is used to handle multiline content, same as in the parser.
+  return input
+    .replace(/\*\*(.*?)\*\*/sg, '$1')
+    .replace(/_(.*?)_/sg, '$1');
 }
 
 export function FormattedText({ text, className }: FormattedTextProps) {

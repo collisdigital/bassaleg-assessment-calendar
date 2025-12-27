@@ -1,5 +1,5 @@
 import { Assessment } from '../types';
-import { FormattedText } from './FormattedText';
+import { stripMarkdown } from './FormattedText';
 
 interface AssessmentPillProps {
   assessment: Assessment;
@@ -15,7 +15,7 @@ export function AssessmentPill({ assessment, color, onClick }: AssessmentPillPro
         className="w-full text-left text-xs p-1 px-2 rounded mb-1 shadow-sm border border-black/5 text-gray-900 truncate cursor-pointer hover:opacity-90 transition-opacity"
         style={{ backgroundColor: color }}
     >
-      <span className="font-semibold">{assessment.subject}:</span> <FormattedText text={assessment.label} />
+      <span className="font-semibold">{assessment.subject}:</span> {stripMarkdown(assessment.label)}
     </button>
   );
 }
