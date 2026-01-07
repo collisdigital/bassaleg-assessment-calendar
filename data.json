@@ -1,0 +1,4407 @@
+{
+  "generatedAt": "2026-01-07T13:35:50.134Z",
+  "years": {
+    "year-10": {
+      "name": "Year 10",
+      "filename": "Year 10 2025-26 Assessment Calendar",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1i1p1tWNJZtwr_9orEjX0AKeQ_GrqkqI-vUW9KbAWslU",
+      "types": {
+        "Exam": "#00FF00",
+        "Mock": "#FFFF00",
+        "NEA": "#00FFFF",
+        "Practical": "#FF0000",
+        "Homework": "#FF00FF",
+        "Note": "#E5E7EB"
+      },
+      "schedule": [
+        {
+          "date": "2025-11-03T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "Health and Social Care NEA - MHU lessons all year"
+            },
+            {
+              "subject": "Humanities",
+              "type": "NEA",
+              "label": "History NEA  2 (this half term)"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-04T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Humanities",
+              "type": "NEA",
+              "label": "RS NEA Unit 2 (this half term but will be spread out between now and Christmas)"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-05T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Humanities",
+              "type": "NEA",
+              "label": "Retail Business - Unit 2: Customer Service Coursework this half term. Spread over this half term."
+            }
+          ]
+        },
+        {
+          "date": "2025-11-06T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-07T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Expressive Arts",
+              "type": "Mock",
+              "label": "Drama-Mock Scripted Performance"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-08T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-09T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-10T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "Health and Social Care NEA - MHU lessons all year"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-11T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-12T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-13T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-14T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Expressive Arts",
+              "type": "Mock",
+              "label": "Drama- Mock written exam"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-15T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-16T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-17T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "English / MFL",
+              "type": "NEA",
+              "label": "Research and Planning Hours for Group Discussion English - Unit 3 Influence and Power"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "Health and Social Care NEA - MHU lessons all year"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-18T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-19T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-20T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-21T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-22T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-23T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-24T00:00:00.000Z",
+          "week": "2",
+          "isInset": true,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "Health and Social Care NEA - MHU lessons all year"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-25T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Humanities",
+              "type": "Mock",
+              "label": "Geography  - unit 1 mock"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-26T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-27T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-28T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Maths / Numeracy",
+              "type": "Note",
+              "label": "Maths Half Term Test"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-29T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-30T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-01T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "English / MFL",
+              "type": "Exam",
+              "label": "Year 10 Group Discussion English -Unit 3 Influence and Power"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "Health and Social Care NEA - MHU lessons all year"
+            }
+          ]
+        },
+        {
+          "date": "2025-12-02T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "English / MFL",
+              "type": "Exam",
+              "label": "Year 10 Group Discussion English -Unit 3 Influence and Power"
+            }
+          ]
+        },
+        {
+          "date": "2025-12-03T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-04T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-05T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-06T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-07T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-08T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "Health and Social Care NEA - MHU lessons all year"
+            },
+            {
+              "subject": "Expressive Arts",
+              "type": "Mock",
+              "label": "Drama- Mock Unit 2 Scripted Exam"
+            }
+          ]
+        },
+        {
+          "date": "2025-12-09T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Expressive Arts",
+              "type": "Mock",
+              "label": "Drama- Mock Unit 2 Scripted Exam"
+            }
+          ]
+        },
+        {
+          "date": "2025-12-10T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-11T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-12T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-13T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-14T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-15T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "Health and Social Care NEA - MHU lessons all year"
+            },
+            {
+              "subject": "Expressive Arts",
+              "type": "Homework",
+              "label": "Drama- Written Exam Paper"
+            }
+          ]
+        },
+        {
+          "date": "2025-12-16T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-17T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-18T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-19T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-20T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-21T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-22T00:00:00.000Z",
+          "week": "Christmas Holidays",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-23T00:00:00.000Z",
+          "week": "Christmas Holidays",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-24T00:00:00.000Z",
+          "week": "Christmas Holidays",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-25T00:00:00.000Z",
+          "week": "Christmas Holidays",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-26T00:00:00.000Z",
+          "week": "Christmas Holidays",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-27T00:00:00.000Z",
+          "week": "Christmas Holidays",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-28T00:00:00.000Z",
+          "week": "Christmas Holidays",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-29T00:00:00.000Z",
+          "week": "Christmas Holidays",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-30T00:00:00.000Z",
+          "week": "Christmas Holidays",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-31T00:00:00.000Z",
+          "week": "Christmas Holidays",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-01T00:00:00.000Z",
+          "week": "Christmas Holidays",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-02T00:00:00.000Z",
+          "week": "Christmas Holidays",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-03T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-04T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-05T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "Health and Social Care NEA - MHU lessons all year"
+            }
+          ]
+        },
+        {
+          "date": "2026-01-06T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-07T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-08T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-09T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-10T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-11T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-12T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "Health and Social Care NEA - MHU lessons all year"
+            }
+          ]
+        },
+        {
+          "date": "2026-01-13T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-14T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-15T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-16T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-17T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-18T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-19T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "Health and Social Care NEA - MHU lessons all year"
+            }
+          ]
+        },
+        {
+          "date": "2026-01-20T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Expressive Arts",
+              "type": "Practical",
+              "label": "Music Performance Exam"
+            }
+          ]
+        },
+        {
+          "date": "2026-01-21T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-22T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Expressive Arts",
+              "type": "Practical",
+              "label": "Music Performance Exam"
+            }
+          ]
+        },
+        {
+          "date": "2026-01-23T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-24T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-25T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-26T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "Health and Social Care NEA - MHU lessons all year"
+            }
+          ]
+        },
+        {
+          "date": "2026-01-27T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-28T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-29T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-30T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Maths / Numeracy",
+              "type": "Note",
+              "label": "Maths Half Term Test"
+            }
+          ]
+        },
+        {
+          "date": "2026-01-31T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-01T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-02T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "Health and Social Care NEA - MHU lessons all year"
+            }
+          ]
+        },
+        {
+          "date": "2026-02-03T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-04T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-05T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-06T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-07T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-08T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-09T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "Health and Social Care NEA - MHU lessons all year"
+            },
+            {
+              "subject": "Expressive Arts",
+              "type": "Mock",
+              "label": "Drama- Unit 1 Evaluation Mock"
+            }
+          ]
+        },
+        {
+          "date": "2026-02-10T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-11T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-12T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-13T00:00:00.000Z",
+          "week": "1",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-14T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-15T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-16T00:00:00.000Z",
+          "week": "February Half Term",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-17T00:00:00.000Z",
+          "week": "February Half Term",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-18T00:00:00.000Z",
+          "week": "February Half Term",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-19T00:00:00.000Z",
+          "week": "February Half Term",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-20T00:00:00.000Z",
+          "week": "February Half Term",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-21T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-22T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-23T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "Health and Social Care NEA - MHU lessons all year"
+            }
+          ]
+        },
+        {
+          "date": "2026-02-24T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-25T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-26T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-27T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-28T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-01T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-02T00:00:00.000Z",
+          "week": "1",
+          "isInset": true,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "Health and Social Care NEA - MHU lessons all year"
+            },
+            {
+              "subject": "Humanities",
+              "type": "Exam",
+              "label": "Business Mock this week Unit 1"
+            }
+          ]
+        },
+        {
+          "date": "2026-03-03T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-04T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-05T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "English / MFL",
+              "type": "Mock",
+              "label": "English Language and Literature Mock"
+            }
+          ]
+        },
+        {
+          "date": "2026-03-06T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-07T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-08T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-09T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "Health and Social Care NEA - MHU lessons all year"
+            }
+          ]
+        },
+        {
+          "date": "2026-03-10T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-11T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-12T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-13T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Maths / Numeracy",
+              "type": "Note",
+              "label": "Maths Half Term Test"
+            }
+          ]
+        },
+        {
+          "date": "2026-03-14T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-15T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-16T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "Health and Social Care NEA - MHU lessons all year"
+            },
+            {
+              "subject": "Humanities",
+              "type": "Mock",
+              "label": "RS Unit 1 mock exam this week (various lessons within the week - TBC by teacher)"
+            }
+          ]
+        },
+        {
+          "date": "2026-03-17T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-18T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-19T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-20T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-21T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-22T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-23T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "Health and Social Care NEA - MHU lessons all year"
+            },
+            {
+              "subject": "Humanities",
+              "type": "Mock",
+              "label": "History mock this week (USA 1910-29). TBC by class teacher"
+            }
+          ]
+        },
+        {
+          "date": "2026-03-24T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-25T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-26T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-27T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "English / MFL",
+              "type": "Homework",
+              "label": "English Easter Revision - Sent Home"
+            }
+          ]
+        },
+        {
+          "date": "2026-03-28T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-29T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-30T00:00:00.000Z",
+          "week": "Easter Holiday",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-31T00:00:00.000Z",
+          "week": "Easter Holiday",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-01T00:00:00.000Z",
+          "week": "Easter Holiday",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-02T00:00:00.000Z",
+          "week": "Easter Holiday",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-03T00:00:00.000Z",
+          "week": "Easter Holiday",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-04T00:00:00.000Z",
+          "week": "Easter Holiday",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-05T00:00:00.000Z",
+          "week": "Easter Holiday",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-06T00:00:00.000Z",
+          "week": "Easter Holiday",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-07T00:00:00.000Z",
+          "week": "Easter Holiday",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-08T00:00:00.000Z",
+          "week": "Easter Holiday",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-09T00:00:00.000Z",
+          "week": "Easter Holiday",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-10T00:00:00.000Z",
+          "week": "Easter Holiday",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-11T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-12T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-13T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Expressive Arts",
+              "type": "Mock",
+              "label": "Drama- Unit 1 Devising Performance Mocks"
+            },
+            {
+              "subject": "Health & Wellbeing",
+              "type": "NEA",
+              "label": "begin NEA PE PFP"
+            }
+          ]
+        },
+        {
+          "date": "2026-04-14T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Expressive Arts",
+              "type": "Mock",
+              "label": "Drama- Unit 1 Devising Performance Mocks"
+            }
+          ]
+        },
+        {
+          "date": "2026-04-15T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-16T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-17T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-18T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-19T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-20T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-21T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-22T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-23T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-24T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-25T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-26T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-27T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-28T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-29T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-30T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-01T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-02T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-03T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-04T00:00:00.000Z",
+          "week": "May BH",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-05T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-06T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-07T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-08T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-09T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-10T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-11T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Humanities",
+              "type": "Exam",
+              "label": "Geography Unit 1 (NEW)"
+            }
+          ]
+        },
+        {
+          "date": "2026-05-12T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-13T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-14T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Humanities",
+              "type": "Exam",
+              "label": "Business unit 1 (NEW)"
+            }
+          ]
+        },
+        {
+          "date": "2026-05-15T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "English / MFL",
+              "type": "Exam",
+              "label": "NEW English Language and Literature Unit 1"
+            }
+          ]
+        },
+        {
+          "date": "2026-05-16T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-17T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-18T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-19T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-20T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Humanities",
+              "type": "Exam",
+              "label": "RS Unit 1 exam (NEW)"
+            }
+          ]
+        },
+        {
+          "date": "2026-05-21T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Expressive Arts",
+              "type": "Mock",
+              "label": "Unit 1- Devising Exam Mock Standdown Day and Evening Showcase"
+            }
+          ]
+        },
+        {
+          "date": "2026-05-22T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "Exam",
+              "label": "**Health and Social Care **Unit 1 Exam"
+            }
+          ]
+        },
+        {
+          "date": "2026-05-23T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-24T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-25T00:00:00.000Z",
+          "week": "May Half Term",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-26T00:00:00.000Z",
+          "week": "May Half Term",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-27T00:00:00.000Z",
+          "week": "May Half Term",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-28T00:00:00.000Z",
+          "week": "May Half Term",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-29T00:00:00.000Z",
+          "week": "May Half Term",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-30T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-31T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-01T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-02T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-03T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-04T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-05T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-06T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-07T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-08T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "Exam",
+              "label": "Biology 1 Exam (Double award & Separate Science)"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-09T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-10T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-11T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Expressive Arts",
+              "type": "Practical",
+              "label": "Drama- Unit 1- Devising Exam- 10B All Day"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-12T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "Exam",
+              "label": "Chemistry 1 Exam (Double award & Separate Science)"
+            },
+            {
+              "subject": "Expressive Arts",
+              "type": "Practical",
+              "label": "Drama- Unit 1- Devising Exam- 10C All Day"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-13T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-14T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-15T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "Exam",
+              "label": "Physics 1 Exam (Double award & Separate Science)"
+            },
+            {
+              "subject": "Expressive Arts",
+              "type": "Mock",
+              "label": "Music End of Year Internal Exam"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-16T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-17T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-18T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-19T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Expressive Arts",
+              "type": "Practical",
+              "label": "Music Performance Exam"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-20T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-21T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-22T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Maths / Numeracy",
+              "type": "Mock",
+              "label": "Maths End of Year Tests"
+            },
+            {
+              "subject": "Humanities",
+              "type": "NEA",
+              "label": "Business NEA starts yr 10"
+            },
+            {
+              "subject": "Expressive Arts",
+              "type": "Practical",
+              "label": "Music Performance Exam"
+            },
+            {
+              "subject": "Health & Wellbeing",
+              "type": "Mock",
+              "label": "PE end of year internal exam"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-23T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Maths / Numeracy",
+              "type": "Mock",
+              "label": "Maths End of Year Tests"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-24T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Maths / Numeracy",
+              "type": "Mock",
+              "label": "Maths End of Year Tests"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-25T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Maths / Numeracy",
+              "type": "Mock",
+              "label": "Maths End of Year Tests"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-26T00:00:00.000Z",
+          "week": "2",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-27T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-28T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-29T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Expressive Arts",
+              "type": "NEA",
+              "label": "Drama Unit 1- Evaluation Exam"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-30T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Expressive Arts",
+              "type": "NEA",
+              "label": "Drama Unit 1- Evaluation Exam"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-01T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-02T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-03T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-04T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-05T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-06T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-07T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-08T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-09T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-10T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Health & Wellbeing",
+              "type": "NEA",
+              "label": "completeion of PE Summer NEA activitity"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-11T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-12T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-13T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-14T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-15T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-16T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-17T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-18T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-19T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        }
+      ]
+    },
+    "year-11": {
+      "name": "Year 11",
+      "filename": "Year 11 2025-26 Assessment Calendar",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1IwS8bwAq1-MGXMp88erwBC55m8iFaU--ZgBPRzuS-w4",
+      "types": {
+        "Exam": "#00FF00",
+        "Mock": "#FFFF00",
+        "NEA": "#00FFFF",
+        "Practical": "#FF0000",
+        "Homework": "#FF00FF",
+        "Note": "#E5E7EB"
+      },
+      "schedule": [
+        {
+          "date": "2025-11-03T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "English / Cymraeg / MFL",
+              "type": "Homework",
+              "label": "Resit Unit 1 English Revision Tasks to be sent home"
+            },
+            {
+              "subject": "Maths / Numeracy",
+              "type": "Note",
+              "label": "Numeracy Stand Down 1"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "**Applied Science (Double Award)** Unit 4 NEA to be done in November during lessons (task based assessments)\n\n**Engineering** Unit 2 - Working on with Mr Parker until Janurary"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "**Health and Social Care** NEA to be done in MHU lessons throughout the year"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Practical",
+              "label": "**Construction** Unit 2 -will be working on this with Mr Pearce until the submission in March."
+            },
+            {
+              "subject": "Expressive Arts",
+              "type": "NEA",
+              "label": "**Music: Will be working on their Unit 2 Composing within lessons. Internal dates given to pupils. Main hand-in date is highlighted on the calendar. **"
+            },
+            {
+              "subject": "Health & Wellbeing",
+              "type": "NEA",
+              "label": "completion of NEA PFP PE coursework"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-04T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Maths / Numeracy",
+              "type": "Exam",
+              "label": "GCSE Numeracy Unit 1 Exam"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-05T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Maths / Numeracy",
+              "type": "Note",
+              "label": "Numeracy Stand Down 2"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-06T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Maths / Numeracy",
+              "type": "Exam",
+              "label": "GCSE Numeracy Unit 2 Exam"
+            },
+            {
+              "subject": "Expressive Arts",
+              "type": "Mock",
+              "label": "Drama Unit 2- Scripted Performance Extract 1"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-07T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Expressive Arts",
+              "type": "Mock",
+              "label": "Drama Unit 2- Scripted Performance Extract 1"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-08T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-09T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-10T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Maths / Numeracy",
+              "type": "Exam",
+              "label": "GCSE Maths Unit 1 Exam"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "**Applied Science (Double Award)** Unit 4 NEA to be done in November during lessons (task based assessments)\n\n**Engineering** Unit 2 - Working on with Mr Parker until Janurary"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "**Health and Social Care** NEA to be done in MHU lessons throughout the year"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Practical",
+              "label": "**Construction** Unit 2 -will be working on this with Mr Pearce until the submission in March."
+            },
+            {
+              "subject": "Expressive Arts",
+              "type": "Mock",
+              "label": "Drama Unit 3- Live Theatre Review"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-11T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Maths / Numeracy",
+              "type": "Note",
+              "label": "Maths Stand Down"
+            },
+            {
+              "subject": "Expressive Arts",
+              "type": "Mock",
+              "label": "Drama Unit 3- Live Theatre Review"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-12T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Maths / Numeracy",
+              "type": "Exam",
+              "label": "GCSE Maths Unit 2 Exam"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-13T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Humanities",
+              "type": "Homework",
+              "label": "Business /finance end of module hwk"
+            },
+            {
+              "subject": "Expressive Arts",
+              "type": "Exam",
+              "label": "Music Solo Performance Exam"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-14T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Expressive Arts",
+              "type": "Exam",
+              "label": "Music Solo Performance Exam"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-15T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-16T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-17T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "**Applied Science (Double Award)** Unit 4 NEA to be done in November during lessons (task based assessments)\n\n**Engineering** Unit 2 - Working on with Mr Parker until Janurary"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "**Health and Social Care** NEA to be done in MHU lessons throughout the year"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Practical",
+              "label": "**Construction** Unit 2 -will be working on this with Mr Pearce until the submission in March."
+            }
+          ]
+        },
+        {
+          "date": "2025-11-18T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-19T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-20T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Humanities",
+              "type": "Mock",
+              "label": "History mock exam (DWR 1930-51)"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-21T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "English / Cymraeg / MFL",
+              "type": "Mock",
+              "label": "Welsh Unit 3 Mock"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-22T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-23T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-24T00:00:00.000Z",
+          "week": "2",
+          "isInset": true,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "**Applied Science (Double Award)** Unit 4 NEA to be done in November during lessons (task based assessments)\n\n**Engineering** Unit 2 - Working on with Mr Parker until Janurary\n\n**Construction** Unit 3 - Working on with Mr Parker until Janurary"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "**Health and Social Care** NEA to be done in MHU lessons throughout the year"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Practical",
+              "label": "**Construction** Unit 2 -will be working on this with Mr Pearce until the submission in March."
+            }
+          ]
+        },
+        {
+          "date": "2025-11-25T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Humanities",
+              "type": "Mock",
+              "label": "Geography  - unit 1 mock"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-26T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Humanities",
+              "type": "NEA",
+              "label": "Georaphy NEA period starts"
+            },
+            {
+              "subject": "Health & Wellbeing",
+              "type": "Mock",
+              "label": "Mock exam PE"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-27T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-28T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-29T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-11-30T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-01T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "**Engineering** Unit 2 - Working on with Mr Parker until January\n\n**Construction** Unit 3 - Working on with Mr Parker until January"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "**Health and Social Care** NEA to be done in MHU lessons throughout the year"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Practical",
+              "label": "**Construction** Unit 2 -will be working on this with Mr Pearce until the submission in March."
+            }
+          ]
+        },
+        {
+          "date": "2025-12-02T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-03T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-04T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-05T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-06T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-07T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-08T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "**Engineering** Unit 2 - Working on with Mr Parker until January\n\n**Constructio**n Unit 3 - Working on with Mr Parker until January"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "**Health and Social Care** NEA to be done in MHU lessons throughout the year"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Practical",
+              "label": "**Construction** Unit 2 -will be working on this with Mr Pearce until the submission in March."
+            }
+          ]
+        },
+        {
+          "date": "2025-12-09T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-10T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-11T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Expressive Arts",
+              "type": "Mock",
+              "label": "Drama- Unit 2 Scripted Performance Extract 2"
+            }
+          ]
+        },
+        {
+          "date": "2025-12-12T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "English / Cymraeg / MFL",
+              "type": "Mock",
+              "label": "Year 11 Unit 1 English Resit Stand Down P1-3"
+            },
+            {
+              "subject": "Expressive Arts",
+              "type": "Mock",
+              "label": "Drama- Unit 2 Scripted Performance Extract 2"
+            }
+          ]
+        },
+        {
+          "date": "2025-12-13T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-14T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-15T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "**Engineering** Unit 2 - Working on with Mr Parker until January\n\n**Constructi**on Unit 3 - Working on with Mr Parker until January"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "**Health and Social Care** NEA to be done in MHU lessons throughout the year"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Practical",
+              "label": "**Construction** Unit 2 -will be working on this with Mr Pearce until the submission in March."
+            },
+            {
+              "subject": "Expressive Arts",
+              "type": "Mock",
+              "label": "Drama Unit 3- Set Text Written Exam"
+            }
+          ]
+        },
+        {
+          "date": "2025-12-16T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Expressive Arts",
+              "type": "Mock",
+              "label": "Drama Unit 3- Set Text Written Exam"
+            }
+          ]
+        },
+        {
+          "date": "2025-12-17T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-18T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-19T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-20T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-21T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-22T00:00:00.000Z",
+          "week": "Christmas Holidays",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-23T00:00:00.000Z",
+          "week": "Christmas Holidays",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-24T00:00:00.000Z",
+          "week": "Christmas Holidays",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-25T00:00:00.000Z",
+          "week": "Christmas Holidays",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-26T00:00:00.000Z",
+          "week": "Christmas Holidays",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-27T00:00:00.000Z",
+          "week": "Christmas Holidays",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-28T00:00:00.000Z",
+          "week": "Christmas Holidays",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-29T00:00:00.000Z",
+          "week": "Christmas Holidays",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-30T00:00:00.000Z",
+          "week": "Christmas Holidays",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2025-12-31T00:00:00.000Z",
+          "week": "Christmas Holidays",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-01T00:00:00.000Z",
+          "week": "Christmas Holidays",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-02T00:00:00.000Z",
+          "week": "Christmas Holidays",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-03T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-04T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-05T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "**Engineering** Unit 2 - Working on with Mr Parker until Januar**y\n\nConstruct**ion Unit 3 - Working on with Mr Parker until January"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "**Health and Social Care** NEA to be done in MHU lessons throughout the year"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Practical",
+              "label": "**Construction** Unit 2 -will be working on this with Mr Pearce until the submission in March."
+            }
+          ]
+        },
+        {
+          "date": "2026-01-06T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "English / Cymraeg / MFL",
+              "type": "Mock",
+              "label": "Stand Down for Year 11 Unit 1 Resit"
+            }
+          ]
+        },
+        {
+          "date": "2026-01-07T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "English / Cymraeg / MFL",
+              "type": "Exam",
+              "label": "English Literature GCSE RESIT\n(Unit 1 – Of Mice and Men and Unseen Poetry)"
+            }
+          ]
+        },
+        {
+          "date": "2026-01-08T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-09T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-10T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-11T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-12T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Maths / Numeracy",
+              "type": "Homework",
+              "label": "Past Paper Homework"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "**Engineering** Unit 2 - Working on with Mr Parker until Janua**ry\n\nConstruc**tion Unit 3 - Working on with Mr Parker until January"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "**Health and Social Care** NEA to be done in MHU lessons throughout the year"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Practical",
+              "label": "**Construction** Unit 2 -will be working on this with Mr Pearce until the submission in March."
+            },
+            {
+              "subject": "Humanities",
+              "type": "Homework",
+              "label": "Business /external environment end of module hwk"
+            }
+          ]
+        },
+        {
+          "date": "2026-01-13T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-14T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "Practical",
+              "label": "**Science Practical Exams** - All courses"
+            }
+          ]
+        },
+        {
+          "date": "2026-01-15T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "Exam",
+              "label": "**Science Practical Exam** Write Up  - all courses"
+            }
+          ]
+        },
+        {
+          "date": "2026-01-16T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-17T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-18T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-19T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Maths / Numeracy",
+              "type": "Homework",
+              "label": "Past Paper Homework"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "**Engineering** Unit 2 - Working on with Mr Parker until Janu**ary\n\nConstru**ction Unit 3 - Working on with Mr Parker until January"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "**Health and Social Care** NEA to be done in MHU lessons throughout the year"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Practical",
+              "label": "**Construction** Unit 2 -will be working on this with Mr Pearce until the submission in March."
+            }
+          ]
+        },
+        {
+          "date": "2026-01-20T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-21T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "Practical",
+              "label": "**Science Practical Exams** - All courses"
+            }
+          ]
+        },
+        {
+          "date": "2026-01-22T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "Exam",
+              "label": "**Science Practical Exam** Write Up  - all courses"
+            }
+          ]
+        },
+        {
+          "date": "2026-01-23T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-24T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-25T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-26T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Maths / Numeracy",
+              "type": "Homework",
+              "label": "Past Paper Homework"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "**Engineering** Unit 2 - Working on with Mr Parker until Janu**ary\n\nConstr**uction Unit 3 - Working on with Mr Parker until January"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "**Health and Social Care** NEA to be done in MHU lessons throughout the year"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Practical",
+              "label": "**Construction** Unit 2 -will be working on this with Mr Pearce until the submission in March."
+            }
+          ]
+        },
+        {
+          "date": "2026-01-27T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-01-28T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "Practical",
+              "label": "**Science Practical Exams** - Separate Science only"
+            }
+          ]
+        },
+        {
+          "date": "2026-01-29T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "Exam",
+              "label": "**Science Practical Exam** Write Up  - Seperate Science only"
+            }
+          ]
+        },
+        {
+          "date": "2026-01-30T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Health & Wellbeing",
+              "type": "NEA",
+              "label": "Deadline of video evidence submision for PE practical activities"
+            }
+          ]
+        },
+        {
+          "date": "2026-01-31T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-01T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-02T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "English / Cymraeg / MFL",
+              "type": "Mock",
+              "label": "Welsh Unit 2 Mock"
+            },
+            {
+              "subject": "Maths / Numeracy",
+              "type": "Homework",
+              "label": "Past Paper Homework"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "**Health and Social Care** NEA to be done in MHU lessons throughout the year"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Practical",
+              "label": "**Construction** Unit 2 -will be working on this with Mr Pearce until the submission in March.\n\n**Nutrition Practical Exams - **Details about exact timings will be given closer to this time."
+            }
+          ]
+        },
+        {
+          "date": "2026-02-03T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "English / Cymraeg / MFL",
+              "type": "Mock",
+              "label": "Welsh Unit 2 Mock"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Practical",
+              "label": "**Nutrition** Practical Exams - Details about exact timings will be given closer to this time."
+            }
+          ]
+        },
+        {
+          "date": "2026-02-04T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "English / Cymraeg / MFL",
+              "type": "Mock",
+              "label": "Welsh Unit 2 Mock"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Practical",
+              "label": "**Nutrition** Practical Exams - Details about exact timings will be given closer to this time."
+            }
+          ]
+        },
+        {
+          "date": "2026-02-05T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "Practical",
+              "label": "**Nutrition** Practical Exams - Details about exact timings will be given closer to this time."
+            },
+            {
+              "subject": "Expressive Arts",
+              "type": "Mock",
+              "label": "Drama- Unit 2 Scripted Exam Standdown Day 11B"
+            }
+          ]
+        },
+        {
+          "date": "2026-02-06T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "Practical",
+              "label": "**Nutrition** Practical Exams - Details about exact timings will be given closer to this time."
+            },
+            {
+              "subject": "Expressive Arts",
+              "type": "Mock",
+              "label": "Drama- Unit 2 Scripted Exam Standdown Day 11C"
+            }
+          ]
+        },
+        {
+          "date": "2026-02-07T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-08T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-09T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Maths / Numeracy",
+              "type": "Homework",
+              "label": "Past Paper Homework"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "**Health and Social Care** NEA to be done in MHU lessons throughout the year"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Practical",
+              "label": "**Construction** Unit 2 -will be working on this with Mr Pearce until the submission in March.\n\n**Nutrition Practical Exams - **Details about exact timings will be given closer to this time."
+            }
+          ]
+        },
+        {
+          "date": "2026-02-10T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "Practical",
+              "label": "**Nutrition** Practical Exams - Details about exact timings will be given closer to this time."
+            }
+          ]
+        },
+        {
+          "date": "2026-02-11T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "Practical",
+              "label": "**Nutrition** Practical Exams - Details about exact timings will be given closer to this time."
+            }
+          ]
+        },
+        {
+          "date": "2026-02-12T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "Practical",
+              "label": "**Nutrition** Practical Exams - Details about exact timings will be given closer to this time."
+            },
+            {
+              "subject": "Expressive Arts",
+              "type": "NEA",
+              "label": "Music: NEA Unit 2 Hand-in fully complete by 13th February"
+            }
+          ]
+        },
+        {
+          "date": "2026-02-13T00:00:00.000Z",
+          "week": "1",
+          "isInset": true,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "Practical",
+              "label": "**Nutrition** Practical Exams - Details about exact timings will be given closer to this time."
+            },
+            {
+              "subject": "Expressive Arts",
+              "type": "Homework",
+              "label": "Drama- Unit 3 Written Exam Paper"
+            }
+          ]
+        },
+        {
+          "date": "2026-02-14T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-15T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-16T00:00:00.000Z",
+          "week": "February Half Term",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-17T00:00:00.000Z",
+          "week": "February Half Term",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-18T00:00:00.000Z",
+          "week": "February Half Term",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-19T00:00:00.000Z",
+          "week": "February Half Term",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-20T00:00:00.000Z",
+          "week": "February Half Term",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-21T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-22T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-23T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Maths / Numeracy",
+              "type": "Homework",
+              "label": "Past Paper Homework"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "**Health and Social Care** NEA to be done in MHU lessons throughout the year"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Practical",
+              "label": "**Construction** Unit 2 -will be working on this with Mr Pearce until the submission in March."
+            },
+            {
+              "subject": "Humanities",
+              "type": "Exam",
+              "label": "Business Mock this week Unit 1 TBC"
+            },
+            {
+              "subject": "Expressive Arts",
+              "type": "Practical",
+              "label": "**Music: Ensemble Exams**"
+            }
+          ]
+        },
+        {
+          "date": "2026-02-24T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Expressive Arts",
+              "type": "Practical",
+              "label": "Music: Ensemble Exams"
+            }
+          ]
+        },
+        {
+          "date": "2026-02-25T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Expressive Arts",
+              "type": "Exam",
+              "label": "GCSE Drama Unit 3 Exam"
+            }
+          ]
+        },
+        {
+          "date": "2026-02-26T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-27T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-02-28T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-01T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-02T00:00:00.000Z",
+          "week": "1",
+          "isInset": true,
+          "assessments": [
+            {
+              "subject": "Maths / Numeracy",
+              "type": "Homework",
+              "label": "Past Paper Homework"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "**Health and Social Care** NEA to be done in MHU lessons throughout the year"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Practical",
+              "label": "**Construction** Unit 2 -will be working on this with Mr Pearce until the submission in March."
+            },
+            {
+              "subject": "Humanities",
+              "type": "Mock",
+              "label": "RS Unit 2 mock this week - specific dates TBC"
+            },
+            {
+              "subject": "Expressive Arts",
+              "type": "Practical",
+              "label": "Drama- Unit 2 Scripted Exam- Date TBC by Exam Board"
+            }
+          ]
+        },
+        {
+          "date": "2026-03-03T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-04T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-05T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-06T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-07T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-08T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-09T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Maths / Numeracy",
+              "type": "Homework",
+              "label": "Past Paper Homework"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "**Health and Social Care** NEA to be done in MHU lessons throughout the year"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Practical",
+              "label": "**Construction** Unit 2 -will be working on this with Mr Pearce until the submission in March."
+            },
+            {
+              "subject": "Humanities",
+              "type": "Exam",
+              "label": "Business Mock this week Unit 2 TBC"
+            }
+          ]
+        },
+        {
+          "date": "2026-03-10T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "English / Cymraeg / MFL",
+              "type": "Exam",
+              "label": "Welsh Unit 1 Resit (only affects 3 pupils)"
+            }
+          ]
+        },
+        {
+          "date": "2026-03-11T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "English / Cymraeg / MFL",
+              "type": "Exam",
+              "label": "Welsh Unit 1 Resit (only affects 3 pupils)"
+            }
+          ]
+        },
+        {
+          "date": "2026-03-12T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "English / Cymraeg / MFL",
+              "type": "Exam",
+              "label": "Welsh Unit 1 Resit (only affects 3 pupils)"
+            }
+          ]
+        },
+        {
+          "date": "2026-03-13T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-14T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-15T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-16T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Maths / Numeracy",
+              "type": "Homework",
+              "label": "Past Paper Homework"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "**Health and Social Care** NEA to be done in MHU lessons throughout the year"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Practical",
+              "label": "**Construction** Unit 2 -will be working on this with Mr Pearce until the submission in March."
+            }
+          ]
+        },
+        {
+          "date": "2026-03-17T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "English / Cymraeg / MFL",
+              "type": "Exam",
+              "label": "Welsh Unit 2 Speaking Exam"
+            }
+          ]
+        },
+        {
+          "date": "2026-03-18T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "English / Cymraeg / MFL",
+              "type": "Exam",
+              "label": "Welsh Unit 2 Speaking Exam"
+            }
+          ]
+        },
+        {
+          "date": "2026-03-19T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "English / Cymraeg / MFL",
+              "type": "Exam",
+              "label": "Welsh Unit 2 Speaking Exam"
+            }
+          ]
+        },
+        {
+          "date": "2026-03-20T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-21T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-22T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-23T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "English / Cymraeg / MFL",
+              "type": "Mock",
+              "label": "English Mocks"
+            },
+            {
+              "subject": "Maths / Numeracy",
+              "type": "Homework",
+              "label": "Past Paper Homework"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "NEA",
+              "label": "**Health and Social Care** NEA to be done in MHU lessons throughout the year"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Practical",
+              "label": "**Construction** Unit 2 -will be working on this with Mr Pearce until the submission in March."
+            }
+          ]
+        },
+        {
+          "date": "2026-03-24T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "English / Cymraeg / MFL",
+              "type": "Mock",
+              "label": "English Mocks"
+            }
+          ]
+        },
+        {
+          "date": "2026-03-25T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "English / Cymraeg / MFL",
+              "type": "Mock",
+              "label": "English Mocks"
+            }
+          ]
+        },
+        {
+          "date": "2026-03-26T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-27T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "English / Cymraeg / MFL",
+              "type": "Homework",
+              "label": "Engliish revision homework sent home"
+            },
+            {
+              "subject": "Expressive Arts",
+              "type": "Homework",
+              "label": "Drama- Unit 3 Written Exam Paper"
+            }
+          ]
+        },
+        {
+          "date": "2026-03-28T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-29T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-30T00:00:00.000Z",
+          "week": "Easter Holiday",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-03-31T00:00:00.000Z",
+          "week": "Easter Holiday",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-01T00:00:00.000Z",
+          "week": "Easter Holiday",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-02T00:00:00.000Z",
+          "week": "Easter Holiday",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-03T00:00:00.000Z",
+          "week": "Easter Holiday",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-04T00:00:00.000Z",
+          "week": "Easter Holiday",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-05T00:00:00.000Z",
+          "week": "Easter Holiday",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-06T00:00:00.000Z",
+          "week": "Easter Holiday",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-07T00:00:00.000Z",
+          "week": "Easter Holiday",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-08T00:00:00.000Z",
+          "week": "Easter Holiday",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-09T00:00:00.000Z",
+          "week": "Easter Holiday",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-10T00:00:00.000Z",
+          "week": "Easter Holiday",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-11T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-12T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-13T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Maths / Numeracy",
+              "type": "Homework",
+              "label": "Past Paper Homework"
+            }
+          ]
+        },
+        {
+          "date": "2026-04-14T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-15T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-16T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-17T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-18T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-19T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-20T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Maths / Numeracy",
+              "type": "Homework",
+              "label": "Past Paper Homework"
+            }
+          ]
+        },
+        {
+          "date": "2026-04-21T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-22T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-23T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-24T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-25T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-26T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-27T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-28T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-29T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-04-30T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-01T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-02T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-03T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-04T00:00:00.000Z",
+          "week": "May BH",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-05T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-06T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-07T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Maths / Numeracy",
+              "type": "Exam",
+              "label": "GCSE Numeracy Unit 1 Exam"
+            }
+          ]
+        },
+        {
+          "date": "2026-05-08T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-09T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-10T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-11T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Humanities",
+              "type": "Exam",
+              "label": "Business Unit 1"
+            }
+          ]
+        },
+        {
+          "date": "2026-05-12T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "Exam",
+              "label": "**Biology 2 Exam** (Double award & Separate Science)"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Exam",
+              "label": "**Applied Science** Unit 3 (Double award) Exam\n\n**Applied Science** Unit 2 (Single award) Exam"
+            },
+            {
+              "subject": "Humanities",
+              "type": "Exam",
+              "label": "Geography Unit 1"
+            }
+          ]
+        },
+        {
+          "date": "2026-05-13T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "English / Cymraeg / MFL",
+              "type": "Exam",
+              "label": "Welsh GCSE Unit 3 exam"
+            }
+          ]
+        },
+        {
+          "date": "2026-05-14T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Maths / Numeracy",
+              "type": "Exam",
+              "label": "GCSE Maths Unit 1 Exam"
+            }
+          ]
+        },
+        {
+          "date": "2026-05-15T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-16T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-17T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-18T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "English / Cymraeg / MFL",
+              "type": "Exam",
+              "label": "Media Studies GCSE \n(Unit 1)"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Exam",
+              "label": "**Chemistry 2 Exam** (Double award & Separate Science)"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Exam",
+              "label": "**Engineering** Unit 3 Exam"
+            }
+          ]
+        },
+        {
+          "date": "2026-05-19T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "English / Cymraeg / MFL",
+              "type": "Exam",
+              "label": "English Literature GCSE\n(Unit 2a: An Inspector Calls, Heroes)\n(Unit 2b: A Christmas Carol and Blood Brothers / A View from the Bridge"
+            }
+          ]
+        },
+        {
+          "date": "2026-05-20T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-21T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "English / Cymraeg / MFL",
+              "type": "Exam",
+              "label": "English Language GCSE\n(Unit 2 - Exposition, Narration and Description)"
+            },
+            {
+              "subject": "Humanities",
+              "type": "Exam",
+              "label": "Business unit 2"
+            }
+          ]
+        },
+        {
+          "date": "2026-05-22T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "Exam",
+              "label": "**Physics 2 Exam** (Double award & Separate Science)"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Exam",
+              "label": "**Health and Social Care **Unit 1 Exam  (**YEAR 10 RESIT ONLY**)"
+            }
+          ]
+        },
+        {
+          "date": "2026-05-23T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-24T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-25T00:00:00.000Z",
+          "week": "May Half Term",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-26T00:00:00.000Z",
+          "week": "May Half Term",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-27T00:00:00.000Z",
+          "week": "May Half Term",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-28T00:00:00.000Z",
+          "week": "May Half Term",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-29T00:00:00.000Z",
+          "week": "May Half Term",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-30T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-05-31T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-01T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Humanities",
+              "type": "Exam",
+              "label": "RS Unit 2"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-02T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "English / Cymraeg / MFL",
+              "type": "Exam",
+              "label": "Welsh GCSE Unit 4 exam"
+            },
+            {
+              "subject": "English / Cymraeg / MFL",
+              "type": "Exam",
+              "label": "Media Studies GCSE\n(Unit 2)"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-03T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Maths / Numeracy",
+              "type": "Exam",
+              "label": "GCSE Numeracy Unit 2 Exam"
+            },
+            {
+              "subject": "Humanities",
+              "type": "Exam",
+              "label": "Geography Unit 2"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-04T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-05T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "English / Cymraeg / MFL",
+              "type": "Exam",
+              "label": "English Language GCSE \n(Unit 3 - Argumentation, Persuasion and Instructional)"
+            },
+            {
+              "subject": "Expressive Arts",
+              "type": "Exam",
+              "label": "Music: Unit 3 Written Exam"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-06T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-07T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-08T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "Exam",
+              "label": "Biology 1 Exam **YEAR 10 RESIT ONLY **(Double award & Separate Science)\n\n**Applied Science** (Double Award) Unit 2 **YEAR 10 RESIT ONLY**"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Exam",
+              "label": "**Health and Social Care **Unit 3 Exam"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-09T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "Exam",
+              "label": "**Construction** Unit 1 **YEAR 10 RESIT ONLY**"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-10T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Maths / Numeracy",
+              "type": "Exam",
+              "label": "GCSE Maths Unit 2 Exam"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-11T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-12T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "Exam",
+              "label": "Chemistry 1 Exam **YEAR 10 RESIT ONLY **(Double award & Separate Science)"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Exam",
+              "label": "**Hospitality & Catering** Unit 1 Exam"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-13T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-14T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-15T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "Exam",
+              "label": "Physics 1 Exam **YEAR 10 RESIT ONLY **(Double award & Separate Science)"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-16T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": [
+            {
+              "subject": "Maths / Numeracy",
+              "type": "Exam",
+              "label": "Additional Maths Exam"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-17T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-18T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-19T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-20T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-21T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-22T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-23T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-24T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-25T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-26T00:00:00.000Z",
+          "week": "2",
+          "isInset": true,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-27T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-28T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-29T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-06-30T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-01T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-02T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-03T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-04T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-05T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-06T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-07T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-08T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-09T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-10T00:00:00.000Z",
+          "week": "2",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-11T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-12T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-13T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-14T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-15T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-16T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-17T00:00:00.000Z",
+          "week": "1",
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-18T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        },
+        {
+          "date": "2026-07-19T00:00:00.000Z",
+          "week": null,
+          "isInset": false,
+          "assessments": []
+        }
+      ]
+    }
+  }
+}
