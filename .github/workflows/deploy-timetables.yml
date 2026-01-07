@@ -36,8 +36,7 @@ jobs:
 
       - name: Compare Data
         run: |
-          git fetch origin gh-pages || true
-          node scripts/compare-data.js >> $GITHUB_STEP_SUMMARY
+          npm run data:compare >> $GITHUB_STEP_SUMMARY
 
       - name: Build App
         run: |

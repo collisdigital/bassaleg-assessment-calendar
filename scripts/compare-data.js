@@ -15,6 +15,13 @@ const args = process.argv.slice(2);
 const dateArgIndex = args.indexOf('--date');
 const targetDate = dateArgIndex !== -1 ? args[dateArgIndex + 1] : null;
 
+// Ensure we have the remote branch history
+try {
+    execSync(`git fetch origin gh-pages:gh-pages`, { stdio: 'ignore' });
+} catch {
+    // Ignore error if fetch fails (e.g. branch doesn't exist yet)
+}
+
 function getGitFileContent(branch, filePath, date) {
     try {
         let commitHash = branch;
@@ -38,7 +45,6 @@ function getGitFileContent(branch, filePath, date) {
         return JSON.parse(content);
     } catch {
         // Only return null if the error is likely "file not found" or "branch not found"
-        // console.error(e.message);
         return null;
     }
 }
@@ -117,7 +123,6 @@ function formatDate(isoStr) {
     if (!oldData) {
         console.log("## Data Comparison");
         console.log("No previous data found to compare against (or branch/file missing). Assuming strictly new data.");
-        // Optional: List everything as added? For now, just exit.
         process.exit(0);
     }
 
