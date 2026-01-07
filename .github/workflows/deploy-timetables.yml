@@ -34,10 +34,19 @@ jobs:
         run: |
           npm run data:fetch
 
+      - name: Compare Data
+        run: |
+          git fetch origin gh-pages || true
+          node scripts/compare-data.js >> $GITHUB_STEP_SUMMARY
+
       - name: Build App
         run: |
           # Build with Base URL - including repo name
           npm run build -- --base=/bassaleg-assessment-calendar/
+
+      - name: Archive Raw Data
+        run: |
+          cp src/data.json dist/data.json
 
       - name: Deploy to gh-pages
         uses: JamesIves/github-pages-deploy-action@v4
