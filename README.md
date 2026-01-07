@@ -28,6 +28,7 @@ A web application designed to visualize assessment timetables for Year 10 and Ye
 ├── .github/workflows/   # CI/CD pipelines
 ├── e2e/                 # End-to-End tests (Playwright)
 ├── scripts/             # Data scripts
+│   ├── compare-data.js       # Compares local data with deployed data
 │   ├── fetch-live-data.js    # Fetches real Google Sheets data
 │   ├── generate-test-data.js # Generates deterministic mock data
 │   └── years-config.json     # Configuration for year groups
@@ -101,6 +102,16 @@ The application relies on `src/data.json`. You can generate this data in two way
     npm run data:fetch
     ```
 
+3.  **Compare Data:**
+    Compares the current local `src/data.json` with the deployed version on the `gh-pages` branch.
+    ```bash
+    # Compare against latest deployed version
+    npm run data:compare
+
+    # Compare against version deployed on or before a specific date
+    npm run data:compare -- --date 2023-12-25
+    ```
+
 ### Running Locally
 
 To start the development server:
@@ -158,8 +169,10 @@ The repository is configured to automatically deploy to GitHub Pages on every pu
 The workflow:
 1.  Sets up Node.js.
 2.  Fetches live data (`npm run data:fetch`).
-3.  Builds the Single Page Application (`npm run build`).
-4.  Deploys the `dist` folder to the `gh-pages` branch.
+3.  Compares the new data with the previously deployed version (`npm run data:compare`) and outputs a summary to the GitHub Actions log.
+4.  Builds the Single Page Application (`npm run build`).
+5.  Archives the raw data (`cp src/data.json dist/data.json`) to preserve history.
+6.  Deploys the `dist` folder to the `gh-pages` branch.
 
 ## 📄 License
 
