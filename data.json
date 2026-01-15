@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-01-14T03:25:49.934Z",
+  "generatedAt": "2026-01-15T03:20:25.573Z",
   "years": {
     "year-10": {
       "name": "Year 10",
@@ -941,13 +941,7 @@
           "date": "2026-03-05T00:00:00.000Z",
           "week": "1",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "English / MFL",
-              "type": "Mock",
-              "label": "English Language and Literature Mock"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2026-03-06T00:00:00.000Z",
@@ -1370,7 +1364,13 @@
           "date": "2026-05-05T00:00:00.000Z",
           "week": "2",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "English / MFL",
+              "type": "Mock",
+              "label": "English Language and Literature Mock"
+            }
+          ]
         },
         {
           "date": "2026-05-06T00:00:00.000Z",
@@ -1491,6 +1491,11 @@
           "week": "2",
           "isInset": false,
           "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "Exam",
+              "label": "Computer Science Unit 1"
+            },
             {
               "subject": "Expressive Arts",
               "type": "Mock",
