@@ -56,8 +56,8 @@ export function CalendarGrid({ schedule, viewMode, currentMonth, typeColors, onA
     // (days.length % 7) is how many days are in the current partial row.
     // (7 - ...) is how many more we need to reach 7.
     // The final % 7 ensures that if the row is already full, we add 0 days instead of 7.
-    const remaining = (7 - (days.length % 7)) % 7;
-    for (let i = 1; i <= remaining; i++) {
+    const remainingDaysInWeek = (7 - (days.length % 7)) % 7;
+    for (let i = 1; i <= remainingDaysInWeek; i++) {
         const d = new Date(year, month + 1, i);
         days.push({ day: null, date: d, isCurrentMonth: false });
     }
