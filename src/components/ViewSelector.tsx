@@ -7,8 +7,7 @@ interface ViewSelectorProps {
 
 export function ViewSelector({ currentView, onViewChange }: ViewSelectorProps) {
   return (
-    <div className="flex items-center space-x-2">
-      <span className="text-sm font-semibold text-gray-500 uppercase tracking-wider">View:</span>
+    <div className="flex items-center">
       <select
         value={currentView}
         onChange={(e) => onViewChange(e.target.value as ViewMode)}

@@ -34,16 +34,16 @@ export function FilterBar({
   };
 
   return (
-    <div className={`bg-white p-4 shadow-sm border-b border-gray-200 sticky top-0 z-10 ${className}`}>
-      <div className="max-w-7xl mx-auto flex flex-col gap-4">
+    <div className={`bg-white p-2 shadow-sm border-b border-gray-200 sticky top-0 z-10 ${className}`}>
+      <div className="max-w-7xl mx-auto flex flex-col gap-2">
 
         {/* Filters Container */}
-        <div className="flex flex-col md:flex-row gap-6">
+        <div className="flex flex-col md:flex-row gap-4">
 
           {/* Types Filter */}
           <div className="flex-1">
-            <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2">Filter by Type</h3>
-            <div className="flex flex-wrap gap-2">
+            <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">Filter by Type</h3>
+            <div className="flex flex-wrap gap-1.5">
               {allTypes.map(type => {
                 const isSelected = selectedTypes.includes(type);
                 const color = typeColors[type] || '#E5E7EB'; // Default gray-200
@@ -73,8 +73,8 @@ export function FilterBar({
 
           {/* Subjects Filter */}
           <div className="flex-[2]">
-            <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2">Filter by Subject</h3>
-            <div className="flex flex-wrap gap-2">
+            <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">Filter by Subject</h3>
+            <div className="flex flex-wrap gap-1.5">
               {allSubjects.map(subject => {
                 const isSelected = selectedSubjects.includes(subject);
                 return (
