@@ -2,7 +2,7 @@
 
 A web application designed to visualize assessment timetables for Year 10 and Year 11 students at Bassaleg School. The application automatically generates interactive calendars and timeline views from Google Sheets data.
 
-[**View Live Site**](https://collisdigital.github.io/bassaleg-assessment-calendar/)
+[**View Live Site**](https://bassaleg.collis.digital/)
 
 ## 🚀 Features
 
