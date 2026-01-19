@@ -41,7 +41,7 @@ jobs:
       - name: Build App
         run: |
           # Build with Base URL - including repo name
-          npm run build -- --base=/bassaleg-assessment-calendar/
+          npm run build
 
       - name: Archive Raw Data
         run: |
