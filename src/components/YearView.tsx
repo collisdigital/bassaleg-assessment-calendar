@@ -55,8 +55,32 @@ export function YearView() {
 
   const [selectedAssessment, setSelectedAssessment] = useState<{data: Assessment, date: string} | null>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isFiltersOpen, setIsFiltersOpen] = useState(false);
   const [showFilterWarning, setShowFilterWarning] = useState(false);
   const timelineScrollRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [viewMode]);
+
+  const [currentMonth, setCurrentMonth] = useState(() => {
+    const now = new Date();
+    return new Date(now.getFullYear(), now.getMonth(), 1);
+  });
+
+  const goToNextMonth = () => {
+    setCurrentMonth(new Date(currentMonth.getFullYear(), currentMonth.getMonth() + 1, 1));
+  };
+
+  const goToPrevMonth = () => {
+    setCurrentMonth(new Date(currentMonth.getFullYear(), currentMonth.getMonth() - 1, 1));
+  };
+
+  const goToTodayCalendar = () => {
+    setCurrentMonth(new Date(new Date().getFullYear(), new Date().getMonth(), 1));
+  };
+
+  const monthLabel = currentMonth.toLocaleString('default', { month: 'long', year: 'numeric' });
 
   useEffect(() => {
     // If Timeline view is selected on page load and filters are enabled, show a warning
@@ -99,27 +123,58 @@ export function YearView() {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col font-sans">
       <header className="sticky top-0 z-30 bg-white border-b border-gray-200 shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-          <div className="flex items-center gap-4">
+        <div className="max-w-7xl mx-auto px-4 py-2 flex justify-between items-center gap-2">
+          <div className="flex items-center gap-2 md:gap-4 min-w-0 flex-shrink">
             <Link
                 to="/"
-                className="text-gray-500 hover:text-blue-600 transition-colors"
+                className="text-gray-500 hover:text-blue-600 transition-colors flex-shrink-0"
                 title="Return to Year Selection"
             >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
                 </svg>
             </Link>
-            <div>
-                <h1 className="text-lg md:text-2xl font-bold text-gray-900 tracking-tight leading-tight">
+            <div className="min-w-0">
+                <h1 className="text-sm md:text-lg font-semibold text-gray-900 tracking-tight leading-tight truncate whitespace-nowrap">
                 {dataHook.filename}
                 </h1>
-                <p className="text-xs md:text-sm text-gray-500">2025-2026 Academic Year</p>
             </div>
           </div>
 
+          {/* Month Controls - Visible on all screens unless timeline */}
+          {viewMode !== 'timeline' && (
+            <div className="flex items-center gap-2 md:gap-4 mx-2">
+               <h2 className="text-sm md:text-lg font-semibold text-gray-800 w-28 md:w-40 text-center truncate">{monthLabel}</h2>
+               <div className="flex items-stretch rounded-md shadow-sm">
+                  <button onClick={goToPrevMonth} className="flex items-center px-2 bg-white border border-gray-300 rounded-l-md hover:bg-gray-50 text-gray-600" aria-label="Previous Month">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
+                  </button>
+                  <button onClick={goToTodayCalendar} className="flex items-center px-3 py-1.5 bg-white border-t border-b border-gray-300 hover:bg-gray-50 text-sm font-medium text-gray-700">
+                      Today
+                  </button>
+                  <button onClick={goToNextMonth} className="flex items-center px-2 bg-white border border-gray-300 rounded-r-md hover:bg-gray-50 text-gray-600" aria-label="Next Month">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+                  </button>
+               </div>
+            </div>
+          )}
+
           {/* Desktop View Selector & Today Button */}
-          <div className="hidden md:flex items-center gap-3">
+          <div className="hidden md:flex items-center gap-4">
+            
+            <button
+              onClick={() => setIsFiltersOpen(!isFiltersOpen)}
+              className={`flex items-center gap-2 px-3 py-1.5 text-sm font-medium rounded-md transition-colors ${
+                isFiltersOpen 
+                  ? 'bg-blue-50 text-blue-700 ring-1 ring-blue-700/10' 
+                  : 'text-gray-700 hover:bg-gray-100'
+              }`}
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 3c2.755 0 5.455.232 8.083.678.533.09.917.556.917 1.096v1.044a2.25 2.25 0 0 1-.659 1.591l-5.432 5.432a2.25 2.25 0 0 0-.659 1.591v2.927a2.25 2.25 0 0 1-1.244 2.013L9.75 21v-6.568a2.25 2.25 0 0 0-.659-1.591L3.659 7.409A2.25 2.25 0 0 1 3 5.818V4.774c0-.54.384-1.006.917-1.096A48.32 48.32 0 0 1 12 3Z" />
+              </svg>
+              Filters
+            </button>
             {viewMode === 'timeline' && (
               <button
                 onClick={handleScrollToToday}
@@ -158,6 +213,13 @@ export function YearView() {
           </div>
         </div>
 
+        {/* Desktop Filter Bar */}
+        {isFiltersOpen && (
+          <div className="hidden md:block border-t border-gray-100">
+             <FilterBar {...dataHook} className="!sticky-auto !top-auto !shadow-none !border-0 !p-2" />
+          </div>
+        )}
+
         {/* Filter Warning - Inside Sticky Header */}
         {showFilterWarning && (
           <div className="bg-yellow-50 border-t border-yellow-200 p-3 transition-all duration-300">
@@ -194,10 +256,7 @@ export function YearView() {
         )}
       </header>
 
-      {/* Desktop Filter Bar */}
-      <div className="hidden md:block">
-        <FilterBar {...dataHook} />
-      </div>
+
 
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
@@ -220,12 +279,33 @@ export function YearView() {
 
           <div className="p-4 space-y-6">
             <div className="bg-gray-50 p-4 rounded-lg border border-gray-100">
-               <ViewSelector currentView={viewMode} onViewChange={setViewMode} />
+               <ViewSelector 
+                 currentView={viewMode} 
+                 onViewChange={(view) => {
+                   setViewMode(view);
+                   setIsMobileMenuOpen(false);
+                 }} 
+               />
             </div>
 
             <div>
                <h3 className="text-lg font-semibold text-gray-900 mb-2 px-1">Filter Assessments</h3>
-               <FilterBar {...dataHook} className="!static !shadow-none !border-0 !p-0" />
+               <FilterBar 
+                {...dataHook} 
+                setSelectedSubjects={(subjects) => {
+                  dataHook.setSelectedSubjects(subjects);
+                  setIsMobileMenuOpen(false);
+                }}
+                setSelectedTypes={(types) => {
+                  dataHook.setSelectedTypes(types);
+                  setIsMobileMenuOpen(false);
+                }}
+                clearAllFilters={() => {
+                  dataHook.clearAllFilters();
+                  setIsMobileMenuOpen(false);
+                }}
+                className="!static !shadow-none !border-0 !p-0" 
+               />
             </div>
 
             <div className="pt-6 border-t border-gray-100">
@@ -256,6 +336,7 @@ export function YearView() {
             <CalendarGrid
                 schedule={dataHook.schedule}
                 viewMode={viewMode}
+                currentMonth={currentMonth}
                 typeColors={dataHook.typeColors}
                 onAssessmentClick={handleAssessmentClick}
             />

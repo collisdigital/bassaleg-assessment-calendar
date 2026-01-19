@@ -5,6 +5,8 @@ import { MemoryRouter, Routes, Route } from 'react-router-dom';
 
 // Mock scrollIntoView
 Element.prototype.scrollIntoView = vi.fn();
+// Mock scrollTo
+window.scrollTo = vi.fn();
 
 describe('Filter Reset Behavior', () => {
   beforeEach(() => {
@@ -41,6 +43,10 @@ describe('Filter Reset Behavior', () => {
               </Routes>
           </MemoryRouter>
       );
+
+      // Open filters menu
+      const filtersToggle = screen.getByRole('button', { name: /Filters/i });
+      await user.click(filtersToggle);
 
       // Verify "Clear All" button is present
       const clearBtn = await screen.findByText('Clear All');

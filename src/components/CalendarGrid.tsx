@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useMemo } from 'react';
 import { DayInfo, ViewMode } from '../types';
 import { DayCell } from './DayCell';
 
@@ -7,32 +7,12 @@ import { Assessment } from '../types';
 interface CalendarGridProps {
   schedule: DayInfo[];
   viewMode: ViewMode;
+  currentMonth: Date;
   typeColors: Record<string, string>;
   onAssessmentClick: (assessment: Assessment, date: string) => void;
 }
 
-export function CalendarGrid({ schedule, viewMode, typeColors, onAssessmentClick }: CalendarGridProps) {
-  // Determine the date range from the schedule to set initial view
-  // User request: Start with current month containing today
-
-  const [currentMonth, setCurrentMonth] = useState(() => {
-    const now = new Date();
-    return new Date(now.getFullYear(), now.getMonth(), 1);
-  });
-
-  // Navigation
-  const goToNextMonth = () => {
-    setCurrentMonth(new Date(currentMonth.getFullYear(), currentMonth.getMonth() + 1, 1));
-  };
-
-  const goToPrevMonth = () => {
-    setCurrentMonth(new Date(currentMonth.getFullYear(), currentMonth.getMonth() - 1, 1));
-  };
-
-  const goToToday = () => {
-      setCurrentMonth(new Date(new Date().getFullYear(), new Date().getMonth(), 1));
-  }
-
+export function CalendarGrid({ schedule, viewMode, currentMonth, typeColors, onAssessmentClick }: CalendarGridProps) {
   // Optimization: Create a lookup map for schedule dates to avoid O(N*M) lookups
   // N = schedule items, M = days displayed (30-42)
   const scheduleMap = useMemo(() => {
@@ -72,8 +52,11 @@ export function CalendarGrid({ schedule, viewMode, typeColors, onAssessmentClick
         days.push({ day: null, date: d, isCurrentMonth: true });
     }
 
-    // Next Month padding
-    const remaining = 42 - days.length; // 6 rows * 7 days
+    // Next Month padding - fill the rest of the final week
+    // (days.length % 7) is how many days are in the current partial row.
+    // (7 - ...) is how many more we need to reach 7.
+    // The final % 7 ensures that if the row is already full, we add 0 days instead of 7.
+    const remaining = (7 - (days.length % 7)) % 7;
     for (let i = 1; i <= remaining; i++) {
         const d = new Date(year, month + 1, i);
         days.push({ day: null, date: d, isCurrentMonth: false });
@@ -97,19 +80,27 @@ export function CalendarGrid({ schedule, viewMode, typeColors, onAssessmentClick
     return mappedDays;
   }, [currentMonth, scheduleMap]);
 
-  const monthLabel = currentMonth.toLocaleString('default', { month: 'long', year: 'numeric' });
-
   // Filtering for view mode
   const is5Day = viewMode === 'month-5day';
   const gridCols = is5Day ? 'grid-cols-5' : 'grid-cols-7';
 
   // Filter out Sat (6) and Sun (0) if 5-day view
-  const visibleDays = is5Day
+  let visibleDays = is5Day
     ? daysInMonth.filter(d => {
         const day = d.date.getDay();
         return day !== 0 && day !== 6;
       })
     : daysInMonth;
+
+  // Optimization for 5-day view: If the first row contains NO days from the current month
+  // (because the month started on a Sat/Sun), remove that empty row.
+  if (is5Day && visibleDays.length > 5) {
+      const firstRow = visibleDays.slice(0, 5);
+      const hasCurrentMonthInFirstRow = firstRow.some(d => d.isCurrentMonth);
+      if (!hasCurrentMonthInFirstRow) {
+          visibleDays = visibleDays.slice(5);
+      }
+  }
 
   const headerDays = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'];
   if (!is5Day) {
@@ -118,16 +109,6 @@ export function CalendarGrid({ schedule, viewMode, typeColors, onAssessmentClick
 
   return (
     <div className="flex flex-col h-full">
-        {/* Calendar Header */}
-        <div className="flex items-center justify-between p-4 bg-white border-b border-gray-200">
-            <h2 className="text-2xl font-bold text-gray-800">{monthLabel}</h2>
-            <div className="flex gap-2">
-                <button onClick={goToPrevMonth} className="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded text-gray-700">← Prev</button>
-                <button onClick={goToToday} className="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded text-gray-700 text-sm">Today</button>
-                <button onClick={goToNextMonth} className="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded text-gray-700">Next →</button>
-            </div>
-        </div>
-
         {/* Days Header */}
         <div className={`grid ${gridCols} border-b border-gray-200 bg-gray-50`}>
             {headerDays.map(d => (

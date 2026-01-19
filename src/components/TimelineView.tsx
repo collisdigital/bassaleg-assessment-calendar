@@ -52,8 +52,21 @@ export const TimelineView = memo(function TimelineView({ schedule, typeColors, o
       return d >= todayMidnight;
   };
 
-  // Find the first day that is today or in the future to mark as the scroll target
-  let scrollTargetFound = false;
+  // Pre-calculate the scroll target date
+  let targetDate: string | undefined;
+
+  // 1. Get list of days that will actually be rendered
+  const renderedDays = schedule.filter(day => day.assessments.length > 0 || isToday(day.date));
+  
+  // 2. Try to find the first rendered day that is today or in the future
+  const firstFutureOrToday = renderedDays.find(day => isFutureOrToday(day.date));
+
+  if (firstFutureOrToday) {
+    targetDate = firstFutureOrToday.date;
+  } else if (renderedDays.length > 0) {
+    // 3. Fallback: If all rendered events are in the past, use the last one
+    targetDate = renderedDays[renderedDays.length - 1].date;
+  }
 
   return (
     <div className="flex flex-col space-y-4 bg-gray-50 p-4 min-h-[500px]">
@@ -68,12 +81,7 @@ export const TimelineView = memo(function TimelineView({ schedule, typeColors, o
         const isPastDay = !isFutureOrToday(day.date); // Needed for dimming
 
         // Determine if this element should be the scroll target
-        // We want the first day that is Today or Future.
-        let isRef = false;
-        if (!scrollTargetFound && isFutureOrToday(day.date)) {
-            isRef = true;
-            scrollTargetFound = true;
-        }
+        const isRef = day.date === targetDate;
 
         let appearanceClasses = '';
         if (isCurrentDay) {

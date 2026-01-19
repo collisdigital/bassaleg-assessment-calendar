@@ -9,6 +9,8 @@ describe('CalendarGrid', () => {
   const mockTypeColors = { Exam: '#FF0000' };
   // 2024-02-14 is a Wednesday.
   const initialDate = new Date('2024-02-14T12:00:00Z');
+  // We need a specific month object for props
+  const currentMonth = new Date(2024, 1, 1); // February 2024
 
   beforeEach(() => {
     mockOnAssessmentClick.mockClear();
@@ -20,24 +22,12 @@ describe('CalendarGrid', () => {
     vi.useRealTimers();
   });
 
-  it('renders current month header by default', () => {
-    render(
-      <CalendarGrid
-        schedule={[]}
-        viewMode="month-7day"
-        typeColors={mockTypeColors}
-        onAssessmentClick={mockOnAssessmentClick}
-      />
-    );
-
-    expect(screen.getByText('February 2024')).toBeInTheDocument();
-  });
-
   it('renders correct days for the month (7-day view)', () => {
     render(
       <CalendarGrid
         schedule={[]}
         viewMode="month-7day"
+        currentMonth={currentMonth}
         typeColors={mockTypeColors}
         onAssessmentClick={mockOnAssessmentClick}
       />
@@ -45,27 +35,6 @@ describe('CalendarGrid', () => {
 
     expect(screen.getByText('Mon')).toBeInTheDocument();
     expect(screen.getByText('Sun')).toBeInTheDocument();
-  });
-
-  it('navigates to next and previous months', async () => {
-    const user = userEvent.setup();
-    render(
-      <CalendarGrid
-        schedule={[]}
-        viewMode="month-7day"
-        typeColors={mockTypeColors}
-        onAssessmentClick={mockOnAssessmentClick}
-      />
-    );
-
-    const nextBtn = screen.getByText('Next →');
-    await user.click(nextBtn);
-    expect(screen.getByText('March 2024')).toBeInTheDocument();
-
-    const prevBtn = screen.getByText('← Prev');
-    await user.click(prevBtn); // Back to Feb
-    await user.click(prevBtn); // Back to Jan
-    expect(screen.getByText('January 2024')).toBeInTheDocument();
   });
 
   it('renders assessments on correct days', () => {
@@ -78,6 +47,7 @@ describe('CalendarGrid', () => {
       <CalendarGrid
         schedule={schedule}
         viewMode="month-7day"
+        currentMonth={currentMonth}
         typeColors={mockTypeColors}
         onAssessmentClick={mockOnAssessmentClick}
       />
@@ -91,6 +61,7 @@ describe('CalendarGrid', () => {
       <CalendarGrid
         schedule={[]}
         viewMode="month-5day"
+        currentMonth={currentMonth}
         typeColors={mockTypeColors}
         onAssessmentClick={mockOnAssessmentClick}
       />
@@ -107,6 +78,7 @@ describe('CalendarGrid', () => {
       <CalendarGrid
         schedule={[]}
         viewMode="month-7day"
+        currentMonth={currentMonth}
         typeColors={mockTypeColors}
         onAssessmentClick={mockOnAssessmentClick}
       />
@@ -125,6 +97,7 @@ describe('CalendarGrid', () => {
         <CalendarGrid
             schedule={schedule}
             viewMode="month-7day"
+            currentMonth={currentMonth}
             typeColors={mockTypeColors}
             onAssessmentClick={mockOnAssessmentClick}
         />
@@ -134,18 +107,5 @@ describe('CalendarGrid', () => {
       await user.click(button);
 
       expect(mockOnAssessmentClick).toHaveBeenCalledWith(assessment, '2024-02-14');
-  });
-
-  it('jumps to today when Today button is clicked', async () => {
-      const user = userEvent.setup();
-      render(<CalendarGrid schedule={[]} viewMode="month-7day" typeColors={mockTypeColors} onAssessmentClick={mockOnAssessmentClick} />);
-
-      // Navigate away
-      await user.click(screen.getByText('Next →'));
-      expect(screen.getByText('March 2024')).toBeInTheDocument();
-
-      // Click Today
-      await user.click(screen.getByText('Today'));
-      expect(screen.getByText('February 2024')).toBeInTheDocument();
   });
 });
