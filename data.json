@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-01-20T03:23:04.774Z",
+  "generatedAt": "2026-01-21T03:22:13.301Z",
   "years": {
     "year-10": {
       "name": "Year 10",
       "filename": "Year 10 2025-26 Assessment Calendar",
       "sourceUrl": "https://docs.google.com/spreadsheets/d/1i1p1tWNJZtwr_9orEjX0AKeQ_GrqkqI-vUW9KbAWslU",
       "types": {
-        "Exam": "#00FF00",
+        "Exams - To be held in exam venues": "#00FF00",
         "Mock": "#FFFF00",
         "NEA": "#00FFFF",
         "Practical": "#FF0000",
@@ -259,7 +259,7 @@
           "assessments": [
             {
               "subject": "English / MFL",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "Year 10 Group Discussion English -Unit 3 Influence and Power"
             },
             {
@@ -276,7 +276,7 @@
           "assessments": [
             {
               "subject": "English / MFL",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "Year 10 Group Discussion English -Unit 3 Influence and Power"
             }
           ]
@@ -920,7 +920,7 @@
             },
             {
               "subject": "Humanities",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "Business Mock this week Unit 1"
             }
           ]
@@ -1409,7 +1409,7 @@
           "assessments": [
             {
               "subject": "Humanities",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "Geography Unit 1 (NEW)"
             }
           ]
@@ -1433,7 +1433,7 @@
           "assessments": [
             {
               "subject": "Humanities",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "Business unit 1 (NEW)"
             }
           ]
@@ -1445,7 +1445,7 @@
           "assessments": [
             {
               "subject": "English / MFL",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "NEW English Language and Literature Unit 1"
             }
           ]
@@ -1481,7 +1481,7 @@
           "assessments": [
             {
               "subject": "Humanities",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "RS Unit 1 exam (NEW)"
             }
           ]
@@ -1493,7 +1493,7 @@
           "assessments": [
             {
               "subject": "Science & Tech",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "Computer Science Unit 1"
             },
             {
@@ -1510,7 +1510,7 @@
           "assessments": [
             {
               "subject": "Science & Tech",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "**Health and Social Care **Unit 1 Exam"
             }
           ]
@@ -1618,7 +1618,7 @@
           "assessments": [
             {
               "subject": "Science & Tech",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "Biology 1 Exam (Double award & Separate Science)"
             }
           ]
@@ -1654,7 +1654,7 @@
           "assessments": [
             {
               "subject": "Science & Tech",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "Chemistry 1 Exam (Double award & Separate Science)"
             },
             {
@@ -1683,7 +1683,7 @@
           "assessments": [
             {
               "subject": "Science & Tech",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "Physics 1 Exam (Double award & Separate Science)"
             },
             {
@@ -1967,7 +1967,7 @@
       "filename": "Year 11 2025-26 Assessment Calendar",
       "sourceUrl": "https://docs.google.com/spreadsheets/d/1IwS8bwAq1-MGXMp88erwBC55m8iFaU--ZgBPRzuS-w4",
       "types": {
-        "Exam": "#00FF00",
+        "Exams - To be held in exam venues": "#00FF00",
         "Mock": "#FFFF00",
         "NEA": "#00FFFF",
         "Practical": "#FF0000",
@@ -2024,7 +2024,7 @@
           "assessments": [
             {
               "subject": "Maths / Numeracy",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "GCSE Numeracy Unit 1 Exam"
             }
           ]
@@ -2048,7 +2048,7 @@
           "assessments": [
             {
               "subject": "Maths / Numeracy",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "GCSE Numeracy Unit 2 Exam"
             },
             {
@@ -2089,7 +2089,7 @@
           "assessments": [
             {
               "subject": "Maths / Numeracy",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "GCSE Maths Unit 1 Exam"
             },
             {
@@ -2138,7 +2138,7 @@
           "assessments": [
             {
               "subject": "Maths / Numeracy",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "GCSE Maths Unit 2 Exam"
             }
           ]
@@ -2155,7 +2155,7 @@
             },
             {
               "subject": "Expressive Arts",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "Music Solo Performance Exam"
             }
           ]
@@ -2167,7 +2167,7 @@
           "assessments": [
             {
               "subject": "Expressive Arts",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "Music Solo Performance Exam"
             }
           ]
@@ -2656,7 +2656,7 @@
           "assessments": [
             {
               "subject": "English / Cymraeg / MFL",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "English Literature GCSE RESIT\n(Unit 1 – Of Mice and Men and Unseen Poetry)"
             }
           ]
@@ -2742,7 +2742,7 @@
           "assessments": [
             {
               "subject": "Science & Tech",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "**Science Practical Exam** Write Up  - all courses"
             }
           ]
@@ -2778,7 +2778,7 @@
             {
               "subject": "Science & Tech",
               "type": "NEA",
-              "label": "**Engineering** Unit 2 - Working on with Mr Parker until Janu**ary\n\nConstru**ction Unit 3 - Working on with Mr Parker until January"
+              "label": "**Engineering** Unit 2 - Working on with Mr Parker until January\n\n**Constru**ction Unit 3 - Working on with Mr Parker until January"
             },
             {
               "subject": "Science & Tech",
@@ -2817,7 +2817,7 @@
           "assessments": [
             {
               "subject": "Science & Tech",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "**Science Practical Exam** Write Up  - all courses"
             }
           ]
@@ -2892,7 +2892,7 @@
           "assessments": [
             {
               "subject": "Science & Tech",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "**Science Practical Exam** Write Up  - Seperate Science only"
             }
           ]
@@ -3097,11 +3097,6 @@
           "isInset": true,
           "assessments": [
             {
-              "subject": "Science & Tech",
-              "type": "Practical",
-              "label": "**Nutrition** Practical Exams - Details about exact timings will be given closer to this time."
-            },
-            {
               "subject": "Expressive Arts",
               "type": "Homework",
               "label": "Drama- Unit 3 Written Exam Paper"
@@ -3184,7 +3179,7 @@
             },
             {
               "subject": "Humanities",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "Business Mock this week Unit 1 TBC"
             },
             {
@@ -3213,7 +3208,7 @@
           "assessments": [
             {
               "subject": "Expressive Arts",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "GCSE Drama Unit 3 Exam"
             }
           ]
@@ -3332,7 +3327,7 @@
             },
             {
               "subject": "Humanities",
-              "type": "Exam",
+              "type": "Mock",
               "label": "Business Mock this week Unit 2 TBC"
             }
           ]
@@ -3344,7 +3339,7 @@
           "assessments": [
             {
               "subject": "English / Cymraeg / MFL",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "Welsh Unit 1 Resit (only affects 3 pupils)"
             }
           ]
@@ -3356,7 +3351,7 @@
           "assessments": [
             {
               "subject": "English / Cymraeg / MFL",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "Welsh Unit 1 Resit (only affects 3 pupils)"
             }
           ]
@@ -3368,7 +3363,7 @@
           "assessments": [
             {
               "subject": "English / Cymraeg / MFL",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "Welsh Unit 1 Resit (only affects 3 pupils)"
             }
           ]
@@ -3420,7 +3415,7 @@
           "assessments": [
             {
               "subject": "English / Cymraeg / MFL",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "Welsh Unit 2 Speaking Exam"
             }
           ]
@@ -3432,7 +3427,7 @@
           "assessments": [
             {
               "subject": "English / Cymraeg / MFL",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "Welsh Unit 2 Speaking Exam"
             }
           ]
@@ -3444,7 +3439,7 @@
           "assessments": [
             {
               "subject": "English / Cymraeg / MFL",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "Welsh Unit 2 Speaking Exam"
             }
           ]
@@ -3800,7 +3795,7 @@
           "assessments": [
             {
               "subject": "Maths / Numeracy",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "GCSE Numeracy Unit 1 Exam"
             }
           ]
@@ -3830,7 +3825,7 @@
           "assessments": [
             {
               "subject": "Humanities",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "Business Unit 1"
             }
           ]
@@ -3842,17 +3837,17 @@
           "assessments": [
             {
               "subject": "Science & Tech",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "**Biology 2 Exam** (Double award & Separate Science)"
             },
             {
               "subject": "Science & Tech",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "**Applied Science** Unit 3 (Double award) Exam\n\n**Applied Science** Unit 2 (Single award) Exam"
             },
             {
               "subject": "Humanities",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "Geography Unit 1"
             }
           ]
@@ -3864,7 +3859,7 @@
           "assessments": [
             {
               "subject": "English / Cymraeg / MFL",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "Welsh GCSE Unit 3 exam"
             }
           ]
@@ -3876,7 +3871,7 @@
           "assessments": [
             {
               "subject": "Maths / Numeracy",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "GCSE Maths Unit 1 Exam"
             }
           ]
@@ -3906,17 +3901,17 @@
           "assessments": [
             {
               "subject": "English / Cymraeg / MFL",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "Media Studies GCSE \n(Unit 1)"
             },
             {
               "subject": "Science & Tech",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "**Chemistry 2 Exam** (Double award & Separate Science)"
             },
             {
               "subject": "Science & Tech",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "**Engineering** Unit 3 Exam"
             }
           ]
@@ -3928,7 +3923,7 @@
           "assessments": [
             {
               "subject": "English / Cymraeg / MFL",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "English Literature GCSE\n(Unit 2a: An Inspector Calls, Heroes)\n(Unit 2b: A Christmas Carol and Blood Brothers / A View from the Bridge"
             }
           ]
@@ -3946,12 +3941,12 @@
           "assessments": [
             {
               "subject": "English / Cymraeg / MFL",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "English Language GCSE\n(Unit 2 - Exposition, Narration and Description)"
             },
             {
               "subject": "Humanities",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "Business unit 2"
             }
           ]
@@ -3963,12 +3958,12 @@
           "assessments": [
             {
               "subject": "Science & Tech",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "**Physics 2 Exam** (Double award & Separate Science)"
             },
             {
               "subject": "Science & Tech",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "**Health and Social Care **Unit 1 Exam  (**YEAR 10 RESIT ONLY**)"
             }
           ]
@@ -4034,7 +4029,7 @@
           "assessments": [
             {
               "subject": "Humanities",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "RS Unit 2"
             }
           ]
@@ -4046,12 +4041,12 @@
           "assessments": [
             {
               "subject": "English / Cymraeg / MFL",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "Welsh GCSE Unit 4 exam"
             },
             {
               "subject": "English / Cymraeg / MFL",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "Media Studies GCSE\n(Unit 2)"
             }
           ]
@@ -4063,12 +4058,12 @@
           "assessments": [
             {
               "subject": "Maths / Numeracy",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "GCSE Numeracy Unit 2 Exam"
             },
             {
               "subject": "Humanities",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "Geography Unit 2"
             }
           ]
@@ -4086,12 +4081,12 @@
           "assessments": [
             {
               "subject": "English / Cymraeg / MFL",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "English Language GCSE \n(Unit 3 - Argumentation, Persuasion and Instructional)"
             },
             {
               "subject": "Expressive Arts",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "Music: Unit 3 Written Exam"
             }
           ]
@@ -4115,12 +4110,12 @@
           "assessments": [
             {
               "subject": "Science & Tech",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "Biology 1 Exam **YEAR 10 RESIT ONLY **(Double award & Separate Science)\n\n**Applied Science** (Double Award) Unit 2 **YEAR 10 RESIT ONLY**"
             },
             {
               "subject": "Science & Tech",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "**Health and Social Care **Unit 3 Exam"
             }
           ]
@@ -4132,7 +4127,7 @@
           "assessments": [
             {
               "subject": "Science & Tech",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "**Construction** Unit 1 **YEAR 10 RESIT ONLY**"
             }
           ]
@@ -4144,7 +4139,7 @@
           "assessments": [
             {
               "subject": "Maths / Numeracy",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "GCSE Maths Unit 2 Exam"
             }
           ]
@@ -4162,12 +4157,12 @@
           "assessments": [
             {
               "subject": "Science & Tech",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "Chemistry 1 Exam **YEAR 10 RESIT ONLY **(Double award & Separate Science)"
             },
             {
               "subject": "Science & Tech",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "**Hospitality & Catering** Unit 1 Exam"
             }
           ]
@@ -4191,7 +4186,7 @@
           "assessments": [
             {
               "subject": "Science & Tech",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "Physics 1 Exam **YEAR 10 RESIT ONLY **(Double award & Separate Science)"
             }
           ]
@@ -4203,7 +4198,7 @@
           "assessments": [
             {
               "subject": "Maths / Numeracy",
-              "type": "Exam",
+              "type": "Exams - To be held in exam venues",
               "label": "Additional Maths Exam"
             }
           ]
