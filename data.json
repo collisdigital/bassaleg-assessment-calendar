@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-04T03:58:07.333Z",
+  "generatedAt": "2026-02-05T03:59:28.818Z",
   "years": {
     "year-10": {
       "name": "Year 10",
@@ -1367,8 +1367,8 @@
           "assessments": [
             {
               "subject": "English / MFL",
-              "type": "Mock",
-              "label": "English Language and Literature Mock"
+              "type": "Exams - To be held in exam venues",
+              "label": "https://docs.google.com/spreadsheets/d/14qTx46gatDYXD9WwuLyC8NG7OAmk9uh1l4mNibhV8Ls/edit?gid=0#gid=0"
             }
           ]
         },
@@ -1406,13 +1406,7 @@
           "date": "2026-05-11T00:00:00.000Z",
           "week": "1",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Humanities",
-              "type": "Exams - To be held in exam venues",
-              "label": "Geography Unit 1 (NEW)"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2026-05-12T00:00:00.000Z",
@@ -1430,25 +1424,13 @@
           "date": "2026-05-14T00:00:00.000Z",
           "week": "1",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Humanities",
-              "type": "Exams - To be held in exam venues",
-              "label": "Business unit 1 (NEW)"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2026-05-15T00:00:00.000Z",
           "week": "1",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "English / MFL",
-              "type": "Exams - To be held in exam venues",
-              "label": "NEW English Language and Literature Unit 1"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2026-05-16T00:00:00.000Z",
@@ -1478,42 +1460,19 @@
           "date": "2026-05-20T00:00:00.000Z",
           "week": "2",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Humanities",
-              "type": "Exams - To be held in exam venues",
-              "label": "RS Unit 1 exam (NEW)"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2026-05-21T00:00:00.000Z",
           "week": "2",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Science & Tech",
-              "type": "Exams - To be held in exam venues",
-              "label": "Computer Science Unit 1"
-            },
-            {
-              "subject": "Expressive Arts",
-              "type": "Mock",
-              "label": "Unit 1- Devising Exam Mock Standdown Day and Evening Showcase"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2026-05-22T00:00:00.000Z",
           "week": "2",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Science & Tech",
-              "type": "Exams - To be held in exam venues",
-              "label": "**Health and Social Care **Unit 1 Exam"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2026-05-23T00:00:00.000Z",
@@ -1615,13 +1574,7 @@
           "date": "2026-06-08T00:00:00.000Z",
           "week": "2",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Science & Tech",
-              "type": "Exams - To be held in exam venues",
-              "label": "Biology 1 Exam (Double award & Separate Science)"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2026-06-09T00:00:00.000Z",
@@ -1653,11 +1606,6 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Science & Tech",
-              "type": "Exams - To be held in exam venues",
-              "label": "Chemistry 1 Exam (Double award & Separate Science)"
-            },
-            {
               "subject": "Expressive Arts",
               "type": "Practical",
               "label": "Drama- Unit 1- Devising Exam- 10C All Day"
@@ -1682,13 +1630,8 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Science & Tech",
-              "type": "Exams - To be held in exam venues",
-              "label": "Physics 1 Exam (Double award & Separate Science)"
-            },
-            {
               "subject": "Expressive Arts",
-              "type": "Mock",
+              "type": "Practical",
               "label": "Music End of Year Internal Exam"
             }
           ]
@@ -3317,6 +3260,11 @@
             },
             {
               "subject": "Science & Tech",
+              "type": "Mock",
+              "label": "Engineering mock exam 08:45"
+            },
+            {
+              "subject": "Science & Tech",
               "type": "NEA",
               "label": "**Health and Social Care** NEA to be done in MHU lessons throughout the year"
             },
@@ -3750,13 +3698,25 @@
           "date": "2026-04-30T00:00:00.000Z",
           "week": "1",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "English / Cymraeg / MFL",
+              "type": "Mock",
+              "label": "Spanish oral mock"
+            }
+          ]
         },
         {
           "date": "2026-05-01T00:00:00.000Z",
           "week": "1",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "English / Cymraeg / MFL",
+              "type": "Mock",
+              "label": "Spanish oral mock"
+            }
+          ]
         },
         {
           "date": "2026-05-02T00:00:00.000Z",
@@ -3794,9 +3754,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Maths / Numeracy",
+              "subject": "English / Cymraeg / MFL",
               "type": "Exams - To be held in exam venues",
-              "label": "GCSE Numeracy Unit 1 Exam"
+              "label": "https://docs.google.com/spreadsheets/d/1VeHB4FyWZnz8uuyoC4WGk36ykqEBYAFHbwuDVeIswj4/edit?gid=0#gid=0"
             }
           ]
         },
@@ -3822,59 +3782,25 @@
           "date": "2026-05-11T00:00:00.000Z",
           "week": "1",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Humanities",
-              "type": "Exams - To be held in exam venues",
-              "label": "Business Unit 1"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2026-05-12T00:00:00.000Z",
           "week": "1",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Science & Tech",
-              "type": "Exams - To be held in exam venues",
-              "label": "**Biology 2 Exam** (Double award & Separate Science)"
-            },
-            {
-              "subject": "Science & Tech",
-              "type": "Exams - To be held in exam venues",
-              "label": "**Applied Science** Unit 3 (Double award) Exam\n\n**Applied Science** Unit 2 (Single award) Exam"
-            },
-            {
-              "subject": "Humanities",
-              "type": "Exams - To be held in exam venues",
-              "label": "Geography Unit 1"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2026-05-13T00:00:00.000Z",
           "week": "1",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "English / Cymraeg / MFL",
-              "type": "Exams - To be held in exam venues",
-              "label": "Welsh GCSE Unit 3 exam"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2026-05-14T00:00:00.000Z",
           "week": "1",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Maths / Numeracy",
-              "type": "Exams - To be held in exam venues",
-              "label": "GCSE Maths Unit 1 Exam"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2026-05-15T00:00:00.000Z",
@@ -3898,35 +3824,13 @@
           "date": "2026-05-18T00:00:00.000Z",
           "week": "2",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "English / Cymraeg / MFL",
-              "type": "Exams - To be held in exam venues",
-              "label": "Media Studies GCSE \n(Unit 1)"
-            },
-            {
-              "subject": "Science & Tech",
-              "type": "Exams - To be held in exam venues",
-              "label": "**Chemistry 2 Exam** (Double award & Separate Science)"
-            },
-            {
-              "subject": "Science & Tech",
-              "type": "Exams - To be held in exam venues",
-              "label": "**Engineering** Unit 3 Exam"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2026-05-19T00:00:00.000Z",
           "week": "2",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "English / Cymraeg / MFL",
-              "type": "Exams - To be held in exam venues",
-              "label": "English Literature GCSE\n(Unit 2a: An Inspector Calls, Heroes)\n(Unit 2b: A Christmas Carol and Blood Brothers / A View from the Bridge"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2026-05-20T00:00:00.000Z",
@@ -3938,35 +3842,13 @@
           "date": "2026-05-21T00:00:00.000Z",
           "week": "2",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "English / Cymraeg / MFL",
-              "type": "Exams - To be held in exam venues",
-              "label": "English Language GCSE\n(Unit 2 - Exposition, Narration and Description)"
-            },
-            {
-              "subject": "Humanities",
-              "type": "Exams - To be held in exam venues",
-              "label": "Business unit 2"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2026-05-22T00:00:00.000Z",
           "week": "2",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Science & Tech",
-              "type": "Exams - To be held in exam venues",
-              "label": "**Physics 2 Exam** (Double award & Separate Science)"
-            },
-            {
-              "subject": "Science & Tech",
-              "type": "Exams - To be held in exam venues",
-              "label": "**Health and Social Care **Unit 1 Exam  (**YEAR 10 RESIT ONLY**)"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2026-05-23T00:00:00.000Z",
@@ -4026,47 +3908,19 @@
           "date": "2026-06-01T00:00:00.000Z",
           "week": "1",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Humanities",
-              "type": "Exams - To be held in exam venues",
-              "label": "RS Unit 2"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2026-06-02T00:00:00.000Z",
           "week": "1",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "English / Cymraeg / MFL",
-              "type": "Exams - To be held in exam venues",
-              "label": "Welsh GCSE Unit 4 exam"
-            },
-            {
-              "subject": "English / Cymraeg / MFL",
-              "type": "Exams - To be held in exam venues",
-              "label": "Media Studies GCSE\n(Unit 2)"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2026-06-03T00:00:00.000Z",
           "week": "1",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Maths / Numeracy",
-              "type": "Exams - To be held in exam venues",
-              "label": "GCSE Numeracy Unit 2 Exam"
-            },
-            {
-              "subject": "Humanities",
-              "type": "Exams - To be held in exam venues",
-              "label": "Geography Unit 2"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2026-06-04T00:00:00.000Z",
@@ -4078,18 +3932,7 @@
           "date": "2026-06-05T00:00:00.000Z",
           "week": "1",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "English / Cymraeg / MFL",
-              "type": "Exams - To be held in exam venues",
-              "label": "English Language GCSE \n(Unit 3 - Argumentation, Persuasion and Instructional)"
-            },
-            {
-              "subject": "Expressive Arts",
-              "type": "Exams - To be held in exam venues",
-              "label": "Music: Unit 3 Written Exam"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2026-06-06T00:00:00.000Z",
@@ -4107,42 +3950,19 @@
           "date": "2026-06-08T00:00:00.000Z",
           "week": "2",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Science & Tech",
-              "type": "Exams - To be held in exam venues",
-              "label": "Biology 1 Exam **YEAR 10 RESIT ONLY **(Double award & Separate Science)\n\n**Applied Science** (Double Award) Unit 2 **YEAR 10 RESIT ONLY**"
-            },
-            {
-              "subject": "Science & Tech",
-              "type": "Exams - To be held in exam venues",
-              "label": "**Health and Social Care **Unit 3 Exam"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2026-06-09T00:00:00.000Z",
           "week": "2",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Science & Tech",
-              "type": "Exams - To be held in exam venues",
-              "label": "**Construction** Unit 1 **YEAR 10 RESIT ONLY**"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2026-06-10T00:00:00.000Z",
           "week": "2",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Maths / Numeracy",
-              "type": "Exams - To be held in exam venues",
-              "label": "GCSE Maths Unit 2 Exam"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2026-06-11T00:00:00.000Z",
@@ -4154,18 +3974,7 @@
           "date": "2026-06-12T00:00:00.000Z",
           "week": "2",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Science & Tech",
-              "type": "Exams - To be held in exam venues",
-              "label": "Chemistry 1 Exam **YEAR 10 RESIT ONLY **(Double award & Separate Science)"
-            },
-            {
-              "subject": "Science & Tech",
-              "type": "Exams - To be held in exam venues",
-              "label": "**Hospitality & Catering** Unit 1 Exam"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2026-06-13T00:00:00.000Z",
@@ -4183,25 +3992,13 @@
           "date": "2026-06-15T00:00:00.000Z",
           "week": "1",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Science & Tech",
-              "type": "Exams - To be held in exam venues",
-              "label": "Physics 1 Exam **YEAR 10 RESIT ONLY **(Double award & Separate Science)"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2026-06-16T00:00:00.000Z",
           "week": "1",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Maths / Numeracy",
-              "type": "Exams - To be held in exam venues",
-              "label": "Additional Maths Exam"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2026-06-17T00:00:00.000Z",
