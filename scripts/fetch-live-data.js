@@ -10,6 +10,7 @@ const debugMode = process.argv.includes('--debug');
 
 const OUTPUT_FILE = path.join(__dirname, '../src/data.json');
 const CONFIG_FILE = path.join(__dirname, 'years-config.json');
+const EXAM_SHEET_URL = 'https://docs.google.com/spreadsheets/d/14qTx46gatDYXD9WwuLyC8NG7OAmk9uh1l4mNibhV8Ls/export?format=xlsx';
 
 // Read Config
 let yearsConfig = [];
@@ -374,7 +375,99 @@ async function parseSheet(filePath) {
       data.push(dayRecord);
   }
 
-  return { types: outputTypes, schedule: data };
+  // Extract unique subject names for fuzzy matching later
+  const subjectList = Object.values(subjects).filter(s => s && typeof s === 'string');
+
+  return { types: outputTypes, schedule: data, subjects: subjectList };
+}
+
+async function parseExamSheet(filePath, targetYearName, knownSubjects) {
+  const workbook = new ExcelJS.Workbook();
+  await workbook.xlsx.readFile(filePath);
+
+  // Try to find the sheet. The tab name might not match exactly "Year 10", so let's try strict first.
+  let sheet = workbook.getWorksheet(targetYearName);
+
+  if (!sheet) {
+      console.warn(`[Exams] Worksheet "${targetYearName}" not found in exam sheet.`);
+      return [];
+  }
+
+  console.log(`[Exams] Parsing exams for ${targetYearName}...`);
+
+  const exams = [];
+  const knownSubjectsLower = knownSubjects.map(s => s.toLowerCase());
+
+  // Columns
+  const COL_EXAM_DATE = 1;
+  const COL_EXAM_START = 2;
+  const COL_EXAM_TITLE = 4;
+
+  sheet.eachRow((row, rowNumber) => {
+      if (rowNumber === 1) return; // Skip header
+
+      const dateCell = row.getCell(COL_EXAM_DATE);
+      const titleCell = row.getCell(COL_EXAM_TITLE);
+      const startCell = row.getCell(COL_EXAM_START);
+
+      const dateVal = dateCell.value;
+      if (!dateVal) return;
+
+      // Parse Date
+      let dateObj = null;
+      if (dateVal instanceof Date) {
+          dateObj = dateVal;
+      } else {
+          // Attempt basic parsing if string
+          const d = new Date(dateVal);
+          if (!isNaN(d.getTime())) {
+              dateObj = d;
+          }
+      }
+
+      if (!dateObj) {
+          if (debugMode) console.log(`[Exams] Row ${rowNumber}: Invalid date ${dateVal}`);
+          return;
+      }
+
+      const rawTitle = getCellValue(titleCell);
+      if (!rawTitle) return;
+
+      const startTime = getCellValue(startCell);
+
+      // Extract Subject from Title (e.g. "Geography - Unit 1")
+      // Strategy: Take text before first " - " or just the first word if no hyphen?
+      // User said: "Geography - Unit 1 (YEAR 10)"
+      let subject = "Other";
+      const titleParts = rawTitle.split(' - ');
+      let potentialSubject = titleParts[0].trim();
+
+      // Check if this potential subject matches known subjects
+      const matchIndex = knownSubjectsLower.indexOf(potentialSubject.toLowerCase());
+      if (matchIndex !== -1) {
+          subject = knownSubjects[matchIndex];
+      } else {
+          // Heuristic: If it contains "Maths" or "English", try to map to known ones?
+          // For now, let's keep the extracted name.
+          subject = potentialSubject;
+      }
+
+      // Construct Label
+      let label = rawTitle;
+      if (startTime) {
+          label += ` (${startTime})`;
+      }
+
+      exams.push({
+          date: dateObj,
+          subject: subject,
+          label: label,
+          type: 'Exam' // Hardcoded as per instructions
+      });
+  });
+
+  console.log(`[Exams] Found ${exams.length} exams.`);
+  return exams;
 }
 
 (async () => {
@@ -382,6 +475,15 @@ async function parseSheet(filePath) {
         generatedAt: new Date().toISOString(),
         years: {}
     };
+
+    // Download Exam Sheet once
+    const EXAM_FILE_PATH = path.join(__dirname, 'temp_exams.xlsx');
+    try {
+        await downloadSheet(EXAM_SHEET_URL, EXAM_FILE_PATH);
+    } catch (e) {
+        console.error("Failed to download Exam Sheet:", e);
+        process.exit(1);
+    }
 
     console.log(`Starting multi-year build... Found ${yearsConfig.length} years config.`);
 
@@ -400,6 +502,47 @@ async function parseSheet(filePath) {
         try {
             const filename = await downloadSheet(sheetUrl, downloadPath);
             const data = await parseSheet(downloadPath);
+
+            // Merge Exams (Year 10 only)
+            if (year.name === 'Year 10') {
+                try {
+                    const exams = await parseExamSheet(EXAM_FILE_PATH, year.name, data.subjects);
+                    console.log(`[Exams] Merging ${exams.length} exams into schedule...`);
+
+                    // Ensure "Exam" type exists for the UI to pick up the color
+                    if (!data.types['Exam']) {
+                        data.types['Exam'] = '#EF4444'; // Red
+                        console.log('[Exams] Added default "Exam" type with color #EF4444');
+                    }
+
+                    for (const exam of exams) {
+                        const examDateStr = exam.date.toISOString().substring(0, 10);
+                        let dayEntry = data.schedule.find(d => d.date.substring(0, 10) === examDateStr);
+
+                        if (!dayEntry) {
+                            dayEntry = {
+                                date: exam.date.toISOString(),
+                                week: null,
+                                isInset: false,
+                                assessments: []
+                            };
+                            data.schedule.push(dayEntry);
+                        }
+
+                        dayEntry.assessments.push({
+                            subject: exam.subject,
+                            type: 'Exam',
+                            label: exam.label
+                        });
+                    }
+
+                    // Re-sort schedule by date to ensure chronological order
+                    data.schedule.sort((a, b) => new Date(a.date) - new Date(b.date));
+
+                } catch (err) {
+                    console.error(`[Exams] Failed to parse/merge exams for ${year.name}:`, err);
+                }
+            }
 
             appData.years[year.id] = {
                 name: year.name, // Add name from config
@@ -421,4 +564,9 @@ async function parseSheet(filePath) {
 
     fs.writeFileSync(OUTPUT_FILE, JSON.stringify(appData, null, 2));
     console.log(`\nTotal Success! Data saved to ${OUTPUT_FILE}`);
+
+    // Cleanup Exam Sheet
+    if (fs.existsSync(EXAM_FILE_PATH)) {
+        fs.unlinkSync(EXAM_FILE_PATH);
+    }
 })();
