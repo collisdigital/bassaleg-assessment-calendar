@@ -10,7 +10,6 @@ const debugMode = process.argv.includes('--debug');
 
 const OUTPUT_FILE = path.join(__dirname, '../src/data.json');
 const CONFIG_FILE = path.join(__dirname, 'years-config.json');
-const MAPPING_CONFIG_FILE = path.join(__dirname, 'mapping-config.json');
 
 // Read Configs
 let yearsConfig = [];
@@ -21,12 +20,17 @@ let mappingConfig = {
 };
 
 try {
-    const yearsContent = fs.readFileSync(CONFIG_FILE, 'utf-8');
-    yearsConfig = JSON.parse(yearsContent);
+    const configFileContent = fs.readFileSync(CONFIG_FILE, 'utf-8');
+    const parsedConfig = JSON.parse(configFileContent);
 
-    if (fs.existsSync(MAPPING_CONFIG_FILE)) {
-        const mappingContent = fs.readFileSync(MAPPING_CONFIG_FILE, 'utf-8');
-        mappingConfig = { ...mappingConfig, ...JSON.parse(mappingContent) };
+    // Support both old array format and new object format
+    if (Array.isArray(parsedConfig)) {
+        yearsConfig = parsedConfig;
+    } else {
+        yearsConfig = parsedConfig.years || [];
+        if (parsedConfig.mappings) {
+            mappingConfig = { ...mappingConfig, ...parsedConfig.mappings };
+        }
     }
 } catch (e) {
     console.error("Failed to read config:", e);
