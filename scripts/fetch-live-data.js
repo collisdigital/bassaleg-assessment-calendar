@@ -10,14 +10,26 @@ const debugMode = process.argv.includes('--debug');
 
 const OUTPUT_FILE = path.join(__dirname, '../src/data.json');
 const CONFIG_FILE = path.join(__dirname, 'years-config.json');
+const MAPPING_CONFIG_FILE = path.join(__dirname, 'mapping-config.json');
 
-// Read Config
+// Read Configs
 let yearsConfig = [];
+let mappingConfig = {
+    examTypeKeyword: 'exam',
+    defaultExamColor: '#00FF00',
+    subjectMappings: []
+};
+
 try {
-    const configFileContent = fs.readFileSync(CONFIG_FILE, 'utf-8');
-    yearsConfig = JSON.parse(configFileContent);
+    const yearsContent = fs.readFileSync(CONFIG_FILE, 'utf-8');
+    yearsConfig = JSON.parse(yearsContent);
+
+    if (fs.existsSync(MAPPING_CONFIG_FILE)) {
+        const mappingContent = fs.readFileSync(MAPPING_CONFIG_FILE, 'utf-8');
+        mappingConfig = { ...mappingConfig, ...JSON.parse(mappingContent) };
+    }
 } catch (e) {
-    console.error("Failed to read years config:", e);
+    console.error("Failed to read config:", e);
     process.exit(1);
 }
 
@@ -408,13 +420,14 @@ async function parseExamSheet(filePath, targetYearName, knownSubjects, knownType
   const COL_EXAM_TITLE = 4;
 
   // Determine Exam Type & Color
-  // Look for text "Exam" in the assessment types to find the colour/type to use
-  // or use #00FF00 for the Exam colour if there is no match.
+  // Look for text (from config) in the assessment types to find the colour/type to use
+  // or use default colour if there is no match.
   let examType = 'Exam';
-  let examColor = '#00FF00'; // Default Green
+  let examColor = mappingConfig.defaultExamColor; // Default from config
 
   const typeKeys = Object.keys(knownTypes);
-  const examTypeMatch = typeKeys.find(t => t.toLowerCase().includes('exam'));
+  const keyword = mappingConfig.examTypeKeyword.toLowerCase();
+  const examTypeMatch = typeKeys.find(t => t.toLowerCase().includes(keyword));
 
   if (examTypeMatch) {
       examType = examTypeMatch;
@@ -422,7 +435,7 @@ async function parseExamSheet(filePath, targetYearName, knownSubjects, knownType
       console.log(`[Exams] Mapped exams to existing type: "${examType}" (${examColor})`);
   } else {
       // Inject new type if not found (done in caller)
-      console.log(`[Exams] No existing "Exam" type found. Using default: "Exam" (#00FF00)`);
+      console.log(`[Exams] No existing "${mappingConfig.examTypeKeyword}" type found. Using default: "Exam" (${examColor})`);
   }
 
   sheet.eachRow((row, rowNumber) => {
@@ -460,13 +473,11 @@ async function parseExamSheet(filePath, targetYearName, knownSubjects, knownType
       const code = getCellValue(codeCell);
 
       // Extract Subject from Title (e.g. "Geography - Unit 1")
-      // Strategy: Take text before first " - " or just the first word if no hyphen?
+      // Strategy: Use the full raw title for fuzzy matching to capture keywords like "Chemistry" even if format varies.
       let subject = "Other";
-      const titleParts = rawTitle.split(' - ');
-      let potentialSubject = titleParts[0].trim();
 
       // Fuzzy Logic for Subject Mapping
-      subject = mapSubject(potentialSubject, knownSubjects);
+      subject = mapSubject(rawTitle, knownSubjects);
 
       // Construct Label: Title (Time) (Code)
       let label = rawTitle;
@@ -500,40 +511,16 @@ function mapSubject(examSubject, knownSubjects) {
         return knownSubjects.find(s => s.toLowerCase().includes(keyword.toLowerCase()));
     };
 
-    // Rules
-    if (sLower.includes('biology') || sLower.includes('chemistry') || sLower.includes('physics') || sLower.includes('science')) {
-        const match = findContaining('science');
-        return match || 'Science';
-    }
-
-    if (sLower.includes('english')) {
-        const match = findContaining('english');
-        return match || 'English';
-    }
-
-    if (sLower.includes('geography') || sLower.includes('business') || sLower.includes('religious') || sLower.includes('history')) {
-        const match = findContaining('humanities');
-        return match || 'Humanities';
-    }
-
-    if (sLower.includes('spanish')) {
-        const match = findContaining('spanish');
-        return match || 'Spanish';
-    }
-
-    if (sLower.includes('math')) {
-        const match = findContaining('math');
-        return match || 'Maths';
-    }
-
-    if (sLower.includes('health')) {
-        const match = findContaining('health');
-        return match || 'Health and Wellbeing';
-    }
-
-    if (sLower.includes('drama') || sLower.includes('music')) {
-        const match = findContaining('expressive arts');
-        return match || 'Expressive Arts';
+    // Dynamic Rules from Config
+    if (mappingConfig && mappingConfig.subjectMappings) {
+        for (const rule of mappingConfig.subjectMappings) {
+            if (rule.keywords.some(k => sLower.includes(k.toLowerCase()))) {
+                // Try to find an existing subject that matches the target (e.g. "Science" -> "Science & Tech")
+                // Or fallback to the target name itself.
+                const match = findContaining(rule.target);
+                return match || rule.target;
+            }
+        }
     }
 
     // Default: Check for exact/direct match
@@ -600,6 +587,7 @@ async function processExams(year, data) {
 
     } catch (err) {
         console.error(`[Exams] Failed to parse/merge exams for ${year.name}:`, err);
+        process.exit(1);
     }
 }
 
