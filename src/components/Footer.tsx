@@ -4,9 +4,10 @@ interface FooterProps {
   generatedAt?: string;
   filename?: string;
   sourceUrl?: string;
+  examsUrl?: string;
 }
 
-export function Footer({ generatedAt, filename, sourceUrl }: FooterProps) {
+export function Footer({ generatedAt, filename, sourceUrl, examsUrl }: FooterProps) {
   return (
     <footer className="bg-white border-t border-gray-200 mt-auto">
       <div className="max-w-7xl mx-auto px-4 py-4 text-center text-gray-400 text-sm">
@@ -15,14 +16,29 @@ export function Footer({ generatedAt, filename, sourceUrl }: FooterProps) {
             <span>
               Generated from{' '}
               {sourceUrl ? (
-                <a
-                  href={sourceUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-800 underline decoration-blue-300 hover:decoration-blue-800 transition-colors"
-                >
-                  {filename}
-                </a>
+                <>
+                  <a
+                    href={sourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 underline decoration-blue-300 hover:decoration-blue-800 transition-colors"
+                  >
+                    {filename}
+                  </a>
+                  {examsUrl && (
+                    <>
+                      {' and '}
+                      <a
+                        href={examsUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 hover:text-blue-800 underline decoration-blue-300 hover:decoration-blue-800 transition-colors"
+                      >
+                        Exams Sheet
+                      </a>
+                    </>
+                  )}
+                </>
               ) : (
                 filename
               )}

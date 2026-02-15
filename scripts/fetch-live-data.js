@@ -11,13 +11,28 @@ const debugMode = process.argv.includes('--debug');
 const OUTPUT_FILE = path.join(__dirname, '../src/data.json');
 const CONFIG_FILE = path.join(__dirname, 'years-config.json');
 
-// Read Config
+// Read Configs
 let yearsConfig = [];
+let mappingConfig = {
+    examTypeKeyword: 'exam',
+    defaultExamColor: '#00FF00',
+    subjectMappings: []
+};
+
 try {
     const configFileContent = fs.readFileSync(CONFIG_FILE, 'utf-8');
-    yearsConfig = JSON.parse(configFileContent);
+    const parsedConfig = JSON.parse(configFileContent);
+
+    if (!parsedConfig.years || !Array.isArray(parsedConfig.years)) {
+        throw new Error('Invalid config format: "years" array is missing.');
+    }
+
+    yearsConfig = parsedConfig.years;
+    if (parsedConfig.mappings) {
+        mappingConfig = { ...mappingConfig, ...parsedConfig.mappings };
+    }
 } catch (e) {
-    console.error("Failed to read years config:", e);
+    console.error("Failed to read config:", e);
     process.exit(1);
 }
 
@@ -374,7 +389,211 @@ async function parseSheet(filePath) {
       data.push(dayRecord);
   }
 
-  return { types: outputTypes, schedule: data };
+  // Extract unique subject names for fuzzy matching later
+  const subjectList = Object.values(subjects).filter(s => s && typeof s === 'string');
+
+  return { types: outputTypes, schedule: data, subjects: subjectList };
+}
+
+async function parseExamSheet(filePath, targetYearName, knownSubjects, knownTypes) {
+  const workbook = new ExcelJS.Workbook();
+  await workbook.xlsx.readFile(filePath);
+
+  // Try to find the sheet. The tab name might not match exactly "Year 10", so let's try strict first.
+  let sheet = workbook.getWorksheet(targetYearName);
+
+  if (!sheet) {
+      console.warn(`[Exams] Worksheet "${targetYearName}" not found in exam sheet. Falling back to first sheet.`);
+      sheet = workbook.worksheets[0];
+  }
+
+  if (!sheet) {
+      console.error(`[Exams] No sheets found in workbook.`);
+      return [];
+  }
+
+  console.log(`[Exams] Parsing exams for ${targetYearName} (Sheet: ${sheet.name})...`);
+
+  const exams = [];
+
+  // Columns
+  const COL_EXAM_DATE = 1;
+  const COL_EXAM_START = 2;
+  const COL_EXAM_CODE = 3;
+  const COL_EXAM_TITLE = 4;
+
+  // Determine Exam Type & Color
+  // Look for text (from config) in the assessment types to find the colour/type to use
+  // or use default colour if there is no match.
+  let examType = 'Exam';
+  let examColor = mappingConfig.defaultExamColor; // Default from config
+
+  const typeKeys = Object.keys(knownTypes);
+  const keyword = mappingConfig.examTypeKeyword.toLowerCase();
+  const examTypeMatch = typeKeys.find(t => t.toLowerCase().includes(keyword));
+
+  if (examTypeMatch) {
+      examType = examTypeMatch;
+      examColor = knownTypes[examType];
+      console.log(`[Exams] Mapped exams to existing type: "${examType}" (${examColor})`);
+  } else {
+      // Inject new type if not found (done in caller)
+      console.log(`[Exams] No existing "${mappingConfig.examTypeKeyword}" type found. Using default: "Exam" (${examColor})`);
+  }
+
+  sheet.eachRow((row, rowNumber) => {
+      if (rowNumber === 1) return; // Skip header
+
+      const dateCell = row.getCell(COL_EXAM_DATE);
+      const startCell = row.getCell(COL_EXAM_START);
+      const codeCell = row.getCell(COL_EXAM_CODE);
+      const titleCell = row.getCell(COL_EXAM_TITLE);
+
+      const dateVal = dateCell.value;
+      if (!dateVal) return;
+
+      // Parse Date
+      let dateObj = null;
+      if (dateVal instanceof Date) {
+          dateObj = dateVal;
+      } else {
+          // Attempt basic parsing if string
+          const d = new Date(dateVal);
+          if (!isNaN(d.getTime())) {
+              dateObj = d;
+          }
+      }
+
+      if (!dateObj) {
+          if (debugMode) console.log(`[Exams] Row ${rowNumber}: Invalid date ${dateVal}`);
+          return;
+      }
+
+      const rawTitle = getCellValue(titleCell);
+      if (!rawTitle) return;
+
+      const startTime = getCellValue(startCell);
+      const code = getCellValue(codeCell);
+
+      // Extract Subject from Title (e.g. "Geography - Unit 1")
+      // Strategy: Use the full raw title for fuzzy matching to capture keywords like "Chemistry" even if format varies.
+      let subject = "Other";
+
+      // Fuzzy Logic for Subject Mapping
+      subject = mapSubject(rawTitle, knownSubjects);
+
+      // Construct Label: Title (Time) (Code)
+      let label = rawTitle;
+      if (startTime) {
+          label += ` (${startTime})`;
+      }
+      if (code) {
+          label += ` (${code})`;
+      }
+
+      exams.push({
+          date: dateObj,
+          subject: subject,
+          label: label,
+          type: examType,
+          color: examColor // Pass back color preference
+      });
+  });
+
+  console.log(`[Exams] Found ${exams.length} exams.`);
+  return exams;
+}
+
+// Helper for fuzzy subject mapping
+function mapSubject(rawExamTitle, knownSubjects) {
+    const sLower = rawExamTitle.toLowerCase();
+    const knownSubjectsLower = knownSubjects.map(s => s.toLowerCase());
+
+    // Helper to find first known subject containing keyword
+    const findContaining = (keyword) => {
+        return knownSubjects.find(s => s.toLowerCase().includes(keyword.toLowerCase()));
+    };
+
+    // Dynamic Rules from Config
+    if (mappingConfig && mappingConfig.subjectMappings) {
+        for (const rule of mappingConfig.subjectMappings) {
+            if (rule.keywords.some(k => sLower.includes(k.toLowerCase()))) {
+                // Try to find an existing subject that matches the target (e.g. "Science" -> "Science & Tech")
+                // Or fallback to the target name itself.
+                const match = findContaining(rule.target);
+                return match || rule.target;
+            }
+        }
+    }
+
+    // Default: Check for exact/direct match
+    const matchIndex = knownSubjectsLower.indexOf(sLower);
+    if (matchIndex !== -1) {
+        return knownSubjects[matchIndex];
+    }
+
+    // Final Fallback: Split by hyphen and take the first part
+    const potentialSubject = rawExamTitle.split('-')[0].trim();
+    return potentialSubject;
+}
+
+async function processExams(year, data) {
+    if (!year.examsUrl) return;
+
+    const examFilePath = path.join(__dirname, `temp_exams_${year.id}.xlsx`);
+    try {
+        await downloadSheet(year.examsUrl, examFilePath);
+
+        const exams = await parseExamSheet(examFilePath, year.name, data.subjects, data.types);
+        console.log(`[Exams] Merging ${exams.length} exams into schedule...`);
+
+        // Add/Update Type Color if needed
+        if (exams.length > 0) {
+            const examType = exams[0].type;
+            const examColor = exams[0].color;
+
+            if (!data.types[examType]) {
+                data.types[examType] = examColor;
+                console.log(`[Exams] Registered new type "${examType}" with color ${examColor}`);
+            } else if (data.types[examType] !== examColor && examColor !== '#00FF00') {
+                 // Only warn if we found a match but colors differ (unlikely if logic holds)
+                 console.log(`[Exams] Using existing color for "${examType}": ${data.types[examType]}`);
+            }
+        }
+
+        for (const exam of exams) {
+            const examDateStr = exam.date.toISOString().substring(0, 10);
+            let dayEntry = data.schedule.find(d => d.date.substring(0, 10) === examDateStr);
+
+            if (!dayEntry) {
+                dayEntry = {
+                    date: exam.date.toISOString(),
+                    week: null,
+                    isInset: false,
+                    assessments: []
+                };
+                data.schedule.push(dayEntry);
+            }
+
+            dayEntry.assessments.push({
+                subject: exam.subject,
+                type: exam.type,
+                label: exam.label
+            });
+        }
+
+        // Re-sort schedule by date to ensure chronological order
+        data.schedule.sort((a, b) => new Date(a.date) - new Date(b.date));
+
+        // Cleanup Exam Sheet
+        if (fs.existsSync(examFilePath)) {
+            fs.unlinkSync(examFilePath);
+        }
+
+    } catch (err) {
+        console.error(`[Exams] Failed to parse/merge exams for ${year.name}:`, err);
+        process.exit(1);
+    }
 }
 
 (async () => {
@@ -401,10 +620,13 @@ async function parseSheet(filePath) {
             const filename = await downloadSheet(sheetUrl, downloadPath);
             const data = await parseSheet(downloadPath);
 
+            await processExams(year, data);
+
             appData.years[year.id] = {
                 name: year.name, // Add name from config
                 filename: filename || `${year.name} Assessment Calendar`,
                 sourceUrl: sheetUrl,
+                examsUrl: year.examsUrl, // Pass through exams URL if present
                 types: data.types, // Type -> Color mapping
                 schedule: data.schedule
             };

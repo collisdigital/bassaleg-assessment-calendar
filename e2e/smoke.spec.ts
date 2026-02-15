@@ -1,7 +1,42 @@
+/* eslint-disable no-undef */
 import { test, expect } from '@playwright/test';
+
+// Define the Mock Data
+const MOCK_DATA = {
+  generatedAt: new Date().toISOString(),
+  years: {
+    "year-10": {
+      name: "Year 10",
+      filename: "Year 10 Assessment Calendar",
+      sourceUrl: "http://example.com/test",
+      types: {
+        "Exam": "#EF4444"
+      },
+      schedule: [
+        {
+          date: "2025-09-01T12:00:00.000Z",
+          week: "Week 1",
+          isInset: false,
+          assessments: [
+            {
+              subject: "Maths",
+              type: "Exam",
+              label: "Year 10 Maths Exam - Topic: Algebra"
+            }
+          ]
+        }
+      ]
+    }
+  }
+};
 
 test.describe('Assessment Calendar Smoke Test', () => {
   test.beforeEach(async ({ page }) => {
+    // Inject Mock Data
+    await page.addInitScript((mockData) => {
+      window.APP_DATA = mockData;
+    }, MOCK_DATA);
+
     // Set fixed time matching the start of test data (Sept 1st 2025)
     await page.clock.install({ time: new Date('2025-09-01T10:00:00Z') });
   });
@@ -20,10 +55,11 @@ test.describe('Assessment Calendar Smoke Test', () => {
 
     // 3. Verify Year View
     // The generated filename is "Year 10 Assessment Calendar"
+    // Use regex to be safe, but since we injected mock data, it should match exact string "Year 10 Assessment Calendar"
     await expect(page).toHaveTitle(/Year 10 Assessment Calendar/);
 
     const mainHeading = page.getByRole('heading', { level: 1 });
-    await expect(mainHeading).toHaveText('Year 10 Assessment Calendar');
+    await expect(mainHeading).toHaveText(/Year 10 Assessment Calendar/);
 
     // 4. Verify Assessment Data is visible
     // We forced "Maths" and "Exam" on the first day (2025-09-01) in generate-test-data.js

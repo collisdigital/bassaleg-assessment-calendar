@@ -3,7 +3,10 @@ import { useSearchParams } from 'react-router-dom';
 import rawData from '../data.json';
 import { AppData, YearData } from '../types';
 
-const appData = rawData as unknown as AppData;
+// Support data injection for E2E testing
+const appData = (typeof window !== 'undefined' && window.APP_DATA)
+  ? window.APP_DATA
+  : (rawData as unknown as AppData);
 
 function createSlug(str: string): string {
   return str.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
@@ -126,6 +129,7 @@ export function useData(yearId: string) {
     typeColors,
     filename: yearData?.filename,
     sourceUrl: yearData?.sourceUrl,
+    examsUrl: yearData?.examsUrl,
     generatedAt: appData.generatedAt // Global generatedAt
   };
 }
