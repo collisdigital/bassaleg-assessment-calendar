@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-14T15:45:21.005Z",
+  "generatedAt": "2026-02-15T00:50:58.743Z",
   "years": {
     "year-10": {
       "name": "Year 10",
@@ -11,8 +11,7 @@
         "NEA": "#00FFFF",
         "Practical": "#FF0000",
         "Homework": "#FF00FF",
-        "Note": "#E5E7EB",
-        "Exam": "#EF4444"
+        "Note": "#E5E7EB"
       },
       "schedule": [
         {
@@ -1409,9 +1408,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Geography",
-              "type": "Exam",
-              "label": "Geography - Unit 1 (YEAR 10) (12.45)"
+              "subject": "Humanities",
+              "type": "Exams - To be held in exam venues",
+              "label": "Geography - Unit 1 (YEAR 10) (12.45) (3140U10-1)"
             }
           ]
         },
@@ -1433,9 +1432,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Business",
-              "type": "Exam",
-              "label": "Business - Unit 1 (YEAR 10) (12.45)"
+              "subject": "Humanities",
+              "type": "Exams - To be held in exam venues",
+              "label": "Business - Unit 1 (YEAR 10) (12.45) (3160U10-1)"
             }
           ]
         },
@@ -1445,9 +1444,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Double English Lang & Lit",
-              "type": "Exam",
-              "label": "Double English Lang & Lit - Unit 1 (YEAR 10) (8.45)"
+              "subject": "English / MFL",
+              "type": "Exams - To be held in exam venues",
+              "label": "Double English Lang & Lit - Unit 1 (YEAR 10) (8.45) (3750U10-1)"
             }
           ]
         },
@@ -1481,9 +1480,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Religious Studies",
-              "type": "Exam",
-              "label": "Religious Studies - Unit 1 (YEAR 10 Christianity) (8.45)"
+              "subject": "Humanities",
+              "type": "Exams - To be held in exam venues",
+              "label": "Religious Studies - Unit 1 (YEAR 10 Christianity) (8.45) (3150UC0-1)"
             }
           ]
         },
@@ -1493,9 +1492,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Computer Science",
-              "type": "Exam",
-              "label": "Computer Science - Unit 1 (YEAR 10) (12.45)"
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Computer Science - Unit 1 (YEAR 10) (12.45) (3460U10-1)"
             }
           ]
         },
@@ -1506,8 +1505,8 @@
           "assessments": [
             {
               "subject": "Health & Social Care Single",
-              "type": "Exam",
-              "label": "Health & Social Care Single - Unit 1 (YEAR 10) (12.45)"
+              "type": "Exams - To be held in exam venues",
+              "label": "Health & Social Care Single - Unit 1 (YEAR 10) (12.45) (3570UB0-1)"
             }
           ]
         },
@@ -1577,9 +1576,9 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "History",
-              "type": "Exam",
-              "label": "History - Unit 2 (YEAR 10) (12.45)"
+              "subject": "Humanities",
+              "type": "Exams - To be held in exam venues",
+              "label": "History - Unit 2 (YEAR 10) (12.45) (3100UF0-1)"
             }
           ]
         },
@@ -1619,24 +1618,24 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Biology Foundation",
-              "type": "Exam",
-              "label": "Biology Foundation - Unit 1 (YEAR 10) (8.45)"
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Biology Foundation - Unit 1 (YEAR 10) (8.45) (3400U10-1)"
             },
             {
-              "subject": "Biology Higher",
-              "type": "Exam",
-              "label": "Biology Higher - Unit 1 (YEAR 10) (8.45)"
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Biology Higher - Unit 1 (YEAR 10) (8.45) (3400UA0-1)"
             },
             {
-              "subject": "Double Award Science Foundation",
-              "type": "Exam",
-              "label": "Double Award Science Foundation - Unit 1 (YEAR 10) (8.45)"
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Double Award Science Foundation - Unit 1 (YEAR 10) (8.45) (3430U10-1)"
             },
             {
-              "subject": "Double Award Science Higher",
-              "type": "Exam",
-              "label": "Double Award Science Higher - Unit 1 (YEAR 10) (8.45)"
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Double Award Science Higher - Unit 1 (YEAR 10) (8.45) (3430UA0-1)"
             }
           ]
         },
@@ -1675,24 +1674,24 @@
               "label": "Drama- Unit 1- Devising Exam- 10C All Day"
             },
             {
-              "subject": "Chemistry Foundation",
-              "type": "Exam",
-              "label": "Chemistry Foundation - Unit 1 (YEAR 10) (8.45)"
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Chemistry Foundation - Unit 1 (YEAR 10) (8.45) (3410U10-1)"
             },
             {
-              "subject": "Chemistry Higher",
-              "type": "Exam",
-              "label": "Chemistry Higher - Unit 1 (YEAR 10) (8.45)"
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Chemistry Higher - Unit 1 (YEAR 10) (8.45) (3410UA0-1)"
             },
             {
-              "subject": "Double Award Science Foundation",
-              "type": "Exam",
-              "label": "Double Award Science Foundation - Unit 2 (YEAR 10) (8.45)"
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Double Award Science Foundation - Unit 2 (YEAR 10) (8.45) (3430U20-1)"
             },
             {
-              "subject": "Double Award Science Higher",
-              "type": "Exam",
-              "label": "Double Award Science Higher - Unit 2 (YEAR 10) (8.45)"
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Double Award Science Higher - Unit 2 (YEAR 10) (8.45) (3430UB0-1)"
             }
           ]
         },
@@ -1719,24 +1718,24 @@
               "label": "Music End of Year Internal Exam"
             },
             {
-              "subject": "Physics Foundation",
-              "type": "Exam",
-              "label": "Physics Foundation - Unit 1 (YEAR 10) (8.45)"
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Physics Foundation - Unit 1 (YEAR 10) (8.45) (3420U10-1)"
             },
             {
-              "subject": "Physics Higher",
-              "type": "Exam",
-              "label": "Physics Higher - Unit 1 (YEAR 10) (8.45)"
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Physics Higher - Unit 1 (YEAR 10) (8.45) (3420UA0-1)"
             },
             {
-              "subject": "Double Award Science Foundation",
-              "type": "Exam",
-              "label": "Double Award Science Foundation - Unit 3 (YEAR 10) (8.45)"
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Double Award Science Foundation - Unit 3 (YEAR 10) (8.45) (3430U30-1)"
             },
             {
-              "subject": "Double Award Science Higher",
-              "type": "Exam",
-              "label": "Double Award Science Higher - Unit  (YEAR 10) (8.45)"
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Double Award Science Higher - Unit  (YEAR 10) (8.45) (3430UC0-1)"
             }
           ]
         },
@@ -3844,13 +3843,25 @@
           "date": "2026-05-05T00:00:00.000Z",
           "week": "2",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Entry Level Maths/Numeracy",
+              "type": "Exams - To be held in exam venues",
+              "label": "Entry Level Maths/Numeracy (8.45) (6300QCL-1)"
+            }
+          ]
         },
         {
           "date": "2026-05-06T00:00:00.000Z",
           "week": "2",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Entry Level Science (8.45) (6430QCL-1)"
+            }
+          ]
         },
         {
           "date": "2026-05-07T00:00:00.000Z",
@@ -3861,6 +3872,26 @@
               "subject": "English / Cymraeg / MFL",
               "type": "Exams - To be held in exam venues",
               "label": "https://docs.google.com/spreadsheets/d/1VeHB4FyWZnz8uuyoC4WGk36ykqEBYAFHbwuDVeIswj4/edit?gid=0#gid=0"
+            },
+            {
+              "subject": "Maths/Numeracy",
+              "type": "Exams - To be held in exam venues",
+              "label": "Maths/Numeracy - Unit 1 Foundation (Resits) (8.45) (3310U10-1)"
+            },
+            {
+              "subject": "Maths/Numeracy",
+              "type": "Exams - To be held in exam venues",
+              "label": "Maths/Numeracy - Unit 1 Intermediate (Resits) (8.45) (3310U30-1)"
+            },
+            {
+              "subject": "Maths/Numeracy",
+              "type": "Exams - To be held in exam venues",
+              "label": "Maths/Numeracy - Unit 1 Higher (Resits) (8.45) (3310U50-1)"
+            },
+            {
+              "subject": "English / Cymraeg / MFL",
+              "type": "Exams - To be held in exam venues",
+              "label": "Entry Level English (12.45) (6700QCL-1)"
             }
           ]
         },
@@ -3868,7 +3899,18 @@
           "date": "2026-05-08T00:00:00.000Z",
           "week": "2",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Sociology",
+              "type": "Exams - To be held in exam venues",
+              "label": "Sociology - Component 1 (8.45) (C200U10-1)"
+            },
+            {
+              "subject": "Drama",
+              "type": "Exams - To be held in exam venues",
+              "label": "Drama - Unit 3 (12.45) (3690U30-1)"
+            }
+          ]
         },
         {
           "date": "2026-05-09T00:00:00.000Z",
@@ -3886,31 +3928,121 @@
           "date": "2026-05-11T00:00:00.000Z",
           "week": "1",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Humanities",
+              "type": "Exams - To be held in exam venues",
+              "label": "Business - Unit 1 (12.45) (3510U10-1)"
+            }
+          ]
         },
         {
           "date": "2026-05-12T00:00:00.000Z",
           "week": "1",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Humanities",
+              "type": "Exams - To be held in exam venues",
+              "label": "Geography - Unit 1 (8.45) (3110U10-1)"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Biology Foundation - Unit 2 (12.45) (3400U20-1)"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Biology Higher - Unit 2 (12.45) (3400UB0-1)"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Double Award Science Foundation - Unit 4 (12.45) (3430U40-1)"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Double Award Science Higher - Unit 4 (12.45) (3430UD0-1)"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Applied Science Foundation - Unit 3 (12.45) (3445U30-1)"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Applied Science Higher - Unit 3 (12.45) (3445UC0-1)"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Single Applied Science Foundation - Unit 2 (12.45) (3440U20-1)"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Single Applied Science Higher - Unit 2 (12.45) (3440UB0-1)"
+            }
+          ]
         },
         {
           "date": "2026-05-13T00:00:00.000Z",
           "week": "1",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Welsh",
+              "type": "Exams - To be held in exam venues",
+              "label": "Welsh - Unit 3 (8.45) (3020U30-1)"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Computer Science - Unit 1 (12.45) (3500U10-1)"
+            },
+            {
+              "subject": "Humanities",
+              "type": "Exams - To be held in exam venues",
+              "label": "History - Unit 1 (12.45) (3100UC0-1)"
+            }
+          ]
         },
         {
           "date": "2026-05-14T00:00:00.000Z",
           "week": "1",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Maths Foundation",
+              "type": "Exams - To be held in exam venues",
+              "label": "Maths Foundation - Unit 1 (8.45) (3300U10-1)"
+            },
+            {
+              "subject": "Maths Intermediate",
+              "type": "Exams - To be held in exam venues",
+              "label": "Maths Intermediate - Unit 1 (8.45) (3300U30-1)"
+            },
+            {
+              "subject": "Maths Higher",
+              "type": "Exams - To be held in exam venues",
+              "label": "Maths Higher - Unit 1 (8.45) (3300U50-1)"
+            }
+          ]
         },
         {
           "date": "2026-05-15T00:00:00.000Z",
           "week": "1",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Sociology",
+              "type": "Exams - To be held in exam venues",
+              "label": "Sociology - Component 2 (12.45) (C200U20-1)"
+            }
+          ]
         },
         {
           "date": "2026-05-16T00:00:00.000Z",
@@ -3928,31 +4060,131 @@
           "date": "2026-05-18T00:00:00.000Z",
           "week": "2",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Chemistry Foundation - Unit 2 (8.45) (3410U20-1)"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Chemistry Higher - Unit 2 (8.45) (3410UB0-1)"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Double Award Science Foundation - Unit 5 (8.45) (3430U50-1)"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Double Award Science Higher - Unit 5 (8.45) (3430UE0-1)"
+            },
+            {
+              "subject": "Media Studies",
+              "type": "Exams - To be held in exam venues",
+              "label": "Media Studies - Unit 1 (12.45) (3680U10-1)"
+            },
+            {
+              "subject": "Engineering",
+              "type": "Exams - To be held in exam venues",
+              "label": "Engineering - Unit 3 (12.45) (5799U30-1)"
+            }
+          ]
         },
         {
           "date": "2026-05-19T00:00:00.000Z",
           "week": "2",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "English / Cymraeg / MFL",
+              "type": "Exams - To be held in exam venues",
+              "label": "English Literature Foundation -  Unit 2a  (8.45) (3720U20-1)"
+            },
+            {
+              "subject": "English / Cymraeg / MFL",
+              "type": "Exams - To be held in exam venues",
+              "label": "English Literature Higher -  Unit 2a  (8.45) (3720UB0-1)"
+            },
+            {
+              "subject": "English / Cymraeg / MFL",
+              "type": "Exams - To be held in exam venues",
+              "label": "English Literature Foundation -  Unit 2b  (8.45) (3720U30-1)"
+            },
+            {
+              "subject": "English / Cymraeg / MFL",
+              "type": "Exams - To be held in exam venues",
+              "label": "English Literature Higher -  Unit 2b  (8.45) (3720UC0-1)"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Computer Science - Unit 2 (12.45) (3500U20-1)"
+            }
+          ]
         },
         {
           "date": "2026-05-20T00:00:00.000Z",
           "week": "2",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Humanities",
+              "type": "Exams - To be held in exam venues",
+              "label": "Religious Studies - Unit 1 (Christianity & Islam) (12.45) (3120UB0-1)"
+            }
+          ]
         },
         {
           "date": "2026-05-21T00:00:00.000Z",
           "week": "2",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "English / Cymraeg / MFL",
+              "type": "Exams - To be held in exam venues",
+              "label": "English Language - Unit 2 (8.45) (3700U20-1)"
+            },
+            {
+              "subject": "Humanities",
+              "type": "Exams - To be held in exam venues",
+              "label": "Business - Unit 2 (12.45) (3510U20-1)"
+            }
+          ]
         },
         {
           "date": "2026-05-22T00:00:00.000Z",
           "week": "2",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Physics Foundation - Unit 2 (8.45) (3420U20-1)"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Physics Higher - Unit 2 (8.45) (3420UB0-1)"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Double Award Science Foundation - Unit 6 (8.45) (3430U60-1)"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Double Award Science Higher - Unit 6 (8.45) (3430UF0-1)"
+            },
+            {
+              "subject": "Health, Social Care & Childcare",
+              "type": "Exams - To be held in exam venues",
+              "label": "Health, Social Care & Childcare - Unit 1 (12.45) (3570UB0-1)"
+            }
+          ]
         },
         {
           "date": "2026-05-23T00:00:00.000Z",
@@ -4012,19 +4244,62 @@
           "date": "2026-06-01T00:00:00.000Z",
           "week": "1",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "PE",
+              "type": "Exams - To be held in exam venues",
+              "label": "PE - Unit 1 (8.45) (3550U20-1)"
+            },
+            {
+              "subject": "Humanities",
+              "type": "Exams - To be held in exam venues",
+              "label": "Religious Studies - Unit 2 (Christianity & Islam) (12.45) (3120U20-1)"
+            }
+          ]
         },
         {
           "date": "2026-06-02T00:00:00.000Z",
           "week": "1",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Welsh",
+              "type": "Exams - To be held in exam venues",
+              "label": "Welsh - Unit 4 (8.45) (3020U40-1)"
+            },
+            {
+              "subject": "Media Studies",
+              "type": "Exams - To be held in exam venues",
+              "label": "Media Studies - Unit 2 (12.45) (3680U20-1)"
+            }
+          ]
         },
         {
           "date": "2026-06-03T00:00:00.000Z",
           "week": "1",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Maths/Numeracy",
+              "type": "Exams - To be held in exam venues",
+              "label": "Maths/Numeracy - Unit 2 Foundation (Resits) (8.45) (3310U20-1)"
+            },
+            {
+              "subject": "Maths/Numeracy",
+              "type": "Exams - To be held in exam venues",
+              "label": "Maths/Numeracy - Unit 2 Intermediate (Resits) (8.45) (3310U40-1)"
+            },
+            {
+              "subject": "Maths/Numeracy",
+              "type": "Exams - To be held in exam venues",
+              "label": "Maths/Numeracy - Unit 2 Higher (Resits) (8.45) (3310U60-1)"
+            },
+            {
+              "subject": "Humanities",
+              "type": "Exams - To be held in exam venues",
+              "label": "Geography - Unit 2 (12.45) (3110U20-1)"
+            }
+          ]
         },
         {
           "date": "2026-06-04T00:00:00.000Z",
@@ -4036,7 +4311,18 @@
           "date": "2026-06-05T00:00:00.000Z",
           "week": "1",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "English / Cymraeg / MFL",
+              "type": "Exams - To be held in exam venues",
+              "label": "English Language - Unit 3 (8.45) (3700U30-1)"
+            },
+            {
+              "subject": "Music",
+              "type": "Exams - To be held in exam venues",
+              "label": "Music - Unit 3 (12.45) (3660U30-1)"
+            }
+          ]
         },
         {
           "date": "2026-06-06T00:00:00.000Z",
@@ -4054,19 +4340,82 @@
           "date": "2026-06-08T00:00:00.000Z",
           "week": "2",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Applied Science Foundation - Unit 2 (Year 11 Resits only) (8.45) (3445U20-1)"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Applied Science Higher - Unit 2 (Year 11 Resits only) (8.45) (3445UB0-1)"
+            },
+            {
+              "subject": "Digital Technology",
+              "type": "Exams - To be held in exam venues",
+              "label": "Digital Technology - Unit 1 (12.45) (3540U10-1)"
+            },
+            {
+              "subject": "Health, Social Care & Child Care Double",
+              "type": "Exams - To be held in exam venues",
+              "label": "Health, Social Care & Child Care Double - Unit 3 (12.45) (3570UD0-1)"
+            }
+          ]
         },
         {
           "date": "2026-06-09T00:00:00.000Z",
           "week": "2",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Spanish Listening Foundation",
+              "type": "Exams - To be held in exam venues",
+              "label": "Spanish Listening Foundation - Unit 2 (8.45) (3810U20-1)"
+            },
+            {
+              "subject": "Spanish Listening Higher",
+              "type": "Exams - To be held in exam venues",
+              "label": "Spanish Listening Higher - Unit 2 (8.45) (3810UB0-1)"
+            },
+            {
+              "subject": "Spanish Reading Foundation",
+              "type": "Exams - To be held in exam venues",
+              "label": "Spanish Reading Foundation - Unit 3 (8.45) (3810U30-1)"
+            },
+            {
+              "subject": "Spanish Reading Higher",
+              "type": "Exams - To be held in exam venues",
+              "label": "Spanish Reading Higher - Unit 3 (8.45) (3810UC0-1)"
+            },
+            {
+              "subject": "Humanities",
+              "type": "Exams - To be held in exam venues",
+              "label": "History - Unit 3 (12.45) (3100UK0-1)"
+            }
+          ]
         },
         {
           "date": "2026-06-10T00:00:00.000Z",
           "week": "2",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Maths Foundation",
+              "type": "Exams - To be held in exam venues",
+              "label": "Maths Foundation - Unit 2 (8.45) (3300U20-1)"
+            },
+            {
+              "subject": "Maths Intermediate",
+              "type": "Exams - To be held in exam venues",
+              "label": "Maths Intermediate - Unit 2 (8.45) (3300U40-1)"
+            },
+            {
+              "subject": "Maths Higher",
+              "type": "Exams - To be held in exam venues",
+              "label": "Maths Higher - Unit 2 (8.45) (3300U60-1)"
+            }
+          ]
         },
         {
           "date": "2026-06-11T00:00:00.000Z",
@@ -4078,7 +4427,23 @@
           "date": "2026-06-12T00:00:00.000Z",
           "week": "2",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Applied Science Foundation - Unit 1 (Year 11 Resits only) (8.45) (3445U10-1)"
+            },
+            {
+              "subject": "Science & Tech",
+              "type": "Exams - To be held in exam venues",
+              "label": "Applied Science Higher - Unit 1 (Year 11 Resits only) (8.45) (3445UA0-1)"
+            },
+            {
+              "subject": "Hospitality & Catering",
+              "type": "Exams - To be held in exam venues",
+              "label": "Hospitality & Catering (12.45) (5409UB0-1)"
+            }
+          ]
         },
         {
           "date": "2026-06-13T00:00:00.000Z",
@@ -4102,7 +4467,23 @@
           "date": "2026-06-16T00:00:00.000Z",
           "week": "1",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Additional Maths",
+              "type": "Exams - To be held in exam venues",
+              "label": "Additional Maths (8.45) (9550-01-01T00:00:00.000Z)"
+            },
+            {
+              "subject": "Spanish Writing/Reading Foundation",
+              "type": "Exams - To be held in exam venues",
+              "label": "Spanish Writing/Reading Foundation - Unit 4 (8.45) (3810U40-1)"
+            },
+            {
+              "subject": "Spanish Writing/Reading Higher",
+              "type": "Exams - To be held in exam venues",
+              "label": "Spanish Writing/Reading Higher - Unit 4 (8.45) (3810UD0-1)"
+            }
+          ]
         },
         {
           "date": "2026-06-17T00:00:00.000Z",

@@ -2,11 +2,13 @@
   {
     "id": "year-10",
     "name": "Year 10",
-    "sheetUrl": "https://docs.google.com/spreadsheets/d/1i1p1tWNJZtwr_9orEjX0AKeQ_GrqkqI-vUW9KbAWslU"
+    "sheetUrl": "https://docs.google.com/spreadsheets/d/1i1p1tWNJZtwr_9orEjX0AKeQ_GrqkqI-vUW9KbAWslU",
+    "examsUrl": "https://docs.google.com/spreadsheets/d/14qTx46gatDYXD9WwuLyC8NG7OAmk9uh1l4mNibhV8Ls"
   },
   {
     "id": "year-11",
     "name": "Year 11",
-    "sheetUrl": "https://docs.google.com/spreadsheets/d/1IwS8bwAq1-MGXMp88erwBC55m8iFaU--ZgBPRzuS-w4"
+    "sheetUrl": "https://docs.google.com/spreadsheets/d/1IwS8bwAq1-MGXMp88erwBC55m8iFaU--ZgBPRzuS-w4",
+    "examsUrl": "https://docs.google.com/spreadsheets/d/1VeHB4FyWZnz8uuyoC4WGk36ykqEBYAFHbwuDVeIswj4"
   }
 ]
