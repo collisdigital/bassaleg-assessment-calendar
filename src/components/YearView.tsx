@@ -397,6 +397,7 @@ export function YearView() {
         generatedAt={dataHook.generatedAt}
         filename={dataHook.filename}
         sourceUrl={dataHook.sourceUrl}
+        examsUrl={dataHook.examsUrl}
       />
     </div>
   );

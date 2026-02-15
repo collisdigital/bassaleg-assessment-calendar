@@ -16,6 +16,7 @@ export interface DayInfo {
 export interface YearData {
   name: string;
   sourceUrl?: string;
+  examsUrl?: string;
   filename?: string;
   types: Record<string, string>; // Type -> Color (Hex)
   schedule: DayInfo[];

@@ -129,6 +129,7 @@ export function useData(yearId: string) {
     typeColors,
     filename: yearData?.filename,
     sourceUrl: yearData?.sourceUrl,
+    examsUrl: yearData?.examsUrl,
     generatedAt: appData.generatedAt // Global generatedAt
   };
 }

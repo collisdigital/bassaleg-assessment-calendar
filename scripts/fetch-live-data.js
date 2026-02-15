@@ -625,6 +625,7 @@ function mapSubject(examSubject, knownSubjects) {
                 name: year.name, // Add name from config
                 filename: filename || `${year.name} Assessment Calendar`,
                 sourceUrl: sheetUrl,
+                examsUrl: year.examsUrl, // Pass through exams URL if present
                 types: data.types, // Type -> Color mapping
                 schedule: data.schedule
             };

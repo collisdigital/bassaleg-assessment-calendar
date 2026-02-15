@@ -17,6 +17,7 @@ describe('FilterBar', () => {
     schedule: [],
     filename: '',
     sourceUrl: '',
+    examsUrl: '',
     generatedAt: '2023-01-01T00:00:00.000Z',
     yearData: { types: {}, schedule: [] } as unknown as YearData
   };

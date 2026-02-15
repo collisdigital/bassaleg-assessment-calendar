@@ -1,10 +1,11 @@
 {
-  "generatedAt": "2026-02-15T01:12:26.680Z",
+  "generatedAt": "2026-02-15T01:18:16.840Z",
   "years": {
     "year-10": {
       "name": "Year 10",
       "filename": "Year 10 2025-26 Assessment Calendar",
       "sourceUrl": "https://docs.google.com/spreadsheets/d/1i1p1tWNJZtwr_9orEjX0AKeQ_GrqkqI-vUW9KbAWslU",
+      "examsUrl": "https://docs.google.com/spreadsheets/d/14qTx46gatDYXD9WwuLyC8NG7OAmk9uh1l4mNibhV8Ls",
       "types": {
         "Exams - To be held in exam venues": "#00FF00",
         "Mock": "#FFFF00",
@@ -2012,6 +2013,7 @@
       "name": "Year 11",
       "filename": "Year 11 2025-26 Assessment Calendar",
       "sourceUrl": "https://docs.google.com/spreadsheets/d/1IwS8bwAq1-MGXMp88erwBC55m8iFaU--ZgBPRzuS-w4",
+      "examsUrl": "https://docs.google.com/spreadsheets/d/1VeHB4FyWZnz8uuyoC4WGk36ykqEBYAFHbwuDVeIswj4",
       "types": {
         "Exams - To be held in exam venues": "#00FF00",
         "Mock": "#FFFF00",
