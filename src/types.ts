@@ -30,3 +30,9 @@ export interface Filters {
   subjects: string[];
   types: string[];
 }
+
+declare global {
+  interface Window {
+    APP_DATA?: AppData;
+  }
+}
