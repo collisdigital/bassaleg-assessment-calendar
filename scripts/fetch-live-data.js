@@ -23,14 +23,13 @@ try {
     const configFileContent = fs.readFileSync(CONFIG_FILE, 'utf-8');
     const parsedConfig = JSON.parse(configFileContent);
 
-    // Support both old array format and new object format
-    if (Array.isArray(parsedConfig)) {
-        yearsConfig = parsedConfig;
-    } else {
-        yearsConfig = parsedConfig.years || [];
-        if (parsedConfig.mappings) {
-            mappingConfig = { ...mappingConfig, ...parsedConfig.mappings };
-        }
+    if (!parsedConfig.years || !Array.isArray(parsedConfig.years)) {
+        throw new Error('Invalid config format: "years" array is missing.');
+    }
+
+    yearsConfig = parsedConfig.years;
+    if (parsedConfig.mappings) {
+        mappingConfig = { ...mappingConfig, ...parsedConfig.mappings };
     }
 } catch (e) {
     console.error("Failed to read config:", e);
