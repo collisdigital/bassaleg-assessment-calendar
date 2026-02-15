@@ -545,6 +545,64 @@ function mapSubject(examSubject, knownSubjects) {
     return examSubject;
 }
 
+async function processExams(year, data) {
+    if (!year.examsUrl) return;
+
+    const examFilePath = path.join(__dirname, `temp_exams_${year.id}.xlsx`);
+    try {
+        await downloadSheet(year.examsUrl, examFilePath);
+
+        const exams = await parseExamSheet(examFilePath, year.name, data.subjects, data.types);
+        console.log(`[Exams] Merging ${exams.length} exams into schedule...`);
+
+        // Add/Update Type Color if needed
+        if (exams.length > 0) {
+            const examType = exams[0].type;
+            const examColor = exams[0].color;
+
+            if (!data.types[examType]) {
+                data.types[examType] = examColor;
+                console.log(`[Exams] Registered new type "${examType}" with color ${examColor}`);
+            } else if (data.types[examType] !== examColor && examColor !== '#00FF00') {
+                 // Only warn if we found a match but colors differ (unlikely if logic holds)
+                 console.log(`[Exams] Using existing color for "${examType}": ${data.types[examType]}`);
+            }
+        }
+
+        for (const exam of exams) {
+            const examDateStr = exam.date.toISOString().substring(0, 10);
+            let dayEntry = data.schedule.find(d => d.date.substring(0, 10) === examDateStr);
+
+            if (!dayEntry) {
+                dayEntry = {
+                    date: exam.date.toISOString(),
+                    week: null,
+                    isInset: false,
+                    assessments: []
+                };
+                data.schedule.push(dayEntry);
+            }
+
+            dayEntry.assessments.push({
+                subject: exam.subject,
+                type: exam.type,
+                label: exam.label
+            });
+        }
+
+        // Re-sort schedule by date to ensure chronological order
+        data.schedule.sort((a, b) => new Date(a.date) - new Date(b.date));
+
+        // Cleanup Exam Sheet
+        if (fs.existsSync(examFilePath)) {
+            fs.unlinkSync(examFilePath);
+        }
+
+    } catch (err) {
+        console.error(`[Exams] Failed to parse/merge exams for ${year.name}:`, err);
+    }
+}
+
 (async () => {
     const appData = {
         generatedAt: new Date().toISOString(),
@@ -569,62 +627,7 @@ function mapSubject(examSubject, knownSubjects) {
             const filename = await downloadSheet(sheetUrl, downloadPath);
             const data = await parseSheet(downloadPath);
 
-            // Merge Exams (if configured)
-            if (year.examsUrl) {
-                const examFilePath = path.join(__dirname, `temp_exams_${year.id}.xlsx`);
-                try {
-                    await downloadSheet(year.examsUrl, examFilePath);
-
-                    const exams = await parseExamSheet(examFilePath, year.name, data.subjects, data.types);
-                    console.log(`[Exams] Merging ${exams.length} exams into schedule...`);
-
-                    // Add/Update Type Color if needed
-                    if (exams.length > 0) {
-                        const examType = exams[0].type;
-                        const examColor = exams[0].color;
-
-                        if (!data.types[examType]) {
-                            data.types[examType] = examColor;
-                            console.log(`[Exams] Registered new type "${examType}" with color ${examColor}`);
-                        } else if (data.types[examType] !== examColor && examColor !== '#00FF00') {
-                             // Only warn if we found a match but colors differ (unlikely if logic holds)
-                             console.log(`[Exams] Using existing color for "${examType}": ${data.types[examType]}`);
-                        }
-                    }
-
-                    for (const exam of exams) {
-                        const examDateStr = exam.date.toISOString().substring(0, 10);
-                        let dayEntry = data.schedule.find(d => d.date.substring(0, 10) === examDateStr);
-
-                        if (!dayEntry) {
-                            dayEntry = {
-                                date: exam.date.toISOString(),
-                                week: null,
-                                isInset: false,
-                                assessments: []
-                            };
-                            data.schedule.push(dayEntry);
-                        }
-
-                        dayEntry.assessments.push({
-                            subject: exam.subject,
-                            type: exam.type,
-                            label: exam.label
-                        });
-                    }
-
-                    // Re-sort schedule by date to ensure chronological order
-                    data.schedule.sort((a, b) => new Date(a.date) - new Date(b.date));
-
-                    // Cleanup Exam Sheet
-                    if (fs.existsSync(examFilePath)) {
-                        fs.unlinkSync(examFilePath);
-                    }
-
-                } catch (err) {
-                    console.error(`[Exams] Failed to parse/merge exams for ${year.name}:`, err);
-                }
-            }
+            await processExams(year, data);
 
             appData.years[year.id] = {
                 name: year.name, // Add name from config
