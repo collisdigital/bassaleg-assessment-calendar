@@ -388,11 +388,16 @@ async function parseExamSheet(filePath, targetYearName, knownSubjects, knownType
   let sheet = workbook.getWorksheet(targetYearName);
 
   if (!sheet) {
-      console.warn(`[Exams] Worksheet "${targetYearName}" not found in exam sheet.`);
+      console.warn(`[Exams] Worksheet "${targetYearName}" not found in exam sheet. Falling back to first sheet.`);
+      sheet = workbook.worksheets[0];
+  }
+
+  if (!sheet) {
+      console.error(`[Exams] No sheets found in workbook.`);
       return [];
   }
 
-  console.log(`[Exams] Parsing exams for ${targetYearName}...`);
+  console.log(`[Exams] Parsing exams for ${targetYearName} (Sheet: ${sheet.name})...`);
 
   const exams = [];
 
