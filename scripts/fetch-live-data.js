@@ -511,6 +511,26 @@ function mapSubject(examSubject, knownSubjects) {
         return match || 'Humanities';
     }
 
+    if (sLower.includes('spanish')) {
+        const match = findContaining('spanish');
+        return match || 'Spanish';
+    }
+
+    if (sLower.includes('math')) {
+        const match = findContaining('math');
+        return match || 'Maths';
+    }
+
+    if (sLower.includes('health')) {
+        const match = findContaining('health');
+        return match || 'Health and Wellbeing';
+    }
+
+    if (sLower.includes('drama') || sLower.includes('music')) {
+        const match = findContaining('expressive arts');
+        return match || 'Expressive Arts';
+    }
+
     // Default: Check for exact/direct match
     const matchIndex = knownSubjectsLower.indexOf(sLower);
     if (matchIndex !== -1) {

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-15T00:50:58.743Z",
+  "generatedAt": "2026-02-15T01:12:26.680Z",
   "years": {
     "year-10": {
       "name": "Year 10",
@@ -1504,7 +1504,7 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Health & Social Care Single",
+              "subject": "Health & Wellbeing",
               "type": "Exams - To be held in exam venues",
               "label": "Health & Social Care Single - Unit 1 (YEAR 10) (12.45) (3570UB0-1)"
             }
@@ -3845,7 +3845,7 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Entry Level Maths/Numeracy",
+              "subject": "Maths / Numeracy",
               "type": "Exams - To be held in exam venues",
               "label": "Entry Level Maths/Numeracy (8.45) (6300QCL-1)"
             }
@@ -3874,17 +3874,17 @@
               "label": "https://docs.google.com/spreadsheets/d/1VeHB4FyWZnz8uuyoC4WGk36ykqEBYAFHbwuDVeIswj4/edit?gid=0#gid=0"
             },
             {
-              "subject": "Maths/Numeracy",
+              "subject": "Maths / Numeracy",
               "type": "Exams - To be held in exam venues",
               "label": "Maths/Numeracy - Unit 1 Foundation (Resits) (8.45) (3310U10-1)"
             },
             {
-              "subject": "Maths/Numeracy",
+              "subject": "Maths / Numeracy",
               "type": "Exams - To be held in exam venues",
               "label": "Maths/Numeracy - Unit 1 Intermediate (Resits) (8.45) (3310U30-1)"
             },
             {
-              "subject": "Maths/Numeracy",
+              "subject": "Maths / Numeracy",
               "type": "Exams - To be held in exam venues",
               "label": "Maths/Numeracy - Unit 1 Higher (Resits) (8.45) (3310U50-1)"
             },
@@ -3906,7 +3906,7 @@
               "label": "Sociology - Component 1 (8.45) (C200U10-1)"
             },
             {
-              "subject": "Drama",
+              "subject": "Expressive Arts",
               "type": "Exams - To be held in exam venues",
               "label": "Drama - Unit 3 (12.45) (3690U30-1)"
             }
@@ -4016,17 +4016,17 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Maths Foundation",
+              "subject": "Maths / Numeracy",
               "type": "Exams - To be held in exam venues",
               "label": "Maths Foundation - Unit 1 (8.45) (3300U10-1)"
             },
             {
-              "subject": "Maths Intermediate",
+              "subject": "Maths / Numeracy",
               "type": "Exams - To be held in exam venues",
               "label": "Maths Intermediate - Unit 1 (8.45) (3300U30-1)"
             },
             {
-              "subject": "Maths Higher",
+              "subject": "Maths / Numeracy",
               "type": "Exams - To be held in exam venues",
               "label": "Maths Higher - Unit 1 (8.45) (3300U50-1)"
             }
@@ -4180,7 +4180,7 @@
               "label": "Double Award Science Higher - Unit 6 (8.45) (3430UF0-1)"
             },
             {
-              "subject": "Health, Social Care & Childcare",
+              "subject": "Health & Wellbeing",
               "type": "Exams - To be held in exam venues",
               "label": "Health, Social Care & Childcare - Unit 1 (12.45) (3570UB0-1)"
             }
@@ -4280,17 +4280,17 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Maths/Numeracy",
+              "subject": "Maths / Numeracy",
               "type": "Exams - To be held in exam venues",
               "label": "Maths/Numeracy - Unit 2 Foundation (Resits) (8.45) (3310U20-1)"
             },
             {
-              "subject": "Maths/Numeracy",
+              "subject": "Maths / Numeracy",
               "type": "Exams - To be held in exam venues",
               "label": "Maths/Numeracy - Unit 2 Intermediate (Resits) (8.45) (3310U40-1)"
             },
             {
-              "subject": "Maths/Numeracy",
+              "subject": "Maths / Numeracy",
               "type": "Exams - To be held in exam venues",
               "label": "Maths/Numeracy - Unit 2 Higher (Resits) (8.45) (3310U60-1)"
             },
@@ -4318,7 +4318,7 @@
               "label": "English Language - Unit 3 (8.45) (3700U30-1)"
             },
             {
-              "subject": "Music",
+              "subject": "Expressive Arts",
               "type": "Exams - To be held in exam venues",
               "label": "Music - Unit 3 (12.45) (3660U30-1)"
             }
@@ -4357,7 +4357,7 @@
               "label": "Digital Technology - Unit 1 (12.45) (3540U10-1)"
             },
             {
-              "subject": "Health, Social Care & Child Care Double",
+              "subject": "Health & Wellbeing",
               "type": "Exams - To be held in exam venues",
               "label": "Health, Social Care & Child Care Double - Unit 3 (12.45) (3570UD0-1)"
             }
@@ -4369,22 +4369,22 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Spanish Listening Foundation",
+              "subject": "Spanish",
               "type": "Exams - To be held in exam venues",
               "label": "Spanish Listening Foundation - Unit 2 (8.45) (3810U20-1)"
             },
             {
-              "subject": "Spanish Listening Higher",
+              "subject": "Spanish",
               "type": "Exams - To be held in exam venues",
               "label": "Spanish Listening Higher - Unit 2 (8.45) (3810UB0-1)"
             },
             {
-              "subject": "Spanish Reading Foundation",
+              "subject": "Spanish",
               "type": "Exams - To be held in exam venues",
               "label": "Spanish Reading Foundation - Unit 3 (8.45) (3810U30-1)"
             },
             {
-              "subject": "Spanish Reading Higher",
+              "subject": "Spanish",
               "type": "Exams - To be held in exam venues",
               "label": "Spanish Reading Higher - Unit 3 (8.45) (3810UC0-1)"
             },
@@ -4401,17 +4401,17 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Maths Foundation",
+              "subject": "Maths / Numeracy",
               "type": "Exams - To be held in exam venues",
               "label": "Maths Foundation - Unit 2 (8.45) (3300U20-1)"
             },
             {
-              "subject": "Maths Intermediate",
+              "subject": "Maths / Numeracy",
               "type": "Exams - To be held in exam venues",
               "label": "Maths Intermediate - Unit 2 (8.45) (3300U40-1)"
             },
             {
-              "subject": "Maths Higher",
+              "subject": "Maths / Numeracy",
               "type": "Exams - To be held in exam venues",
               "label": "Maths Higher - Unit 2 (8.45) (3300U60-1)"
             }
@@ -4469,17 +4469,17 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Additional Maths",
+              "subject": "Maths / Numeracy",
               "type": "Exams - To be held in exam venues",
               "label": "Additional Maths (8.45) (9550-01-01T00:00:00.000Z)"
             },
             {
-              "subject": "Spanish Writing/Reading Foundation",
+              "subject": "Spanish",
               "type": "Exams - To be held in exam venues",
               "label": "Spanish Writing/Reading Foundation - Unit 4 (8.45) (3810U40-1)"
             },
             {
-              "subject": "Spanish Writing/Reading Higher",
+              "subject": "Spanish",
               "type": "Exams - To be held in exam venues",
               "label": "Spanish Writing/Reading Higher - Unit 4 (8.45) (3810UD0-1)"
             }
