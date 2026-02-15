@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-15T11:31:53.437Z",
+  "generatedAt": "2026-02-15T12:37:23.926Z",
   "years": {
     "year-10": {
       "name": "Year 10",
@@ -3903,7 +3903,7 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Sociology - Component 1",
+              "subject": "Sociology",
               "type": "Exams - To be held in exam venues",
               "label": "Sociology - Component 1 (8.45) (C200U10-1)"
             },
@@ -3996,7 +3996,7 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Welsh - Unit 3",
+              "subject": "Welsh",
               "type": "Exams - To be held in exam venues",
               "label": "Welsh - Unit 3 (8.45) (3020U30-1)"
             },
@@ -4040,7 +4040,7 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Sociology - Component 2",
+              "subject": "Sociology",
               "type": "Exams - To be held in exam venues",
               "label": "Sociology - Component 2 (12.45) (C200U20-1)"
             }
@@ -4084,12 +4084,12 @@
               "label": "Double Award Science Higher - Unit 5 (8.45) (3430UE0-1)"
             },
             {
-              "subject": "Media Studies - Unit 1",
+              "subject": "Media Studies",
               "type": "Exams - To be held in exam venues",
               "label": "Media Studies - Unit 1 (12.45) (3680U10-1)"
             },
             {
-              "subject": "Engineering - Unit 3",
+              "subject": "Engineering",
               "type": "Exams - To be held in exam venues",
               "label": "Engineering - Unit 3 (12.45) (5799U30-1)"
             }
@@ -4248,7 +4248,7 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "PE - Unit 1",
+              "subject": "PE",
               "type": "Exams - To be held in exam venues",
               "label": "PE - Unit 1 (8.45) (3550U20-1)"
             },
@@ -4265,12 +4265,12 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Welsh - Unit 4",
+              "subject": "Welsh",
               "type": "Exams - To be held in exam venues",
               "label": "Welsh - Unit 4 (8.45) (3020U40-1)"
             },
             {
-              "subject": "Media Studies - Unit 2",
+              "subject": "Media Studies",
               "type": "Exams - To be held in exam venues",
               "label": "Media Studies - Unit 2 (12.45) (3680U20-1)"
             }
@@ -4354,7 +4354,7 @@
               "label": "Applied Science Higher - Unit 2 (Year 11 Resits only) (8.45) (3445UB0-1)"
             },
             {
-              "subject": "Digital Technology - Unit 1",
+              "subject": "Digital Technology",
               "type": "Exams - To be held in exam venues",
               "label": "Digital Technology - Unit 1 (12.45) (3540U10-1)"
             },

@@ -505,8 +505,8 @@ async function parseExamSheet(filePath, targetYearName, knownSubjects, knownType
 }
 
 // Helper for fuzzy subject mapping
-function mapSubject(examSubject, knownSubjects) {
-    const sLower = examSubject.toLowerCase();
+function mapSubject(rawExamTitle, knownSubjects) {
+    const sLower = rawExamTitle.toLowerCase();
     const knownSubjectsLower = knownSubjects.map(s => s.toLowerCase());
 
     // Helper to find first known subject containing keyword
@@ -532,7 +532,9 @@ function mapSubject(examSubject, knownSubjects) {
         return knownSubjects[matchIndex];
     }
 
-    return examSubject;
+    // Final Fallback: Split by hyphen and take the first part
+    const potentialSubject = rawExamTitle.split('-')[0].trim();
+    return potentialSubject;
 }
 
 async function processExams(year, data) {
