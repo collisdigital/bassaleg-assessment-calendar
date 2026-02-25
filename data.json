@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-24T04:03:32.497Z",
+  "generatedAt": "2026-02-25T04:04:53.956Z",
   "years": {
     "year-10": {
       "name": "Year 10",
@@ -3406,6 +3406,11 @@
               "subject": "English / Cymraeg / MFL",
               "type": "Exams - To be held in exam venues",
               "label": "Welsh Unit 1 Resit (only affects 3 pupils)"
+            },
+            {
+              "subject": "Maths / Numeracy",
+              "type": "Mock",
+              "label": "GCSE Maths Unit 1 Mock"
             }
           ]
         },
@@ -3425,7 +3430,13 @@
           "date": "2026-03-13T00:00:00.000Z",
           "week": "2",
           "isInset": false,
-          "assessments": []
+          "assessments": [
+            {
+              "subject": "Maths / Numeracy",
+              "type": "Mock",
+              "label": "GCSE Maths Unit 2 Mock"
+            }
+          ]
         },
         {
           "date": "2026-03-14T00:00:00.000Z",
