@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-02T02:30:38.165Z",
+  "generatedAt": "2026-06-03T02:30:46.231Z",
   "years": {
     "year-10": {
       "name": "Year 10",
@@ -1788,11 +1788,6 @@
           "isInset": false,
           "assessments": [
             {
-              "subject": "Maths / Numeracy",
-              "type": "Mock",
-              "label": "Maths End of Year Tests"
-            },
-            {
               "subject": "Humanities",
               "type": "NEA",
               "label": "Business NEA starts yr 10"
@@ -1813,37 +1808,19 @@
           "date": "2026-06-23T00:00:00.000Z",
           "week": "2",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Maths / Numeracy",
-              "type": "Mock",
-              "label": "Maths End of Year Tests"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2026-06-24T00:00:00.000Z",
           "week": "2",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Maths / Numeracy",
-              "type": "Mock",
-              "label": "Maths End of Year Tests"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2026-06-25T00:00:00.000Z",
           "week": "2",
           "isInset": false,
-          "assessments": [
-            {
-              "subject": "Maths / Numeracy",
-              "type": "Mock",
-              "label": "Maths End of Year Tests"
-            }
-          ]
+          "assessments": []
         },
         {
           "date": "2026-06-26T00:00:00.000Z",
@@ -1869,6 +1846,11 @@
           "isInset": false,
           "assessments": [
             {
+              "subject": "Maths / Numeracy",
+              "type": "Mock",
+              "label": "Maths End of Year Test 1"
+            },
+            {
               "subject": "Expressive Arts",
               "type": "NEA",
               "label": "Drama Unit 1- Evaluation Exam"
@@ -1880,6 +1862,11 @@
           "week": "1",
           "isInset": false,
           "assessments": [
+            {
+              "subject": "Maths / Numeracy",
+              "type": "Mock",
+              "label": "Maths End of Year Test 2"
+            },
             {
               "subject": "Expressive Arts",
               "type": "NEA",
